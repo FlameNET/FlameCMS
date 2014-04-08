@@ -226,9 +226,9 @@ textarea { overflow: auto; }
 #change-language span { display: inline-block; background: url("../images/icons/map-small.gif") 0 50% no-repeat; padding: 2px 0 2px 35px }
 
 /* embedded login */
-#login-embedded { width: 400px; position: fixed; top: 50%; left: 50%; padding: 0; margin: -200px; z-index: 9005; height: 300px; background: #000; border: 5px solid #525e67; border-radius: 3px; -moz-box-shadow: #000 0 0 20px; box-shadow: #000 0 0 20px; }
+#login-embedded { width: 400px; height: 405px; position: fixed; top: 50%; left: 50%; padding: 0; margin: -200px; z-index: 9005; background: #000; border: 5px solid #525e67; border-radius: 3px; -moz-box-shadow: #000 0 0 20px; box-shadow: #000 0 0 20px; }
 #login-embedded object,
-#login-embedded iframe { width: 400px; margin: 0; padding: 0; border: none; }
+#login-embedded iframe { width: 400px; height: 405px; margin: 0; padding: 0; border: none; }
 #embedded-loader { width: 200px; height: 200px; position: fixed; top: 50%; left: 50%; margin: -100px; z-index: 9005; background: url("../images/loaders/uber-loading.gif") 50% 50% no-repeat; }
 
 /* bml */

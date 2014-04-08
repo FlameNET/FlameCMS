@@ -8,5 +8,6 @@ $cms_lang[6]		= "WoW Source: Warlords of Draenor";
 $cms_lang[7]		= "World of Warcraft: Warlords of Draenor BlizzCon 2013 FAQ";
 $cms_lang[8]		= "Latest Updates";
 $cms_lang[9]		= "Latest Blizzard Posts";
-
+$cms_lang[10]		= "Load more";
+$cms_lang[11]		= "on";
 ?>

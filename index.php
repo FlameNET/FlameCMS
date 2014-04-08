@@ -9,7 +9,7 @@
 <!-- Description of CMS -->
 <?php include('webkit/desc'); ?>
 <!-- Description of CMS END -->
-<title>FlameCMS</title>
+<title><?php echo $cms['title']; ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <?php include('webkit/core'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
@@ -73,16 +73,16 @@
 		<a href="#" target="_blank"></a>
 		</li>
 		<li class="facebook">
-		<a href="<?php echo $cms['Facebook']; ?>" title="<?php echo $cms['title']; ?> on Facebook"></a>
+		<a href="<?php echo $cms['Facebook']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> Facebook"></a>
 		</li>
 		<li class="twitter">
-		<a href="<?php echo $cms['Twitter']; ?>" title="<?php echo $cms['title']; ?> on Twitter"></a>
+		<a href="<?php echo $cms['Twitter']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> Twitter"></a>
 		</li>
 		<li class="youtube">
-		<a href="<?php echo $cms['Youtube']; ?>" title="<?php echo $cms['title']; ?> on Youtube"></a>
+		<a href="<?php echo $cms['Youtube']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> Youtube"></a>
 		</li>
 		<li class="reddit">
-		<a href="<?php echo $cms['Reddit']; ?>" title="<?php echo $cms['title']; ?> on reddit"></a>
+		<a href="<?php echo $cms['Reddit']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> reddit"></a>
 		</li>
 	<span class="clear"><!-- --></span>
 	</ul>
@@ -153,7 +153,7 @@
 <!-- Articles END -->
 <span class="clear"><!-- --></span>
 <div class="blog-load-more">
-<a class="load-more" id="load-more" href="javascript:;">Load more</a>
+<a class="load-more" id="load-more" href="javascript:;"><?php echo $cms_lang['10']; ?></a>
 <span class="clear"><!-- --></span>
 </div>
 </div>
