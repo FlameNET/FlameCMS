@@ -7,6 +7,10 @@
 <link rel="stylesheet" type="text/css" media="all" href="assets/css/cms.css" />
 <link rel="stylesheet" type="text/css" media="all" href="assets/css/locale/en-gb.css" />
 <link rel="stylesheet" type="text/css" media="all" href="assets/css/legal/ratings.css" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/css/profile.css" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/css/zone.css" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/css/summary.css" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/css/pet.css" />
 <!-- Le Javascripts -->
 <script type="text/javascript" src="assets/js/third-party.js"></script>
 <script type="text/javascript" src="assets/js/common-game-site.js"></script>

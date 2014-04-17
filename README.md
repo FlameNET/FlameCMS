@@ -1,19 +1,14 @@
 ## Flame.NET
 
   [Visit us]: YET TO BE DETERMINED
-  
-![image][]
 
-  [image]:
-  
-  
 ## License 
 
 (The GNU License)
 
-		= AquaFlame Project -- General information =
+		= Flame.NET Project -- General information =
 
-	Copyright (C) 2014 (http://aquaflame.org) AquaFlame.NET
+	Copyright (C) 2014 (YET TO BE DETERMINED) Flame.NET
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
