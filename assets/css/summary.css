@@ -2,7 +2,7 @@
 
 /* overrides */
 .profile-contents { margin-left: 0; }
-.profile-sidebar-inner { background-image: url("../images/character/summary/sidebar-bg.png"); }
+.profile-sidebar-inner { background-image: url("../images/character/sidebar-bg.png"); }
 ul.profile-sidebar-menu,
 ul.profile-sidebar-menu li { background-image: url("../images/profile/sidebar-menu-sep.png"); }
 ul.profile-sidebar-menu a { width: 160px; }
@@ -35,7 +35,7 @@ ul.profile-sidebar-menu a:hover { background: url("../images/profile/sidebar-men
 .summary-middle-inner { padding: 15px 25px; background-color: rgba(0, 0, 0, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .summary-middle-left { margin-right: 367px; }
 .summary-middle-right { float: right; width: 333px; }
-.summary-bottom { padding: 32px 40px; background: url("../images/character/summary/bottom-bg.png") left top no-repeat; min-height: 655px; }
+.summary-bottom { padding: 32px 40px; background: url("../images/character/bottom-bg.png") left top no-repeat; min-height: 655px; }
 .summary-bottom-sub-content { border-top: 1px solid #3d1e0f; margin-top: 19px; padding-top: 45px;}
 .summary-bottom-left { margin-right: 367px; }
 .summary-bottom-right { float: right; width: 385px; }
@@ -65,7 +65,7 @@ a.summary-link-tools { display: block; width: 21px; height: 21px; background: ur
 .summary-inventory a.item { width: 49px; height: 49px; display: block; position: absolute; }
 .summary-inventory a.item img { display: block; width: 44px; height: 44px; padding: 3px 0 0 3px; }
 .summary-inventory a.item:hover .frame { background-color: rgba(255, 255, 255, 0.2); }
-.summary-inventory a.empty { width: 49px; height: 49px; display: block; cursor: help; position: absolute; background: url("../images/character/summary/item-empty-bg.png") no-repeat; opacity: 0.33333; }
+.summary-inventory a.empty { width: 49px; height: 49px; display: block; cursor: help; position: absolute; background: url("../images/character/item-empty-bg.png") no-repeat; opacity: 0.33333; }
 .summary-inventory a.empty:hover { opacity: 0.66666; }
 .summary-inventory a.item .frame, .summary-inventory a.empty .frame { position: absolute; left: 0; top: 0; width: 49px; height: 49px; background: url("../images/icons/frames/inventory-slots.png") no-repeat; }
 .summary-inventory .slot,
@@ -119,7 +119,7 @@ a.summary-link-tools { display: block; width: 21px; height: 21px; background: ur
 
 /* inventory (advanced) */
 .summary-inventory-advanced { width: 807px; height: 521px; position: absolute; left: -45px; top: -2px; }
-.summary-inventory-advanced .slot-inner { width: 265px; height: 57px; background: url("../images/character/summary/item-slot-advanced-bg.png") left top repeat-y; }
+.summary-inventory-advanced .slot-inner { width: 265px; height: 57px; background: url("../images/character/item-slot-advanced-bg.png") left top repeat-y; }
 .summary-inventory-advanced .slot-highlight .slot-inner { background-position: left bottom; }
 .summary-inventory-advanced .details { position: absolute; width: 204px; height: 49px; left: 57px; top: 4px; white-space: nowrap; }
 .summary-inventory-advanced a.item,
@@ -200,11 +200,11 @@ a.summary-link-tools { display: block; width: 21px; height: 21px; background: ur
 /* reforging */
 .summary-reforging .category { margin-top: 15px; }
 .summary-reforging .arrow-anchor { position: relative; width: 1px; height: 0; margin: 0 auto; }
-.summary-reforging .arrow-anchor .arrow { position: absolute; width: 20px; height: 20px; background: url("../images/character/summary/reforging-arrow.gif") left top no-repeat; left: -10px; top: 0; }
+.summary-reforging .arrow-anchor .arrow { position: absolute; width: 20px; height: 20px; background: url("../images/character/reforging-arrow.gif") left top no-repeat; left: -10px; top: 0; }
 .reforging-highlight .arrow-anchor .arrow { display: none; }
 .reforging-highlight li { opacity: 0.3333; }
 .summary-reforging li { cursor: default; line-height: 15px; padding: 0px 0; position: relative; letter-spacing:-.010em;}
-.summary-reforging li .arrow { display: none; position: absolute; width: 10px; height: 10px; top: 8px; background: url("../images/character/summary/reforging-arrow-small.png") left top no-repeat; }
+.summary-reforging li .arrow { display: none; position: absolute; width: 10px; height: 10px; top: 8px; background: url("../images/character/reforging-arrow-small.png") left top no-repeat; }
 .summary-reforging li .text { padding: 5px 0; padding-left: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .summary-reforging li.highlight { opacity: 1; }
 .summary-reforging li.highlight .arrow { display: block; }
@@ -224,7 +224,7 @@ a.summary-link-tools { display: block; width: 21px; height: 21px; background: ur
 
 /* health/resource */
 .summary-health-resource { float: left; margin: 0 0px 10px; color: white; }
-.summary-health-resource li { margin-right: 11px; padding-left: 11px; text-shadow: 1px 1px 1px #000; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: url("../images/character/summary/health-resource-bg.png") repeat-x; cursor: help; display: inline-block; width: 157px;}
+.summary-health-resource li { margin-right: 11px; padding-left: 11px; text-shadow: 1px 1px 1px #000; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: url("../images/character/health-resource-bg.png") repeat-x; cursor: help; display: inline-block; width: 157px;}
 .summary-health-resource li, .summary-health-resource span { height: 23px; line-height: 23px; }
 .summary-health-resource .name { font-size: 11px; }
 .summary-health-resource .value { font-size: 12px; font-family:"Arial Black", Arial, sans-serif; font-weight:900; padding-left: 5px; }
@@ -251,7 +251,7 @@ a.summary-link-tools { display: block; width: 21px; height: 21px; background: ur
 
 .summary-talents .talent-specs .inner { display: block; padding: 8px 7px 11px 12px; padding-bottom: 0; position: relative;}
 .summary-talents .talent-specs .roles { position: absolute; left: 13px; top: 25px; width: 32px; height: 16px; }
-.summary-talents .talent-specs .checkmark { background: url("../images/character/summary/talents-check.gif") no-repeat; width:15px; height:11px; float: right; position: absolute; top: 18px; right: 7px;}
+.summary-talents .talent-specs .checkmark { background: url("../images/character/talents-check.gif") no-repeat; width:15px; height:11px; float: right; position: absolute; top: 18px; right: 7px;}
 
 .summary-talents .talent-specs .frame { float: left; width: 26px; height: 26px; margin-right: 9px; margin-top: 1px; background-color: black; border: 1px solid #434445; border-bottom-color: #2F3032; border-top-color: #B1B2B4; overflow: hidden; -webkit-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.50); box-shadow:0px 1px 8px 0px rgba(0,0,0,0.50);}
 .summary-talents .talent-specs .icon img { display: block; width: 26px; height: 26px;}
@@ -339,7 +339,7 @@ a.summary-stats-simple-arrow-right:hover { background-position: right bottom; }
 .summary-stats-simple-other { position: relative; }
 .summary-stats-simple-other, .summary-stats-advanced-role { float: left; }
 .summary-stats-advanced li { padding: 10px 0; border-top: 1px solid #2f1e18; }
-a.summary-stats-toggler, a.summary-stats-toggler .inner { display: block; height: 26px; line-height: 26px; background: url("../images/character/summary/stats-expand-bg.gif") left top no-repeat; font-size: 11px; }
+a.summary-stats-toggler, a.summary-stats-toggler .inner { display: block; height: 26px; line-height: 26px; background: url("../images/character/stats-expand-bg.gif") left top no-repeat; font-size: 11px; }
 a.summary-stats-toggler { margin-top: 15px; text-align: center; padding-left: 10px; }
 a.summary-stats-toggler .inner { background-position: right top; padding-right: 10px; }
 a.summary-stats-toggler:hover { background-position: left bottom; }
@@ -357,7 +357,7 @@ a.summary-stats-toggler:hover .inner { background-position: right bottom; }
 .summary-professions,
 .summary-professions li,
 .summary-professions .profession-details { width: 312px; display: block; }
-.summary-professions li { height: 23px; margin-bottom: 7px; background: #462414 url("../images/character/summary/professions-bar-bg.png") repeat-x; background-size:cover; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.summary-professions li { height: 23px; margin-bottom: 7px; background: #462414 url("../images/character/professions-bar-bg.png") repeat-x; background-size:cover; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 .summary-professions .profession-details { position: absolute; left: 0; top: 0; text-shadow: 1px 1px 1px #000; }
 .summary-professions a.profession-details:hover { background-color: rgba(255, 255, 255, 0.15); }
 .summary-professions .profession-details span { float: left; color: white; }
@@ -368,7 +368,7 @@ a.summary-stats-toggler:hover .inner { background-position: right bottom; }
 .summary-professions li.empty .name { color: #572e1b; text-shadow: none; float:none; margin:0; display:block; height:23px; text-align:center;}
 
 .summary-professions .profile-progress { background: none; margin: 0; text-align: left; }
-.summary-professions .profile-progress .bar { height: 23px; background: url("../images/character/summary/professions-bar-bg.png") left -23px repeat-x; width: 100%; }
+.summary-professions .profile-progress .bar { height: 23px; background: url("../images/character/professions-bar-bg.png") left -23px repeat-x; width: 100%; }
 .summary-professions .profile-progress .bar-contents { line-height: 23px; }
 
 /* battlegrounds */
@@ -391,12 +391,12 @@ a.summary-stats-toggler:hover .inner { background-position: right bottom; }
 #battle-pet-summary .pet-summary-slot.end  { margin-right: 0; }
 #battle-pet-summary .pet-summary-slot .character { width: 96px; height: 96px; display: block; cursor: default;
     border: 1px solid #3c2012; overflow: hidden;
-    background: url("../images/character/summary/battle-pet-container-small.png") 50% 50% no-repeat;
+    background: url("../images/character/battle-pet-container-small.png") 50% 50% no-repeat;
     -moz-box-shadow: 0 0 10px #241209; -webkit-box-shadow: 0 0 10px #241209; box-shadow: 0 0 10px #241209;
     -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
 }
 #battle-pet-summary .pet-summary-slot .character a {display:block;}
-#battle-pet-summary .pet-summary-slot.locked .character  { background: url("../images/character/summary/battle-pet-container-locked-small.png") 50% 50% no-repeat; }
+#battle-pet-summary .pet-summary-slot.locked .character  { background: url("../images/character/battle-pet-container-locked-small.png") 50% 50% no-repeat; }
 #battle-pet-summary .pet-summary-slot .character .preview img { width: 96px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 #battle-pet-summary .pet-summary-slot .character .family-icon-small { position: absolute; top: 3px; left: -10px; }
 #battle-pet-summary .pet-summary-slot .pet-info { font-size: 12px; text-align: left; margin-top: 6px; width:98px;}
@@ -450,7 +450,7 @@ a.summary-stats-toggler:hover .inner { background-position: right bottom; }
 .summary-raid tr.icons td.expansion-3 .icon { border-color: #f15c00; }
 .summary-raid tr.icons td.expansion-4 .icon { border-color: #00ffba; }
 .summary-raid tr.icons .icon, .summary-raid tr.icons .icon a { width: 61px; height: 60px; display: block; }
-.summary-raid tr.icons .icon { background: url("../images/character/summary/raid-icons.jpg") no-repeat; }
+.summary-raid tr.icons .icon { background: url("../images/character/raid-icons.jpg") no-repeat; }
 .summary-raid tr.icons .icon a,
 .summary-raid tr.icons .icon span { display: block; overflow: hidden; text-align: center; text-shadow: 1px 1px 1px black; font-family:"Arial Black", Arial, sans-serif; font-weight:900; font-size: 11px; line-height: 98px; color: white; width:60px; height:61px }
 .summary-raid tr.icons .icon span { cursor: help; }
@@ -496,7 +496,7 @@ a.summary-stats-toggler:hover .inner { background-position: right bottom; }
 .summary-raid td.status-completed div { background-color: #5cc301; }
 
 .summary-raid-legend { text-align: center; padding: 24px 0 11px 0; }
-.summary-raid-legend span { background: url("../images/character/summary/raid-legend.gif") no-repeat left center; padding-left: 14px; margin-right: 20px; }
+.summary-raid-legend span { background: url("../images/character/raid-legend.gif") no-repeat left center; padding-left: 14px; margin-right: 20px; }
 .summary-raid-legend .in-progress { color: #fcff00; background-position: 0 center; margin-right: 0; }
 .summary-raid-legend .completed   { color: #5cc301; background-position: -150px center; }
 
@@ -509,7 +509,7 @@ a.summary-stats-toggler:hover .inner { background-position: right bottom; }
 /* arena */
 .summary-arena { padding-top: 40px; }
 .summary-arena .arena-columns { width: 645px; margin: 0 auto; }
-.summary-arena .arena-column { width: 205px; height: 242px; float: right; margin-left: 10px; background: #2a150b url("../images/character/summary/arena-bg.png") no-repeat; }
+.summary-arena .arena-column { width: 205px; height: 242px; float: right; margin-left: 10px; background: #2a150b url("../images/character/arena-bg.png") no-repeat; }
 .summary-arena .arena-column.column-disabled { background-position: -205px 0; }
 .summary-arena .arena-column.column-disabled .cell-top h2 { color: #421e0a }
 .summary-arena .cell { margin-top: 20px; padding-bottom: 17px; }

@@ -1,0 +1,25 @@
+html,
+body {
+background: #132a43 url("../../images/login/background.png") no-repeat center -200px !important;
+}
+.header {
+background: #132a43 url("../../images/login/background.png") no-repeat center 0 !important;
+}
+@media (max-width: 1280px) {
+html,
+body {
+background: #132a43 url("../../images/login/background.png") no-repeat center -200px !important;
+}
+.header {
+background: #132a43 url("../../images/login/background.png") no-repeat center 0 !important;
+}
+}
+@media (max-width: 1024px) {
+html,
+body {
+background: #132a43 url("../../images/login/background.png") no-repeat center -200px !important;
+}
+.header {
+background: #132a43 url("../../images/login/background.png") no-repeat center 0 !important;
+}
+}

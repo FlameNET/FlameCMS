@@ -880,7 +880,7 @@ li.item-spec-group { margin-top: 10px; }
 .activity-feed li .icon, .activity-feed li .icon-frame { position: absolute; left: 0; top: 13px; }
 .activity-feed li .icon { left: 1px; }
 .activity-tooltip { min-width: 220px; }
-.activity-feed li .icon {width: 20px; height: 20px; display: block; background: url(../images/profile/feed-icons.gif) no-repeat; }
+.activity-feed li .icon {width: 20px; height: 20px; display: block; background: url(../images/icons/feed-icons.gif) no-repeat; }
 .activity-feed li.crit .icon           	{ background-position:     0 0; }
 .activity-feed li.bosskill .icon       	{ background-position: -20px 0; }
 .activity-feed li.guild-levelup .icon,

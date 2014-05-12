@@ -2,36 +2,9 @@
 <ul class="service-bar">
 <li class="service-cell service-home">
 <a href="http://flame.eu" tabindex="50" accessKey="1" title="Flame.NET HOME" data-action="Flame.NET HOME">&nbsp;</a>
-<div id="bnet-app-tooltip" style="display: none">
-<div class="tooltip-arrow"></div>
-<div class="tooltip-wrapper">
-<a href="javascript:;" class="close" rel="close" data-label="Close"></a>
-<div class="content">
-<h3 class="sub-title">Launcher Update</h3>
-<h2 class="title">Get the Desktop App for Flame.net Now</h2>
-<ul>
-<li>All your games in 1 place</li>
-<li>Log in once</li>
-<li>Automatic game updates</li>
-</ul>
-</div>
-<span class="clear"><!-- --></span>
-<a href="http://eu.Flame.net/app/" class="button">Learn more</a>
-<a href="javascript:;" rel="close" data-label="Close">No thanks</a>
-</div>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-Core.showUntilClosed('#bnet-app-tooltip', 'bnet.app.tooltip', {
-startDate: '2013/09/07',
-endDate: '2013/11/07',
-cookieParams: { expires: 720 }
-});
-//]]>
-</script>
 </li>
 <li class="service-cell service-welcome">
-<a href="?login" onclick="return Login.open()">Log in</a> or <a href="https://eu.Flame.net/account/creation/tos.html">Create an Account</a>
+<a href="?login" onclick="return Login.open()">Log in</a> or <a href="#">Create an Account</a>
 </li>
 <li class="service-cell service-shop">
 <a href='https://eu.Flame.net/shop/' class="service-link" data-action="Shop">Shop</a>
@@ -126,7 +99,6 @@ shim.style.display = 'block';
 </script>
 <![endif]-->
 </div>
-
 <ul class="explore-secondary">
 <!--<li class="explore-game explore-game-wow">
 <a href="http://eu.Flame.net/wow/" tabindex="55" data-action="Explore - wow">
@@ -167,7 +139,6 @@ shim.style.display = 'block';
 </div>
 </li>
 </ul>
-
 <div id="warnings-wrapper">
 <!--[if lt IE 8]> <div id="browser-warning" class="warning warning-red">
 <div class="warning-inner2">
@@ -178,28 +149,6 @@ You are using an outdated web browser.<br />
 </div>
 <![endif]-->
 <!--[if lt IE 8]> <script type="text/javascript" src="assets/js/third-party/CFInstall.min.js?v=58"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(function() {
-var age = 365 * 24 * 60 * 60 * 1000;
-var src = 'https://www.google.com/chromeframe/?hl=en-GB';
-if ('http:' == document.location.protocol) {
-src = 'http://www.google.com/chromeframe/?hl=en-GB';
-}
-document.cookie = "disableGCFCheck=0;path=/;max-age="+age;
-$('#chrome-frame-link').bind({
-'click': function() {
-App.closeWarning('#browser-warning');
-CFInstall.check({
-mode: 'overlay',
-url: src
-});
-return false;
-}
-});
-});
-//]]>
-</script>
 <![endif]-->
 <noscript>
 <div id="javascript-warning" class="warning warning-red">
@@ -209,20 +158,4 @@ JavaScript must be enabled to use this site.
 </div>
 </noscript>
 </div>
-<script type="text/javascript">
-//<![CDATA[
-$(function() {
-var category = Core.project + ' - GNB';
-Core.bindTrackEvent('#service .service-home a', category);
-Core.bindTrackEvent('#service .service-account a', category);
-Core.bindTrackEvent('#service .service-shop a', category);
-Core.bindTrackEvent('#support-link', category);
-Core.bindTrackEvent('#support-nav-kb', category);
-Core.bindTrackEvent('#support-nav-tickets', category);
-Core.bindTrackEvent('#ticket-summary', category);
-Core.bindTrackEvent('#explore-link', category);
-Core.bindTrackEvent('.explore-nav li a', category);
-});
-//]]>
-</script>
 </div>

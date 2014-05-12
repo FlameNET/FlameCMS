@@ -1,5 +1,5 @@
 <!-- Le Styles -->
-<link rel="shortcut icon" href="assets/images/meta/favicon.ico" />
+<link rel="shortcut icon" href="assets/images/logos/favicon.png" />
 <link rel="stylesheet" type="text/css" media="all" href="assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="assets/css/lightbox.css" />
@@ -14,35 +14,27 @@
 <!-- Le Javascripts -->
 <script type="text/javascript" src="assets/js/third-party.js"></script>
 <script type="text/javascript" src="assets/js/common-game-site.js"></script>
+<!-- Le Core Code -->
 <script type="text/javascript">
 //<![CDATA[
 var Core = Core || {},
 Login = Login || {};
-Core.staticUrl = '/wow/static';
-Core.sharedStaticUrl = 'assets/local-common';
-Core.baseUrl = '/wow/en';
-Core.projectUrl = '/wow';
-Core.cdnUrl = 'http://media.blizzard.com';
-Core.supportUrl = 'http://eu.battle.net/support/';
-Core.secureSupportUrl = 'https://eu.battle.net/support/';
-Core.project = 'wow';
+Core.staticUrl = '../assets';
+Core.sharedStaticUrl = '../assets';
+Core.baseUrl = '../assets';
+Core.projectUrl = '../assets';
+Core.project = 'FlameCMS';
 Core.locale = 'en-gb';
 Core.language = 'en';
-Core.region = 'eu';
+Core.region = 'ww';
 Core.shortDateFormat = 'dd/MM/yyyy';
 Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = 'https://eu.battle.net/login/login.frag';
+Login.embeddedUrl = '<?php echo $cms_core; ?>loginframe.php';
 var Flash = Flash || {};
 Flash.videoPlayer = 'http://media.blizzard.com/global-video-player/themes/wow/video-player.swf';
-Flash.videoBase = 'http://media.blizzard.com/wow/media/videos';
 Flash.ratingImage = 'http://media.blizzard.com/global-video-player/ratings/wow/en-gb.jpg';
 Flash.expressInstall = 'http://media.blizzard.com/global-video-player/expressInstall.swf';
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-544112-16']);
-_gaq.push(['_setDomainName', '.battle.net']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_trackPageview']);
 //]]>
 </script>
