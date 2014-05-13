@@ -1,5 +1,6 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('webkit/config'); ?>
+<?php require_once('webkit/config.php'); ?>
+<?php require_once('functions/function.time.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
@@ -35,7 +36,7 @@
 <!-- Content Trail END -->
 <div class="content-bot clear">
 <!-- Slideshow -->
-<?php include('webkit/slideshow'); ?>
+<?php include('webkit/slideshow.php'); ?>
 <!-- Slideshow END -->
 <!-- Sidebar -->
 <div class="right-sidebar">
@@ -143,7 +144,7 @@
 <div class="featured-news-container">
 <ul class="featured-news">
 <!-- Featured News -->
-<?php include('webkit/featuresnews'); ?>
+<?php include('webkit/featuresnews.php'); ?>
 </ul>
 </div>
 <span class="clear"><!-- --></span>
