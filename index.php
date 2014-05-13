@@ -150,7 +150,7 @@
 <span class="clear"><!-- --></span>
 <!-- Featured News END -->
 <!-- Articles -->
-<?php include('webkit/articles'); ?>
+<?php include('webkit/articles.php'); ?>
 <!-- Articles END -->
 <span class="clear"><!-- --></span>
 <div class="blog-load-more">
