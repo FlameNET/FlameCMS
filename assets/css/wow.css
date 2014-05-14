@@ -1008,7 +1008,7 @@ li.item-spec-group { margin-top: 10px; }
 #comments-pages-wrapper { padding:0; }
 .comment-section, .bnet-comments { clear:both; }
 #comments-reply-form,
-.bnet-comments { padding: 15px 30px; margin-top: 30px; background: url("../images/body/cms/comments_bg.jpg") 50% 0 repeat-x; }
+.bnet-comments { padding: 15px 30px; margin-top: 30px; background: url("../images/body/comments_bg.jpg") 50% 0 repeat-x; }
 form#comments-reply-form { padding: 15px 15px 15px 100px; }
 .bnet-comments .comments-error-gate,
 .bnet-comments .comment-tile { background:#2b1507; }

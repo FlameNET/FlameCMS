@@ -578,7 +578,7 @@ body.zh-cn .sidebar-link { height:50px; width:302px; }
 #comments-pages-wrapper { padding:0; }
 .comment-section, .bnet-comments { clear:both; }
 #comments-reply-form,
-.bnet-comments { padding: 15px 30px; margin-top: 30px; background: url("../images/layout/cms/comments_bg.jpg") 50% 0 repeat-x; }
+.bnet-comments { padding: 15px 30px; margin-top: 30px; background: url("../images/body/comments_bg.jpg") 50% 0 repeat-x; }
 .bnet-comments .comments-error-gate,
 .bnet-comments .comment-tile { background:#2b1507; }
 .bnet-comments .comments-form { background:none; }
@@ -600,7 +600,7 @@ body.zh-cn .sidebar-link { height:50px; width:302px; }
 #page-comments .blizzard { background:#0d1a24; }
 #page-comments .blizzard .user .time a { color:#3d5365; }
 #page-comments .blizzard .content { color:#008cc6 }
-#page-comments .nested .new-post .comment { background: #1a0f08 url("../images/layout/cms/comments_bg.jpg") 50% 0; }
+#page-comments .nested .new-post .comment { background: #1a0f08 url("../images/body/comments_bg.jpg") 50% 0; }
 #page-comments .new-post { padding: 0; margin-bottom: 15px; }
 #page-comments .nested .comment-interior { padding-left: 95px; }
 .comments-container .ui-pagination { margin-top:20px }

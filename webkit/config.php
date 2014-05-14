@@ -16,7 +16,21 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
-
+/*
+|--------------------------------------------------------------------------|
+| Info: Session for Accounts.
+| Special: DO NOT TOUCH!
+|--------------------------------------------------------------------------|
+| Creates Sessions that are saved so that accounts can stay connected.
+|--------------------------------------------------------------------------|
+*/
+if (!isset($_SESSION))
+    session_start();
+/*
+|--------------------------------------------------------------------------|
+| Info: Session for Accounts. END.
+|--------------------------------------------------------------------------|
+*/
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Language System.
@@ -25,7 +39,31 @@
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-include('assets/lang/english');
+if (isset($_GET['Local']))
+    $lang = $_GET['Local'];
+else if (isset($_SESSION['Local']))
+    $lang = $_SESSION['Local'];
+if (empty($lang))
+    $lang = 'english';
+
+$language = $lang;
+$langs    = Array(
+    "english" => null,
+    "romanian" => null,
+    "italian" => null,
+    "german" => null,
+    "spanish" => null,
+    "bulgarian" => null,
+    "greek" => null,
+    "russian" => null,
+    "french" => null
+);
+
+if (array_key_exists($lang, $langs))
+    require_once("assets/lang/" . $lang . "");
+else
+    require_once("/assets/lang/english");
+$_SESSION['Local'] = $language;
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Language System END.
