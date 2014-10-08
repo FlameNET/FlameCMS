@@ -1,0 +1,5 @@
+1) Create "Login": Player - GM - Admin | (includes: userplate and avatar)
+2) Create Admin Panel
+3) Implement news and blog
+4) Menu
+5) Sidebar Homepage
