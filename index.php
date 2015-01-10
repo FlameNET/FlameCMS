@@ -1,4 +1,12 @@
 <!-- DO NOT TOUCH -->
+<?php
+
+if(file_exists("install"))
+{
+	header("Location: install");
+	die();
+}
+?>
 <?php require_once('webkit/config.php'); ?>
 <?php require_once('functions/function.time.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">

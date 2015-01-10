@@ -39,7 +39,7 @@ include("config.php");
 						<a href="" class="icon fa-home"><span>Welcome</span></a>
 						<a href="" class="icon fa-folder"><span>Setup</span></a>
 						<a href="" class="icon fa-envelope active"><span>Final</span></a>
-						<a href="#" class="icon fa-facebook"><span>Facebook</span></a>
+						<a href="http://goo.gl/0kmktS" class="icon fa-facebook"><span>Facebook</span></a>
 					</nav>
 
 				<!-- Main -->

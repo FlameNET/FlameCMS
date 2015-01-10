@@ -39,7 +39,7 @@ include("config.php");
 						<a href="#me" class="icon fa-home active"><span>Welcome</span></a>
 						<a href="#work" class="icon fa-folder"><span>Setup</span></a>
 						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-						<a href="#" class="icon fa-facebook"><span>Facebook</span></a>
+						<a href="http://goo.gl/0kmktS" class="icon fa-facebook"><span>Facebook</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -49,7 +49,7 @@ include("config.php");
 							<article id="me" class="panel">
 								<header>
 									<h1>FlameCMS</h1>
-									<p>Content Management System <br>for World of Warcraft</p>
+									<p>Content Management System <br>for World of Warcraft Servers</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
