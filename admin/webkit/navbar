@@ -1,0 +1,161 @@
+<div class="navbar main">
+<!-- Menu Toggle Button -->
+<button type="button" class="btn btn-navbar pull-left visible-phone">
+<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+</button>
+<!-- // Menu Toggle Button END -->
+<!-- Not Blank page -->
+<!-- Full Top Style -->
+<ul class="topnav pull-left">
+<li class="active"><a href="#" class="glyphicons dashboard"><i></i> Dashboard</a></li>
+<li class="dropdown dd-1">
+<a href="" data-toggle="dropdown" class="glyphicons settings"><i></i>Administration <span class="caret"></span></a>
+<ul class="dropdown-menu pull-left">
+<!-- Components Submenu Level 2 -->
+<li class="dropdown submenu">
+<a data-toggle="dropdown" class="dropdown-toggle">Accounts</a>
+<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+<li class=""><a href="#">View</a></li>
+<li class=""><a href="#">Manage</a></li>
+</ul>
+</li>
+<!-- // Components Submenu Level 2 END -->
+<li class="dropdown submenu">
+<a data-toggle="dropdown" class="dropdown-toggle">Forums</a>
+<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+<li class=""><a href="#">P.Posts</a></li>
+<li class=""><a href="#">MVP.Posts</a></li>
+<li class=""><a href="#">GM.Posts</a></li>
+</ul>
+</li>
+<!-- Components Submenu Regular Items -->
+<li class=""><a href="#">Advertisements</a></li>
+<li class=""><a href="#">Community</a></li>
+<li class=""><a href="#">Armory</a></li>
+<!-- // Components Submenu Regular Items END -->
+<li class="dropdown submenu">
+<a data-toggle="dropdown" class="dropdown-toggle glyphicons circle_info"><i></i>Maintenance</a>
+<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+<li class="dropdown submenu">
+<a data-toggle="dropdown" href="#" class="dropdown-toggle">CMS</a>
+</li>
+<li class="dropdown submenu">
+<a data-toggle="dropdown" href="#" class="dropdown-toggle">Server</a>
+</li>
+</ul>	
+</li>
+<li class=""><a href="#">Guilds</a></li>
+<li class=""><a href="#">Arena Teams</a></li>		
+<li class="dropdown submenu">
+<a data-toggle="dropdown" class="dropdown-toggle">APIs</a>
+<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+<li class=""><a href="#">Facebook API</a></li>
+<li class=""><a href="#">Twitter API</a></li>
+<li class=""><a href="#">Google Analytics API</a></li>
+<li class=""><a href="#">FlameDB API</a></li>
+<li class=""><a href="#">Github API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="mega-menu">
+<a href="#" class="glyphicons sheriffs_star"><i></i> Mega menu</a>
+<div class="mega-sub">
+<div class="mega-sub-inner">
+<div class="row-fluid"> 
+<div class="span2">
+<h4><i class="icon-wrench icon-fixed-width text-primary"></i> Administration</h4>
+<ul class="icons-ul">
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View Accounts</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> Manage Accounts</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View & Manage Guilds</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View & Manage Arena Teams</a></li>
+</ul>
+</div>
+<div class="span2">
+<h4><i class="icon-book icon-fixed-width text-primary"></i> Forums</h4>
+<ul class="icons-ul">
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View & Manage Forums</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View Player Posts</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View MVP Posts</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> View GM Posts</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> Manage All Posts</a></li>
+</ul>
+</div>
+<div class="span3">
+<h4><i class="icon-apple icon-fixed-width text-primary"></i> Maintenance</h4>
+<ul class="icons-ul">
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> CMS</a></li>
+<li><a href="#"><span class="icon-li icon-arrow-right"></span> Server</a></li>
+</ul>
+</div>
+<div class="span5">
+<div class="innerTB innerR">
+<div class="glyphicons glyphicon-xlarge glyphicon-top sheriffs_star glyphicon-primary">
+<i></i>
+<h4>Support for any type of content</h4>
+<p class="margin-none">We have developed this CMS to help you in your needs.<br> We have drunk alot of coffee and wasted alot of energy to provide you with the best of the best...<br> <a href="">learn more</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div><!-- /cbp-hrsub-inner -->
+</div><!-- /cbp-hrsub -->
+</li>
+</ul>
+<!-- // Full Top Style END -->
+<!-- // Not Blank Page END -->
+<!-- Top Menu Right -->
+<ul class="topnav pull-right hidden-phone">
+<!-- Language menu -->
+<li class="hidden-phone dropdown dd-1 dd-flags" id="lang_nav">
+<a href="#" data-toggle="dropdown"><img src="common/theme/images/lang/en.png" alt="en" /></a>
+<ul class="dropdown-menu pull-right">
+<li class="active"><a href="#" title="English"><img src="common/theme/images/lang/en.png" alt="English"> English</a></li>
+<li><a href="#" title="Romanian"><img src="common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+<li><a href="#" title="Italian"><img src="common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+<li><a href="#" title="French"><img src="common/theme/images/lang/fr.png" alt="French"> French</a></li>
+<li><a href="#" title="Polish"><img src="common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+</ul>
+</li>
+<!-- // Language menu END -->
+<!-- Profile / Logout menu -->
+<li class="account dropdown dd-1">
+<a data-toggle="dropdown" href="#" class="glyphicons logout lock"><span class="hidden-tablet hidden-phone hidden-desktop-1">USERNAME</span><i></i></a>
+<ul class="dropdown-menu pull-right">
+<li><a href="#" class="glyphicons cogwheel">Settings<i></i></a></li>
+<li><a href="#" class="glyphicons camera">My Avatar<i></i></a></li>
+<!-- Themer -->
+<li><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper single-icon">Color Grade<i></i></a></li>
+<!-- // Themer END -->
+<li class="profile">
+<span>
+<span class="heading">Profile <a href="#" style="layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-dark&amp;sidebar_type=collapsible" class="pull-right text-primary text-weight-regular">edit</a></span>
+<a href="#" class="img thumb">
+<img data-src="holder.js/51x51/dark" alt="Avatar" />
+</a>
+<span class="details">
+<a href="#" class="strong text-regular">NAME LASTNAME</a>
+EMAIL@EMAIL.COM
+</span>
+<span class="clearfix"></span>
+</span>
+</li>
+<li>
+<span>
+<a class="btn btn-default btn-mini pull-right" href="#" style="layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-dark&amp;sidebar_type=collapsible">Sign Out</a>
+</span>
+</li>
+</ul>
+</li>
+<!-- // Profile / Logout menu END -->
+</ul>
+<!-- // Top Menu Right END -->
+<ul class="topnav pull-right hidden-phone">
+<li><a href="#" class="glyphicons envelope single-icon"><i></i><span class="badge fix badge-primary">1</span></a></li>
+<li><a href="#" class="glyphicons cup single-icon"><i></i><span class="badge fix badge-primary">2</span></a></li>
+<li class="hidden-tablet"><a href="#" class="glyphicons comments single-icon"><i></i><span class="badge fix badge-primary">3</span></a></li>
+</ul>			
+<div class="clearfix"></div>
+</div>

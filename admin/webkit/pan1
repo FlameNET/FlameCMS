@@ -1,0 +1,107 @@
+<?php require_once('../webkit/config.php'); ?>
+<?php
+	$connect = mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
+	mysqli_set_charset($connect, "utf8");
+	if(isset($_GET['new'])){
+	$vers = intval($_GET['new']);
+	}else{
+		$vers = 0;
+	}
+	$vers_query = ("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
+	$vers_query = mysqli_query($connect, $vers_query);
+	$counter = 1;
+	
+	while($counter<=7 && $vers=mysqli_fetch_array($vers_query)){
+	if($counter == 1){}else{}
+	$counter++;
+?>
+
+<div class="span3">
+<div class="widget widget-heading-simple widget-body-white">
+<div class="widget-body padding-none">
+<div class="row-fluid row-merge">
+<div class="span6">
+<div class="innerAll center">
+<h5 class="strong muted text-uppercase"><i class="icon-coffee text-faded"></i> Pack</h5>
+<span class="text-xxlarge strong text-primary"><?php echo ' '.$vers['pack'].' ';?></span>
+</div>
+</div>
+<div class="span6">
+<div class="innerAll center muted">
+<h5 class="strong muted text-uppercase"><i class="icon-beer text-faded"></i> Commit</h5>
+<span class="text-xxlarge strong"><?php echo ' '.$vers['commit'].' ';?></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="span3">
+<div class="widget widget-body-white">
+<div class="widget-head"><h4 class="heading text-uppercase">Progress Rating</h4></div>
+<div class="widget-body center">
+<span class="text-large text-primary"><i class="icon-trophy"></i></span>
+<span class="text-large text-faded"><i class="icon-trophy"></i></span>
+<span class="text-large text-faded"><i class="icon-trophy"></i></span>
+<span class="text-large text-faded"><i class="icon-trophy"></i></span>
+<span class="text-large text-faded"><i class="icon-trophy"></i></span>
+<p>Total rating: <strong><?php echo ' '.$vers['progress'].' ';?></strong></p>
+</div>
+</div>
+</div>
+<div class="span3">
+			<div class="widget widget-body-white">
+				<div class="widget-head"><h4 class="heading text-uppercase">Last Commits</h4></div>
+				<div class="widget-body padding-none">
+					<table class="table table-striped table-vertical-center table-condensed margin-none">
+						<tbody>
+							<tr>
+								<td class="text-faded center strong border-none">1</td>
+								<td class="text-primary border-none">[10] Admin Panel V0.0.1 + more...</td>
+								<td class="text-right">
+									<a href=""><i class="icon-thumbs-up-alt"></i></a>
+									<a href=""><i class="icon-thumbs-down-alt"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-faded center strong">2</td>
+								<td class="text-primary">[9] Small Fixes</td>
+								<td class="text-right">
+									<a href=""><i class="icon-thumbs-up-alt"></i></a>
+									<a href=""><i class="icon-thumbs-down-alt"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-faded center strong">3</td>
+								<td class="text-primary">[8] Install Feature + Style.</td>
+								<td class="text-right">
+									<a href=""><i class="icon-thumbs-up-alt"></i></a>
+									<a href=""><i class="icon-thumbs-down-alt"></i></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+<div class="span3">
+<div class="widget widget-heading-simple widget-body-white">
+<div class="widget-body padding-none">
+<div class="row-fluid row-merge">
+<div class="span6">
+<div class="innerAll center">
+<h5 class="strong muted text-uppercase"><i class="icon-coffee text-faded"></i> Date of Update</h5>
+<span class="text-medium strong text-primary"><?php echo ' '.$vers['ddmmyyyy'].' ';?></span>
+</div>
+</div>
+<div class="span6">
+<div class="innerAll center muted">
+<h5 class="strong muted text-uppercase"><i class="icon-beer text-faded"></i> Hour of Update</h5>
+<span class="text-large strong"><?php echo ' '.$vers['hour'].' ';?></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<?php } ?>

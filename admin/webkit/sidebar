@@ -1,0 +1,33 @@
+<div class="container-fluid menu-hidden sidebar-hidden-phone fluid menu-left">
+<!-- Sidebar menu & content wrapper -->
+<div id="wrapper">
+<!-- Sidebar Menu -->
+<div id="menu" class="hidden-print">
+<!-- Brand -->
+<a href="#" class="appbrand"><span class="text-primary">FLAME</span> <span>NET</span></a>
+<!-- Scrollable menu wrapper with Maximum height -->
+<div class="slim-scroll" data-scroll-height="800px">
+<!-- Menu Toggle Button -->
+<button type="button" class="btn btn-navbar">
+<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+</button>
+<!-- // Menu Toggle Button END -->
+<!-- Sidebar Profile -->
+<span class="profile center">
+<a href="#"><img src="http://bnetcmseu-a.akamaihd.net/cms/user_avatar/HZSGEPTZAZ361297343142536.gif" alt="Avatar" /></a>
+</span>
+<!-- // Sidebar Profile END -->
+<!-- Menu -->
+<ul>
+<li class="active"><a href="#" class="glyphicons dashboard"><i></i><span>Dashboard</span></a></li>					
+</ul>
+<div class="clearfix"></div>
+<!-- // Menu END -->
+<div class="menu-hidden-element alert alert-primary">
+<a class="close" data-dismiss="alert">&times;</a>
+<p>You will find everything you need to administer your website (CMS) to your needs. If you can't find something or you can't administer something, please do not hesitate to contact the developers.</p>
+</div>
+</div>
+<!-- // Scrollable Menu wrapper with Maximum Height END -->
+</div>
+<!-- // Sidebar Menu END -->

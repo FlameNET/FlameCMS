@@ -35,6 +35,7 @@ if(file_exists("install"))
 <h1 id="logo"><a href="/wow/en/"><?php echo $cms['title']; ?></a></h1>
 <!-- Header -->
 <?php include('webkit/header'); ?>
+<?php include('webkit/usrplate');?>
 <!-- Header END -->
 </div>
 <div id="content">

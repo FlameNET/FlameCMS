@@ -390,6 +390,10 @@ p.separator i {
 .text-faded {
   color: #d7d7d7 !important;
 }
+.text-medium {
+  font-size: 25px !important;
+  line-height: 48px !important;
+ }
 .text-large {
   font-size: 35px !important;
   line-height: 40px !important;
