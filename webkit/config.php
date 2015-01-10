@@ -75,7 +75,7 @@ $cms["Reddit"]   	= "http://www.reddit.com/";
 */
 $cms_host			= "127.0.0.1";
 $cms_user			= "root";
-$cms_pass			= "mario123";
+$cms_pass			= "password";
 $cms_db				= "cms";
 $cms_wdb			= "world";
 $cms_adb			= "auth";
@@ -87,7 +87,7 @@ $cms_cdb			= "char";
 */
 $cms_core			= "webkit/";
 $cms_root			= "/";
-$cms_add			= "http://localhost/FlameCMS/";
+$cms_add			= "http://localhost/projects/FlameCMS/";
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Connection Variables END.

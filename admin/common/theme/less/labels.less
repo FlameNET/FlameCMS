@@ -1,0 +1,41 @@
+//
+// Labels
+// --------------------------------------------------
+
+// Label
+// -------------------------
+
+.label {
+	&.large {
+		height: 29px;
+		padding: 0 10px;
+		line-height: 29px;
+		background: #e5e5e5;
+		color: #64625f;
+		text-shadow: 0 1px 0 #fff;
+	}
+	&.label-primary { background: @primaryColor; }
+	&.label-warning { background: @warningColor; }
+	&.label-important { background: @dangerColor; }
+	&.label-success { background: @successColor; }
+	&.label-block { display: block; }
+}
+
+.badge {
+	&.fix {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 10px;
+		text-align: center;
+		padding: 0;
+		.rounded(50%,50%,50%,50%);
+		border: none;
+	}
+	&.badge-primary { background: @primaryColor; }
+	&.badge-warning { background: @warningColor; }
+	&.badge-danger { background: @dangerColor; }
+	&.badge-success { background: @successColor; }
+	&.badge-info { background: @infoColor; }
+	&.badge-block { display: block; }
+}

@@ -1,0 +1,126 @@
+//
+// Modals
+// --------------------------------------------------
+
+// Backdrop
+// -------------------------
+
+.modal-backdrop {
+	z-index: 10000;
+	background: #000000;
+	&, &.fade.in {
+		opacity: 0.9;
+		filter: alpha(opacity=90);
+	}
+}
+
+// Modal
+// -------------------------
+
+.modal {
+	z-index: 100001;
+	border-color: @contentBorder;
+	background: @widgetBg;
+	.box-shadow(none);
+	.rounded();
+	.modal-header {
+		padding: 0 10px;
+		height: 29px;
+		line-height: 29px;
+		border-color: @contentBorder;
+		#reset #gradient();
+		.box-shadow(none);
+		background: @widgetBgGray;
+		.rounded();
+		h3 { font-size: 14px; }
+		.close {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			padding: 0;
+			margin: 0;
+			opacity: 1;
+			filter: alpha(opacity=100); 
+			color: @bodyText;
+			text-shadow: none;
+		}
+	}
+	.modal-body { padding: 10px; p:last-child { margin: 0; } }
+	.modal-footer {
+		.rounded();
+		.box-shadow(none);
+		border-color: @contentBorder2;
+		padding: 10px;
+		background: @contentBg1 url("../images/pattern1.png") repeat;
+	}
+	&.modal-inverse {
+		background: @inverseColor;
+		border-color: @inverseColor;
+		color: #fff;
+		.modal-header {
+			background: @inverseColor;
+			border-color: lighten(@inverseColor, 10%);
+			&, * { color: #fff; }
+		}
+		.modal-footer {
+			background: @inverseColor;
+			border-color: lighten(@inverseColor, 10%);
+		}
+	}
+	&.modal-primary {
+		background: @primaryColor;
+		border-color: @primaryColor;
+		color: #fff;
+		.modal-header {
+			background: @primaryColor;
+			border-color: lighten(@primaryColor, 10%);
+			&, * { color: #fff; }
+		}
+		.modal-footer {
+			background: @primaryColor;
+			border-color: lighten(@primaryColor, 10%);
+		}
+	}
+	&.modal-info {
+		background: @infoColor;
+		border-color: @infoColor;
+		color: #fff;
+		.modal-header {
+			background: @infoColor;
+			border-color: lighten(@infoColor, 10%);
+			&, * { color: #fff; }
+		}
+		.modal-footer {
+			background: @infoColor;
+			border-color: lighten(@infoColor, 10%);
+		}
+	}
+	&.modal-warning {
+		background: @warningColor;
+		border-color: @warningColor;
+		color: #fff;
+		.modal-header {
+			background: @warningColor;
+			border-color: lighten(@warningColor, 10%);
+			&, * { color: #fff; }
+		}
+		.modal-footer {
+			background: @warningColor;
+			border-color: lighten(@warningColor, 10%);
+		}
+	}
+	&.modal-success {
+		background: @successColor;
+		border-color: @successColor;
+		color: #fff;
+		.modal-header {
+			background: @successColor;
+			border-color: lighten(@successColor, 10%);
+			&, * { color: #fff; }
+		}
+		.modal-footer {
+			background: @successColor;
+			border-color: lighten(@successColor, 10%);
+		}
+	}
+}

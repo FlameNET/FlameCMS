@@ -1,0 +1,184 @@
+.btn-primary,
+#flotTip,
+.btn-group.open .btn-primary.dropdown-toggle,
+.btn-primary.disabled,
+.btn-primary[disabled],
+.btn-primary:hover,
+.label-primary,
+.table-primary thead th,
+.pagination ul > .active > a,
+.pagination ul > .active > span,
+.gallery ul li .thumb,
+.widget-activity ul.filters li.glyphicons.active i,
+.ui-slider-wrap .slider-primary .ui-slider-range,
+.accordion-heading .accordion-toggle,
+.ui-widget-header,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.fc-event-skin,
+#external-events li,
+.notyfy_wrapper.notyfy_primary,
+.progress.progress-primary .bar,
+.alert.alert-primary,
+.pagination ul > li > a:hover,
+.pagination ul > li.primary > a,
+.gritter-item-wrapper.gritter-primary .gritter-item,
+#content-notification .notyfy_wrapper.notyfy_primary,
+.ribbon-wrapper .ribbon.primary,
+.label.label-primary,
+.widget-stats.primary,
+.widget-stats.primary:hover,
+.widget.widget-wizard-pills .widget-head ul li.primary a,
+.bwizard-steps li.active,
+.sliderContainer .ui-rangeSlider-bar,
+#tlyPageGuideWrapper #tlyPageGuide li.tlypageguide-active,
+#tlyPageGuideWrapper #tlyPageGuideMessages .tlypageguide_close,
+#tlyPageGuideWrapper #tlyPageGuideMessages span,
+.tabsbar.tabsbar-2.active-fill ul li.active a,
+.shop-client-products.list ul li a .glyphicons i,
+.social-large:not(.social-large-2) a.active,
+.social-large:not(.social-large-2) a:hover,
+#landing_1 .banner-1 .carousel-indicators li.active,
+.nav-timeline > li.active > a,
+.nav-timeline > li > a:hover,
+.nav-timeline > li.active > a:hover,
+.layout-timeline ul.timeline > li.active .type:before,
+.layout-timeline ul.timeline > li.active .type:after,
+.layout-timeline ul.timeline > li.active:before,
+.carousel.carousel-1 .carousel-indicators li.active,
+.widget-body-gray .ui-datepicker .ui-datepicker-calendar tbody td a.ui-state-active,
+.widget.widget-body-primary > .widget-body,
+.badge.badge-primary,
+.widget-stats.widget-stats-primary,
+.widget-employees [class*='span'].listWrapper .results {
+  background-color: #4e72c2;
+}
+a,
+p a,
+.widget .widget-body.list ul li .count,
+.widget-stats .txt strong,
+.glyphicons.single i:before,
+.glyphicons.single,
+.table-primary tbody td.important,
+.widget.widget-3 .widget-body.large.cancellations span span:first-child,
+.widget .widget-footer a:hover,
+.widget .widget-footer a:hover i:before,
+.widget.widget-3 .widget-footer a:hover,
+.widget.widget-3 .widget-footer a:hover i:before,
+blockquote small,
+.glyphicons.primary i:before,
+.glyphicons.standard:not(.disabled):hover i:before,
+.menubar.links.primary ul li a,
+.text-primary,
+#docs_icons .glyphicons i:before,
+.shop-client-products.product-details .form-horizontal .price,
+.widget-activity ul.list li:hover .activity-icon i:before,
+.widget-activity ul.list li.highlight .activity-icon i:before,
+#menu ul.menu-1 > li.hasSubmenu.active ul li .glyphicons:hover i:before,
+#landing_1 .banner .banner-wrapper.banner-1 p a,
+#landing_1 .banner .banner-wrapper.banner-1 h3,
+#landing_2 .banner .banner-wrapper.banner-1 p a,
+#landing_2 .banner .banner-wrapper.banner-1 .buy a,
+#landing_2 .banner .banner-wrapper.banner-1 h3,
+#landing_1 .banner-1 .carousel-caption a,
+div.glyphicons.glyphicon-primary i:before,
+.layout-timeline ul.timeline > li.active .type,
+.layout-timeline ul.timeline > li.active .type i:before,
+.social-large.social-large-2 a.active i:before,
+.social-large.social-large-2 a:hover i:before,
+.social-large.social-large-2 a.active,
+.social-large.social-large-2 a:hover,
+html.front #footer a,
+html.top-full .navbar.main .topnav > li.active > a.glyphicons i:before,
+html.top-full .navbar.main .topnav > li.open > a.glyphicons i:before,
+html.sidebar-full #menu .slim-scroll > ul > li.active > a.glyphicons i:before,
+html.sidebar-full #menu > ul > li.active > a.glyphicons i:before,
+html.sidebar-full #menu .slim-scroll > ul > li.open > a.glyphicons i:before,
+html.sidebar-full #menu > ul > li.open > a.glyphicons i:before,
+html.sidebar-full.no-touch #menu .slim-scroll > ul li:hover:not(.active) > a.glyphicons i:before,
+html.sidebar-full.no-touch #menu > ul li:hover:not(.active) > a.glyphicons i:before,
+html.top-full.no-touch .navbar.main .topnav > li:hover:not(.active) > a.glyphicons i:before,
+html.top-full .navbar.main .topnav > li.dropdown.dd-1 .dropdown-menu > li:hover > a i:before,
+html.top-full .navbar.main .topnav > li.dropdown .dd-1 .dropdown-menu > li:hover > a i:before,
+html.top-full .navbar.main .topnav > li.dropdown.dd-1 .dropdown-menu > li.active > a i:before,
+html.top-full .navbar.main .topnav > li.dropdown .dd-1 .dropdown-menu > li.active > a i:before,
+.rating span.star.active:before,
+.rating span.star.active ~ span.star:before {
+  color: #4e72c2;
+}
+.text-primary {
+  color: #4e72c2 !important;
+}
+.btn-primary,
+.ui-slider-wrap .slider-primary .ui-slider-handle,
+#flotTip,
+.widget.widget-2.primary .widget-head,
+.widget .widget-body.list.list-2 ul li.active a i:before,
+.table-primary thead th,
+.pagination ul > .active > a,
+.pagination ul > .active > span,
+.widget.widget-4 .widget-head .heading,
+.ui-widget-header,
+.fc-event-skin,
+.alert.alert-primary,
+.pagination ul > li > a:hover,
+.pagination ul > li.primary > a,
+.widget-stats.primary,
+#menu .slim-scroll > ul.menu-0 > li.active > a,
+.widget-chat .media .media-body,
+.widget-chat .media .media-body.right,
+#menu .slim-scroll > ul.menu-0 > li.active > a,
+#menu > ul.menu-0 > li.active > a {
+  border-color: #4e72c2;
+}
+.table-primary tbody td {
+  background-color: #ffffff;
+}
+.table-primary tbody tr.selected td,
+.table-primary tbody tr.selectable:hover td {
+  background-color: #e6ebf6;
+}
+.table-primary.table-bordered tbody td,
+.table-primary,
+.pagination ul > .disabled > a,
+.pagination ul > .disabled > span {
+  border-color: #ffffff;
+}
+.bwizard-steps li.active:after,
+.sliderContainer .ui-rangeSlider-rightArrow .ui-rangeSlider-arrow-inner {
+  border-left-color: #4e72c2;
+}
+.sliderContainer .ui-rangeSlider-leftArrow .ui-rangeSlider-arrow-inner {
+  border-right-color: #4e72c2;
+}
+#tlyPageGuideWrapper #tlyPageGuide li.tlypageguide-active.tlypageguide_right:after,
+#tlyPageGuideWrapper #tlyPageGuide li.tlypageguide-active.tlypageguide_left:after,
+#tlyPageGuideWrapper #tlyPageGuide li.tlypageguide-active.tlypageguide_top:after {
+  border-top-color: #4e72c2;
+}
+#tlyPageGuideWrapper #tlyPageGuide li.tlypageguide-active.tlypageguide_bottom:after {
+  border-bottom-color: #4e72c2;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #2c457e;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #3f64b7;
+}
+.tlypageguide_shadow:after {
+  background-color: rgba(78, 114, 194, 0.2);
+}
+.widget .widget-body.list.list-2 ul li.active {
+  border-color: #9aaedc;
+}
+.widget .widget-body.list.list-2 ul li a {
+  color: #9aaedc;
+}
+.widget .widget-body.list.list-2 ul li a i:before {
+  background: #ffffff;
+  color: #7490cf;
+  border-color: #9aaedc;
+}

@@ -1,0 +1,620 @@
+//
+// Animations
+// --------------------------------------------------
+
+// CSS Animations
+// ---------------------
+
+html.csstransitions.csstransforms3d.animations
+{
+	/*
+	 * ONLY AFTER PAGE LOAD COMPLETE
+	 */
+	&.content-transitions {
+		/*
+		 * DESKTOP WITH GPU OPTION DISABLED
+		 */
+		&.no-touch:not(.animations-gpu) {
+			.menu-left {
+				#content {
+					-webkit-transition: left 250ms ease;
+				}
+			}
+			.menu-right {
+				#content {
+					-webkit-transition: right 250ms ease;
+				}
+			}
+		}
+		/*
+		 * DESKTOP WITH GPU OPTION ENABLED / OR WE'RE ON A TOUCH DEVICE
+		 */
+		&.animations-gpu,
+		&:not(.no-touch) {
+			#content {
+				-webkit-transition: -webkit-transform 150ms linear;
+			}
+		}
+		&:not(.no-touch) {
+			#menu {
+				.animation(moveFromLeft 250ms ease)
+			}
+		}
+	}
+	&.sidebar {
+		.menu-left {
+			#content {
+				margin: 0 @sidebarFullWidth 0 0 !important;
+			}
+			&.menu-hidden #content {
+				margin: 0 @sidebarHiddenWidth 0 0 !important;
+			}
+		}
+		.menu-right {
+			#content {
+				margin: 0 0 0 @sidebarFullWidth !important;
+			}
+			&.menu-hidden #content {
+				margin: 0 0 0 @sidebarHiddenWidth !important;
+			}
+			#menu {
+				.slim-scroll > ul, > ul {
+					> li {
+						&.open {
+							.dropdown-menu {
+								.animation(moveFromLeft 300ms ease-in);
+							}
+						}
+					}
+				}
+			}
+		}
+		#menu {
+			.slim-scroll > ul, > ul {
+				> li {
+					> a {
+						&.glyphicons {
+							i:before { .transition(all 400ms linear); }
+							&:hover {
+								> span {
+									.animation(moveFromRight 300ms ease-in-out);
+								}
+								i {
+									.animation(moveFromLeft 200ms ease);
+								    .transform(scale(1.1));
+								}
+							}
+						}
+					}
+					&.open {
+						.dropdown-menu {
+							.animation(moveFromRight 300ms ease-in);
+						}
+					}
+				}
+			}
+		}
+		/* When sidebar is hidden on phone */
+		@media (max-width: 767px) {
+			.sidebar-hidden-phone {
+				&, &.menu-left, &.menu-right {
+					#content {
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+	}
+	&.sidebar.sidebar-collapsible {
+		#menu li {
+			> a {
+				> .badge { 
+					.transition(all 400ms linear);
+				}
+				&:hover > .badge {
+					.transform(rotateY(360deg));
+				} 
+			}
+		}
+	}
+	/*
+	 * DESKTOP WITH GPU OPTION DISABLED
+	 */
+	&.sidebar.no-touch:not(.animations-gpu) {
+		.menu-left {
+			#content {
+				left: @sidebarFullWidth;
+			}
+			&.menu-hidden #content {
+				left: @sidebarHiddenWidth;
+			}
+		}
+		.menu-right {
+			#content {
+				right: @sidebarFullWidth;
+			}
+			&.menu-hidden #content {
+				right: @sidebarHiddenWidth;
+			}
+		}
+		/* When sidebar is hidden on phone */
+		@media (max-width: 767px) {
+			.sidebar-hidden-phone {
+				#content {
+					left: 0 !important;
+					right: 0 !important;
+				}
+			}
+		}
+	}
+	/* GPU ACCELERATION 
+	 * BETTER PERFORMANCE BUT DOESNT PLAY WELL WITH ZINDEX AND FIXED POSITIONING 
+	 * IF DESKTOP && GPU OPTION ENABLED / OR WE'RE ON A TOUCH DEVICE */
+	&.sidebar.animations-gpu,
+	&.sidebar:not(.no-touch) {
+		#menu {
+			-webkit-backface-visibility: hidden;
+			-webkit-perspective: 1000;
+			* { 
+				-webkit-transform: translateZ(0);
+			}
+		}
+		#content {
+			-webkit-backface-visibility: hidden; 
+			-webkit-perspective: 1000;
+			> div, .widget-stats, .carousel, .widget, .alert {
+				-webkit-transform: translateZ(0);
+			}
+		}
+		.menu-left {
+			#content { 
+				-webkit-transform: translateX(@sidebarFullWidth); 
+			}
+			&.menu-hidden #content {
+				-webkit-transform: translateX(@sidebarHiddenWidth);
+			}
+		}
+		.menu-right {
+			#content { 
+				-webkit-transform: translateX(-@sidebarFullWidth); 
+			}
+			&.menu-hidden #content {
+				-webkit-transform: translateX(-@sidebarHiddenWidth);
+			}
+		}
+		/* When sidebar is hidden on phone */
+		@media (max-width: 767px) {
+			.sidebar-hidden-phone {
+				#content {
+					-webkit-transform: translateX(0) !important;
+				}
+			}
+		}
+		.navbar.main {
+			-webkit-backface-visibility: hidden;
+			-webkit-perspective: 1000;
+		}
+		&.sticky-top.sidebar.sidebar-full .navbar.main,
+		&.sticky-top .menu-hidden .navbar.main { left: 0 !important; }
+	}
+	&.sidebar {
+		.container-fluid:not(.menu-hidden) {
+			#menu {
+				.profile {
+					.animation(moveFromLeftAndGrowAndRotate 500ms ease);
+				}
+				.menu-hidden-element {
+					.animation(moveFromBottom 500ms ease);
+				}
+			}
+		}
+		.menu-right:not(.menu-hidden) {
+			#menu {
+				.profile {
+					.animation(moveFromRightAndGrowAndRotate 500ms ease);
+				}
+				.menu-hidden-element {
+					.animation(moveFromBottom 500ms ease);
+				}
+			}
+		}
+	}
+	/*
+	 * FIX ZINDEX ISSUE
+	 * ONLY ON A TOUCH DEVICE
+	 */
+	&:not(.no-touch)
+	{
+		.navbar.main .topnav {
+			> li {
+				&.open {
+					.dropdown-menu {
+						-webkit-transform: translateZ(1px);
+					}
+				}
+			}
+		}
+	}
+	&.front .container-fluid:not(.menu-hidden) {
+		.navbar.main {
+			.topnav {
+				> li:not(.active) {
+					.animation(moveFromBottom 300ms ease);
+				}
+			}
+		}
+	}
+	.navbar.main {
+		.topnav {
+			> li {
+				> a {
+					.transition(all 400ms ease);
+					&.glyphicons {
+						i:before { .transition(all 400ms linear); }
+						&:hover {
+							> span {
+								.animation(moveFromRight 300ms ease-in-out);
+							}
+							i {
+								.animation(moveFromLeft 200ms ease);
+							    .transform(scale(1.1));
+							}
+						}
+					}
+				}
+				&.open {
+					.dropdown-menu {
+						.animation(moveFromBottom 300ms ease);
+					}
+				}
+				&.mega-menu-open .mega-sub {
+					.animation(moveFromBottom 300ms ease);
+					.sheriffs_star i {
+						.animation(moveFromLeftAndGrowAndRotate 800ms ease);
+					}
+				}
+				&.mega-menu {
+					.mega-sub {
+						.sheriffs_star i {
+							display: block;
+							.transition(all 4s ease);
+						}
+					}
+					.mega-sub-inner {
+						ul {
+							li {
+								a {
+									.transition(all 300ms ease);
+									&:hover {
+										.transform(scale(1.1));
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// Only Mobile
+	@media (min-width: 768px) {
+		&.no-touch.sticky-top.menuh-bottom:not(.animations-gpu) {
+			.navbar.main {
+				.topnav {
+					> li {
+						&.open {
+							.dropdown-menu {
+								.animation(moveFromTop 300ms ease);
+							}
+						}
+						&.mega-menu-open .mega-sub {
+							.animation(moveFromTop 300ms ease);
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// Only Desktop
+	@media (min-width: 980px)
+	{
+		&.no-touch {
+			// Widgets
+			.widget-stats-4 {
+				overflow: hidden;
+				.txt, .count, .glyphicons i { .transition(all 300ms ease); } 
+				&:hover {
+					.count { .transform(scale(1.2)); }
+					.txt { .transform(scale(0.8)); }
+					.glyphicons i {
+						.transform(rotate(20deg));
+						font-size: 150px !important;
+					    opacity: 0.2;
+					    right: -20px;
+					}
+					.glyphicons.refresh {
+						i { .transform(rotate(360deg)); }
+					}
+				}
+			}
+			.widget-stats-5 {
+				overflow: hidden;
+				.txt, .glyphicons i { .transition(all 300ms ease); } 
+				&:hover {
+					.txt { .transform(scale(0.8)); }
+					.glyphicons i {
+						.transform(rotate(-20deg));
+						font-size: 100px !important;
+					    opacity: 0.2;
+					    left: -20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Move from bottom
+// ------------------------- //
+
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translateY(200%) scale(0.5) translateZ(1px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateY(0%) scale(1) translateZ(1px);
+        opacity: 1;        
+    }
+}
+@-moz-keyframes moveFromBottom {
+    from {
+        -moz-transform: translateY(200%) scale(0.5) translateZ(1px);
+        opacity: 0;
+    }
+    to {
+        -moz-transform: translateY(0%) scale(1) translateZ(1px);
+        opacity: 1;        
+    }
+}
+@-ms-keyframes moveFromBottom {
+    from {
+        -ms-transform: translateY(200%) scale(0.5) translateZ(1px);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translateY(0%) scale(1) translateZ(1px);
+        opacity: 1;        
+    }
+}
+
+// Move from top
+// ------------------------- //
+
+@-webkit-keyframes moveFromTop {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-200%) translateZ(1px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%) translateZ(1px);
+    }
+}
+@-moz-keyframes moveFromTop {
+    from {
+        opacity: 0;
+        -moz-transform: translateY(-200%) translateZ(1px);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateY(0%) translateZ(1px);
+    }
+}
+@-ms-keyframes moveFromTop {
+    from {
+        opacity: 0;
+        -ms-transform: translateY(-200%) translateZ(1px);
+    }
+    to {
+        opacity: 1;
+        -ms-transform: translateY(0%) translateZ(1px);
+    }
+}
+
+// Move from left
+// ------------------------- //
+
+@-webkit-keyframes moveFromLeft{
+    from {
+        -webkit-transform: translateX(-100%) translateZ(1px);
+    }
+    to {
+        -webkit-transform: translateX(0%) translateZ(1px);
+    }
+}
+@-moz-keyframes moveFromLeft{
+    from {
+        -moz-transform: translateX(-100%) translateZ(1px);
+    }
+    to {
+        -moz-transform: translateX(0%) translateZ(1px);
+    }
+}
+@-ms-keyframes moveFromLeft{
+    from {
+        -ms-transform: translateX(-100%) translateZ(1px);
+    }
+    to {
+        -ms-transform: translateX(0%) translateZ(1px);
+    }
+}
+
+// Move from right
+// ------------------------- //
+
+@-webkit-keyframes moveFromRight {
+    from {
+        -webkit-transform: translateX(100%) translateZ(1px);
+    }
+    to {
+        -webkit-transform: translateX(0%) translateZ(1px);
+    }
+}
+@-moz-keyframes moveFromRight {
+    from {
+        -moz-transform: translateX(100%) translateZ(1px);
+    }
+    to {
+        -moz-transform: translateX(0%) translateZ(1px);
+    }
+}
+@-ms-keyframes moveFromRight {
+    from {
+        -ms-transform: translateX(100%) translateZ(1px);
+    }
+    to {
+        -ms-transform: translateX(0%) translateZ(1px);
+    }
+}
+
+// Move from left rotate
+// ------------------------- //
+
+@-webkit-keyframes moveFromLeftRotate{
+    from {
+        -webkit-transform: translateX(-100%) rotate(-90deg) translateZ(1px);
+    }
+    to {
+        -webkit-transform: translateX(0%) rotate(0deg) translateZ(1px);
+    }
+}
+@-moz-keyframes moveFromLeftRotate{
+    from {
+        -moz-transform: translateX(-100%) rotate(-90deg) translateZ(1px);
+    }
+    to {
+        -moz-transform: translateX(0%) rotate(0deg) translateZ(1px);
+    }
+}
+@-ms-keyframes moveFromLeftRotate{
+    from {
+        -ms-transform: translateX(-100%) rotate(-90deg) translateZ(1px);
+    }
+    to {
+        -ms-transform: translateX(0%) rotate(0deg) translateZ(1px);
+    }
+}
+
+// Small to Big
+// ------------------------- //
+
+@-webkit-keyframes smallToBig{
+    from {
+        -webkit-transform: scale(0.1);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+@-moz-keyframes smallToBig{
+    from {
+        -moz-transform: scale(0.1);
+    }
+    to {
+        -moz-transform: scale(1);
+    }
+}
+@-ms-keyframes smallToBig{
+    from {
+        -ms-transform: scale(0.1);
+    }
+    to {
+        -ms-transform: scale(1);
+    }
+}
+
+// Big to Small
+// ------------------------- //
+
+@-webkit-keyframes bigToSmall{
+    from {
+        -webkit-transform: scale(2);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+@-moz-keyframes bigToSmall{
+    from {
+        -moz-transform: scale(2);
+    }
+    to {
+        -moz-transform: scale(1);
+    }
+}
+@-ms-keyframes bigToSmall{
+    from {
+        -ms-transform: scale(2);
+    }
+    to {
+        -ms-transform: scale(1);
+    }
+}
+
+// Move From Left And Grow And Rotate
+// ------------------------- //
+
+@-webkit-keyframes moveFromLeftAndGrowAndRotate{
+    from {
+        -webkit-transform: translateX(-100%) rotate(-90deg) scale(0.1) translateZ(1px);
+    }
+    to {
+        -webkit-transform: translateX(0%) rotate(0deg) scale(1) translateZ(1px);
+    }
+}
+@-moz-keyframes moveFromLeftAndGrowAndRotate{
+    from {
+        -moz-transform: translateX(-100%) rotate(-90deg) scale(0.1) translateZ(1px);
+    }
+    to {
+        -moz-transform: translateX(0%) rotate(0deg) scale(1) translateZ(1px);
+    }
+}
+@-ms-keyframes moveFromLeftAndGrowAndRotate{
+    from {
+        -ms-transform: translateX(-100%) rotate(-90deg) scale(0.1) translateZ(1px);
+    }
+    to {
+        -ms-transform: translateX(0%) rotate(0deg) scale(1) translateZ(1px);
+    }
+}
+
+// Move From Right And Grow And Rotate
+// ------------------------- //
+
+@-webkit-keyframes moveFromRightAndGrowAndRotate{
+    from {
+        -webkit-transform: translateX(100%) rotate(90deg) scale(0.1) translateZ(1px);
+    }
+    to {
+        -webkit-transform: translateX(0%) rotate(0deg) scale(1) translateZ(1px);
+    }
+}
+@-moz-keyframes moveFromRightAndGrowAndRotate{
+    from {
+        -moz-transform: translateX(100%) rotate(90deg) scale(0.1) translateZ(1px);
+    }
+    to {
+        -moz-transform: translateX(0%) rotate(0deg) scale(1) translateZ(1px);
+    }
+}
+@-ms-keyframes moveFromRightAndGrowAndRotate{
+    from {
+        -ms-transform: translateX(100%) rotate(90deg) scale(0.1) translateZ(1px);
+    }
+    to {
+        -ms-transform: translateX(0%) rotate(0deg) scale(1) translateZ(1px);
+    }
+}

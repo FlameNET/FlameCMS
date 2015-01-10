@@ -1,16 +1,16 @@
 <div id="service">
 <ul class="service-bar">
 <li class="service-cell service-home">
-<a href="http://flame.eu" tabindex="50" accessKey="1" title="Flame.NET HOME" data-action="Flame.NET HOME">&nbsp;</a>
+<a href="#" tabindex="50" accessKey="1" title="<?php echo $cms['title']; ?> HOME" data-action="<?php echo $cms['title']; ?> HOME">&nbsp;</a>
 </li>
 <li class="service-cell service-welcome">
 <a href="?login" onclick="return Login.open()">Log in</a> or <a href="#">Create an Account</a>
 </li>
 <li class="service-cell service-shop">
-<a href='https://eu.Flame.net/shop/' class="service-link" data-action="Shop">Shop</a>
+<a href='<?php echo $cms_core; ?>shop/' class="service-link" data-action="Shop">Shop</a>
 </li>
 <li class="service-cell service-account">
-<a href="https://eu.Flame.net/account/management/" class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
+<a href="<?php echo $cms_core; ?>management/" class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
 </li>
 <li class="service-cell service-support service-support-enhanced">
 <a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Support - Support">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>
@@ -18,13 +18,13 @@
 <div class="support-primary">
 <ul class="support-nav">
 <li>
-<a href="http://eu.Flame.net/support/" tabindex="55" class="support-category" id="support-nav-kb" data-action="Support - Knowledge Center">
+<a href="#" tabindex="55" class="support-category" id="support-nav-kb" data-action="Support - Knowledge Center">
 <strong class="support-caption">Knowledge Center</strong>
 Browse our support articles
 </a>
 </li>
 <li>
-<a href="https://eu.Flame.net/support/ticket/status" tabindex="55" class="support-category" id="support-nav-tickets" data-action="Support - Your Support Tickets">
+<a href="#" tabindex="55" class="support-category" id="support-nav-tickets" data-action="Support - Your Support Tickets">
 <strong class="support-caption">Your Support Tickets</strong>
 View your active tickets (login required).
 </a>

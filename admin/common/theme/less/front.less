@@ -1,0 +1,351 @@
+//
+// Front customizations
+// --------------------------------------------------
+
+// Top menu
+// ------------------------- //
+
+html.front {
+	&.top-full {
+		.navbar.main {
+			height: auto;
+			left: 0 !important;
+			background: @navbar2Bg;
+			border-bottom-color: @navbar2Border;
+			.appbrand {
+				font-weight: 700;
+				font-size: 25pt;
+				color: @menuAppbrand;
+				text-decoration: none;
+				padding: 0 8px;
+				height: @navbar2Height;
+				line-height: @navbar2Height;
+			}
+			.btn-navbar {
+				height: @navbarSecondaryHeight;
+				float: none;
+				background: @navbarSecondaryBg;
+				border: none;
+				span {
+					background: @navbarSecondaryBorder;
+				}
+			}
+			> .container-960 > .topnav {
+				> li {
+					height: @navbar2Height; 
+					line-height: @navbar2Height;
+					border-right: none;
+					> a {
+						height: @navbar2Height;
+						line-height: @navbar2Height;
+						font-size: 14px;
+						color: @frontNavbarText;
+						&.glyphicons {
+							i {
+								line-height: @navbar2Height; 
+								height: @navbar2Height;
+								&:before {
+									line-height: @navbar2Height; 
+									height: @navbar2Height; 
+								}
+							}
+						}
+					}
+					&.active {
+						> a {
+							background: none;
+							color: @frontNavbarActiveText;
+						}
+					}
+				}
+			}
+			.secondary {
+				height: @navbarSecondaryHeight;
+				line-height: @navbarSecondaryHeight;
+				position: relative;
+				overflow: hidden;
+				background-color: @navbarSecondaryBg;
+				border-bottom: 1px solid @navbarSecondaryBorder;
+				.topnav {
+					> li {
+						height: @navbarSecondaryHeight; 
+						line-height: @navbarSecondaryHeight;
+						border-color: @navbarSecondaryBorder;
+						> a {
+							height: @navbarSecondaryHeight;
+							line-height: @navbarSecondaryHeight;
+							color: @navbarSecondaryColor;
+							&.glyphicons { 
+								i {
+									line-height: @navbarSecondaryHeight; 
+									height: @navbarSecondaryHeight;
+									&:before {
+										line-height: @navbarSecondaryHeight; 
+										height: @navbarSecondaryHeight;
+										font-size: 15px;
+										color: @navbarSecondaryColor;
+									}
+								}
+							}
+						}
+						&:hover {
+							> a {
+								background: @navbarSecondaryBg;
+								color: @navbarActiveText;
+							}
+						}
+						&.follow {
+							padding: 0 @spacing;
+							.transition(background 300ms ease);
+							span, a {
+								display: inline-block;
+								padding: 0;
+								& + span,
+								& + a {
+									padding: 0 0 0 @spacing/2;
+								}
+							}
+							span {
+								font-weight: 600;
+								color: @navbarSecondaryColor;
+								.transition(color 300ms ease);
+							}
+							a {
+								font-weight: 400;
+							}
+							
+							&:hover {
+								background: @navbarSecondaryBg;
+								a {
+									background: none;
+									color: @navbarSecondaryColor;
+								}
+								span {
+									color: @navbarActiveText;
+								}
+							}
+							
+							[class*="icon-"] {
+								font-size: 17px;
+								.transition(all 300ms ease);
+								&:hover {
+									color: @primaryColor;
+								} 
+							}
+						}
+						&.inverse:not(:hover) {
+							background: @inverseColor;
+							a, a i:before {
+								color: #fff;
+							}
+						}
+						&.primary:not(:hover) {
+							background: @primaryColor;
+							a, a i:before {
+								color: #fff;
+							}
+						}
+						&.active:not(:hover) {
+							a {
+								color: @navbarActiveText;
+								i:before {
+									color: @primaryColor;
+								}
+							}
+						}
+						&.active:hover {
+							a i:before { color: @primaryColor; }
+						}
+					}
+				}
+			}
+		}
+	}
+	#content {
+		margin: 0;
+		padding: 0;
+	}
+	#footer {
+		height: auto;
+		line-height: 20px;
+		background: #1f2123;
+		color: #919192;
+		a { color: @primaryColor; text-decoration: none; }
+		.copy { 
+			color: #efefef;
+			text-align: left;
+			.appbrand {
+				position: absolute;
+				right: 10px;
+				text-transform: uppercase;
+				font-size: 15px;
+				font-weight: 700;
+			} 
+		}
+		.box-generic {
+			background: #191a1c;
+			border: none;
+		}
+		h4 {
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 700;
+			text-shadow: none;
+			color: #fff;
+			margin: 0 0 8px;
+		}
+		ul {
+			list-style: none;
+			margin: 0 0 @spacing;
+			padding: 0;
+			li {
+				display: block;
+				background: #191a1c;
+				margin: 0 0 1px;
+				line-height: 30px;
+				height: 30px;
+				a {
+					line-height: 30px;
+					height: 30px;
+					display: block;
+					padding: 0 10px;
+				}
+			}
+			&.icons {
+				li {
+					padding: 0 10px 0 35px;
+					i:before { top: 7px; left: 10px; }
+				}
+			}
+		}
+	}
+	#contact_gmap { height: 400px; }
+	
+	//
+	// Landing pages
+	// --------------------------------------------------
+	
+	#landing_1 {
+		.mosaic-line {
+			height: 58px;
+			line-height: 58px;
+			border-bottom: 1px solid @contentBorder;
+			background: @widgetBgGray;
+			&.mosaic-line-2 {
+				line-height: 100px;
+				height: 100px;
+				h2 { 
+					line-height: 100px;
+					span { color: #444; } 
+				}
+			}
+		}
+		.banner {
+			background: #000;
+			height: 321px;
+			.banner-wrapper {
+				height: 321px;
+				position: relative;
+				overflow: hidden;
+				&.banner-1 {
+					margin: 0;
+					background: #000;
+					h3 {
+						height: 46px;
+						line-height: 46px;
+						top: 65px;
+						right: 27px;
+						position: absolute;
+						background: #fff;
+						color: @primaryColor;
+						font-size: 22pt;
+						font-weight: bold;
+						padding: 0 15px;
+					}
+					p {
+						position: absolute;
+						top: 126px;
+						right: 27px;
+						background: #1f1e1e;
+						color: #fff;
+						line-height: 25px;
+						width: 370px;
+						text-align: right;
+						padding: 10px 15px;
+						a { text-decoration: underline; color: @primaryColor; }
+					}
+					.btn { 
+						position: absolute;
+						top: 232px;
+						right: 27px; 
+					}
+				}
+			}
+		}
+	}
+	
+	#landing_2 {
+		.mosaic-line {
+			height: 58px;
+			line-height: 58px;
+			border-bottom: 1px solid @contentBorder;
+			background: @widgetBgGray;
+			&.mosaic-line-2 {
+				line-height: 100px;
+				height: 100px;
+				h2 { 
+					line-height: 100px;
+					text-shadow: 0 1px 0 #fff;
+					span { color: #ccc; } 
+				}
+			}
+		}
+		.banner {
+			background: #1f2123;
+			height: 356px;
+			.banner-wrapper {
+				height: 356px;
+				position: relative;
+				overflow: hidden;
+				&.banner-1 {
+					margin: 0;
+					h3 {
+						height: 46px;
+						line-height: 46px;
+						top: 55px;
+						right: 27px;
+						position: absolute;
+						color: #fff;
+						font-size: 27pt;
+						font-weight: bold;
+						text-shadow: none;
+						padding: 0;
+					}
+					p {
+						position: absolute;
+						top: 115px;
+						right: 27px;
+						background: #1f1e1e;
+						color: #fff;
+						line-height: 25px;
+						width: 380px;
+						text-align: right;
+						padding: 10px 15px;
+						a { text-decoration: underline; color: @primaryColor; }
+					}
+					.btn { 
+						position: absolute;
+						bottom: 40px;
+						&.btn-primary { right: 230px; }
+						&.btn-default { right: 27px; bottom: 37px; }
+					}
+				}
+			}
+		}
+	}
+	
+	// Other
+	// -------------------------
+}
+.separator-line { width: 100%; height: 1px; background: @widgetBgGray; margin-bottom: 10px; }
+.container-960 { width: 960px; margin: 0 auto; }

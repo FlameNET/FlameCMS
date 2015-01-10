@@ -1,0 +1,30 @@
+//
+// Tooltips
+// --------------------------------------------------
+
+.tooltip { 
+	.tooltip-inner { 
+		background-color: @primaryColor; 
+		color: #fff;
+		.rounded(); 
+	}
+	&.right { .tooltip-arrow { border-right-color: @primaryColor; } }
+	&.left { margin-left: -13px; .tooltip-arrow { border-left-color: @primaryColor; } }
+	&.top { .tooltip-arrow { border-top-color: @primaryColor; } }
+	&.bottom { .tooltip-arrow { border-bottom-color: @primaryColor; } }
+}
+
+// Flot Charts Tooltips
+// -------------------------
+
+#flotTip { 
+	white-space: nowrap; 
+	border: 1px solid @primaryColor; 
+	padding: 3px 8px; 
+	background: @primaryColor; 
+	.rounded(5px,5px,5px,5px); 
+	.bevelEmboss();
+	position: absolute;
+	z-index: 100; 
+	color: #fff;
+}

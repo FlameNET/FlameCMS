@@ -1,0 +1,235 @@
+//
+// Buttons
+// --------------------------------------------------
+
+// Button
+// -------------------------
+
+.btn { 
+	font-weight: 600; 
+	.rounded(); 
+	text-shadow: none;
+	#reset .boxShadow();
+	&.active, &:active {
+		outline: 0;
+		.box-shadow(inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05));
+	}
+}
+.btn-block { width: 100%; }
+.btn + .btn:not(.btn-block) { margin: 0 0 0 5px; }
+.input-append, .input-prepend { .btn + .btn { margin-left: -1px; } }
+.btn-group { 
+	.btn + .btn:not(.btn-block) { margin-left: -1px; } 
+	&.dropup { 
+		.btn:first-child { .rounded(); } 
+	} 
+}
+
+// Default
+// -------------------------
+
+.btn-default {
+	background: #e7e7e7;
+	border-color: #e7e7e7;
+}
+.btn-group.open .btn-default.dropdown-toggle,
+.btn-default.disabled, .btn-default[disabled],
+.btn-default:hover, .btn-default:focus { background: #e8e8e8; }
+.btn-default:active, .btn-default.active { background: #e8e8e8; color: #fff; text-shadow: none; }
+.btn-default .caret { border-top-color: rgba(0,0,0,.5); }
+
+// Warning
+// -------------------------
+
+.btn-warning {
+	background: @warningColor;
+	border-color: @warningColor;
+	color: #ffffff;
+	&.glyphicons {
+		i:before { color: rgba(255,255,255,.5); text-shadow: none; }
+	}
+}
+.btn-group.open .btn-warning.dropdown-toggle,
+.btn-warning.disabled, .btn-warning[disabled],
+.btn-warning:hover, .btn-warning:focus { background: @warningColor; color: #fff; }
+.btn-warning:active, .btn-warning.active { background: @warningColor; color: #fff; }
+.btn-warning .caret { border-top-color: rgba(255,255,255,.7); border-bottom-color: rgba(255,255,255,.7); }
+
+// Info
+// -------------------------
+
+.btn-info {
+	background: @infoColor;
+	border-color: @infoColor;
+	color: #ffffff;
+	&.glyphicons {
+		i:before { color: rgba(255,255,255,.5); text-shadow: none; }
+	}
+}
+.btn-group.open .btn-info.dropdown-toggle,
+.btn-info.disabled, .btn-info[disabled],
+.btn-info:hover, .btn-info:focus { background: @infoColor; color: #fff; }
+.btn-info:active, .btn-info.active { background: @infoColor; color: #fff; }
+.btn-info .caret { border-top-color: rgba(255,255,255,.7); border-bottom-color: rgba(255,255,255,.7); }
+
+// Danger
+// -------------------------
+
+.btn-danger {
+	background: @dangerColor;
+	border-color: @dangerColor;
+	color: #ffffff;
+	&.glyphicons {
+		i:before { color: rgba(255,255,255,.5); text-shadow: none; }
+	}
+}
+.btn-group.open .btn-danger.dropdown-toggle,
+.btn-danger.disabled, .btn-danger[disabled],
+.btn-danger:hover, .btn-danger:focus { background: @dangerColor; color: #fff; }
+.btn-danger:active, .btn-danger.active { background: @dangerColor; color: #fff; }
+.btn-danger .caret { border-top-color: rgba(255,255,255,.7); border-bottom-color: rgba(255,255,255,.7); }
+
+// Primary
+// -------------------------
+
+.btn-primary {
+	background: @primaryColor;
+	border-color: @primaryColor;
+	color: #ffffff;
+	&.glyphicons {
+		i:before { color: rgba(255,255,255,.4); text-shadow: none; }
+	}
+}
+.btn-group.open .btn-primary.dropdown-toggle,
+.btn-primary.disabled, .btn-primary[disabled],
+.btn-primary:hover, .btn-primary:focus { background: @primaryColor; color: #fff; }
+.btn-primary:active, .btn-primary.active { background: @primaryColor; color: #fff; }
+.btn-primary .caret { border-top-color: #ffffff; border-bottom-color: #ffffff; }
+
+// Inverse
+// -------------------------
+
+.btn-inverse {
+	background: @inverseColor;
+	border-color: @inverseColor;
+	color: #ffffff;
+	&.glyphicons {
+		i:before { color: #919293; text-shadow: none; }
+	}
+}
+.btn-group.open .btn-inverse.dropdown-toggle,
+.btn-inverse.disabled, .btn-inverse[disabled],
+.btn-inverse:hover, .btn-inverse:focus { background: @inverseColor; color: #fff; }
+.btn-inverse:active, .btn-inverse.active { background: @inverseColor; color: #fff; }
+.btn-inverse .caret { border-top-color: #fff; border-bottom-color: #fff; }
+
+// Success
+// -------------------------
+
+.btn-success {
+	background: @successColor;
+	border-color: @successColor;
+	color: #ffffff;
+	&.glyphicons {
+		i:before { color: #a2bc9b; text-shadow: none; }
+	}
+}
+.btn-group.open .btn-success.dropdown-toggle,
+.btn-success.disabled, .btn-success[disabled],
+.btn-success:hover, .btn-success:focus { background: @successColor; color: #fff; }
+.btn-success:active, .btn-success.active { background: @successColor; color: #fff; }
+.btn-success .caret { border-top-color: #fff; border-bottom-color: #fff; }
+
+// Button groups
+// -------------------------
+
+.btn-group {
+	.btn-primary {
+		&:not(.dropdown-toggle),
+		&:not('[data-toggle*=""]') { margin-right: 2px; }
+	}
+}
+.btn-group-vertical.block { display: block; }
+.btn-group.btn-block {
+	padding: 0;
+	position: relative;
+	.leadcontainer {
+		left: 0;
+	    position: absolute;
+	    right: 29px;
+	    > .btn:first-child {
+	    	.rounded();
+			margin-left: 0;
+			/* .rounded(4px,0,0,4px); */
+			text-align: left;
+		}
+	}
+	.dropdown-lead {
+	    box-sizing: border-box;
+	    width: 100%;
+	}
+	.dropdown-toggle {
+		width: 30px;
+	    float: right;
+	    box-sizing: border-box;
+	    text-align: center;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+}
+
+// Button icon stacked
+// -------------------------
+
+.btn-icon-stacked {
+	text-align: left;
+	padding: 5px 5px 5px 45px;
+	i {
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		&:before { left: auto; top: auto; position: relative; text-align: center; }
+	}
+	span { 
+		display: block; 
+		font-size: 13px;
+		line-height: normal;
+	}
+}
+
+// Button other styles
+// -------------------------
+
+.btn-facebook {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background: #5d7cb6;
+	border: 1px solid #5d7cb6;
+	i:before { color: #fff; }
+	&:hover { background: lighten(#5d7cb6, 10%); color: #fff; }
+}
+.btn-google {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background: #9e3838;
+	border: 1px solid #9e3838;
+	i:before { color: #fff; }
+	&:hover { background: lighten(#9e3838, 10%); color: #fff; }
+}
+
+// Toggle view code Button
+// -------------------------
+
+.btn-toggle-code { position: absolute; bottom: 0; right: 0; z-index: 1000; .rounded(); &.outside { bottom: -24px; } }
+
+// ONLY Buttons on UI Demo Page (Table)
+// -------------------------
+
+#demo_buttons {
+	.btn-block { max-width: 200px; margin: 0 auto; }
+	thead th { width: 25%; }
+}
+

@@ -1,5 +1,5 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('webkit/config'); ?>
+<?php require_once('webkit/config.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
@@ -31,23 +31,23 @@
 <?php include('webkit/header'); ?>
 <!-- Header END -->
 </div>
-<div id="content">
+<div xmlns="http://www.w3.org/1999/xhtml" id="content">
 <div class="content-top body-top">
 <div class="content-trail">
 <ol class="ui-breadcrumb">
-<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <a href="/wow/en/" rel="np" class="breadcrumb-arrow" itemprop="url">
-<span class="breadcrumb-text" itemprop="title">World of Warcraft</span>
+<span class="breadcrumb-text" itemprop="name">World of Warcraft</span>
 </a>
 </li>
-<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <a href="/wow/en/community/" rel="np" class="breadcrumb-arrow" itemprop="url">
-<span class="breadcrumb-text" itemprop="title">Community</span>
+<span class="breadcrumb-text" itemprop="name">Community</span>
 </a>
 </li>
-<li class="last" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-<a href="/wow/en/character/silvermoon/Alexodormu/simple" rel="np" itemprop="url">
-<span class="breadcrumb-text" itemprop="title">Alexodormu @ Silvermoon</span>
+<li class="last" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<a href="/wow/en/character/silvermoon/Lichbaine/simple" rel="np" itemprop="url">
+<span class="breadcrumb-text" itemprop="name">Lichbaine @ Silvermoon</span>
 </a>
 </li>
 </ol>
@@ -74,21 +74,21 @@
 
 		<div class="profile-info-anchor">
 			<div class="profile-info">
-				<div class="name"><a href="/wow/en/character/silvermoon/Alexodormu/" rel="np">Alexodormu</a></div>
+				<div class="name"><a href="/wow/en/character/silvermoon/Lichbaine/" rel="np">Lichbaine</a></div>
 				<div class="title-guild">
-					<div class="title"> the Kingslayer</div>
+					<div class="title"> of the Iron Vanguard</div>
 						<div class="guild">
-							<a href="/wow/en/guild/silvermoon/Uranium/?character=alexodormu">Uranium</a>
+							<a href="/wow/en/guild/silvermoon/Horizons_End/?character=lichbaine">Horizons End</a>
 						</div>
 				</div>
 	<span class="clear"><!-- --></span>
 				<div class="under-name color-c6">
-						<span class="level"><strong>90</strong></span> <a href="/wow/en/game/race/night-elf" class="race">Night Elf</a> <a id="profile-info-spec" href="#talents" class="spec tip">Frost</a> <a href="/wow/en/game/class/death-knight" class="class">Death Knight</a><span class="comma">,</span>
-					<span class="realm tip" id="profile-info-realm" data-battlegroup="Cyclone / Wirbelsturm">
+						<span class="level"><strong>100</strong></span> <a href="/wow/en/game/race/night-elf" class="race">Night Elf</a> <a id="profile-info-spec" href="#talents" class="spec tip">Blood</a> <a href="/wow/en/game/class/death-knight" class="class">Death Knight</a><span class="comma">,</span>
+					<span class="realm tip" id="profile-info-realm" data-battlegroup="Misery">
 						Silvermoon
 					</span>
 				</div>
-				<div class="achievements"><a href="/wow/en/character/silvermoon/Alexodormu/achievement">2890</a></div>
+				<div class="achievements"><a href="/wow/en/character/silvermoon/Lichbaine/achievement">9320</a></div>
 			</div>
 		</div>
 
@@ -103,7 +103,7 @@
 
 			<li class=" active">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/" class="" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/" class="" rel="np">
 			<span class="arrow"><span class="icon">
 				Summary
 			</span></span>
@@ -150,7 +150,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/achievement" class=" has-submenu" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/achievement" class=" has-submenu" rel="np">
 			<span class="arrow"><span class="icon">
 				Achievements
 			</span></span>
@@ -164,7 +164,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/challenge" class="" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/challenge" class="" rel="np">
 			<span class="arrow"><span class="icon">
 				Challenge Mode
 			</span></span>
@@ -178,7 +178,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/pet" class="" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/pet" class="" rel="np">
 			<span class="arrow"><span class="icon">
 				Pets &amp; Mounts
 			</span></span>
@@ -192,7 +192,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/profession/" class=" has-submenu" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/profession/" class=" has-submenu" rel="np">
 			<span class="arrow"><span class="icon">
 				Professions
 			</span></span>
@@ -206,7 +206,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/reputation/" class="" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/reputation/" class="" rel="np">
 			<span class="arrow"><span class="icon">
 				Reputation
 			</span></span>
@@ -220,7 +220,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/pvp" class="" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/pvp" class="" rel="np">
 			<span class="arrow"><span class="icon">
 				PvP
 			</span></span>
@@ -234,7 +234,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/character/silvermoon/Alexodormu/feed" class="" rel="np">
+		<a href="/wow/en/character/silvermoon/Lichbaine/feed" class="" rel="np">
 			<span class="arrow"><span class="icon">
 				Activity Feed
 			</span></span>
@@ -253,7 +253,7 @@
 
 			<li class="">
 
-		<a href="/wow/en/guild/silvermoon/Uranium/?character=alexodormu" class=" has-submenu" rel="np">
+		<a href="/wow/en/guild/silvermoon/Horizons_End/?character=lichbaine" class=" has-submenu" rel="np">
 			<span class="arrow"><span class="icon">
 				Guild
 			</span></span>
@@ -275,7 +275,7 @@
 								</span>
 
 									<span class="summary-sidebar-button">
-	<a href="javascript:;" data-fansite="character|EU|Alexodormu|silvermoon" class="fansite-link "> </a>
+	<a href="javascript:;" data-fansite="character|EU|Lichbaine|silvermoon" class="fansite-link "> </a>
 									</span>
 							</div>
 					</div>
@@ -292,12 +292,12 @@
 
 	<ul class="profile-view-options" id="profile-view-options-summary">
 			<li>
-				<a href="/wow/en/character/silvermoon/Alexodormu/advanced" rel="np" class="advanced">
+				<a href="/wow/en/character/silvermoon/Lichbaine/advanced" rel="np" class="advanced">
 					Advanced
 				</a>
 			</li>
 			<li class="current">
-				<a href="/wow/en/character/silvermoon/Alexodormu/simple" rel="np" class="simple">
+				<a href="/wow/en/character/silvermoon/Lichbaine/simple" rel="np" class="simple">
 					Simple
 				</a>
 			</li>
@@ -307,10 +307,10 @@
 					<div class="summary-averageilvl">
 	<div class="rest">
 		Average item level<br />
-		(<span class="equipped">524</span> Equipped)
+		(<span class="equipped">654</span> Equipped)
 	</div>
 	<div id="summary-averageilvl-best" class="best tip" data-id="averageilvl">
-		535
+		656
 	</div>
 					</div>
 
@@ -330,9 +330,9 @@
 	<div data-id="0" data-type="1" class="slot slot-1 item-quality-4" style=" left: 0px; top: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/102713" class="item" data-item="set=102713,102652,103182,102650&amp;t=32373"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_pvpdeathknight_g_01_helm.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118940" class="item" data-item="d=81&amp;t=113809&amp;pl=100&amp;cc=0&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_crown_02.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=32373" href="/wow/en/item/32373"></a>
+						<a class="transmog-frame" data-item="t=113809&amp;cc=0" href="/wow/en/item/113809"></a>
 			</div>
 		</div>
 	</div>
@@ -346,7 +346,7 @@
 	<div data-id="1" data-type="2" class="slot slot-2 item-quality-4" style=" left: 0px; top: 58px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/104766" class="item" data-item="re=136&amp;s=728768000&amp;u=491"><img src="http://media.blizzard.com/wow/icons/56/inv_misc_key_06.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118846/dungeon-heroic" class="item" data-item="e=5293&amp;pl=100&amp;cc=2&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_misc_necklace_6_0_037.jpg" alt="" /><span class="frame"></span></a>
 
 			</div>
 		</div>
@@ -361,9 +361,9 @@
 	<div data-id="2" data-type="3" class="slot slot-3 item-quality-4" style=" left: 0px; top: 116px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/102652" class="item" data-item="set=102713,102652,103182,102650&amp;t=50234"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_pvpdeathknight_g_01_shoulder.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118951/quest-reward" class="item" data-item="d=84&amp;t=113811&amp;pl=100&amp;cc=11&amp;bl=82,560"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_draenorlfr_c_01shoulders.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=50234" href="/wow/en/item/50234"></a>
+						<a class="transmog-frame" data-item="t=113811&amp;cc=0" href="/wow/en/item/113811"></a>
 			</div>
 		</div>
 	</div>
@@ -377,9 +377,8 @@
 	<div data-id="14" data-type="16" class="slot slot-16 item-quality-4" style=" left: 0px; top: 174px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/101790" class="item" data-item="r=-352&amp;s=2060911888&amp;t=71268&amp;u=491"><img src="http://media.blizzard.com/wow/icons/56/inv_cape_pandaria_c_04.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/113605/raid-heroic" class="item" data-item="e=5312&amp;g0=115808&amp;pl=100&amp;cc=5&amp;bl=564,566"><img src="http://media.blizzard.com/wow/icons/56/inv_cape_draenorraid_d_01plate_paladin.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=71268" href="/wow/en/item/71268"></a>
 			</div>
 		</div>
 	</div>
@@ -393,9 +392,9 @@
 	<div data-id="4" data-type="5" class="slot slot-5 item-quality-4" style=" left: 0px; top: 232px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/101851" class="item" data-item="e=4420&amp;g0=83148&amp;r=-463&amp;re=161&amp;s=190712086&amp;d=163&amp;t=90355&amp;u=491"><img src="http://media.blizzard.com/wow/icons/56/inv_chest_plate_reputation_c_01.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/113831/raid-normal" class="item" data-item="d=140&amp;t=113807&amp;pl=100&amp;cc=3&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_chest_plate_raidpaladin_o_01.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=90355" href="/wow/en/item/90355"></a>
+						<a class="transmog-frame" data-item="t=113807&amp;cc=0" href="/wow/en/item/113807"></a>
 			</div>
 		</div>
 	</div>
@@ -406,7 +405,22 @@
 
 
 
-	<div data-id="3" data-type="4" class="slot slot-4" style=" left: 0px; top: 290px;">
+	<div data-id="3" data-type="4" class="slot slot-4 item-quality-3" style=" left: 0px; top: 290px;">
+		<div class="slot-inner">
+			<div class="slot-contents">
+					<a href="/wow/en/item/98085" class="item" data-item="s=279906688&amp;pl=100&amp;cc=0&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_chest_mail_16v3.jpg" alt="" /><span class="frame"></span></a>
+
+			</div>
+		</div>
+	</div>
+
+
+	 	
+
+
+
+
+	<div data-id="18" data-type="19" class="slot slot-19" style=" left: 0px; top: 348px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
 					<a href="javascript:;" class="empty"><span class="frame"></span></a>
@@ -420,25 +434,10 @@
 
 
 
-	<div data-id="18" data-type="19" class="slot slot-19 item-quality-1" style=" left: 0px; top: 348px;">
-		<div class="slot-inner">
-			<div class="slot-contents">
-					<a href="/wow/en/item/64882" class="item" data-item=""><img src="http://media.blizzard.com/wow/icons/56/inv_misc_tabard_gilneas.jpg" alt="" /><span class="frame"></span></a>
-
-			</div>
-		</div>
-	</div>
-
-
-	 	
-
-
-
-
 	<div data-id="8" data-type="9" class="slot slot-9 item-quality-4" style=" left: 0px; top: 406px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/86868" class="item" data-item="e=4411&amp;re=135&amp;s=1533441024&amp;d=54&amp;u=445"><img src="http://media.blizzard.com/wow/icons/56/inv_bracer_plate_raiddeathknight_l_01.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/114236/trade-skill" class="item" data-item="d=48&amp;pl=100&amp;cc=13&amp;bl=66,525,533"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_draenorcrafted_d_01bracer.jpg" alt="" /><span class="frame"></span></a>
 
 			</div>
 		</div>
@@ -454,9 +453,9 @@
 	<div data-id="9" data-type="10" class="slot slot-10 slot-align-right item-quality-4" style=" top: 0px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/102650" class="item" data-item="s=1311833344&amp;set=102713,102652,103182,102650&amp;d=54&amp;t=32278"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_pvpdeathknight_g_01_glove.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/113632/raid-normal" class="item" data-item="d=48&amp;t=113808&amp;pl=100&amp;cc=3&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_glove_plate_raidpaladin_o_01.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=32278" href="/wow/en/item/32278"></a>
+						<a class="transmog-frame" data-item="t=113808&amp;cc=0" href="/wow/en/item/113808"></a>
 			</div>
 		</div>
 	</div>
@@ -471,9 +470,9 @@
 	<div data-id="5" data-type="6" class="slot slot-6 slot-align-right item-quality-4" style=" top: 58px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/101792" class="item" data-item="r=-348&amp;s=1778910912&amp;d=54&amp;t=38668&amp;u=491"><img src="http://media.blizzard.com/wow/icons/56/inv_belt_plate_reputation_c_01.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/119337/raid-heroic" class="item" data-item="d=47&amp;t=113805&amp;pl=100&amp;cc=5&amp;bl=566"><img src="http://media.blizzard.com/wow/icons/56/inv_belt_plate_raidpaladin_o_01.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=38668" href="/wow/en/item/38668"></a>
+						<a class="transmog-frame" data-item="t=113805&amp;cc=0" href="/wow/en/item/113805"></a>
 			</div>
 		</div>
 	</div>
@@ -488,9 +487,8 @@
 	<div data-id="6" data-type="7" class="slot slot-7 slot-align-right item-quality-4" style=" top: 116px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/103182" class="item" data-item="set=102713,102652,103182,102650&amp;d=118&amp;t=32341"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_pvpdeathknight_g_01_pant.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118950/quest-reward" class="item" data-item="d=104&amp;pl=100&amp;cc=11&amp;bl=186"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_draenorlfr_c_01pant.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=32341" href="/wow/en/item/32341"></a>
 			</div>
 		</div>
 	</div>
@@ -505,9 +503,9 @@
 	<div data-id="7" data-type="8" class="slot slot-8 slot-align-right item-quality-4" style=" top: 174px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/103261" class="item" data-item="t=50788"><img src="http://media.blizzard.com/wow/icons/56/inv_plate_pvpdeathknight_g_01_boot.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/113660/raid-normal" class="item" data-item="d=69&amp;t=113806&amp;pl=100&amp;cc=3&amp;bl=40,560"><img src="http://media.blizzard.com/wow/icons/56/inv_boot_plate_raidpaladin_o_01.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=50788" href="/wow/en/item/50788"></a>
+						<a class="transmog-frame" data-item="t=113806&amp;cc=0" href="/wow/en/item/113806"></a>
 			</div>
 		</div>
 	</div>
@@ -522,7 +520,7 @@
 	<div data-id="10" data-type="11" class="slot slot-11 slot-align-right item-quality-4" style=" top: 232px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/105113" class="item" data-item="g0=76700&amp;re=157&amp;s=1783068416&amp;u=491"><img src="http://media.blizzard.com/wow/icons/56/inv_misc_ring_4.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/113644/raid-normal" class="item" data-item="e=5326&amp;pl=100&amp;cc=3&amp;bl=40"><img src="http://media.blizzard.com/wow/icons/56/inv_ringwod_d5_1.jpg" alt="" /><span class="frame"></span></a>
 
 			</div>
 		</div>
@@ -538,7 +536,7 @@
 	<div data-id="11" data-type="11" class="slot slot-11 slot-align-right item-quality-4" style=" top: 290px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/103320" class="item" data-item="re=147"><img src="http://media.blizzard.com/wow/icons/56/inv_misc_pvp_ringc2.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118298/vendor" class="item" data-item="e=5299&amp;pl=100&amp;cc=14&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_misc_6oring_silverlv2.jpg" alt="" /><span class="frame"></span></a>
 
 			</div>
 		</div>
@@ -554,7 +552,7 @@
 	<div data-id="12" data-type="12" class="slot slot-12 slot-align-right item-quality-4" style=" top: 348px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/103334" class="item" data-item="set=103319"><img src="http://media.blizzard.com/wow/icons/56/inv_jewelry_trinketpvp_01.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118884" class="item" data-item="pl=100&amp;cc=0&amp;bl"><img src="http://media.blizzard.com/wow/icons/56/inv_stone_weightstone_07.jpg" alt="" /><span class="frame"></span></a>
 
 			</div>
 		</div>
@@ -570,7 +568,7 @@
 	<div data-id="13" data-type="12" class="slot slot-12 slot-align-right item-quality-4" style=" top: 406px; right: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/103319" class="item" data-item="set=103319"><img src="http://media.blizzard.com/wow/icons/56/inv_misc_token_argentdawn3.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/112319/trade-skill" class="item" data-item="pl=100&amp;cc=13&amp;bl=525,530"><img src="http://media.blizzard.com/wow/icons/56/inv_inscription_trinket_tank.jpg" alt="" /><span class="frame"></span></a>
 
 			</div>
 		</div>
@@ -585,9 +583,9 @@
 	<div data-id="15" data-type="21" class="slot slot-21 slot-align-right item-quality-4" style=" left: 273.5px; bottom: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/102605" class="item" data-item="e=3594&amp;t=51010"><img src="http://media.blizzard.com/wow/icons/56/inv_sword_1h_pvppandarias3_c_01.jpg" alt="" /><span class="frame"></span></a>
+					<a href="/wow/en/item/118980/quest-reward" class="item" data-item="e=3847&amp;g0=115808&amp;d=102&amp;t=40343&amp;pl=100&amp;cc=11&amp;bl=142,563"><img src="http://media.blizzard.com/wow/icons/56/inv_axe_2h_draenorhonor_c_01.jpg" alt="" /><span class="frame"></span></a>
 
-						<a class="transmog-frame" data-item="t=51010" href="/wow/en/item/51010"></a>
+						<a class="transmog-frame" data-item="t=40343&amp;cc=0" href="/wow/en/item/40343"></a>
 			</div>
 		</div>
 	</div>
@@ -598,12 +596,10 @@
 
 
 
-	<div data-id="16" data-type="22" class="slot slot-22 item-quality-4" style=" left: 338.5px; bottom: 0px;">
+	<div data-id="16" data-type="22" class="slot slot-22" style=" left: 338.5px; bottom: 0px;">
 		<div class="slot-inner">
 			<div class="slot-contents">
-					<a href="/wow/en/item/102605" class="item" data-item="e=3368&amp;t=51010"><img src="http://media.blizzard.com/wow/icons/56/inv_sword_1h_pvppandarias3_c_01.jpg" alt="" /><span class="frame"></span></a>
-
-						<a class="transmog-frame" data-item="t=51010" href="/wow/en/item/51010"></a>
+					<a href="javascript:;" class="empty"><span class="frame"></span></a>
 			</div>
 		</div>
 	</div>
@@ -615,105 +611,99 @@
 			var summaryInventory = new Summary.Inventory({ view: "simple" }, {
 			
 			0: {
-				name: "Prideful Gladiator\'s Dreadplate Helm",
+				name: "Crown of Desolation",
 				quality: 4,
-				icon: "inv_plate_pvpdeathknight_g_01_helm"
+				icon: "inv_crown_02"
 			}
 			,
 			1: {
-				name: "Juggernaut\'s Ignition Keys",
+				name: "Gorget of Primal Might",
 				quality: 4,
-				icon: "inv_misc_key_06"
+				icon: "inv_misc_necklace_6_0_037"
 			}
 			,
 			2: {
-				name: "Prideful Gladiator\'s Dreadplate Shoulders",
+				name: "Bouldercrush Pauldrons of the Savage",
 				quality: 4,
-				icon: "inv_plate_pvpdeathknight_g_01_shoulder"
+				icon: "inv_plate_draenorlfr_c_01shoulders"
 			}
 			,
 			14: {
-				name: "Cliffbreaker Drape of the Landslide",
+				name: "Fireproof Greatcloak",
 				quality: 4,
-				icon: "inv_cape_pandaria_c_04"
+				icon: "inv_cape_draenorraid_d_01plate_paladin"
 			}
 			,
 			4: {
-				name: "Elder Tortoiseshell Breastplate of the Adroit",
+				name: "Chestplate of Arcane Volatility",
 				quality: 4,
-				icon: "inv_chest_plate_reputation_c_01"
+				icon: "inv_chest_plate_raidpaladin_o_01"
 			}
 			,
-			18: {
-				name: "Gilneas Tabard",
-				quality: 1,
-				icon: "inv_misc_tabard_gilneas"
+			3: {
+				name: "Brucehide Jersey",
+				quality: 3,
+				icon: "inv_chest_mail_16v3"
 			}
 			,
 			8: {
-				name: "Bracers of Defiled Earth",
+				name: "Truesteel Armguards of the Savage",
 				quality: 4,
-				icon: "inv_bracer_plate_raiddeathknight_l_01"
+				icon: "inv_plate_draenorcrafted_d_01bracer"
 			}
 			,
 			9: {
-				name: "Prideful Gladiator\'s Dreadplate Gauntlets",
+				name: "Gauntlets of the Heavy Hand",
 				quality: 4,
-				icon: "inv_plate_pvpdeathknight_g_01_glove"
+				icon: "inv_glove_plate_raidpaladin_o_01"
 			}
 			,
 			5: {
-				name: "Cliffbreaker Girdle of the Impatient",
+				name: "Ripswallow Plate Belt",
 				quality: 4,
-				icon: "inv_belt_plate_reputation_c_01"
+				icon: "inv_belt_plate_raidpaladin_o_01"
 			}
 			,
 			6: {
-				name: "Grievous Gladiator\'s Dreadplate Legguards",
+				name: "Bouldercrush Legplates of the Merciless",
 				quality: 4,
-				icon: "inv_plate_pvpdeathknight_g_01_pant"
+				icon: "inv_plate_draenorlfr_c_01pant"
 			}
 			,
 			7: {
-				name: "Grievous Gladiator\'s Warboots of Alacrity",
+				name: "Mosscrusher Sabatons",
 				quality: 4,
-				icon: "inv_plate_pvpdeathknight_g_01_boot"
+				icon: "inv_boot_plate_raidpaladin_o_01"
 			}
 			,
 			10: {
-				name: "Devilfang Band",
+				name: "Earthfury Band",
 				quality: 4,
-				icon: "inv_misc_ring_4"
+				icon: "inv_ringwod_d5_1"
 			}
 			,
 			11: {
-				name: "Grievous Gladiator\'s Signet of Cruelty",
+				name: "Timeless Solium Band of the Bulwark",
 				quality: 4,
-				icon: "inv_misc_pvp_ringc2"
+				icon: "inv_misc_6oring_silverlv2"
 			}
 			,
 			12: {
-				name: "Grievous Gladiator\'s Medallion of Cruelty",
+				name: "Kyb\'s Foolish Perseverance",
 				quality: 4,
-				icon: "inv_jewelry_trinketpvp_01"
+				icon: "inv_stone_weightstone_07"
 			}
 			,
 			13: {
-				name: "Grievous Gladiator\'s Insignia of Victory",
+				name: "Knight\'s Badge",
 				quality: 4,
-				icon: "inv_misc_token_argentdawn3"
+				icon: "inv_inscription_trinket_tank"
 			}
 			,
 			15: {
-				name: "Prideful Gladiator\'s Slicer",
+				name: "Expeditious Broadaxe of the Deft",
 				quality: 4,
-				icon: "inv_sword_1h_pvppandarias3_c_01"
-			}
-			,
-			16: {
-				name: "Prideful Gladiator\'s Slicer",
-				quality: 4,
-				icon: "inv_sword_1h_pvppandarias3_c_01"
+				icon: "inv_axe_2h_draenorhonor_c_01"
 			}
 			});
 		});
@@ -730,14 +720,26 @@
 				<div class="summary-bottom-right">
 					<div class="summary-talents" id="summary-talents">
 	<h3 class="category ">							<span class="title">Talents</span>
-							<a name="talents" href="/wow/en/tool/talent-calculator#dZ!202022!IP" target="_blank" id="export-build" class="talent-export">View in Talent Calculator<span class="arrow"></span></a>
+							<a name="talents" href="/wow/en/tool/talent-calculator#da!2020001!rbRn" target="_blank" id="export-build" class="talent-export">View in Talent Calculator<span class="arrow"></span></a>
 </h3>
 	
 
 	<div class="profile-box-simple">
-		<div class="talent-specs">
-	<a data-spec-id="0" class="spec-button spec-0 " href="javascript:;" data-tooltip="A dark guardian who manipulates and corrupts life energy to sustain herself in the face of an enemy onslaught."><span class="inner">
+		<div class="talent-specs" data-class-name="death-knight">
+	<a data-spec-id="0" class="spec-button spec-0" href="javascript:;" data-spec-name="unholy" data-tooltip="A master of death and decay, spreading infection and controlling undead minions to do his bidding."><span class="inner">
 		
+		<span class="frame">
+			<span class="icon"><img src="http://media.blizzard.com/wow/icons/36/spell_deathknight_unholypresence.jpg" alt="" /></span>
+		</span>
+		<span class="roles">
+				<span class="icon-dps"></span>
+		</span>
+		<span class="name-build">
+			<span class="name ">Unholy</span>
+		</span>
+	</span></a>
+	<a data-spec-id="1" class="spec-button spec-1 selected active" href="javascript:;" data-spec-name="blood" data-tooltip="A dark guardian who manipulates and corrupts life energy to sustain himself in the face of an enemy onslaught."><span class="inner">
+		<span class="checkmark"></span>
 		<span class="frame">
 			<span class="icon"><img src="http://media.blizzard.com/wow/icons/36/spell_deathknight_bloodpresence.jpg" alt="" /></span>
 		</span>
@@ -748,18 +750,6 @@
 			<span class="name ">Blood</span>
 		</span>
 	</span></a>
-	<a data-spec-id="1" class="spec-button spec-1 selected active" href="javascript:;" data-tooltip="An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes."><span class="inner">
-		<span class="checkmark"></span>
-		<span class="frame">
-			<span class="icon"><img src="http://media.blizzard.com/wow/icons/36/spell_deathknight_frostpresence.jpg" alt="" /></span>
-		</span>
-		<span class="roles">
-				<span class="icon-dps"></span>
-		</span>
-		<span class="name-build">
-			<span class="name ">Frost</span>
-		</span>
-	</span></a>
 	<span class="clear"><!-- --></span>
 		</div>
 
@@ -768,109 +758,123 @@
 	<div class="talent-build " id="talent-build-0">
 			<div class="talents">				
 				<ul>
-									<li class="talent" data-tooltip="#tooltip-108170" data-tier="0" data-column="0">
+									<li class="talent" data-tooltip="#tooltip-123693" data-tier="0" data-column="1">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/ability_deathknight_roilingblood.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_creature_disease_02.jpg&quot;);">
 		</span>
-<span class="spell-name">Roiling Blood</span></li>
+<span class="spell-name">Plague Leech</span></li>
 
 
 	
-    <div id="tooltip-108170" style="display: none">
+    <div id="tooltip-123693" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/ability_deathknight_roilingblood.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_creature_disease_02.jpg&quot;);">
 		</span>
 
-			<h3>Roiling Blood</h3>
+			<h3>Plague Leech</h3>
 				<h4></h4>
 
 
+				<div>
+							30 yd range
+	<span class="clear"><!-- --></span>
+				</div>
 
 				<div>
-						Passive
+						<span class="float-right">25 sec cooldown</span>
+						Instant
 	<span class="clear"><!-- --></span>
 				</div>
 
 
 				<div class="color-tooltip-yellow">
-Your Blood Boil ability now also triggers Pestilence if it strikes a diseased target.				</div>
+Consumes your Blood Plague and Frost Fever on the target to activate up to two random fully-depleted runes as Death Runes.				</div>
 		</div>
 	</div>
 
 
 
-									<li class="talent" data-tooltip="#tooltip-114556" data-tier="1" data-column="2">
+									<li class="talent" data-tooltip="#tooltip-51052" data-tier="1" data-column="1">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/inv_misc_shadowegg.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_antimagiczone.jpg&quot;);">
 		</span>
-<span class="spell-name">Purgatory</span></li>
+<span class="spell-name">Anti-Magic Zone</span></li>
 
 
 	
-    <div id="tooltip-114556" style="display: none">
+    <div id="tooltip-51052" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/inv_misc_shadowegg.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_antimagiczone.jpg&quot;);">
 		</span>
 
-			<h3>Purgatory</h3>
+			<h3>Anti-Magic Zone</h3>
 				<h4></h4>
 
 
+				<div>
+							30 yd range
+	<span class="clear"><!-- --></span>
+				</div>
 
 				<div>
-						Passive
+						<span class="float-right">2 min cooldown</span>
+						Instant
 	<span class="clear"><!-- --></span>
 				</div>
 
 
 				<div class="color-tooltip-yellow">
-An unholy pact grants you the ability to fight on through damage that would kill mere mortals. When you would sustain fatal damage, you instead are wrapped in a Shroud of Purgatory, absorbing incoming healing equal to the amount of damage prevented, lasting 3 sec.<br/><br/>If any healing absorption remains when Shroud of Purgatory expires, you die. Otherwise, you survive.  This effect may only occur every 3 min.				</div>
+Places an Anti-Magic Zone for 3 sec that reduces spell damage taken by party or raid members by 20%.				</div>
 		</div>
 	</div>
 
 
 
-									<li class="talent" data-tooltip="#tooltip-96268" data-tier="2" data-column="0">
+									<li class="talent" data-tooltip="#tooltip-108194" data-tier="2" data-column="2">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_demonicempathy.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_deathknight_asphixiate.jpg&quot;);">
 		</span>
-<span class="spell-name">Death&#39;s Advance</span></li>
+<span class="spell-name">Asphyxiate</span></li>
 
 
 	
-    <div id="tooltip-96268" style="display: none">
+    <div id="tooltip-108194" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_demonicempathy.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_deathknight_asphixiate.jpg&quot;);">
 		</span>
 
-			<h3>Death&#39;s Advance</h3>
+			<h3>Asphyxiate</h3>
 				<h4></h4>
 
 
+				<div>
+							30 yd range
+	<span class="clear"><!-- --></span>
+				</div>
 
 				<div>
 						<span class="float-right">30 sec cooldown</span>
@@ -880,18 +884,57 @@ An unholy pact grants you the ability to fight on through damage that would kill
 
 
 				<div class="color-tooltip-yellow">
-You passively move 10% faster, and movement-impairing effects may not reduce you below 70% of normal movement speed.<br/><br/>When activated, you gain 30% movement speed and may not be slowed below 100% of normal movement speed for 6 seconds.				</div>
+Lifts an enemy target off the ground and crushes their throat with dark energy, stunning them for 5 sec.  Functions as a silence if the target is immune to stuns.<br /><br />Replaces Strangulate.				</div>
 		</div>
 	</div>
 
 
 
-									<li class="talent" data-tooltip="#tooltip-48743" data-tier="3" data-column="0">
+									<li class="talent" data-tooltip="#tooltip-51462" data-tier="3" data-column="2">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_deathpact.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_rune.jpg&quot;);">
+		</span>
+<span class="spell-name">Runic Corruption</span></li>
+
+
+	
+    <div id="tooltip-51462" style="display: none">
+		<div class="tc-tooltip">
+
+
+
+
+
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_rune.jpg&quot;);">
+		</span>
+
+			<h3>Runic Corruption</h3>
+				<h4></h4>
+
+
+
+				<div>
+						Passive
+	<span class="clear"><!-- --></span>
+				</div>
+
+
+				<div class="color-tooltip-yellow">
+When you spend Runic Power, you have a 1.50% chance per Runic Power spent to increase your rune regeneration rate by 100% for 3 sec.				</div>
+		</div>
+	</div>
+
+
+
+									<li class="talent" data-tooltip="#tooltip-48743" data-tier="4" data-column="0">
+
+
+
+
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_deathpact.jpg&quot;);">
 		</span>
 <span class="spell-name">Death Pact</span></li>
 
@@ -904,7 +947,7 @@ You passively move 10% faster, and movement-impairing effects may not reduce you
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_deathpact.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_deathpact.jpg&quot;);">
 		</span>
 
 			<h3>Death Pact</h3>
@@ -920,76 +963,41 @@ You passively move 10% faster, and movement-impairing effects may not reduce you
 
 
 				<div class="color-tooltip-yellow">
-Drain vitality from an undead minion, healing the Death Knight for 50% of her maximum health and causing the minion to suffer damage equal to 50% of its maximum health.				</div>
+Heals the Death Knight for 50% of max health, and absorbs incoming healing equal to 25% of max health for 15 sec.				</div>
 		</div>
 	</div>
 
 
 
-									<li class="talent" data-tooltip="#tooltip-45529" data-tier="4" data-column="0">
+									<li class="talent" data-tooltip="#tooltip-108199" data-tier="5" data-column="0">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_deathknight_bloodtap.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_deathknight_aoedeathgrip.jpg&quot;);">
 		</span>
-<span class="spell-name">Blood Tap</span></li>
+<span class="spell-name">Gorefiend's Grasp</span></li>
 
 
 	
-    <div id="tooltip-45529" style="display: none">
+    <div id="tooltip-108199" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_deathknight_bloodtap.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_deathknight_aoedeathgrip.jpg&quot;);">
 		</span>
 
-			<h3>Blood Tap</h3>
+			<h3>Gorefiend's Grasp</h3>
 				<h4></h4>
-
 
 
 				<div>
-						Instant
+							30 yd range
 	<span class="clear"><!-- --></span>
 				</div>
-
-
-				<div class="color-tooltip-yellow">
-Each damaging Death Coil, Frost Strike, or Rune Strike generates 2 Blood Charges, up to a maximum of 12 charges.  Blood Tap consumes 5 Blood Charges to activate a random fully-depleted rune as a Death Rune.				</div>
-		</div>
-	</div>
-
-
-
-									<li class="talent" data-tooltip="#tooltip-108200" data-tier="5" data-column="1">
-
-
-
-
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/ability_deathknight_remorselesswinters2.jpg");'>
-		</span>
-<span class="spell-name">Remorseless Winter</span></li>
-
-
-	
-    <div id="tooltip-108200" style="display: none">
-		<div class="tc-tooltip">
-
-
-
-
-
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/ability_deathknight_remorselesswinters2.jpg");'>
-		</span>
-
-			<h3>Remorseless Winter</h3>
-				<h4></h4>
-
-
 
 				<div>
 						<span class="float-right">1 min cooldown</span>
@@ -999,7 +1007,52 @@ Each damaging Death Coil, Frost Strike, or Rune Strike generates 2 Blood Charges
 
 
 				<div class="color-tooltip-yellow">
-Surrounds the Death Knight with a swirling tempest of frigid air for 8 sec, chilling enemies within 8 yards every 1 sec. Each pulse reduces targets' movement speed by 15% for 3 sec, stacking up to 5 times. Upon receiving a fifth application, an enemy will be stunned for 6 sec.				</div>
+Shadowy tendrils coil around all enemies within 20 yards of a target (hostile or friendly), pulling them to the target's location.				</div>
+		</div>
+	</div>
+
+
+
+									<li class="talent" data-tooltip="#tooltip-152280" data-tier="6" data-column="1">
+
+
+
+
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_defile.jpg&quot;);">
+		</span>
+<span class="spell-name">Defile</span></li>
+
+
+	
+    <div id="tooltip-152280" style="display: none">
+		<div class="tc-tooltip">
+
+
+
+
+
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_defile.jpg&quot;);">
+		</span>
+
+			<h3>Defile</h3>
+				<h4></h4>
+
+
+				<div>
+							<span class="float-right">30 yd range</span>
+						1 Unholy
+	<span class="clear"><!-- --></span>
+				</div>
+
+				<div>
+						<span class="float-right">30 sec cooldown</span>
+						Instant
+	<span class="clear"><!-- --></span>
+				</div>
+
+
+				<div class="color-tooltip-yellow">
+Defiles the ground targeted by the Death Knight. Every 1 sec, if there are any enemies standing in the Defile, it deals 828 Shadowfrost damage to them, and grows in radius and damage by 2.5%. <br /><br />Enemies standing in your Defile deal 10% less damage to you.<br /><br />Replaces Death and Decay.				</div>
 		</div>
 	</div>
 
@@ -1016,7 +1069,7 @@ Surrounds the Death Knight with a swirling tempest of frigid air for 8 sec, chil
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_deathknight_iceboundfortitude.jpg");' data-tooltip="#tooltip-58673">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_iceboundfortitude.jpg&quot;);" data-tooltip="#tooltip-58673">
 		</span>
 
 	
@@ -1027,7 +1080,7 @@ Surrounds the Death Knight with a swirling tempest of frigid air for 8 sec, chil
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_deathknight_iceboundfortitude.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_iceboundfortitude.jpg&quot;);">
 		</span>
 
 			<h3>Glyph of Icebound Fortitude</h3>
@@ -1051,22 +1104,22 @@ Reduces the cooldown of your Icebound Fortitude by 50%, but also reduces its dur
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_lifedrain.jpg");' data-tooltip="#tooltip-58676">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_deadofnight.jpg&quot;);" data-tooltip="#tooltip-159427">
 		</span>
 
 	
-    <div id="tooltip-58676" style="display: none">
+    <div id="tooltip-159427" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_lifedrain.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_deadofnight.jpg&quot;);">
 		</span>
 
-			<h3>Glyph of Vampiric Blood</h3>
-				<h4>Blood</h4>
+			<h3>Glyph of Raise Ally</h3>
+				<h4></h4>
 
 
 
@@ -1077,7 +1130,7 @@ Reduces the cooldown of your Icebound Fortitude by 50%, but also reduces its dur
 
 
 				<div class="color-tooltip-yellow">
-Increases the bonus healing received while your Vampiric Blood is active by an additional 15%, but your Vampiric Blood no longer grants you health.				</div>
+Your Raise Ally ability no longer costs any Runic Power.				</div>
 		</div>
 	</div>
 							
@@ -1086,22 +1139,22 @@ Increases the bonus healing received while your Vampiric Blood is active by an a
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/inv_sword_07.jpg");' data-tooltip="#tooltip-63330">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_deathcoil.jpg&quot;);" data-tooltip="#tooltip-63333">
 		</span>
 
 	
-    <div id="tooltip-63330" style="display: none">
+    <div id="tooltip-63333" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/inv_sword_07.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_deathcoil.jpg&quot;);">
 		</span>
 
-			<h3>Glyph of Dancing Rune Weapon</h3>
-				<h4>Blood</h4>
+			<h3>Glyph of Death Coil</h3>
+				<h4>Blood, Unholy</h4>
 
 
 
@@ -1112,7 +1165,7 @@ Increases the bonus healing received while your Vampiric Blood is active by an a
 
 
 				<div class="color-tooltip-yellow">
-Increases your threat generation by 100% while your Dancing Rune Weapon is active, but reduces its damage dealt by 25%.				</div>
+Your Death Coil spell is now usable on all allies.  When cast on a non-undead ally, Death Coil shrouds them with a protective barrier that absorbs up to 2,529 damage.				</div>
 		</div>
 	</div>
 							
@@ -1126,21 +1179,21 @@ Increases your threat generation by 100% while your Dancing Rune Weapon is activ
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_arcane_teleportundercity.jpg");' data-tooltip="#tooltip-60200">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_rogue_envelopingshadows.jpg&quot;);" data-tooltip="#tooltip-63335">
 		</span>
 
 	
-    <div id="tooltip-60200" style="display: none">
+    <div id="tooltip-63335" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_arcane_teleportundercity.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_rogue_envelopingshadows.jpg&quot;);">
 		</span>
 
-			<h3>Glyph of Death Gate</h3>
+			<h3>Glyph of Tranquil Grip</h3>
 				<h4></h4>
 
 
@@ -1152,7 +1205,7 @@ Increases your threat generation by 100% while your Dancing Rune Weapon is activ
 
 
 				<div class="color-tooltip-yellow">
-Reduces the cast time of your Death Gate spell by 60%.				</div>
+Your Death Grip spell no longer taunts the target.				</div>
 		</div>
 	</div>
 
@@ -1160,22 +1213,22 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/ability_deathknight_remorselesswinters.jpg");' data-tooltip="#tooltip-146653">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/inv_misc_bone_humanskull_01.jpg&quot;);" data-tooltip="#tooltip-146652">
 		</span>
 
 	
-    <div id="tooltip-146653" style="display: none">
+    <div id="tooltip-146652" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/ability_deathknight_remorselesswinters.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/inv_misc_bone_humanskull_01.jpg&quot;);">
 		</span>
 
-			<h3>Glyph of the Long Winter</h3>
-				<h4></h4>
+			<h3>Glyph of the Skeleton</h3>
+				<h4>Unholy</h4>
 
 
 
@@ -1186,7 +1239,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 				<div class="color-tooltip-yellow">
-The effect of your Horn of Winter now lasts for 1 hour.				</div>
+Your Raise Dead spell summons a skeleton instead of a ghoul.				</div>
 		</div>
 	</div>
 
@@ -1194,7 +1247,7 @@ The effect of your Horn of Winter now lasts for 1 hour.				</div>
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_deathknight_armyofthedead.jpg");' data-tooltip="#tooltip-58669">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_armyofthedead.jpg&quot;);" data-tooltip="#tooltip-58669">
 		</span>
 
 	
@@ -1205,7 +1258,7 @@ The effect of your Horn of Winter now lasts for 1 hour.				</div>
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_deathknight_armyofthedead.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_armyofthedead.jpg&quot;);">
 		</span>
 
 			<h3>Glyph of Army of the Dead</h3>
@@ -1237,7 +1290,7 @@ The ghouls summoned by your Army of the Dead no longer taunt their target.				</
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_contagion.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_contagion.jpg&quot;);">
 		</span>
 <span class="spell-name">Unholy Blight</span></li>
 
@@ -1250,7 +1303,7 @@ The ghouls summoned by your Army of the Dead no longer taunt their target.				</
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_contagion.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_contagion.jpg&quot;);">
 		</span>
 
 			<h3>Unholy Blight</h3>
@@ -1266,7 +1319,7 @@ The ghouls summoned by your Army of the Dead no longer taunt their target.				</
 
 
 				<div class="color-tooltip-yellow">
-Surrounds the Death Knight with a vile swarm of unholy insects for 10 sec, stinging all enemies within 10 yards every 1 sec, infecting them with Blood Plague and Frost Fever.				</div>
+Surrounds the Death Knight with a vile swarm of unholy insects for 10 sec, stinging all enemies within 10 yards, infecting them with Blood Plague and Frost Fever.				</div>
 		</div>
 	</div>
 
@@ -1277,7 +1330,7 @@ Surrounds the Death Knight with a vile swarm of unholy insects for 10 sec, sting
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_raisedead.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_raisedead.jpg&quot;);">
 		</span>
 <span class="spell-name">Lichborne</span></li>
 
@@ -1290,7 +1343,7 @@ Surrounds the Death Knight with a vile swarm of unholy insects for 10 sec, sting
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_raisedead.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_raisedead.jpg&quot;);">
 		</span>
 
 			<h3>Lichborne</h3>
@@ -1306,7 +1359,7 @@ Surrounds the Death Knight with a vile swarm of unholy insects for 10 sec, sting
 
 
 				<div class="color-tooltip-yellow">
-Draw upon unholy energy to become undead for 10 sec.  While undead, you are immune to Charm, Fear, and Sleep effects, and Death Coil will heal you.				</div>
+Draw upon unholy energy to increase Leech by 10%, and make you immune to Charm, Fear, and Sleep for 10 sec.				</div>
 		</div>
 	</div>
 
@@ -1317,7 +1370,7 @@ Draw upon unholy energy to become undead for 10 sec.  While undead, you are immu
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/ability_deathknight_asphixiate.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_deathknight_asphixiate.jpg&quot;);">
 		</span>
 <span class="spell-name">Asphyxiate</span></li>
 
@@ -1330,7 +1383,7 @@ Draw upon unholy energy to become undead for 10 sec.  While undead, you are immu
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/ability_deathknight_asphixiate.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_deathknight_asphixiate.jpg&quot;);">
 		</span>
 
 			<h3>Asphyxiate</h3>
@@ -1350,18 +1403,57 @@ Draw upon unholy energy to become undead for 10 sec.  While undead, you are immu
 
 
 				<div class="color-tooltip-yellow">
-Lifts an enemy target off the ground and crushes their throat with dark energy, stunning them for 5 sec.  Functions as a silence if the target is immune to stuns.<br/><br/>Replaces Strangulate.				</div>
+Lifts an enemy target off the ground and crushes their throat with dark energy, stunning them for 5 sec.  Functions as a silence if the target is immune to stuns.<br /><br />Replaces Strangulate.				</div>
 		</div>
 	</div>
 
 
 
-									<li class="talent" data-tooltip="#tooltip-48743" data-tier="3" data-column="0">
+									<li class="talent" data-tooltip="#tooltip-45529" data-tier="3" data-column="0">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_deathpact.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_bloodtap.jpg&quot;);">
+		</span>
+<span class="spell-name">Blood Tap</span></li>
+
+
+	
+    <div id="tooltip-45529" style="display: none">
+		<div class="tc-tooltip">
+
+
+
+
+
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_bloodtap.jpg&quot;);">
+		</span>
+
+			<h3>Blood Tap</h3>
+				<h4></h4>
+
+
+
+				<div>
+						Instant
+	<span class="clear"><!-- --></span>
+				</div>
+
+
+				<div class="color-tooltip-yellow">
+Every 15 Runic Power you spend will generate a Blood Charge. Max 12 charges.<br /><br />Blood Tap consumes 5 Blood Charges to activate a random fully-depleted rune as a Death Rune.				</div>
+		</div>
+	</div>
+
+
+
+									<li class="talent" data-tooltip="#tooltip-48743" data-tier="4" data-column="0">
+
+
+
+
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_deathpact.jpg&quot;);">
 		</span>
 <span class="spell-name">Death Pact</span></li>
 
@@ -1374,7 +1466,7 @@ Lifts an enemy target off the ground and crushes their throat with dark energy, 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_deathpact.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_deathpact.jpg&quot;);">
 		</span>
 
 			<h3>Death Pact</h3>
@@ -1390,86 +1482,96 @@ Lifts an enemy target off the ground and crushes their throat with dark energy, 
 
 
 				<div class="color-tooltip-yellow">
-Drain vitality from an undead minion, healing the Death Knight for 50% of her maximum health and causing the minion to suffer damage equal to 50% of its maximum health.				</div>
+Heals the Death Knight for 50% of max health, and absorbs incoming healing equal to 25% of max health for 15 sec.				</div>
 		</div>
 	</div>
 
 
 
-									<li class="talent" data-tooltip="#tooltip-51462" data-tier="4" data-column="2">
+									<li class="talent" data-tooltip="#tooltip-108199" data-tier="5" data-column="0">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_shadow_rune.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_deathknight_aoedeathgrip.jpg&quot;);">
 		</span>
-<span class="spell-name">Runic Corruption</span></li>
+<span class="spell-name">Gorefiend's Grasp</span></li>
 
 
 	
-    <div id="tooltip-51462" style="display: none">
+    <div id="tooltip-108199" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_shadow_rune.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_deathknight_aoedeathgrip.jpg&quot;);">
 		</span>
 
-			<h3>Runic Corruption</h3>
+			<h3>Gorefiend's Grasp</h3>
 				<h4></h4>
 
 
-
 				<div>
-						Passive
+							30 yd range
 	<span class="clear"><!-- --></span>
 				</div>
 
-
-				<div class="color-tooltip-yellow">
-When you land a damaging Death Coil, Frost Strike, or Rune Strike, you have a 45% chance to activate Runic Corruption, increasing your rune regeneration rate by 100% for 3 sec.				</div>
-		</div>
-	</div>
-
-
-
-									<li class="talent" data-tooltip="#tooltip-108201" data-tier="5" data-column="2">
-
-
-
-
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/ability_deathknight_desecratedground.jpg");'>
-		</span>
-<span class="spell-name">Desecrated Ground</span></li>
-
-
-	
-    <div id="tooltip-108201" style="display: none">
-		<div class="tc-tooltip">
-
-
-
-
-
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/ability_deathknight_desecratedground.jpg");'>
-		</span>
-
-			<h3>Desecrated Ground</h3>
-				<h4></h4>
-
-
-
 				<div>
-						<span class="float-right">2 min cooldown</span>
+						<span class="float-right">1 min cooldown</span>
 						Instant
 	<span class="clear"><!-- --></span>
 				</div>
 
 
 				<div class="color-tooltip-yellow">
-Corrupts the ground in a 8 yard radius beneath the Death Knight for 10 sec. While standing in this corruption, the Death Knight is immune to effects that cause loss of control. This ability instantly removes such effects when activated.				</div>
+Shadowy tendrils coil around all enemies within 20 yards of a target (hostile or friendly), pulling them to the target's location.				</div>
+		</div>
+	</div>
+
+
+
+									<li class="talent" data-tooltip="#tooltip-152280" data-tier="6" data-column="1">
+
+
+
+
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_defile.jpg&quot;);">
+		</span>
+<span class="spell-name">Defile</span></li>
+
+
+	
+    <div id="tooltip-152280" style="display: none">
+		<div class="tc-tooltip">
+
+
+
+
+
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_defile.jpg&quot;);">
+		</span>
+
+			<h3>Defile</h3>
+				<h4></h4>
+
+
+				<div>
+							<span class="float-right">30 yd range</span>
+						1 Unholy
+	<span class="clear"><!-- --></span>
+				</div>
+
+				<div>
+						<span class="float-right">30 sec cooldown</span>
+						Instant
+	<span class="clear"><!-- --></span>
+				</div>
+
+
+				<div class="color-tooltip-yellow">
+Defiles the ground targeted by the Death Knight. Every 1 sec, if there are any enemies standing in the Defile, it deals 828 Shadowfrost damage to them, and grows in radius and damage by 2.5%. <br /><br />Enemies standing in your Defile deal 10% less damage to you.<br /><br />Replaces Death and Decay.				</div>
 		</div>
 	</div>
 
@@ -1481,9 +1583,75 @@ Corrupts the ground in a 8 yard radius beneath the Death Knight for 10 sec. Whil
 				<ul>
 					<li><h3>Major Glyphs</h3></li>
 					<li>
-								<span class="icon-frame frame-18 empty"></span>
+
+
+
+
+
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_shadow_deadofnight.jpg&quot;);" data-tooltip="#tooltip-159427">
+		</span>
+
+	
+    <div id="tooltip-159427" style="display: none">
+		<div class="tc-tooltip">
+
+
+
+
+
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_shadow_deadofnight.jpg&quot;);">
+		</span>
+
+			<h3>Glyph of Raise Ally</h3>
+				<h4></h4>
+
+
+
+				<div>
+						Passive
+	<span class="clear"><!-- --></span>
+				</div>
+
+
+				<div class="color-tooltip-yellow">
+Your Raise Ally ability no longer costs any Runic Power.				</div>
+		</div>
+	</div>
 							
-								<span class="icon-frame frame-18 empty"></span>
+
+
+
+
+
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/spell_deathknight_iceboundfortitude.jpg&quot;);" data-tooltip="#tooltip-58673">
+		</span>
+
+	
+    <div id="tooltip-58673" style="display: none">
+		<div class="tc-tooltip">
+
+
+
+
+
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/spell_deathknight_iceboundfortitude.jpg&quot;);">
+		</span>
+
+			<h3>Glyph of Icebound Fortitude</h3>
+				<h4></h4>
+
+
+
+				<div>
+						Passive
+	<span class="clear"><!-- --></span>
+				</div>
+
+
+				<div class="color-tooltip-yellow">
+Reduces the cooldown of your Icebound Fortitude by 50%, but also reduces its duration by 75%.				</div>
+		</div>
+	</div>
 							
 								<span class="icon-frame frame-18 empty"></span>
 							
@@ -1497,21 +1665,21 @@ Corrupts the ground in a 8 yard radius beneath the Death Knight for 10 sec. Whil
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/ability_deathknight_remorselesswinters.jpg");' data-tooltip="#tooltip-146653">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/warlock_curse_shadow.jpg&quot;);" data-tooltip="#tooltip-59309">
 		</span>
 
 	
-    <div id="tooltip-146653" style="display: none">
+    <div id="tooltip-59309" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/ability_deathknight_remorselesswinters.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/warlock_curse_shadow.jpg&quot;);">
 		</span>
 
-			<h3>Glyph of the Long Winter</h3>
+			<h3>Glyph of Resilient Grip</h3>
 				<h4></h4>
 
 
@@ -1523,7 +1691,7 @@ Corrupts the ground in a 8 yard radius beneath the Death Knight for 10 sec. Whil
 
 
 				<div class="color-tooltip-yellow">
-The effect of your Horn of Winter now lasts for 1 hour.				</div>
+When your Death Grip ability fails because its target is immune, its cooldown is reset.				</div>
 		</div>
 	</div>
 
@@ -1531,21 +1699,21 @@ The effect of your Horn of Winter now lasts for 1 hour.				</div>
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/spell_arcane_teleportundercity.jpg");' data-tooltip="#tooltip-60200">
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_rogue_envelopingshadows.jpg&quot;);" data-tooltip="#tooltip-63335">
 		</span>
 
 	
-    <div id="tooltip-60200" style="display: none">
+    <div id="tooltip-63335" style="display: none">
 		<div class="tc-tooltip">
 
 
 
 
 
-		<span  class="icon-frame frame-56 " style='background-image: url("http://media.blizzard.com/wow/icons/56/spell_arcane_teleportundercity.jpg");'>
+		<span class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_rogue_envelopingshadows.jpg&quot;);">
 		</span>
 
-			<h3>Glyph of Death Gate</h3>
+			<h3>Glyph of Tranquil Grip</h3>
 				<h4></h4>
 
 
@@ -1557,7 +1725,7 @@ The effect of your Horn of Winter now lasts for 1 hour.				</div>
 
 
 				<div class="color-tooltip-yellow">
-Reduces the cast time of your Death Gate spell by 60%.				</div>
+Your Death Grip spell no longer taunts the target.				</div>
 		</div>
 	</div>
 								<span class="icon-frame frame-18 empty"></span>
@@ -1574,8 +1742,8 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 			var specLinks = {};
 
-				specLinks[0] = "/wow/en/tool/talent-calculator#da!020001!YjNPIh";
-				specLinks[1] = "/wow/en/tool/talent-calculator#dZ!202022!IP";
+				specLinks[0] = "/wow/en/tool/talent-calculator#db!1122001!brNnLH";
+				specLinks[1] = "/wow/en/tool/talent-calculator#da!2020001!rbRn";
 
 			Summary.Talents(specLinks);
 		});
@@ -1589,7 +1757,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 				<div class="summary-bottom-left">
 					<div class="summary-health-resource">
 	<ul>
-		<li class="health" id="summary-health" data-id="health"><span class="name">Health</span><span class="value">489879</span></li>
+		<li class="health" id="summary-health" data-id="health"><span class="name">Health</span><span class="value">364620</span></li>
 		<li class="resource-6" id="summary-power" data-id="power-6"><span class="name">Runic</span><span class="value">100</span></li>
 	</ul>
 					</div>
@@ -1597,9 +1765,10 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<div class="summary-stats" id="summary-stats">
 			<div id="summary-stats-advanced" class="summary-stats-advanced">
-				<div class="summary-stats-advanced-base">
+						<div id="summary-stats-spec0" class="summary-stats-specs" style=" display: none">
+							<div class="summary-stats-advanced-base">
 	<div class="summary-stats-column">
-		<h4>Base</h4>
+		<h4>General</h4>
 		<ul>
 
 	 
@@ -1610,7 +1779,18 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="strength" class="">
 		<span class="name">Strength</span>
-		<span class="value color-q2">15933</span>
+		<span class="value color-q2">3505</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+	<li data-id="attackpower" class="">
+		<span class="name">Attack Power</span>
+		<span class="value">4650</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1620,9 +1800,28 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 
-	<li data-id="stamina" class="">
-		<span class="name">Stamina</span>
-		<span class="value color-q2">24534</span>
+	<li data-id="haste" class="">
+		<span class="name">Haste</span>
+		<span class="value">14.07%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+		</ul>
+	</div>
+							</div>
+							<div class="summary-stats-advanced-role">
+	<div class="summary-stats-column">
+		<h4>Other</h4>
+		<ul>
+
+	 
+
+
+
+
+
+	<li data-id="crit" class="">
+		<span class="name">Crit</span>
+		<span class="value">11.43%</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1634,85 +1833,42 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="mastery" class="">
 		<span class="name">Mastery</span>
-		<span class="value color-q2">32.95%</span>
+		<span class="value color-q2">34.91%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="multistrike" class="">
+		<span class="name">Multistrike</span>
+		<span class="value">20.20%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="versatility" class="">
+		<span class="name">Versatility</span>
+		<span class="value">3.67%</span>
 	<span class="clear"><!-- --></span>
 	</li>
 		</ul>
 	</div>
-				</div>
-				<div class="summary-stats-advanced-role">
+							</div>
+							<div class="summary-stats-end"></div>
+						</div>
+						<div id="summary-stats-spec1" class="summary-stats-specs">
+							<div class="summary-stats-advanced-base">
 	<div class="summary-stats-column">
-		<h4>Other</h4>
-		<ul>
-
-	 
-
-
-
-
-	<li data-id="meleeattackpower" class="">
-		<span class="name">Attack Power</span>
-		<span class="value">32116</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-	
-
-	<li data-id="expertise" class="">
-		<span class="name">Expertise</span>
-		<span class="value">11.06%/11.06%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="meleehaste" class="">
-		<span class="name">Haste</span>
-		<span class="value">74.64%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="meleehit" class="">
-		<span class="name">Hit</span>
-		<span class="value">+5.83%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="meleecrit" class="">
-		<span class="name">Crit</span>
-		<span class="value">14.54%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-		</ul>
-	</div>
-				</div>
-				<div class="summary-stats-end"></div>
-			</div>
-
-		<div id="summary-stats-simple" class="summary-stats-simple" style=" display: none">
-			<div class="summary-stats-simple-base">
-
-
-	<div class="summary-stats-column">
-		<h4>Base</h4>
+		<h4>General</h4>
 		<ul>
 
 	 
@@ -1723,7 +1879,123 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="strength" class="">
 		<span class="name">Strength</span>
-		<span class="value color-q2">15933</span>
+		<span class="value color-q2">3505</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+	<li data-id="attackpower" class="">
+		<span class="name">Attack Power</span>
+		<span class="value">4650</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="multistrike" class="">
+		<span class="name">Multistrike</span>
+		<span class="value">20.20%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="bonusarmor" class="">
+		<span class="name">Bonus Armor</span>
+		<span class="value">557</span>
+	<span class="clear"><!-- --></span>
+	</li>
+		</ul>
+	</div>
+							</div>
+							<div class="summary-stats-advanced-role">
+	<div class="summary-stats-column">
+		<h4>Other</h4>
+		<ul>
+
+	 
+
+
+
+
+
+	<li data-id="crit" class="">
+		<span class="name">Crit</span>
+		<span class="value">11.43%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="haste" class="">
+		<span class="name">Haste</span>
+		<span class="value">14.07%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="mastery" class="">
+		<span class="name">Mastery</span>
+		<span class="value color-q2">34.91%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="versatility" class="">
+		<span class="name">Versatility</span>
+		<span class="value">3.67%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+		</ul>
+	</div>
+							</div>
+							<div class="summary-stats-end"></div>
+						</div>
+			</div>
+
+		<div id="summary-stats-simple" class="summary-stats-simple" style=" display: none">
+			<div class="summary-stats-simple-base">
+
+
+	<div class="summary-stats-column">
+		<h4>Attributes</h4>
+		<ul>
+
+	 
+
+
+
+
+
+	<li data-id="strength" class="">
+		<span class="name">Strength</span>
+		<span class="value color-q2">3505</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1735,19 +2007,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="agility" class="">
 		<span class="name">Agility</span>
-		<span class="value">135</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="stamina" class="">
-		<span class="name">Stamina</span>
-		<span class="value color-q2">24534</span>
+		<span class="value">1075</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1759,7 +2019,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="intellect" class="">
 		<span class="name">Intellect</span>
-		<span class="value">38</span>
+		<span class="value">569</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1769,52 +2029,26 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 
-	<li data-id="spirit" class="">
-		<span class="name">Spirit</span>
-		<span class="value">67</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="mastery" class="">
-		<span class="name">Mastery</span>
-		<span class="value color-q2">32.95%</span>
+	<li data-id="stamina" class="">
+		<span class="name">Stamina</span>
+		<span class="value color-q2">6077</span>
 	<span class="clear"><!-- --></span>
 	</li>
 		</ul>
 	</div>
-			</div>
-			<div class="summary-stats-simple-other">
-				<a id="summary-stats-simple-arrow-left" class="summary-stats-simple-arrow-left" href="javascript:;"></a>
-				<a id="summary-stats-simple-arrow-right" class="summary-stats-simple-arrow-right" href="javascript:;"></a>
 
 
 	<div class="summary-stats-column">
-		<h4>Melee</h4>
+		<h4>Attack</h4>
 		<ul>
 
 	 
 
 	
 
-	<li data-id="meleedamage" class="">
+	<li data-id="attackdamage" class="">
 		<span class="name">Damage</span>
-		<span class="value">17364–23065</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-	
-
-	<li data-id="meleedps" class="">
-		<span class="name">DPS</span>
-		<span class="value">13575.9/6787.9</span>
+		<span class="value">6644–7195</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1823,9 +2057,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 
-	<li data-id="meleeattackpower" class="">
+	<li data-id="attackpower" class="">
 		<span class="name">Attack Power</span>
-		<span class="value">32116</span>
+		<span class="value">4650</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -1833,150 +2067,16 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	
 
-	<li data-id="meleespeed" class="">
+	<li data-id="attackspeed" class="">
 		<span class="name">Speed</span>
-		<span class="value">1.49/1.49</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="meleehaste" class="">
-		<span class="name">Haste</span>
-		<span class="value">74.64%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="meleehit" class="">
-		<span class="name">Hit</span>
-		<span class="value">+5.83%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="meleecrit" class="">
-		<span class="name">Crit</span>
-		<span class="value">14.54%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-	
-
-	<li data-id="expertise" class="">
-		<span class="name">Expertise</span>
-		<span class="value">11.06%/11.06%</span>
+		<span class="value">3.07</span>
 	<span class="clear"><!-- --></span>
 	</li>
 		</ul>
 	</div>
 
 
-	<div class="summary-stats-column" style="display: none">
-		<h4>Ranged</h4>
-		<ul>
-
-	 
-
-	
-
-	<li data-id="rangeddamage" class=" no-tooltip">
-		<span class="name">Damage</span>
-		<span class="value color-q0">--</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="rangeddps" class=" no-tooltip">
-		<span class="name">DPS</span>
-		<span class="value color-q0">--</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-	<li data-id="rangedattackpower" class="">
-		<span class="name">Attack Power</span>
-		<span class="value">0</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="rangedspeed" class=" no-tooltip">
-		<span class="name">Speed</span>
-		<span class="value color-q0">--</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="rangedhaste" class="">
-		<span class="name">Haste</span>
-		<span class="value">20.44%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="rangedhit" class="">
-		<span class="name">Hit</span>
-		<span class="value">+5.83%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="rangedcrit" class="">
-		<span class="name">Crit</span>
-		<span class="value">14.54%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-		</ul>
-	</div>
-
-
-	<div class="summary-stats-column" style="display: none">
+	<div class="summary-stats-column">
 		<h4>Spell</h4>
 		<ul>
 
@@ -1988,31 +2088,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="spellpower" class="">
 		<span class="name">Spell Power</span>
-		<span class="value">28</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="spellhaste" class="">
-		<span class="name">Haste</span>
-		<span class="value">9.49%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="spellhit" class="">
-		<span class="name">Hit</span>
-		<span class="value">+16.89%</span>
+		<span class="value">569</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -2027,47 +2103,13 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 		<span class="value color-q0">--</span>
 	<span class="clear"><!-- --></span>
 	</li>
-
-	 
-
-
-
-
-
-	<li data-id="combatregen" class=" no-tooltip">
-		<span class="name">Combat Regen</span>
-		<span class="value color-q0">--</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="spellcrit" class="">
-		<span class="name">Crit</span>
-		<span class="value">9.53%</span>
-	<span class="clear"><!-- --></span>
-	</li>
-
-	 
-
-
-
-
-
-	<li data-id="pvppower" class="">
-		<span class="name">PvP Power</span>
-		<span class="value">43.47%</span>
-	<span class="clear"><!-- --></span>
-	</li>
 		</ul>
 	</div>
+			</div>
+			<div class="summary-stats-simple-other">
 
 
-	<div class="summary-stats-column" style="display: none">
+	<div class="summary-stats-column">
 		<h4>Defense</h4>
 		<ul>
 
@@ -2079,7 +2121,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="armor" class="">
 		<span class="name">Armour</span>
-		<span class="value">35602</span>
+		<span class="value color-q2">3121</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -2091,7 +2133,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="dodge" class="">
 		<span class="name">Dodge</span>
-		<span class="value">5.16%</span>
+		<span class="value">7.00%</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -2103,7 +2145,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 	<li data-id="parry" class="">
 		<span class="name">Parry</span>
-		<span class="value">21.87%</span>
+		<span class="value">18.62%</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -2118,6 +2160,13 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 		<span class="value">0.00%</span>
 	<span class="clear"><!-- --></span>
 	</li>
+		</ul>
+	</div>
+
+
+	<div class="summary-stats-column">
+		<h4>Enhancements</h4>
+		<ul>
 
 	 
 
@@ -2125,9 +2174,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 
-	<li data-id="resilience" class="">
-		<span class="name">PvP Resilience</span>
-		<span class="value">80.00%</span>
+	<li data-id="crit" class="">
+		<span class="name">Crit</span>
+		<span class="value">11.43%</span>
 	<span class="clear"><!-- --></span>
 	</li>
 
@@ -2137,9 +2186,93 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 
 
-	<li data-id="pvppower" class="">
-		<span class="name">PvP Power</span>
-		<span class="value">43.47%</span>
+	<li data-id="haste" class="">
+		<span class="name">Haste</span>
+		<span class="value">14.07%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="mastery" class="">
+		<span class="name">Mastery</span>
+		<span class="value color-q2">34.91%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="spirit" class="">
+		<span class="name">Spirit</span>
+		<span class="value">640</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="bonusarmor" class="">
+		<span class="name">Bonus Armor</span>
+		<span class="value">557</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="multistrike" class="">
+		<span class="name">Multistrike</span>
+		<span class="value">20.20%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="leech" class="">
+		<span class="name">Leech</span>
+		<span class="value">0.00%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="versatility" class="">
+		<span class="name">Versatility</span>
+		<span class="value">3.67%</span>
+	<span class="clear"><!-- --></span>
+	</li>
+
+	 
+
+
+
+
+
+	<li data-id="avoidance" class="">
+		<span class="name">Avoidance</span>
+		<span class="value">1.48%</span>
 	<span class="clear"><!-- --></span>
 	</li>
 		</ul>
@@ -2157,171 +2290,188 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			new Summary.Stats({
 		
 
-			"health": 489879,
+			"health": 364620,
 			"power": 100,
 			"powerTypeId": 6,
-			"hasOffhandWeapon": true,
-			"masteryName": "Mastery: Frozen Heart",
-			"masteryDescription": "Increases all Frost damage done by 16%.",
-			"averageItemLevelEquipped": 524,
-			"averageItemLevelBest": 535,
+			"hasOffhandWeapon": false,
+			"masteryName": "Mastery: Blood Shield",
+			"masteryDescription": "Each time you heal yourself with Death Strike while in Blood Presence, you gain ]]><![CDATA[20% of the amount healed as a Physical damage absorption shield.\n\n\n\nAlso increases your attack power by 10%.",
+			"averageItemLevelEquipped": 654,
+			"averageItemLevelBest": 656,
+			"sturdinessRating": 0,
 			"shadowResist": 0,
-			"dmgMainMin": 17364,
-			"pvpPowerDamage": 43.47249984741211,
-			"rangeCritRatingPercent": 9.523333549499512,
-			"critRating": 5714,
-			"rangeHitPercent": 5.832353115081787,
-			"parry": 21.868179321289062,
-			"rangedHasteRating": 4035,
-			"spellHaste": 9.494110107421875,
-			"spellHitPercent": 16.888235092163086,
-			"strBase": 215,
-			"expertiseOff": 11.055882453918457,
+			"dmgMainMin": 6644,
+			"pvpPowerDamage": 0,
+			"rangeCritRatingPercent": 6.427272796630859,
+			"speedRatingBonus": 0,
+			"critRating": 707,
+			"rangeHitPercent": 0,
+			"speedRating": 0,
+			"parry": 18.619935989379883,
+			"rangedHasteRating": 370,
+			"spellHaste": 14.069999694824219,
+			"spellHitPercent": 3,
+			"strBase": 1451,
+			"expertiseOff": 3,
 			"spellDmg_petSpellDmg": -1,
-			"dmgOffMax": 11533,
+			"dmgOffMax": 1585,
 			"armor_petArmor": -1,
-			"rangedHaste": 20.443519592285156,
+			"rangedHaste": 14.069999694824219,
 			"rangeBonusWeaponRating": 0,
-			"pvpResilienceBase": 77,
+			"pvpResilienceBase": 0,
 			"blockRatingPercent": 0,
-			"arcaneCrit": 9.527132987976074,
-			"spellDamage": 28,
-			"armorTotal": 35602,
-			"spellHasteRatingPercent": 9.494117736816406,
-			"agi_armor": 270,
-			"holyResist": 0,
+			"arcaneCrit": 11.42727279663086,
+			"spellDamage": 569,
+			"multistrikeRatingBonus": 10.196969985961914,
+			"armorTotal": 3121,
+			"spellHasteRatingPercent": 3.700000047683716,
+			"agi_armor": 2150,
 			"rangeBonusWeaponSkill": 0,
+			"holyResist": 0,
 			"uiSpellHitModifier": 0,
-			"pvpResilience": 80.00091552734375,
+			"pvpResilience": 0,
 			"expertiseOffPercent": 0,
-			"spellHitRatingPercent": 16.888235092163086,
+			"spellHitRatingPercent": 3,
 			"agi_ap": 0,
-			"hasteRating": 4035,
+			"hasteRating": 370,
 			"masteryBase": 15.999998092651367,
-			"frostCrit": 9.527132987976074,
+			"frostCrit": 11.42727279663086,
 			"resistHoly_pet": -1,
-			"dmgMainMax": 23065,
-			"spellHasteRating": 4035,
-			"atkPowerBase": 32116,
+			"dmgMainMax": 7195,
+			"spellHasteRating": 370,
+			"atkPowerBase": 4650,
 			"armorPenetration": 0,
-			"haste": 74.64312744140625,
-			"pvpPowerRating": 17389,
+			"haste": 14.069999694824219,
+			"pvpPowerRating": 0,
 			"dmgRangeSpeed": -1,
-			"health": 489879,
-			"masteryRating": 5086,
+			"health": 364620,
+			"masteryRating": 1040,
 			"bonusOffWeaponRating": 0,
-			"agiTotal": 135,
-			"pvpResilienceBonus": 3.0009169578552246,
-			"dmgOffSpeed": 1.4889999628067017,
+			"agiTotal": 1075,
+			"pvpResilienceBonus": 0,
+			"dmgOffSpeed": 1.753000020980835,
 			"rangeAtkPowerLoss": 0,
+			"avoidanceRating": 163,
 			"resistFire_pet": -1,
-			"pvpPowerHealing": 17.388999938964844,
-			"dmgOffMin": 8682,
+			"pvpPowerHealing": 0,
+			"dmgOffMin": 1584,
 			"spellDmg_petAp": -1,
-			"intTotal": 38,
-			"staTotal": 24534,
+			"intTotal": 569,
+			"staTotal": 6077,
 			"manaRegenPerFive": 0,
-			"masteryRatingBonus": 16.953332901000977,
-			"fireDamage": 28,
-			"dmgOffDps": 6787.9345703125,
-			"spellCritRating": 5714,
-			"expertiseRatingPercent": 11.055882453918457,
-			"sta_hp": 343216,
-			"sprTotal": 67,
-			"fireCrit": 9.527132987976074,
-			"rangeCritRating": 5714,
-			"hasteRatingPercent": 9.494117736816406,
-			"shadowCrit": 9.527132987976074,
+			"masteryRatingBonus": 18.909090042114258,
+			"fireDamage": 569,
+			"dmgOffDps": 903.886962890625,
+			"versatilityHealingDoneBonus": 3.6692309379577637,
+			"spellCritRating": 707,
+			"expertiseRatingPercent": 0,
+			"sta_hp": 364620,
+			"sprTotal": 640,
+			"fireCrit": 11.42727279663086,
+			"rangeCritRating": 707,
+			"hasteRatingPercent": 3.700000047683716,
+			"shadowCrit": 11.42727279663086,
 			"armorPenetrationPercent": 0,
 			"rap_petSpellDmg": -1,
-			"dodge": 5.157468795776367,
+			"dodge": 7,
 			"resistNature_pet": -1,
-			"rangeCritPercent": 14.536833763122559,
+			"rangeCritPercent": 11.42727279663086,
 			"energy": 0,
 			"rangeAtkPowerBase": 0,
+			"multistrikeRating": 673,
 			"rage": 0,
-			"hitRatingPercent": 5.832353115081787,
-			"pvpPower": 43.47249984741211,
-			"resilience_damage": 15.732992172241211,
-			"strTotal": 15933,
-			"rangeHitRating": 1983,
-			"expertiseRanged": 11.055882453918457,
+			"hitRatingPercent": 0,
+			"lifestealRatingBonus": 0,
+			"pvpPower": 0,
+			"resilience_damage": 0,
+			"strTotal": 3505,
+			"rangeHitRating": 0,
+			"expertiseRanged": 3,
 			"bonusOffMainWeaponSkill": 0,
 			"block_damage": 30,
+			"avoidanceRatingBonus": 1.4818179607391357,
 			"frostResist": 0,
-			"atkPowerTotal": 32116,
-			"armorBase": 35602,
-			"parryRatingPercent": 0.5864409804344177,
-			"dodgeRating": 122,
+			"atkPowerTotal": 4650,
+			"armorBase": 2564,
+			"parryRatingPercent": 4.364198207855225,
+			"dodgeRating": 0,
+			"bonusArmor": 557,
 			"defensePercent": 0,
-			"parryRating": 519,
-			"hitRating": 1983,
-			"resilience_crit": 15.732992172241211,
-			"healing": 28,
+			"parryRating": 707,
+			"hitRating": 0,
+			"resilience_crit": 0,
+			"healing": 569,
 			"manaRegenCombat": 0,
+			"versatilityDamageDoneBonus": 3.6692309379577637,
 			"spellPenetration": 0,
 			"int_sp": 0,
-			"natureDamage": 28,
-			"fireResist": 0,
-			"holyCrit": 9.527132987976074,
-			"dmgMainDps": 13575.869140625,
+			"natureDamage": 569,
+			"versatilityDamageTakenBonus": 1.8346149921417236,
+			"fireResist": 63,
+			"holyCrit": 11.42727279663086,
+			"dmgMainDps": 2255.38037109375,
+			"lifesteal": 0,
 			"int_crit": 0,
-			"rangedHasteRatingPercent": 9.494117736816406,
-			"critPercent": 14.536833763122559,
+			"lifestealRating": 0,
+			"rangedHasteRatingPercent": 3.700000047683716,
+			"critPercent": 11.42727279663086,
 			"atkPowerLoss": 0,
-			"pvpResilienceRating": 5280,
-			"spellHitRating": 1983,
+			"pvpResilienceRating": 0,
+			"spellHitRating": 0,
+			"sturdinessRatingBonus": 0,
 			"rangeAtkPowerTotal": 0,
-			"expertiseMain": 11.055882453918457,
-			"dmgMainSpeed": 1.4889999628067017,
-			"agiBase": 135,
+			"expertiseMain": 3,
+			"dmgMainSpeed": 3.068000078201294,
+			"agiBase": 1075,
 			"defense": 0,
 			"rap_petAp": -1,
 			"uiHitModifier": 0,
-			"armorPercent": 43.49159240722656,
+			"armorPercent": 46.3675537109375,
 			"sta_petSta": -1,
-			"mastery": 32.953330993652344,
-			"rangeHitRatingPercent": 5.832353115081787,
-			"agi_crit": 5.013500213623047,
-			"sprBase": 67,
-			"intBase": 38,
+			"mastery": 34.909088134765625,
+			"rangeHitRatingPercent": 0,
+			"agi_crit": 5,
+			"sprBase": 640,
+			"intBase": 569,
 			"dmgRangeMin": -1,
 			"arcaneResist": 0,
-			"ap_dps": 2294,
+			"ap_dps": 332.1428527832031,
+			"multistrike": 20.196969985961914,
 			"focus": 0,
 			"resistArcane_pet": -1,
-			"dodgeRatingPercent": 0.1378529965877533,
+			"dodgeRatingPercent": 0,
 			"mana": 0,
 			"atkPowerBonus": 0,
 			"bonusMainWeaponSkill": 0,
 			"resistShadow_pet": -1,
 			"block": 0,
+			"versatility": 477,
 			"expertiseMainPercent": 0,
-			"hitPercent": 5.832353115081787,
+			"hitPercent": 0,
 			"spr_regen": 0,
-			"expertiseRating": 3759,
-			"shadowDamage": 28,
-			"spellCritRatingPercent": 9.523333549499512,
-			"arcaneDamage": 28,
+			"expertiseRating": 0,
+			"shadowDamage": 569,
+			"spellCritRatingPercent": 6.427272796630859,
+			"arcaneDamage": 569,
 			"power": 100,
-			"critRatingPercent": 9.523333549499512,
-			"str_ap": 31846,
+			"critRatingPercent": 6.427272796630859,
+			"str_ap": 3505,
 			"natureResist": 0,
 			"resistFrost_pet": -1,
 			"chi": 0,
 			"runicPower": 100,
 			"bonusMainWeaponRating": 0,
 			"blockRating": 0,
-			"spellCritPercent": 9.527132987976074,
+			"spellCritPercent": 11.42727279663086,
 			"dmgRangeDps": -1,
 			"rangeAtkPowerBonus": 0,
-			"holyDamage": 28,
-			"frostDamage": 28,
+			"holyDamage": 569,
+			"frostDamage": 569,
 			"dmgRangeMax": -1,
 			"str_block": -1,
-			"staBase": 190,
-			"natureCrit": 9.527132987976074,
-	"foo": true
+			"staBase": 953,
+			"natureCrit": 11.42727279663086,
+	"foo": true 
 });
 		});
 		//]]>
@@ -2346,18 +2496,18 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	<dl>
 		<dd>
 
-		<a href="/wow/en/item/29994" class="color-q4" data-item="s=391485824">
+		<a href="/wow/en/item/109878" class="color-q3" data-item="pl=100&amp;cc=2&amp;bl=524">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/inv_misc_cape_15.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/inv_bracer_plate_draenordungeon_c_01.jpg&quot;);">
 		</span>
 </a>
 
-	Obtained <a href="/wow/en/item/29994" class="color-q4" data-item="s=391485824">Thalassian Wildercloak</a>.
+	Obtained <a href="/wow/en/item/109878" class="color-q3" data-item="pl=100&amp;cc=2&amp;bl=524">Goldsteel Bindings</a>.
 </dd>
-		<dt>18 hours ago</dt>
+		<dt>22/12/2014</dt>
 	</dl>
 	</li>
 
@@ -2367,18 +2517,18 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	<dl>
 		<dd>
 
-		<a href="/wow/en/item/29992" class="color-q4" data-item="s=391485824">
+		<a href="/wow/en/item/109820" class="color-q3" data-item="pl=100&amp;cc=2&amp;bl=524">
 
 
 
 
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/inv_misc_cape_10.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/inv_pant_plate_draenordungeon_c_01.jpg&quot;);">
 		</span>
 </a>
 
-	Obtained <a href="/wow/en/item/29992" class="color-q4" data-item="s=391485824">Royal Cloak of the Sunstriders</a>.
+	Obtained <a href="/wow/en/item/109820" class="color-q3" data-item="pl=100&amp;cc=2&amp;bl=524">Goldsteel Legplates</a>.
 </dd>
-		<dt>18 hours ago</dt>
+		<dt>22/12/2014</dt>
 	</dl>
 	</li>
 
@@ -2387,37 +2537,35 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	<li class="bosskill ">
 	<dl>
 		<dd>	<span class="icon"></span>
-
-		2 <a href="/wow/en/zone/tempest-keep/kaelthas-sunstrider" data-npc="19622">Kael&#39;thas Sunstrider</a> kills (<a href="/wow/en/zone/tempest-keep/" data-zone="3845">Tempest Keep</a>)
+	8 Teron'gor kills (Heroic Auchindoun)
 </dd>
-		<dt>18 hours ago</dt>
+		<dt>22/12/2014</dt>
 	</dl>
 	</li>
 
 
 
-	<li class="ach ">
+	<li>
 	<dl>
 		<dd>
 
-		<a href="achievement#168:14805:a692" data-achievement="692">
+		<a href="/wow/en/item/109896" class="color-q3" data-item="pl=100&amp;cc=2&amp;bl=524">
 
 
 
 
-
-		<span  class="icon-frame frame-18 " style='background-image: url("http://media.blizzard.com/wow/icons/18/achievement_boss_gruulthedragonkiller.jpg");'>
+		<span class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/inv_chest_plate_draenordungeon_c_01.jpg&quot;);">
 		</span>
-		</a>
+</a>
 
-	Earned the achievement <a href="achievement#168:14805:a692"  data-achievement="692">Gruul&#39;s Lair</a> for 10 points.
+	Obtained <a href="/wow/en/item/109896" class="color-q3" data-item="pl=100&amp;cc=2&amp;bl=524">Rivet-Sealed Breastplate</a>.
 </dd>
-		<dt>19 hours ago</dt>
+		<dt>22/12/2014</dt>
 	</dl>
 	</li>
 	</ul>
 	<div class="profile-linktomore">
-		<a href="/wow/en/character/silvermoon/Alexodormu/feed" rel="np">View earlier activity</a>
+		<a href="/wow/en/character/silvermoon/Lichbaine/feed" rel="np">View earlier activity</a>
 	</div>
 
 	<span class="clear"><!-- --></span>
@@ -2428,25 +2576,21 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 					<div class="summary-bottom-left">
 						<div class="summary-battlegrounds">
 	
-	<a href="/wow/en/character/silvermoon/Alexodormu/pvp" class="link">Player vs. Player</a>
+	<a href="/wow/en/character/silvermoon/Lichbaine/pvp" class="link">Player vs. Player</a>
 	<ul>
 		<li class="rating">
 			<span class="value">0</span>
 			<span class="name">Battleground rating</span>
 		</li>
-				<li class="rating">
-					<span class="value">1021</span>
-					<span class="name">2v2 arena Rating</span>
-				</li>
 		<li class="kills">
-			<span class="value">684</span>
+			<span class="value">1561</span>
 			<span class="name">Honourable kills</span>
 		</li>
 	</ul>
 						</div>
 
 						<div class="summary-professions">
-	<h3 class="category ">								<a href="/wow/en/character/silvermoon/Alexodormu/profession/" class="view-more">Professions</a>
+	<h3 class="category ">								<a href="/wow/en/character/silvermoon/Lichbaine/profession/" class="view-more">Professions</a>
 </h3>
 	<ul>
 				<li>
@@ -2454,9 +2598,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	    
 	
 
-	<div class="profile-progress border-3" >
-		<div class="bar border-3 hover" style="width: 11%"></div>
-			<div class="bar-contents">						<a class="profession-details" href="/wow/en/character/silvermoon/Alexodormu/profession/blacksmithing">
+	<div class="profile-progress border-3 completed">
+		<div class="bar border-3 hover" style="width: 100%"></div>
+			<div class="bar-contents">						<a class="profession-details" href="/wow/en/character/silvermoon/Lichbaine/profession/blacksmithing">
 							<span class="icon">
 
 
@@ -2467,7 +2611,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 		</span>
 </span>
 							<span class="name">Blacksmithing</span>
-							<span class="value">66</span>
+							<span class="value">663</span>
 						</a>
 </div>
 	</div>
@@ -2477,9 +2621,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	    
 	
 
-	<div class="profile-progress border-3 completed" >
+	<div class="profile-progress border-3 completed">
 		<div class="bar border-3 hover" style="width: 100%"></div>
-			<div class="bar-contents">						<a class="profession-details" href="/wow/en/character/silvermoon/Alexodormu/profession/jewelcrafting">
+			<div class="bar-contents">						<a class="profession-details" href="/wow/en/character/silvermoon/Lichbaine/profession/jewelcrafting">
 							<span class="icon">
 
 
@@ -2490,7 +2634,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 		</span>
 </span>
 							<span class="name">Jewelcrafting</span>
-							<span class="value">600</span>
+							<span class="value">676</span>
 						</a>
 </div>
 	</div>
@@ -2499,44 +2643,20 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 						</div>
 						
 						<div class="summary-pets">
-	<h3 class="category ">								<a href="/wow/en/character/silvermoon/Alexodormu/pet" class="view-more">Pets</a>							
+	<h3 class="category ">								<a href="/wow/en/character/silvermoon/Lichbaine/pet" class="view-more">Pets</a>							
 </h3>
 	<div id="battle-pet-summary">
 
-				<div class="pet-summary-slot ">
-					<div class="character">
-						<div class="family-icon-small beast" data-pet-type="7" ></div>
-						<a class="preview" rel="np" data-collectible="407" data-collectible-slug="pet" data-collectible-info="rO0ABXcjAAAAAAADAAABUwAAAX8AAAF6AAAAAZcAAAAVAAAAAwAAAAg=">
-							<img src="http://media.blizzard.com/wow/renders/npcs/grid/creature61320.jpg" />
-						</a>
-					</div>
-					<div class="pet-info">
-							<span class="name color-q3"><strong class="level">8</strong> Forest Spiderling</span>
-					</div>
+				<div class="pet-summary-slot empty " data-tooltip="Empty" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+					<div class="character"></div>
 				</div>
 
-				<div class="pet-summary-slot ">
-					<div class="character">
-						<div class="family-icon-small dragonkin" data-pet-type="1" ></div>
-						<a class="preview" rel="np" data-collectible="196" data-collectible-slug="pet" data-collectible-info="rO0ABXcjAAAAAAADAAAAcwAAAmQAAAH3AAAAAMQAAAAHAAAAAwAAAAo=">
-							<img src="http://media.blizzard.com/wow/renders/npcs/grid/creature32592.jpg" />
-						</a>
-					</div>
-					<div class="pet-info">
-							<a class="name color-q3" href="/wow/en/item/44721"><strong class="level">10</strong> Proto-Drake Whelp</a>
-					</div>
+				<div class="pet-summary-slot empty " data-tooltip="Empty" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+					<div class="character"></div>
 				</div>
 
-				<div class="pet-summary-slot end">
-					<div class="character">
-						<div class="family-icon-small humanoid" data-pet-type="0" ></div>
-						<a class="preview" rel="np" data-collectible="1147" data-collectible-slug="pet" data-collectible-info="rO0ABXcjAAAAAAADAAADIAAAANsAAAE/AAAABHsAAAAEAAAAAwAAAAk=">
-							<img src="http://media.blizzard.com/wow/renders/npcs/grid/creature68665.jpg" />
-						</a>
-					</div>
-					<div class="pet-info">
-							<a class="name color-q3" href="/wow/en/item/93033"><strong class="level">9</strong> Harbinger of Flame</a>
-					</div>
+				<div class="pet-summary-slot empty end" data-tooltip="Empty" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+					<div class="character"></div>
 				</div>
 	<span class="clear"><!-- --></span>
 	</div>
@@ -2544,12 +2664,12 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 							<div class="summary-challenge-mode">
 
-	<a href="/wow/en/character/silvermoon/Alexodormu/challenge" class="link">Challenge Mode</a>
+	<a href="/wow/en/character/silvermoon/Lichbaine/challenge" class="link">Challenge Mode</a>
 
 	<div id="challenge-mode-medals">
-		<div class="medal gold">0</div>
-		<div class="medal silver">0</div>
-		<div class="medal bronze">0</div>
+		<div class="medal gold">9</div>
+		<div class="medal silver">2</div>
+		<div class="medal bronze">1</div>
 	</div>
 
 							</div>
@@ -2566,7 +2686,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 		<div class="prestige"><div>Most prestigious raid title:
 			<strong>
-					<a href="/wow/en/character/silvermoon/Alexodormu/achievement#168:14922:a4530" data-achievement="4530"> the Kingslayer</a>
+					<a href="/wow/en/character/silvermoon/Lichbaine/achievement#168:15107:a8482" data-achievement="8482"> Hellscream's Downfall</a>
 			</strong>
 		</div></div>
 
@@ -2578,10 +2698,10 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			<a id="summary-raid-arrow-right" class="arrow-right" href="javascript:;"></a>
 
 				<div class="lfr"><span>LFR</span></div>
-			<div class="flex"><span>Flexible</span></div>
 			<div class="normal"><span>Normal</span></div>
 			<div class="heroic"><span>Heroic</span></div>
-			
+			<div class="mythic"><span>Mythic</span></div>
+
 		</div>
 
 		<div id="summary-raid-wrapper-table" class="summary-raid-wrapper-table">
@@ -2590,9 +2710,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	<thead>
 		<tr>
 			<th class="spacer-left"><div></div></th>
-				<th class="trivial" colspan="59">
+				<th class="trivial" colspan="63">
 					<div class="name-anchor">
-						<div class="name" id="summary-raid-head-trivial">Trivial</div>
+						<div class="name" id="summary-raid-head-trivial" style="left: 2176px;">Trivial</div>
 					</div>
 					<div class="marker"></div>
 				</th>
@@ -2800,6 +2920,18 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 							<a href="/wow/en/zone/siege-of-orgrimmar/" data-zone="6738">SoO</a>
 					</div>
 				</td>
+					<td class="spacer"><div></div></td>
+				<td class="hm expansion-5" data-raid="hm">
+					<div class="icon">
+							<a href="/wow/en/zone/highmaul/" data-zone="6996">HM</a>
+					</div>
+				</td>
+					<td class="spacer"><div></div></td>
+				<td class="brf expansion-5" data-raid="brf">
+					<div class="icon">
+							<a href="/wow/en/zone/blackrock-foundry/" data-zone="6967">BRF</a>
+					</div>
+				</td>
 			<td class="spacer-edge"><div></div></td>
 		</tr>
 			<tr class="lfr">
@@ -2864,115 +2996,53 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 						<td></td>
 	<td data-raid="tes" class="status status-completed"><div></div></td>
 						<td></td>
-	<td data-raid="tot" class="status status-in-progress"><div></div></td>
+	<td data-raid="tot" class="status status-completed"><div></div></td>
 						<td></td>
-	<td data-raid="soo" class="status status-in-progress"><div></div></td>
+	<td data-raid="soo" class="status status-completed"><div></div></td>
+						<td></td>
+	<td data-raid="hm" class="status status-in-progress"><div></div></td>
+						<td></td>
+	<td data-raid="brf" class="status status-incomplete"><div></div></td>
 			</tr>
-		<tr class="flex">
-			<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-	<td data-raid="soo" class="status status-in-progress"><div></div></td>
-		</tr>
 		<tr class="normal">
 			<td></td>
 	<td data-raid="mc" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="bwl" class="status status-incomplete"><div></div></td>
+	<td data-raid="bwl" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="aq10" class="status status-incomplete"><div></div></td>
+	<td data-raid="aq10" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="aq40" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="kar" class="status status-incomplete"><div></div></td>
+	<td data-raid="kar" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="mag" class="status status-incomplete"><div></div></td>
+	<td data-raid="mag" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="gru" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="ssc" class="status status-incomplete"><div></div></td>
+	<td data-raid="ssc" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="tk" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="mh" class="status status-incomplete"><div></div></td>
+	<td data-raid="mh" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="bt" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="sp" class="status status-incomplete"><div></div></td>
+	<td data-raid="sp" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="voa" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="nax" class="status status-in-progress"><div></div></td>
+	<td data-raid="nax" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="os" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="eoe" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="uld" class="status status-incomplete"><div></div></td>
+	<td data-raid="uld" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="ony" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="toc" class="status status-incomplete"><div></div></td>
+	<td data-raid="toc" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="icc" class="status status-completed"><div></div></td>
 					<td></td>
@@ -2986,19 +3056,23 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 					<td></td>
 	<td data-raid="tfw" class="status status-incomplete"><div></div></td>
 					<td></td>
-	<td data-raid="fl" class="status status-incomplete"><div></div></td>
+	<td data-raid="fl" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="ds" class="status status-incomplete"><div></div></td>
+	<td data-raid="ds" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="mv" class="status status-in-progress"><div></div></td>
+	<td data-raid="mv" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="hf" class="status status-incomplete"><div></div></td>
+	<td data-raid="hf" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="tes" class="status status-incomplete"><div></div></td>
 					<td></td>
-	<td data-raid="tot" class="status status-incomplete"><div></div></td>
+	<td data-raid="tot" class="status status-in-progress"><div></div></td>
 					<td></td>
-	<td data-raid="soo" class="status status-incomplete"><div></div></td>
+	<td data-raid="soo" class="status status-completed"><div></div></td>
+					<td></td>
+	<td data-raid="hm" class="status status-in-progress"><div></div></td>
+					<td></td>
+	<td data-raid="brf" class="status status-incomplete"><div></div></td>
 		</tr>
 		<tr class="heroic">
 			<td></td>
@@ -3038,33 +3112,107 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 					<td></td>
 					<td></td>
 					<td></td>
-	<td data-raid="toc" class="status status-incomplete"><div></div></td>
+	<td data-raid="toc" class="status status-in-progress"><div></div></td>
 					<td></td>
-	<td data-raid="icc" class="status status-incomplete"><div></div></td>
+	<td data-raid="icc" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="rs" class="status status-incomplete"><div></div></td>
 					<td></td>
 					<td></td>
 					<td></td>
-	<td data-raid="bd" class="status status-incomplete"><div></div></td>
+	<td data-raid="bd" class="status status-completed"><div></div></td>
 					<td></td>
 	<td data-raid="bot" class="status status-incomplete"><div></div></td>
 					<td></td>
 	<td data-raid="tfw" class="status status-incomplete"><div></div></td>
 					<td></td>
-	<td data-raid="fl" class="status status-incomplete"><div></div></td>
+	<td data-raid="fl" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="ds" class="status status-incomplete"><div></div></td>
+	<td data-raid="ds" class="status status-completed"><div></div></td>
 					<td></td>
-	<td data-raid="mv" class="status status-incomplete"><div></div></td>
+	<td data-raid="mv" class="status status-in-progress"><div></div></td>
 					<td></td>
 	<td data-raid="hf" class="status status-incomplete"><div></div></td>
 					<td></td>
 	<td data-raid="tes" class="status status-incomplete"><div></div></td>
 					<td></td>
-	<td data-raid="tot" class="status status-incomplete"><div></div></td>
+	<td data-raid="tot" class="status status-in-progress"><div></div></td>
 					<td></td>
-	<td data-raid="soo" class="status status-incomplete"><div></div></td>
+	<td data-raid="soo" class="status status-in-progress"><div></div></td>
+					<td></td>
+	<td data-raid="hm" class="status status-in-progress"><div></div></td>
+					<td></td>
+	<td data-raid="brf" class="status status-incomplete"><div></div></td>
+		</tr>
+		<tr class="mythic">
+			<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+	<td data-raid="soo" class="status status-in-progress"><div></div></td>
+					<td></td>
+	<td data-raid="hm" class="status status-incomplete"><div></div></td>
+					<td></td>
+	<td data-raid="brf" class="status status-incomplete"><div></div></td>
 		</tr>
 	</tbody>
 			</table>
@@ -3082,16 +3230,17 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 		<script type="text/javascript">
 		//<![CDATA[
 		$(document).ready(function() {
-			new Summary.RaidProgression({ nTrivialRaids: 30, nOptimalRaids: 2, nChallengingRaids: 0  }, {
+			new Summary.RaidProgression({ nTrivialRaids: 32, nOptimalRaids: 2, nChallengingRaids: 0  }, {
 		mc: {
 			name: "Molten Core",
-			playerLevel: 60,
+			playerLevel: 100,
 			nPlayers: 40,
 			location: "Blackrock Mountain",
 			expansion: 0,
 			heroicMode: false,
-			bosses: 	[
-			{ name: "Ragnaros", nKills: 1 }
+			mythicMode: false,
+		]]><![CDATA[	bosses: 	[
+			{ name: "Ragnaros", nKills: 4 }
 ]
 		},
 		bwl: {
@@ -3101,19 +3250,21 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Blackrock Mountain",
 			expansion: 0,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Nefarian", nKills: 0 }
+			{ name: "Nefarian", nKills: 2 }
 ]
 		},
 		aq10: {
-			name: "Ruins of Ahn\'Qiraj",
+			name: "R]]><![CDATA[uins of Ahn\'Qiraj",
 			playerLevel: 60,
 			nPlayers: 10,
 			location: "Silithus",
 			expansion: 0,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Ossirian the Unscarred", nKills: 0 }
+			{ name: "Ossirian the Unscarred", nKills: 1 }
 ]
 		},
 		aq40: {
@@ -3123,8 +3274,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Silithus",
 			expansion: 0,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "C\'Thun", nKills: 1 }
+			{ name: "C\'Thun", nKills: 2 }
 ]
 		},
 		kar: {
@@ -3134,8 +3286,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Deadwind Pass",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Prince Malchezaar", nKills: 0 }
+			{ name: "Prince Malchezaar", nKills: 1 }
 ]
 		},
 		mag: {
@@ -3145,8 +3298,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Hellfire Peninsula",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Magtheridon", nKills: 0 }
+			{ name: "Magtheridon", nKills: 2 }
 ]
 		},
 		gru: {
@@ -3156,8 +3310,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Blade\'s Edge Mountains",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Gruul the Dragonkiller", nKills: 1 }
+			{ name: "Gruul the Dragonkiller", nKills: 2 }
 ]
 		},
 		ssc: {
@@ -3167,8 +3322,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Zangarmarsh",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Lady Vashj", nKills: 0 }
+			{ name: "Lady Vashj", nKills: 1 }
 ]
 		},
 		tk: {
@@ -3178,8 +3334,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Netherstorm",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Kael\'thas Sunstrider", nKills: 2 }
+			{ name: "Kael\'thas Sunstrider", nKills: 4 }
 ]
 		},
 		mh: {
@@ -3189,8 +3346,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Caverns of Time",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Archimonde", nKills: 0 }
+			{ name: "Archimonde", nKills: 1 }
 ]
 		},
 		bt: {
@@ -3200,8 +3358,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Shadowmoon Valley",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Illidan Stormrage", nKills: 1 }
+			{ name: "Illidan Stormrage", nKills: 4 }
 ]
 		},
 		sp: {
@@ -3211,8 +3370,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Isle of Quel\'Danas",
 			expansion: 1,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Kil\'jaeden", nKills: 0 }
+			{ name: "Kil\'jaeden", nKills: 1 }
 ]
 		},
 		voa: {
@@ -3222,6 +3382,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Wintergrasp",
 			expansion: 2,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
 			{ name: "Archavon the Stone Watcher", nKills: 2 },
 			{ name: "Emalon the Storm Watcher", nKills: 2 },
@@ -3236,22 +3397,23 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Dragonblight",
 			expansion: 2,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Anub\'Rekhan", nKills: 1 },
-			{ name: "Grand Widow Faerlina", nKills: 1 },
-			{ name: "Maexxna", nKills: 1 },
-			{ name: "Noth the Plaguebringer", nKills: 1 },
-			{ name: "Heigan the Unclean", nKills: 1 },
-			{ name: "Loatheb", nKills: 1 },
-			{ name: "Instructor Razuvious", nKills: 1 },
-			{ name: "Gothik the Harvester", nKills: 1 },
-			{ name: "The Four Horsemen", nKills: 1 },
-			{ name: "Patchwerk", nKills: 1 },
-			{ name: "Grobbulus", nKills: 1 },
-			{ name: "Gluth", nKills: 1 },
-			{ name: "Thaddius", nKills: 1 },
-			{ name: "Sapphiron", nKills: 1 },
-			{ name: "Kel\'Thuzad", nKills: 0 }
+			{ name: "Anub\'Rekhan", nKills: 2 },
+			{ name: "Grand Widow Faerlina", nKills: 2 },
+			{ name: "Maexxna", nKills: 2 },
+			{ name: "Noth the Plaguebringer", nKills: 3 },
+			{ name: "Heigan the Unclean", nKills: 3 },
+			{ name: "Loatheb", nKills: 3 },
+			{ name: "Instructor Razuvious", nKills: 3 },
+			{ name: "Gothik the Harvester", nKills: 3 },
+			{ name: "The Four Horsemen", nKills: 3 },
+			{ name: "Patchwerk", nKills: 4 },
+			{ name: "Grobbulus", nKills: 4 },
+			{ name: "Gluth", nKills: 4 },
+			{ name: "Thaddius", nKills: 4 },
+			{ name: "Sapphiron", nKills: 4 },
+			{ name: "Kel\'Thuzad", nKills: 3 }
 ]
 		},
 		os: {
@@ -3261,8 +3423,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Dragonblight",
 			expansion: 2,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Sartharion", nKills: 2 }
+			{ name: "Sartharion", nKills: 5 }
 ]
 		},
 		eoe: {
@@ -3272,8 +3435,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Borean Tundra",
 			expansion: 2,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Malygos", nKills: 1 }
+			{ name: "Malygos", nKills: 2 }
 ]
 		},
 		uld: {
@@ -3283,21 +3447,22 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "The Storm Peaks",
 			expansion: 2,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Flame Leviathan", nKills: 0 },
-			{ name: "Ignis the Furnace Master", nKills: 0, optional: true },
-			{ name: "Razorscale", nKills: 0, optional: true },
-			{ name: "XT-002 Deconstructor", nKills: 0 },
-			{ name: "The Assembly of Iron", nKills: 0 },
-			{ name: "Kologarn", nKills: 0 },
-			{ name: "Auriaya", nKills: 0 },
-			{ name: "Hodir", nKills: 0 },
-			{ name: "Thorim", nKills: 0 },
-			{ name: "Freya", nKills: 0 },
-			{ name: "Mimiron", nKills: 0 },
-			{ name: "General Vezax", nKills: 0 },
-			{ name: "Yogg-Saron", nKills: 0 },
-			{ name: "Algalon the Observer", nKills: 0, optional: true }
+			{ name: "Flame Leviathan", nKills: 5 },
+			{ name: "Ignis the Furnace Master", nKills: 4, optional: true },
+			{ name: "Razorscale", nKills: 4, optional: true },
+			{ name: "XT-002 Deconstructor", nKills: 5 },
+			{ name: "The Assembly of Iron", nKills: 4 },
+			{ name: "Kologarn", nKills: 5 },
+			{ name: "Auriaya", nKills: 5 },
+			{ name: "Hodir", nKills: 5 },
+			{ name: "Thorim", nKills: 5 },
+			{ name: "Freya", nKills: 5 },
+			{ name: "Mimiron", nKills: 5 },
+			{ name: "General Vezax", nKills: 5 },
+			{ name: "Yogg-Saron", nKills: 5 },
+			{ name: "Algalon the Observer", nKills: 2, optional: true }
 ]
 		},
 		ony: {
@@ -3307,8 +3472,9 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Dustwallow Marsh",
 			expansion: 0,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Onyxia", nKills: 2 }
+			{ name: "Onyxia", nKills: 4 }
 ]
 		},
 		toc: {
@@ -3318,12 +3484,13 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Icecrown",
 			expansion: 2,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Northrend Beasts", nKills: 0, nHeroicKills: 0 },
-			{ name: "Lord Jaraxxus", nKills: 0, nHeroicKills: 0 },
-			{ name: "Faction Champions", nKills: 0, nHeroicKills: 0 },
-			{ name: "Val\'kyr Twins", nKills: 0, nHeroicKills: 0 },
-			{ name: "Anub\'arak", nKills: 0, nHeroicKills: 0 }
+			{ name: "Northrend Beasts", nKills: 1, nHeroicKills: 1 },
+			{ name: "Lord Jaraxxus", nKills: 1, nHeroicKills: 1 },
+			{ name: "Faction Champions", nKills: 1, nHeroicKills: 1 },
+			{ name: "Val\'kyr Twins", nKills: 1, nHeroicKills: 1 },
+			{ name: "Anub\'arak", nKills: 1, nHeroicKills: 0 }
 ]
 		},
 		icc: {
@@ -3333,19 +3500,20 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Icecrown",
 			expansion: 2,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Lord Marrowgar", nKills: 1, nHeroicKills: 0 },
-			{ name: "Lady Deathwhisper", nKills: 1, nHeroicKills: 0 },
-			{ name: "Icecrown Gunship Battle", nKills: 1, nHeroicKills: 0 },
-			{ name: "Deathbringer Saurfang", nKills: 1, nHeroicKills: 0 },
-			{ name: "Rotface", nKills: 1, nHeroicKills: 0 },
-			{ name: "Festergut", nKills: 1, nHeroicKills: 0 },
-			{ name: "Professor Putricide", nKills: 1, nHeroicKills: 0 },
-			{ name: "Blood Council", nKills: 1, nHeroicKills: 0 },
-			{ name: "Blood-Queen Lana\'thel", nKills: 1, nHeroicKills: 0 },
-			{ name: "Valithria Dreamwalker", nKills: 1, nHeroicKills: 0 },
-			{ name: "Sindragosa", nKills: 1, nHeroicKills: 0 },
-			{ name: "The Lich King", nKills: 1, nHeroicKills: 0 }
+			{ name: "Lord Marrowgar", nKills: 2, nHeroicKills: 3 },
+			{ name: "Lady Deathwhisper", nKills: 2, nHeroicKills: 4 },
+			{ name: "Icecrown Gunship Battle", nKills: 2, nHeroicKills: 5 },
+			{ name: "Deathbringer Saurfang", nKills: 2, nHeroicKills: 5 },
+			{ name: "Rotface", nKills: 2, nHeroicKills: 5 },
+			{ name: "Festergut", nKills: 2, nHeroicKills: 5 },
+			{ name: "Professor Putricide", nKills: 2, nHeroicKills: 5 },
+			{ name: "Blood Council", nKills: 2, nHeroicKills: 5 },
+			{ name: "Blood-Queen Lana\'thel", nKills: 2, nHeroicKills: 5 },
+			{ name: "Valithria Dreamwalker", nKills: 2, nHeroicKills: 5 },
+			{ name: "Sindragosa", nKills: 2, nHeroicKills: 5 },
+			{ name: "The Lich King", nKills: 2, nHeroicKills: 4 }
 ]
 		},
 		rs: {
@@ -3355,6 +3523,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Dragonblight",
 			expansion: 2,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
 			{ name: "Halion", nKills: 2, nHeroicKills: 0 }
 ]
@@ -3366,6 +3535,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Tol Barad",
 			expansion: 3,
 			heroicMode: false,
+			mythicMode: false,
 			bosses: 	[
 			{ name: "Argaloth", nKills: 0 },
 			{ name: "Occu\'thar", nKills: 0 },
@@ -3379,13 +3549,14 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Blackrock Mountain",
 			expansion: 3,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Omnotron Defense System", nKills: 0, nHeroicKills: 0 },
-			{ name: "Magmaw", nKills: 0, nHeroicKills: 0 },
-			{ name: "Atramedes", nKills: 0, nHeroicKills: 0 },
-			{ name: "Chimaeron", nKills: 0, nHeroicKills: 0 },
-			{ name: "Maloriak", nKills: 0, nHeroicKills: 0 },
-			{ name: "Nefarian\'s End", nKills: 0, nHeroicKills: 0 }
+			{ name: "Omnotron Defense System", nKills: 0, nHeroicKills: 1 },
+			{ name: "Magmaw", nKills: 0, nHeroicKills: 1 },
+			{ name: "Atramedes", nKills: 0, nHeroicKills: 1 },
+			{ name: "Chimaeron", nKills: 0, nHeroicKills: 1 },
+			{ name: "Maloriak", nKills: 0, nHeroicKills: 1 },
+			{ name: "Nefarian\'s End", nKills: 0, nHeroicKills: 1 }
 ]
 		},
 		bot: {
@@ -3395,6 +3566,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Twilight Highlands",
 			expansion: 3,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
 			{ name: "Halfus Wyrmbreaker", nKills: 0, nHeroicKills: 0 },
 			{ name: "Theralion and Valiona", nKills: 0, nHeroicKills: 0 },
@@ -3410,6 +3582,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Uldum",
 			expansion: 3,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
 			{ name: "The Conclave of Wind", nKills: 0, nHeroicKills: 0 },
 			{ name: "Al\'Akir", nKills: 0, nHeroicKills: 0 }
@@ -3422,14 +3595,15 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Mount Hyjal",
 			expansion: 3,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Beth\'tilac", nKills: 0, nHeroicKills: 0 },
-			{ name: "Lord Rhyolith", nKills: 0, nHeroicKills: 0 },
-			{ name: "Shannox", nKills: 0, nHeroicKills: 0 },
-			{ name: "Alysrazor", nKills: 0, nHeroicKills: 0 },
-			{ name: "Baleroc, the Gatekeeper", nKills: 0, nHeroicKills: 0 },
-			{ name: "Majordomo Staghelm", nKills: 0, nHeroicKills: 0 },
-			{ name: "Ragnaros", nKills: 0, nHeroicKills: 0 }
+			{ name: "Beth\'tilac", nKills: 1, nHeroicKills: 2 },
+			{ name: "Lord Rhyolith", nKills: 1, nHeroicKills: 2 },
+			{ name: "Shannox", nKills: 1, nHeroicKills: 1 },
+			{ name: "Alysrazor", nKills: 2, nHeroicKills: 1 },
+			{ name: "Baleroc, the Gatekeeper", nKills: 2, nHeroicKills: 1 },
+			{ name: "Majordomo Staghelm", nKills: 1, nHeroicKills: 2 },
+			{ name: "Ragnaros", nKills: 2, nHeroicKills: 1 }
 ]
 		},
 		ds: {
@@ -3439,15 +3613,16 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Dragon Soul",
 			expansion: 3,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Morchok", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Warlord Zon\'ozz", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Yor\'sahj the Unsleeping", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Hagara the Stormbinder", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Ultraxion", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Warmaster Blackhorn", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Spine of Deathwing", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Madness of Deathwing", nLfrKills: 0, nKills: 0, nHeroicKills: 0 }
+			{ name: "Morchok", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Warlord Zon\'ozz", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Yor\'sahj the Unsleeping", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Hagara the Stormbinder", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Ultraxion", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Warmaster Blackhorn", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Spine of Deathwing", nLfrKills: 0, nKills: 1, nHeroicKills: 1 },
+			{ name: "Madness of Deathwing", nLfrKills: 0, nKills: 1, nHeroicKills: 1 }
 ]
 		},
 		mv: {
@@ -3457,13 +3632,14 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Kun-Lai Summit",
 			expansion: 4,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "The Stone Guard", nLfrKills: 1, nKills: 1, nHeroicKills: 0 },
-			{ name: "Feng the Accursed", nLfrKills: 1, nKills: 1, nHeroicKills: 0 },
-			{ name: "Gara\'jal the Spiritbinder", nLfrKills: 2, nKills: 1, nHeroicKills: 0 },
-			{ name: "The Spirit Kings", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
-			{ name: "Elegon", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
-			{ name: "Will of the Emperor", nLfrKills: 0, nKills: 0, nHeroicKills: 0 }
+			{ name: "The Stone Guard", nLfrKills: 1, nKills: 1, nHeroicKills: 1 },
+			{ name: "Feng the Accursed", nLfrKills: 1, nKills: 2, nHeroicKills: 0 },
+			{ name: "Gara\'jal the Spiritbinder", nLfrKills: 2, nKills: 2, nHeroicKills: 0 },
+			{ name: "The Spirit Kings", nLfrKills: 0, nKills: 2, nHeroicKills: 0 },
+			{ name: "Elegon", nLfrKills: 0, nKills: 2, nHeroicKills: 0 },
+			{ name: "Will of the Emperor", nLfrKills: 0, nKills: 1, nHeroicKills: 0 }
 ]
 		},
 		hf: {
@@ -3473,13 +3649,14 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Dread Wastes",
 			expansion: 4,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Imperial Vizier Zor\'lok", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Blade Lord Ta\'yak", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Garalon", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Wind Lord Mel\'jarak", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Amber-Shaper Un\'sok", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Grand Empress Shek\'zeer", nLfrKills: 0, nKills: 0, nHeroicKills: 0 }
+			{ name: "Imperial Vizier Zor\'lok", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
+			{ name: "Blade Lord Ta\'yak", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
+			{ name: "Garalon", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
+			{ name: "Wind Lord Mel\'jarak", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
+			{ name: "Amber-Shaper Un\'sok", nLfrKills: 0, nKills: 1, nHeroicKills: 0 },
+			{ name: "Grand Empress Shek\'zeer", nLfrKills: 0, nKills: 1, nHeroicKills: 0 }
 ]
 		},
 		tes: {
@@ -3489,11 +3666,12 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "The Veiled Stair",
 			expansion: 4,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Protectors of the Endless", nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Tsulong", nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Lei Shi", nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Sha of Fear", nLfrKills: 1, nKills: 0, nHeroicKills: 0 }
+			{ name: "Protectors of the Endless", nLfrKills: 6, nKills: 0, nHeroicKills: 0 },
+			{ name: "Tsulong", nLfrKills: 5, nKills: 0, nHeroicKills: 0 },
+			{ name: "Lei Shi", nLfrKills: 4, nKills: 0, nHeroicKills: 0 },
+			{ name: "Sha of Fear", nLfrKills: 4, nKills: 0, nHeroicKills: 0 }
 ]
 		},
 		tot: {
@@ -3503,44 +3681,85 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 			location: "Isle of Thunder",
 			expansion: 4,
 			heroicMode: true,
+			mythicMode: false,
 			bosses: 	[
-			{ name: "Jin\'rokh the Breaker", nLfrKills: 2, nKills: 0, nHeroicKills: 0 },
-			{ name: "Horridon", nLfrKills: 2, nKills: 0, nHeroicKills: 0 },
-			{ name: "Council of Elders", nLfrKills: 2, nKills: 0, nHeroicKills: 0 },
-			{ name: "Tortos", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Megaera", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Ji-Kun", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Durumu the Forgotten", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Primordius", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Dark Animus", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Iron Qon", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Twin Consorts", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Lei Shen", nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
+			{ name: "Jin\'rokh the Breaker", nLfrKills: 6, nKills: 1, nHeroicKills: 1 },
+			{ name: "Horridon", nLfrKills: 6, nKills: 1, nHeroicKills: 1 },
+			{ name: "Council of Elders", nLfrKills: 5, nKills: 1, nHeroicKills: 1 },
+			{ name: "Tortos", nLfrKills: 2, nKills: 1, nHeroicKills: 1 },
+			{ name: "Megaera", nLfrKills: 3, nKills: 1, nHeroicKills: 1 },
+			{ name: "Ji-Kun", nLfrKills: 3, nKills: 1, nHeroicKills: 1 },
+			{ name: "Durumu the Forgotten", nLfrKills: 5, nKills: 1, nHeroicKills: 1 },
+			{ name: "Primordius", nLfrKills: 5, nKills: 1, nHeroicKills: 1 },
+			{ name: "Dark Animus", nLfrKills: 5, nKills: 0, nHeroicKills: 0 },
+			{ name: "Iron Qon", nLfrKills: 6, nKills: 0, nHeroicKills: 0 },
+			{ name: "Twin Consorts", nLfrKills: 6, nKills: 0, nHeroicKills: 0 },
+			{ name: "Lei Shen", nLfrKills: 6, nKills: 0, nHeroicKills: 0 },
 			{ name: "Ra-den", nHeroicKills: 0, optional: true }
 ]
 		},
 		soo: {
 			name: "Siege of Orgrimmar",
 			playerLevel: 90,
-			nPlayers: -10,
+			nPlayers: -20,
 			location: "Orgrimmar",
 			expansion: 4,
 			heroicMode: true,
+			mythicMode: true,
 			bosses: 	[
-			{ name: "Immerseus", nFlexKills: 1, nLfrKills: 4, nKills: 0, nHeroicKills: 0 },
-			{ name: "The Fallen Protectors", nFlexKills: 1, nLfrKills: 4, nKills: 0, nHeroicKills: 0 },
-			{ name: "Norushen", nFlexKills: 1, nLfrKills: 3, nKills: 0, nHeroicKills: 0 },
-			{ name: "Sha of Pride", nFlexKills: 1, nLfrKills: 3, nKills: 0, nHeroicKills: 0 },
-			{ name: "Galakras", nFlexKills: 1, nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Iron Juggernaut", nFlexKills: 1, nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Kor\'kron Dark Shaman", nFlexKills: 1, nLfrKills: 2, nKills: 0, nHeroicKills: 0 },
-			{ name: "General Nazgrim", nFlexKills: 1, nLfrKills: 2, nKills: 0, nHeroicKills: 0 },
-			{ name: "Malkorok", nFlexKills: 0, nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Spoils of Pandaria", nFlexKills: 0, nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Thok the Bloodthirsty", nFlexKills: 0, nLfrKills: 1, nKills: 0, nHeroicKills: 0 },
-			{ name: "Siegecrafter Blackfuse", nFlexKills: 0, nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Paragons of the Klaxxi", nFlexKills: 0, nLfrKills: 0, nKills: 0, nHeroicKills: 0 },
-			{ name: "Garrosh Hellscream", nFlexKills: 0, nLfrKills: 0, nKills: 0, nHeroicKills: 0 }
+			{ name: "Immerseus", nLfrKills: 9, nKills: 13, nHeroicKills: 8, nMythicKills: 5 },
+			{ name: "The Fallen Protectors", nLfrKills: 8, nKills: 13, nHeroicKills: 8, nMythicKills: 5 },
+			{ name: "Norushen", nLfrKills: 6, nKills: 12, nHeroicKills: 7, nMythicKills: 5 },
+			{ name: "Sha of Pride", nLfrKills: 7, nKills: 12, nHeroicKills: 7, nMythicKills: 2 },
+			{ name: "Galakras", nLfrKills: 5, nKills: 12, nHeroicKills: 6, nMythicKills: 2 },
+			{ name: "Iron Juggernaut", nLfrKills: 5, nKills: 12, nHeroicKills: 7, nMythicKills: 3 },
+			{ name: "Kor\'kron Dark Shaman", nLfrKills: 6, nKills: 12, nHeroicKills: 7, nMythicKills: 2 },
+			{ name: "General Nazgrim", nLfrKills: 6, nKills: 11, nHeroicKills: 0, nMythicKills: 1 },
+			{ name: "Malkorok", nLfrKills: 1, nKills: 5, nHeroicKills: 6, nMythicKills: 2 },
+			{ name: "Spoils of Pandaria", nLfrKills: 1, nKills: 5, nHeroicKills: 6, nMythicKills: 1 },
+			{ name: "Thok the Bloodthirsty", nLfrKills: 1, nKills: 6, nHeroicKills: 6, nMythicKills: 0 },
+			{ name: "Siegecrafter Blackfuse", nLfrKills: 2, nKills: 11, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Paragons of the Klaxxi", nLfrKills: 2, nKills: 15, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Garrosh Hellscream", nLfrKills: 3, nKills: 14, nHeroicKills: 0, nMythicKills: 1 }
+]
+		},
+		hm: {
+			name: "Highmaul",
+			playerLevel: 100,
+			nPlayers: -20,
+			location: "Nagrand",
+			expansion: 5,
+			heroicMode: true,
+			mythicMode: true,
+			bosses: 	[
+			{ name: "Kargath Bladefist", nLfrKills: 1, nKills: 3, nHeroicKills: 5, nMythicKills: 0 },
+			{ name: "The Butcher", nLfrKills: 1, nKills: 3, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Brackenspore", nLfrKills: 1, nKills: 4, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Tectus", nLfrKills: 1, nKills: 4, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Twin Ogron", nLfrKills: 0, nKills: 3, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Ko\'ragh", nLfrKills: 0, nKills: 3, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Imperator Mar\'gok", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 }
+]
+		},
+		brf: {
+			name: "Blackrock Foundry",
+			playerLevel: 100,
+			nPlayers: -20,
+			location: "Gorgrond",
+			expansion: 5,
+			heroicMode: true,
+			mythicMode: true,
+			bosses: 	[
+			{ name: "Oregorger", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Gruul", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "The Blast Furnace", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Hans\'gar and Franzok", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Flamebender Ka\'graz", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Kromog", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Beastlord Darmac", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Operator Thogar", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "The Iron Maidens", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 },
+			{ name: "Blackhand", nLfrKills: 0, nKills: 0, nHeroicKills: 0, nMythicKills: 0 }
 ]
 		}
 			});
@@ -3553,7 +3772,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 	<span class="clear"><!-- --></span>
 
 				<div class="summary-lastupdate">
-					Last updated on 17/04/2014
+					Last updated on 22/12/2014
 				</div>
 
 			</div>
@@ -3567,7 +3786,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 		<script type="text/javascript">
 		//<![CDATA[
 		$(function() {
-			Profile.url = '/wow/en/character/silvermoon/Alexodormu/summary';
+			Profile.url = '/wow/en/character/silvermoon/Lichbaine/summary';
 		});
 
 			var MsgProfile = {
@@ -3603,7 +3822,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 					12: "Trinket",
 					15: "Ranged",
 					16: "Back",
-					19: "Tabard",
+			]]><![CDATA[		19: "Tabard",
 					21: "Main Hand",
 					22: "Off Hand",
 					28: "Relic",
@@ -3740,6 +3959,16 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 					unknown: "You must learn Mastery from your trainer before this will have an effect.",
 					unspecced: "You must select a talent specialization in order to activate Mastery."
 				},
+				crit: {
+					title: "Critical Strike {0}%",
+					description: "Chance for extra effectiveness on attack and heals.",
+					description2: "Critical Strike: {0} [+{1}%]"
+				},
+				haste: {
+					title: "Haste +{0}%",
+					description: "Increases attack speed and spell casting speed.",
+					description2: "Haste: {0} [+{1}%]"
+				},
 				meleeDps: {
 					title: "Damage per Second"
 				},
@@ -3863,6 +4092,31 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 				shadowRes: {
 					title: "Shadow Resistance {0}",
 					description: "Reduces Shadow damage taken by an average of {0}%."
+				},
+				bonusArmor: {
+					title: "Bonus Armor {0}",
+					description: "Total Armor Physical Damage Reduction: {0}%",
+					description2: "Increases Attack Power by {0}."
+				},
+				multistrike: {
+					title: "Multistrike {0}%",
+					description: "Grants two {0}% chances to deliver extra attacks or heals for {1}% of normal value.",
+					description2: "Multistrike: {0} [{1}%]"
+				},
+				leech: {
+					title: "Leech {0}%",
+					description: "Returns a portion of your damage and healing as healing to you.",
+					description2: "Leech: {0} [+{1}%]"
+				},
+				versatility: {
+					title: "Versatility {0}%/{1}%",
+					description: "Increases damage and healing done by {0}% and decreases damage taken by {1}%.",
+					description2: "Versatility: {0} [{1}%/{2}%]"
+				},
+				avoidance: {
+					title: "Avoidance {0}%",
+					description: "Reduces damage taken from area of effect attacks.",
+					description2: "Avoidance: {0} [+{1}%]"
 				}
 			},
 			recentActivity: {
@@ -3874,6 +4128,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 					flex: "(Flexible)",
 					normal: "(Normal)",
 					heroic: "(Heroic)",
+					mythic: "(Mythic)",
 					complete: "{0}% complete ({1}/{2})",
 					optional: "(optional)"
 					}
@@ -3889,8 +4144,7 @@ Reduces the cast time of your Death Gate spell by 60%.				</div>
 
 </div>
 </div>
-</div>
-<?php include('webkit/footer'); ?>
+</div><?php include('webkit/footer'); ?>
 </div>
 <script>
 //<![CDATA[

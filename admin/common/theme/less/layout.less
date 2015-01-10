@@ -1,0 +1,343 @@
+//
+// Layout
+// --------------------------------------------------
+
+// General
+// -------------------------
+
+.innerLR { padding-left: @spacing; padding-right: @spacing; position: relative; }
+.innerTB { padding-top: @spacing; padding-bottom: @spacing; position: relative; }
+.innerAll { padding: @spacing; position: relative; }
+.innerL { padding-left: @spacing; position: relative; }
+.innerR { padding-right: @spacing; position: relative; }
+.innerT { padding-top: @spacing; position: relative; }
+.innerB { padding-bottom: @spacing; position: relative; }
+
+// Other Utilities
+// -------------------------
+
+.center { text-align: center !important; }
+.margin-bottom-none { margin-bottom: 0 !important; }
+.margin-right-none { margin-right: 0 !important; }
+.margin-none { margin: 0 !important; }
+.padding-none { padding: 0 !important; }
+.border-none { border: none !important; }
+.box-shadow-none { #reset .boxShadow(); }
+.padding-none-TB { padding-bottom: 0 !important; padding-top: 0 !important; }
+.relativeWrap { position: relative; }
+.text-weight-regular { font-weight: normal !important; }
+.text-primary { color: @primaryColor !important; }
+.text-regular { color: #444 !important; }
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-faded { color: #d7d7d7 !important; }
+.text-large { font-size: 35px !important; line-height: 40px !important; }
+.text-xlarge { font-size: 50px; line-height: 50px; }
+.text-xxlarge { font-size: 70px; line-height: 70px; }
+.text-underline { text-decoration: underline; }
+.text-right { text-align: right !important; }
+.inline-block { display: inline-block !important; }
+.overflow-y-auto { position: relative; overflow: hidden; overflow-y: auto; }
+.overflow-hidden { position: relative; overflow: hidden; }
+.containerBg { background: @containerBg; }
+.whiteBg { background: #fff; }
+
+// Grid
+// -------------------------
+
+.row-merge {
+	position: relative;
+	> [class*="span"] ~ [class*="span"] {
+		margin-left: 0;
+		&:after { position: absolute; top: 0; bottom: 0; width: 1px; background: @contentBorder; content: ""; }
+	}
+	> [class*="span"] ~ [class*="span3"] { width: 25.26315789473684%; }
+	> [class*="span"] ~ [class*="span4"] { width: 33.68421052631579%; }
+	> [class*="span"] ~ [class*="span5"] { width: 42.10526315789473%; }
+	> [class*="span"] ~ [class*="span6"] { width: 50.74626865671642%; }
+	> [class*="span"] ~ [class*="span8"] { width: 67.66169154228855%; }
+	> [class*="span"] ~ [class*="span9"] { width: 75.78947368421052%; }
+	&.border-top, & ~ & { border-top: 1px solid @contentBorder; }
+	&.border-bottom { border-bottom: 1px solid @contentBorder; }
+	.fill-column {
+		&:before { position: absolute; top: 0; bottom: 0; width: inherit; background: @widgetBgGray; content: ""; }
+	}
+}
+
+// Main Wrapper
+// -------------------------
+
+#wrapper {
+	overflow: hidden;
+	
+	// smooth momentum scrolling on iOS
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	
+	float: left;
+	width: 100%;
+}
+
+// Content
+// -------------------------
+
+html {
+	body > .container-fluid { 
+		padding: 0;
+		background: @containerBg;
+		&.fixed { 
+			margin: 30px auto 30px;
+			margin: 0 auto;
+			width: 1024px;
+		}
+		&.documentation {
+			background: #fff;
+		}
+	}
+	&.sidebar {
+		body > .container-fluid.fixed.menu-left {
+			border-right: 1px solid @contentBorder;
+		}
+		body > .container-fluid.fixed.menu-right {
+			border-left: 1px solid @contentBorder;
+		}
+	}
+	&:not(.sidebar) {
+		body > .container-fluid.fixed.menu-left {
+			border-left: 1px solid @contentBorder;
+			border-right: 1px solid @contentBorder;
+		}
+	}
+}
+
+#content { 
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	min-width: 320px;
+	min-height: 500px;
+	padding: 0 0 @spacing;
+	background: @containerBg;
+	> .menubar { border-left: none; border-right: none; }
+	> p { padding: 0 @spacing 5px; }
+	> h1, > h2, > h3, > h4, > h5, > h6 { margin: @spacing+3 @spacing @spacing; }
+	> .filter-bar {
+		border-right: none;
+		border-left: none;
+	}
+	.heading-buttons { margin-top: @spacing; }
+	.heading-arrow {
+		text-transform: uppercase;
+		border-bottom: 1px solid @contentBorder;
+		margin: 0 0 @spacing;
+		padding: 0 @spacing;
+		font-size: 11pt;
+		height: 35px;
+		line-height: 30px;
+		position: relative;
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-bottom: 8px solid @contentBorder;
+			border-right: 8px solid transparent;
+			border-left: 8px solid transparent;
+			position: absolute;
+			bottom: 0;
+			left: 15px;
+		}
+		&.glyphicons { padding: 0 10px 0 40px; i:before { font-size: 17px; left: 15px; } }
+		&.margin-bottom-none { margin-bottom: 0; }
+	}
+	
+	> .widget { 
+		border-left: 0; 
+		border-right: 0;
+		.widget-head,
+		.widget-body {
+			border-left: 0; 
+			border-right: 0;
+		}
+		&:last-child { margin: 0; }
+	}
+	
+	> .table { 
+		border-left: none; border-right: none;
+		tr td:first-child { border-left: none; }
+	}
+}
+
+// Footer
+// -------------------------
+ 
+#footer {
+	font-weight: 600;
+	position: relative;
+	overflow: hidden;
+	z-index: 10000;
+	background: @footerBg;
+	text-align: center;
+	padding: 0 10px;
+	height: @footerHeight;
+	line-height: 48px;
+	a { color: #686868; text-decoration: underline; }
+}
+
+html.sidebar {
+	&.sidebar-full {
+		#content { margin: 0 0 0 @sidebarFullWidth; }
+		.menu-right { 
+			#content { margin: 0 @sidebarFullWidth 0 0; } 
+		}
+	}
+}
+
+// Sticky Sidebar & Footer always bottom
+// -------------------------
+@media (min-width: 768px)
+{
+	html.no-touch.sticky-sidebar.sidebar:not(.animations-gpu) {
+		body { overflow: hidden; }
+		&, body, 
+		body > .container-fluid,
+		#wrapper {
+			min-height: 100%;
+			height: 100%; 
+		}
+		#wrapper { margin-bottom: -@footerHeight; }
+		#menu { 
+			position: fixed;
+			bottom: 0;
+		}
+		#content { padding-bottom: @navbarHeight; }
+	}
+}
+
+// Sticky Top Menu
+// -------------------------
+
+@media (min-width: 768px)
+{
+	html.no-touch.sticky-top:not(.animations-gpu) {
+		#content { padding-top: @navbarHeight; }
+		.navbar.main {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10000;
+		}
+		&.menuh-bottom {
+			.navbar.main {
+				top: auto;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 10000;
+				border-bottom: none;
+				border-top: 1px solid @topnavBorder1;
+				.topnav > .dropdown {
+					> a {
+						.caret {
+							border-top-color: transparent;
+							border-top-width: 0;
+							border-bottom-color: @navbarText;
+							border-bottom-width: 4px;
+							border-bottom-style: solid;
+						}
+					}
+					> .dropdown-menu {
+						top: auto;
+						bottom: 100%;
+						> .dropdown > .dropdown-menu {
+							top: auto;
+							bottom: 100%;
+							margin-bottom: -28px;
+						}
+						&:before {
+							top: auto;
+							bottom: -7px;
+							border-top-width: 7px;
+							border-top-color: #fff;
+							border-bottom-width: 0;
+						}
+						&:after {
+							top: auto;
+							bottom: -6px;
+							border-top-width: 6px;
+							border-top-color: #fff;
+							border-bottom-width: 0;
+						}
+					}
+				}
+				.topnav > .mega-menu {
+					.mega-sub {
+						top: auto;
+						bottom: 100%;
+						margin-bottom: 1px;
+					}
+				}
+			}
+			&.front {
+				.navbar.main {
+					border-top: 1px solid @navbarSecondaryBorder;
+				}
+				#content {
+					padding-top: 0;
+					padding-bottom: @navbar2Height + @navbarSecondaryHeight + 1;
+				}
+			}
+			#footer {
+				display: none;
+			}
+			#content {
+				padding-top: 0;
+			}
+		}
+		&.sidebar {
+			&.sidebar-full {
+				.navbar.main { left: @sidebarFullWidth; }
+				.menu-right {
+					.navbar.main { left: 0; right: @sidebarFullWidth; }
+				}
+			}
+			.menu-hidden {
+				&.menu-left { 
+					.navbar.main { left: @sidebarHiddenWidth !important; right: 0 !important; }
+				}
+				&.menu-right { 
+					.navbar.main { right: @sidebarHiddenWidth !important; left: 0 !important; }
+				}
+			}
+		}
+		&.front {
+			#content { padding-top: @navbar2Height + @navbarSecondaryHeight + 1; margin: 0 !important; }
+		}
+	}
+}
+
+html.fixed {
+	&, body {
+		min-height: auto; 
+		height: auto;
+		overflow: visible;
+	}
+}
+body > .container-fluid.fixed {
+	min-height: auto;
+	height: auto;
+	#wrapper {
+		position: relative;
+		overflow: hidden;
+		min-height: auto;
+		height: auto;
+		margin: 0;
+	}
+	#menu {
+		position: absolute;
+		height: 100%;
+		min-height: 100%;
+		bottom: auto;
+	}
+}
