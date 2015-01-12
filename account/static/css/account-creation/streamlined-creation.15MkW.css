@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+#page-header .caption { margin-bottom: 0; }
+#page-header .privacy-message { margin: 0; }
+.section-box2 { margin-bottom: 0; }
+.parent-introduction { padding-bottom: 10px; border-bottom: 1px solid #AFADAC; }
+.parent-introduction p:first-child { margin-top: 0; }
+.parent-introduction p:last-child { margin-bottom: 0; }
+.privacy-message b { color: #000; }
+.parent-confirmation,
+.country-select { padding-top: 24px; }
+
+.parent-confirmation .inline-message { min-height: 32px; }
+
+.input-left { width: 300px; }
+.input-right { max-width: 680px; }
+.input-center { display: block; margin: 0 auto; }
+.submit-center { text-align: center; }
+
+.input-row-text .title-text,
+.input-row-text .label-text { max-width: 280px; }
+
+.input-row .input-required { color: #d3d1ce; visibility: hidden; }
+
+.input-row-note { margin-left: 300px; width: 630px; }
+.question-info { margin-top: -24px; margin-bottom: 0; }
+.toggle-note .input-note-content { width: 293px; }
+#countryCHINA { display: none; }
+
+.input-row-checkbox .input-left { width: 300px; }
+.input-row-checkbox .input-right { width: 680px; }
+.input-row-checkbox .label-text { width: 595px; }
+.input-row-important .label-text { font-size: 14px; }
+
+.password-result { display: inline-block; vertical-align: middle; font: normal 13px/24px "Lucida Sans Unicode","Lucida Grande", "Arial", sans-serif; }
+.password-rating { display: inline-block; vertical-align: middle; width: 125px; height: 10px; margin: 7px 0; background: #bfbfbf; float: right; }
+.password-rating .rating { display: block; height: 10px; width: 0; }
+.password-rating .rating-default { width: 0; }
+.password-rating .rating-short { width: 25%; background: #8c8c8c; }
+.password-rating .rating-weak { width: 50%; background: #ff0000; }
+.password-rating .rating-fair { width: 75%; background: #ffc000; }
+.password-rating .rating-strong { width: 100%; background: #00b050; }
+.password-level { padding-top: 8px; }
+.password-level li { line-height: 16px; margin: 0 0 2px 0; font-size: 11px; }
+.password-level li .icon-16 { background-position: -160px -96px; vertical-align: top; }
+.password-level li.pass .icon-16 { background-position: -176px -96px; }
+.password-level li.fail .icon-16 { background-position: -160px -112px; }
+.password-level li .icon-16-label { width: 320px; }
+.password-level li.fail .icon-16-label { color: #730202; }
+.password-result strong.fail { color: #730202; }
+
+.radio-tabs { display: block; }
+.radio-tab { display: inline-block; vertical-align: bottom; margin: 0; padding: 0 10px 0 0; }
+.radio-tab:hover { background: #fff ; }
+.radio-tab:hover .label-text { color: #222; }
+.radio-tab.selected-tab { background: #fff; }
+.radio-tab.selected-tab .label-text { color: #222; }
+.radio-tab .label-text { color: #777; }
+
+.account-creation-agegating { color: #0b8820; }
+
+.submit-row .disabled { cursor: not-allowed; }
+
+.ipin-desc {padding:10px 0 0;}
+
+/* default note */
+.default-note-title { font-size: 14px; font-weight: bold; }
+.default-note-disc { padding: 5px 0 0; }
+.default-note-disc ul { padding-left: 15px; }
+.default-note-disc li { margin: 6px 0; list-style-type: disc; }
+
+/* success page */
+
+.account-success { background-image: url("../../images/icons/email-verification.4Idt5.gif"); background-repeat: no-repeat; background-position: 32px 32px; margin-bottom: 0; padding: 24px 32px 24px 128px; }
+.account-success .headline,
+.account-success .subcategory { margin: 0; }
+.account-success p { margin: .5em 0 0 0; }
+.account-verification .headline { font-size: 22px; }
+.account-name { margin: 24px 0; word-wrap: break-word; }
+.account-details .caption { color: #8d8d8d; }
+.parent-info { margin-top: 16px; font-weight: bold; }
+.parent-info strong { color: #393939; }
+.section-buttons { margin-top: 3em; }
+
+.agreement-check .tou-desc { width: 630px; }
+.creation .result-desc .notice-row .noticeDesc { width: 100%; }
+.alert-page .result-button { margin-top: 32px; }
+/* except */
+#mobilePhase2 .label-text { height: 58px; }
+.success-page .notice-row .noticeTitle { width: 100%; text-align: left; }
+.success-page .notice-row .noticeTitle{width:100%;text-align:left;}
+
+/* localization overrides */
+.it-it .inline-note,
+.pl-pl .inline-note ,
+.ru-ru .inline-note { width: 308px; line-height: 16px; }
+.it-it .inline-note .caption,
+.pl-pl .inline-note .caption,
+.ru-ru .inline-note .caption { line-height: 16px; }
+.it-it .password-rating { width: 90px; }
+.pl-pl .password-rating,
+.ru-ru .password-rating { width: 60px; }
+.zh-cn #creation { padding-top: 24px; }
+
+.creation .successful { padding-bottom: 70px; }
+.creation .successful p { margin: 0; padding: 0; }
+.creation .successful h6 { font-size: 16px; font-weight: bold; letter-spacing: -1px; }
+.creation .successful .title { font-size: 36px; }
+.creation .successful .successful-box { padding-top: 10px; font-size: 13px; }
+.creation .successful .successful-box .account-name { font-size: 28px; font-weight: bold; }
+.creation .successful .successful-desc { padding-top: 10px; }
+.creation .successful .successful-desc .next-list li { padding: 3px 0 3px 12px; line-height: 18px; background: url("../../images/icons/arrow-right-gray.1sUyG.png") 0 6px no-repeat; }
+.creation .successful .successful-desc .next-list li .noticeDesc { padding-top: 10px; }
+.creation .successful .creation-successful { margin-top: 30px; padding-left: 65px; background: url("../../images/creation/success-page.4cdBg.png") 5px 7px no-repeat; }
+.creation .successful .whats-next { margin-top: 30px; padding-left: 65px; background: url("../../images/creation/big-arrow-next.10Zhb.png") 5px 3px no-repeat; }
+.creation .successful .creation-game { margin: 30px 0 0 65px; padding-top: 30px; width: 926px; font-size: 13px; border-top: 1px solid #a2a2a2; background: url("../../images/creation/gradient-top.4Z6u2.jpg") center top no-repeat; }
+.creation .successful .creation-game.wow .creation-game-box { background: url("../../images/creation/play-wow.0d2J1.png") -7px 0 no-repeat; }
+.creation .successful .creation-game.sc2 .creation-game-box { background: url("../../images/creation/play-sc2.4PvFK.png") -7px 0 no-repeat; }
+.creation .successful .creation-game .successful-desc { padding-top: 20px; }
+.creation .successful .creation-game .creation-game-inside { padding-bottom: 30px; width: 100%; border-bottom: 1px solid #a2a2a2; background: url("../../images/creation/gradient-bottom.2KrRH.jpg") center bottom no-repeat; overflow: auto; }
+.creation .successful .creation-game .creation-game-box { float: left; min-height: 172px; padding-left: 137px; width: 340px; }
+.creation .successful .creation-game .creation-game-box h6 { font-size: 24px; font-weight: 900; }
+.creation .successful .creation-game .creation-game-box h6.subtitle { padding-top: 20px; font-size: 16px; font-weight: 900; }
+.creation .successful .creation-game .creation-game-box .subdesc { padding-top: 13px; }
+.creation .successful .creation-game .creation-game-box .play-igr { font-size: 16px; font-weight: bold; font-style: italic; }
+.creation .successful .creation-game .successful-box { float: right; margin-right: 11px; padding: 23px 25px; width: 298px; font-size: 13px; background: #c1c0bd; }
+.creation .successful .creation-game .successful-box .noticeDesc { margin-top: 15px; }
+.creation .successful .verification-completed { padding-left: 30px; background: url("../../images/icons/success-text.0Ji01.png") 13px 1px no-repeat; }
+.creation .email-verification-highlight { border: 1px solid #89959a; background: #c1c0bd; padding: 24px; margin-bottom: 2em; }
+.creation .email-verification-highlight img { float:left; margin-right:24px }
+.creation .email-verification-highlight h3 { font-size: 33px; line-height:2em }
+.creation .email-verification-highlight .play-now { font-size: 23px; line-height:1em }
+.creation .alert-page .result-desc .email-verification-highlight h6 { padding-bottom: 1em; }
