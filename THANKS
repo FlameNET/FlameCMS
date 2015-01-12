@@ -1,0 +1,16 @@
+= Flame.NET -- Thanks/credits file =
+
+FlameCMS is a derivation/rewrite of AquaFlameCMS, which was originally written
+by AquaFlameNET and theAdriann. Many people further helped AquaFlameNET
+by submitting bug reports, code patches, and suggestions. Thanks to the
+community! But we take the Updates to the next level by providing the best
+of the new PHP!
+
+Special thanks should go out to the Community. We have gained help from
+them many times in the creation of this project. Keep up the good work guys.
+
+Thanks go out to the following people for various patches/code (listed in the
+order they were added) (there may be duplicates or invalid names, most of them
+were extracted from commits):
+Doxramos, adomasalcore3, oneluiz, FailZorD, Trust123, caffeine239, s32ialx, Morgan Green, Baeumchen,
+GoGoS_AE.
