@@ -7,7 +7,6 @@ if(file_exists("install"))
 }
 ?>
 <?php require_once('webkit/config.php'); ?>
-<?php require_once('functions/function.time.php'); ?>
 <?php require_once('assets/lang/english.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
