@@ -30,7 +30,7 @@
 <div class="row-fluid row-merge border-top">
 <div class="span3">
 <div class="innerAll padding-bottom-none-phone">
-<a href="" class="widget-stats widget-stats-default widget-stats-4">
+<a href="update.php" class="widget-stats widget-stats-default widget-stats-4">
 <span class="txt">Updates</span>
 <span class="count">0</span>
 <span class="glyphicons warning_sign"><i></i></span>
@@ -98,24 +98,6 @@
 <!-- Themer -->
 <?php include('webkit/themer');?>
 <!-- // Themer END -->
-
-	<!-- Modal Gallery -->
-	<div id="modal-gallery" class="modal modal-gallery hide fade hidden-print" tabindex="-1">
-	    <div class="modal-header">
-	        <a class="close" data-dismiss="modal">&times;</a>
-	        <h3 class="modal-title"></h3>
-	    </div>
-	    <div class="modal-body"><div class="modal-image"></div></div>
-	    <div class="modal-footer">
-	        <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
-	        <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
-	        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
-	        <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
-	    </div>
-	</div>
-	<!-- // Modal Gallery END -->
-<!-- ADD HERE END -->
-<!-- // Stats Widgets END -->
 <?php include('webkit/jquery');?>
 </body>
 </html>

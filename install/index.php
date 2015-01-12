@@ -12,6 +12,7 @@ include("config.php");
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -89,7 +90,6 @@ include("config.php");
 								<?php
 	if (isset($_POST["Submit"])) {
 		$string = '<?php
-
 /**
 * Copyright (C) 2014 FlameCMS <YET TO BE DETERMINED>
 *
@@ -130,7 +130,6 @@ if (!isset($_SESSION))
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Language System END.
@@ -199,6 +198,14 @@ if (mysqli_connect_errno()) {
 | Info: CMS Connection System END.
 |--------------------------------------------------------------------------|
 */
+
+
+/*
+|--------------------------------------------------------------------------|
+| Functions CMS
+|--------------------------------------------------------------------------|
+*/
+include("functions/function.php");
 ';
 		$fp = fopen("../webkit/config.php", "w");
 		fwrite($fp, $string);
