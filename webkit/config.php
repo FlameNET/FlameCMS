@@ -114,4 +114,5 @@ if (mysqli_connect_errno()) {
 | Functions CMS
 |--------------------------------------------------------------------------|
 */
-include('functions/function.php');
+include( str_replace("//","/",dirname(__FILE__)."/") ."../functions/function.php");
+
