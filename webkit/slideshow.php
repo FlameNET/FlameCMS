@@ -1,10 +1,8 @@
 <div id="slideshow" class="ui-slideshow">
         <div class="slideshow">
 			<?php
-			$connect = mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
-			mysqli_set_charset($connect, "utf8");
-			$slideshows = "SELECT * FROM slideshows ORDER BY id ASC LIMIT 5";
-			$slideshows = mysqli_query($connect, $slideshows);
+			$mysqli->query("SET NAMES 'utf8'");
+			$slideshows = $mysqli->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 			$i=0;
 			while($slideshow = mysqli_fetch_array($slideshows))
 			{
@@ -22,9 +20,8 @@
 			}
 			$i++;
 			}
-			echo'
-        </div>';
 			?>
+        </div>
 
             <div class="paging">
                 <a href="javascript:;" class="prev" onclick="Slideshow.prev();"></a>
@@ -40,31 +37,29 @@
         <div class="mask"></div>
     </div>
 		<?php
-		$connect = mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
-		mysqli_set_charset($connect, "utf8");	
-		$slideshows = "SELECT * FROM slideshows ORDER BY id ASC LIMIT 5";
-		$slideshows = mysqli_query($connect, $slideshows);
+		$mysqli->query("SET NAMES 'utf8'");
+		$slideshows = $mysqli->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 		?>
 		<script type="text/javascript">
 		//<![CDATA[
         $(function() {
             Slideshow.initialize('#slideshow', [
 				<?php
-					$i=0; 
-					while($slideshow = mysqli_fetch_array($slideshows)){
-					echo '
-					{
-                    image: "assets/images/slideshows/'.$slideshow['image'].'",
-                    desc: "'.$slideshow['description'].'",
-                    title: "'.$slideshow['title'].'",
-                    url: "'.$slideshow['link'].'",
-                    id: "'.$slideshow['id'].'",
-					duration: '.$slideshow['duration'].'
-                }';
-					if($i!=4){echo',';}
-					$i++;
-					}
-					?>
+				$i=0; 
+				while($slideshow = mysqli_fetch_array($slideshows)){
+				echo '
+				{
+				image: "assets/images/slideshows/'.$slideshow['image'].'",
+				desc: "'.$slideshow['description'].'",
+				title: "'.$slideshow['title'].'",
+				url: "'.$slideshow['link'].'",
+				id: "'.$slideshow['id'].'",
+				duration: '.$slideshow['duration'].'
+				}';
+				if($i!=4){echo',';}
+				$i++;
+				}
+				?>
             ]);
 
         });

@@ -52,11 +52,12 @@ if (!isset($_SESSION))
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-$cms["title"]		= "FlameCMS";
-$cms["Facebook"] 	= "http://www.facebook.com/";
-$cms["Twitter"]  	= "http://twitter.com/";
-$cms["Youtube"]  	= "http://www.youtube.com/";
-$cms["Reddit"]   	= "http://www.reddit.com/";
+define("TITLE",		"FlameCMS");
+define("FACEBOOK", 	"https://www.facebook.com/");
+define("TWITTER",  	"https://twitter.com/");
+define("YOUTUBE",  	"https://www.youtube.com/");
+define("REDDIT",   	"https://www.reddit.com/");
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Community System END.
@@ -71,21 +72,24 @@ $cms["Reddit"]   	= "http://www.reddit.com/";
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */
-$cms_host			= "127.0.0.1";
-$cms_user			= "root";
-$cms_pass			= "password";
-$cms_db				= "cms";
-$cms_wdb			= "world";
-$cms_adb			= "auth";
-$cms_cdb			= "char";
+define('HOST',		'127.0.0.1');
+define('USER',		'root');
+define('PASSWORD',	'password');
+define('PORT',		'3306');
+define('DB',		'cms');
+define('AUTH',		'auth');
+define('CHARACTERS','characters');
+define('WORLD',		'world');
+
 /*
 |--------------------------------------------------------------------------|
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-$cms_core			= "webkit/";
-$cms_root			= "/";
-$cms_add			= "http://localhost/projects/FlameCMS/";
+define('BASE_URL',	'http://localhost/projects/FlameCMS/');
+define('CORE',		'webkit/"');
+define('ROOT',		'/');
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Connection Variables END.
@@ -98,9 +102,10 @@ $cms_add			= "http://localhost/projects/FlameCMS/";
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-$con=mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to Database: " . mysqli_connect_error();
+$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+
+if (mysqli_connect_error()) {
+	die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 }
 /*
 |--------------------------------------------------------------------------|
@@ -111,8 +116,17 @@ if (mysqli_connect_errno()) {
 
 /*
 |--------------------------------------------------------------------------|
+| Install CMS Required
+|--------------------------------------------------------------------------|
+*/
+if(file_exists("install"))
+{
+	header("Location: install");
+	die();
+}
+/*
+|--------------------------------------------------------------------------|
 | Functions CMS
 |--------------------------------------------------------------------------|
 */
 include( str_replace("//","/",dirname(__FILE__)."/") ."../functions/function.php");
-

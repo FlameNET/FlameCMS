@@ -1,11 +1,4 @@
 <!-- DO NOT TOUCH -->
-<?php
-if(file_exists("install"))
-{
-	header("Location: install");
-	die();
-}
-?>
 <?php require_once('webkit/config.php'); ?>
 <?php require_once('assets/lang/english.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
@@ -17,7 +10,7 @@ if(file_exists("install"))
 <!-- Description of CMS -->
 <?php include('webkit/desc'); ?>
 <!-- Description of CMS END -->
-<title><?php echo $cms['title']; ?></title>
+<title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <?php include('webkit/core'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
@@ -31,7 +24,7 @@ if(file_exists("install"))
 <!-- Search -->
 <?php include('webkit/search'); ?>
 <!-- Search END -->
-<h1 id="logo"><a href="/wow/en/"><?php echo $cms['title']; ?></a></h1>
+<h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <?php include('webkit/header'); ?>
 <!-- Header END -->

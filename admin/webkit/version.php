@@ -1,13 +1,11 @@
 <?php
-	$connect = mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
-	mysqli_set_charset($connect, "utf8");
+	$mysqli->query("SET NAMES 'utf8'");
 	if(isset($_GET['new'])){
 	$vers = intval($_GET['new']);
 	}else{
 		$vers = 0;
 	}
-	$vers_query = ("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
-	$vers_query = mysqli_query($connect, $vers_query);
+	$vers_query = $mysqli->query("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
 	$counter = 1;
 	
 	while($counter<=7 && $vers=mysqli_fetch_array($vers_query)){

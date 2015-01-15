@@ -34,16 +34,16 @@
 		<a href="#" target="_blank"></a>
 		</li>
 		<li class="facebook">
-		<a href="<?php echo $cms['Facebook']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> Facebook"></a>
+		<a href="<?php echo FACEBOOK ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Facebook"></a>
 		</li>
 		<li class="twitter">
-		<a href="<?php echo $cms['Twitter']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> Twitter"></a>
+		<a href="<?php echo TWITTER ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Twitter"></a>
 		</li>
 		<li class="youtube">
-		<a href="<?php echo $cms['Youtube']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> Youtube"></a>
+		<a href="<?php echo YOUTUBE ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Youtube"></a>
 		</li>
 		<li class="reddit">
-		<a href="<?php echo $cms['Reddit']; ?>" title="<?php echo $cms['title']; ?> <?php echo $cms_lang['11']; ?> reddit"></a>
+		<a href="<?php echo REDDIT ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> reddit"></a>
 		</li>
 	<span class="clear"><!-- --></span>
 	</ul>

@@ -71,17 +71,18 @@ include("config.php");
 								</p>
 								<section>
 									<form action="" method="post" name="install" id="install">
-									Database Host: <input type="text" name="hostname">
-									Database Username: <input type="text" name="username">
-									Database Password: <input type="password" name="password">
+									Database Host: <input type="text" name="hostname" placeholder="127.0.0.1">
+									Database Username: <input type="text" name="username" placeholder="root">
+									Database Password: <input type="password" name="password" placeholder="password">
+									Database Port: <input type="port" name="port" placeholder="3306">
 									<a href="#" title="First, create an empty database with this name!">Website Database:</a>
-									<input type="text" name="dbname">
+									<input type="text" name="dbname" placeholder="DB Name">
 									Auth Database:
-									<input type="text" name="authdb">
+									<input type="text" name="authdb" placeholder="Auth DB Name">
 									Characters Database:
-									<input type="text" name="chardb">
+									<input type="text" name="chardb" placeholder="Characters Db Name">
 									World Database:
-									<input type="text" name="worlddb">
+									<input type="text" name="worlddb" placeholder="World DB Name">
 									<a href="#" title="If you don't have a domain just add the following: http://localhost/">Domain:</a>
 									<input type="text" name="cfgdom">
 									<p><center><input type="submit" name="Submit" value="Install FlameCMS Now"></center></p>
@@ -143,11 +144,12 @@ if (!isset($_SESSION))
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-$cms["title"]		= "FlameCMS";
-$cms["Facebook"] 	= "http://www.facebook.com/";
-$cms["Twitter"]  	= "http://twitter.com/";
-$cms["Youtube"]  	= "http://www.youtube.com/";
-$cms["Reddit"]   	= "http://www.reddit.com/";
+define("TITLE",		"FlameCMS");
+define("FACEBOOK", 	"https://www.facebook.com/");
+define("TWITTER",  	"https://twitter.com/");
+define("YOUTUBE",  	"https://www.youtube.com/");
+define("REDDIT",   	"https://www.reddit.com/");
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Community System END.
@@ -162,21 +164,23 @@ $cms["Reddit"]   	= "http://www.reddit.com/";
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */
-$cms_host			= "'. $_POST["hostname"]. '";
-$cms_user			= "'. $_POST["username"]. '";
-$cms_pass			= "'. $_POST["password"]. '";
-$cms_db				= "'. $_POST["dbname"]. '";
-$cms_wdb			= "'. $_POST["worlddb"]. '";
-$cms_adb			= "'. $_POST["authdb"]. '";
-$cms_cdb			= "'. $_POST["chardb"]. '";
+define("HOST",		"'. $_POST["hostname"]. '");
+define("USER",		"'. $_POST["username"]. '");
+define("PASSWORD",	"'. $_POST["password"]. '");
+define("PORT",		"'. $_POST["port"]. '");
+define("DB",		"'. $_POST["dbname"]. '");
+define("AUTH",		"'. $_POST["authdb"]. '");
+define("CHARACTERS","'. $_POST["chardb"]. '");
+define("WORLD",		"'. $_POST["worlddb"]. '");
 /*
 |--------------------------------------------------------------------------|
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-$cms_core			= "webkit/";
-$cms_root			= "/";
-$cms_add			= "'. $_POST["cfgdom"]. '";
+define("BASE_URL",	"'. $_POST["cfgdom"]. '");
+define("CORE",		"webkit/");
+define("ROOT",		"/");
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Connection Variables END.
@@ -189,9 +193,10 @@ $cms_add			= "'. $_POST["cfgdom"]. '";
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-$con=mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to Database: " . mysqli_connect_error();
+$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+
+if (mysqli_connect_error()) {
+	die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 }
 /*
 |--------------------------------------------------------------------------|
@@ -200,6 +205,16 @@ if (mysqli_connect_errno()) {
 */
 
 
+/*
+|--------------------------------------------------------------------------|
+| Install CMS Required
+|--------------------------------------------------------------------------|
+*/
+if(file_exists("install"))
+{
+	header("Location: install");
+	die();
+}
 /*
 |--------------------------------------------------------------------------|
 | Functions CMS

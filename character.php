@@ -9,7 +9,7 @@
 <!-- Description of CMS -->
 <?php include('webkit/desc'); ?>
 <!-- Description of CMS END -->
-<title><?php echo $cms['title']; ?></title>
+<title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <?php include('webkit/core'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
@@ -26,7 +26,7 @@
 <!-- Search -->
 <?php include('webkit/search'); ?>
 <!-- Search END -->
-<h1 id="logo"><a href="/wow/en/"><?php echo $cms['title']; ?></a></h1>
+<h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <?php include('webkit/header'); ?>
 <!-- Header END -->
