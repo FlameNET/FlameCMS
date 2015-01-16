@@ -1,15 +1,17 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('system/config.php');
+<?php
+require_once('system/config.php');
 if (isset($_GET['id'])){
-	$mysqli->query("SET NAMES 'utf8'");
-	$news = $mysqli->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
+	Connect()->query("SET NAMES 'utf8'");
+	$news = Connect()->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
 	$rows = $news->fetch_assoc();
 	if (!$rows['id']){
 	  $error = true;
 	}
 }else{
  $error = true;
-}?>
+}
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
