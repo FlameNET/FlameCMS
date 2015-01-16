@@ -28,54 +28,59 @@ if(isset($_GET['lang'])){
 
 switch ($lang) {
 
-  case 'cn':
-  $lang_file = 'lang.cn.php';
-  break;
-  
-  case 'de':
-  $lang_file = 'lang.de.php';
-  break;
-  
-  case 'en':
-  $lang_file = 'lang.en.php';
-  break;
-  
-  case 'fr':
-  $lang_file = 'lang.fr.php';
-  break;
-  
-  case 'gr':
-  $lang_file = 'lang.gr.php';
-  break;
-  
-  case 'it':
-  $lang_file = 'lang.it.php';
-  break;
-  
-  case 'ko':
-  $lang_file = 'lang.ko.php';
-  break;
-  
-  case 'pt':
-  $lang_file = 'lang.pt.php';
-  break;
-  
-  case 'ro':
-  $lang_file = 'lang.ro.php';
-  break;
-  
-  case 'ru':
-  $lang_file = 'lang.ru.php';
-  break;
-  
-  case 'tw':
-  $lang_file = 'lang.tw.php';
-  break;
+	case 'cn':
+	$lang_file = 'lang.cn.php';
+	break;
 
-  default:
-  $lang_file = 'lang.en.php';
+	case 'de':
+	$lang_file = 'lang.de.php';
+	break;
+
+	case 'en':
+	$lang_file = 'lang.en.php';
+	break;
+
+	case 'es':
+	$lang_file = 'lang.es.php';
+	break;
+
+	case 'fr':
+	$lang_file = 'lang.fr.php';
+	break;
+
+	case 'gr':
+	$lang_file = 'lang.gr.php';
+	break;
+
+	case 'it':
+	$lang_file = 'lang.it.php';
+	break;
+
+	case 'ko':
+	$lang_file = 'lang.ko.php';
+	break;
+
+	case 'pt':
+	$lang_file = 'lang.pt.php';
+	break;
+
+	case 'ro':
+	$lang_file = 'lang.ro.php';
+	break;
+
+	case 'ru':
+	$lang_file = 'lang.ru.php';
+	break;
+
+	case 'tw':
+	$lang_file = 'lang.tw.php';
+	break;
+
+	default:
+	$lang_file = 'lang.en.php';
+
 }
-include_once str_replace("//","/",dirname(__FILE__)."/") ."../system/languages/".$lang_file;
+include_once (__ROOT__."/system/languages/".$lang_file;
 
 /*
 |--------------------------------------------------------------------------|
@@ -97,6 +102,5 @@ if(file_exists("install"))
 | Functions CMS
 |--------------------------------------------------------------------------|
 */
-include( str_replace("//","/",dirname(__FILE__)."/") ."../system/functions/function.php");
-include( str_replace("//","/",dirname(__FILE__)."/") ."../system/functions/function.page.php");
-?>
+include( __ROOT__."/system/functions/function.php");
+include( __ROOT__."/system/functions/function.page.php");
