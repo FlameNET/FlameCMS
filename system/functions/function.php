@@ -1,4 +1,16 @@
 <?php
+function Connect(){
+
+	$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+
+	if (mysqli_connect_error()) {
+		die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+	}
+
+	return $mysqli;
+
+}
+
 function ago($time)
 {
    $periods = array("second", "minute", "hour", "day", "week", "month", "year", "decade");

@@ -1,24 +1,6 @@
 <?php
 /*
 |--------------------------------------------------------------------------|
-| Info: CMS Connection System.
-|--------------------------------------------------------------------------|
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
-
-if (mysqli_connect_error()) {
-	die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-}
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection System END.
-|--------------------------------------------------------------------------|
-*/
-
-/*
-|--------------------------------------------------------------------------|
 | Info: CMS Language System.
 |--------------------------------------------------------------------------|
 | Specifies the Language that your CMS will show.
@@ -102,4 +84,5 @@ if(file_exists("install"))
 |--------------------------------------------------------------------------|
 */
 include( str_replace("//","/",dirname(__FILE__)."/") ."../system/functions/function.php");
+include( str_replace("//","/",dirname(__FILE__)."/") ."../system/functions/function.page.php");
 ?>

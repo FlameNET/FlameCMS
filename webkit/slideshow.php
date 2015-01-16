@@ -1,8 +1,8 @@
 <div id="slideshow" class="ui-slideshow">
         <div class="slideshow">
 			<?php
-			$mysqli->query("SET NAMES 'utf8'");
-			$slideshows = $mysqli->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
+			Connect()->query("SET NAMES 'utf8'");
+			$slideshows = Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 			$i=0;
 			while($slideshow = mysqli_fetch_array($slideshows))
 			{
@@ -37,8 +37,8 @@
         <div class="mask"></div>
     </div>
 		<?php
-		$mysqli->query("SET NAMES 'utf8'");
-		$slideshows = $mysqli->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
+		Connect()->query("SET NAMES 'utf8'");
+		$slideshows = Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 		?>
 		<script type="text/javascript">
 		//<![CDATA[

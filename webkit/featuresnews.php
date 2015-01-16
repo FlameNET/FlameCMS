@@ -1,6 +1,6 @@
 <?php
-$mysqli->query("SET NAMES 'utf8'");
-$articles_query = $mysqli->query("SELECT * FROM news ORDER BY DATE DESC LIMIT 3");
+Connect()->query("SET NAMES 'utf8'");
+$articles_query = Connect()->query("SELECT * FROM news ORDER BY DATE DESC LIMIT 3");
 while($articles = mysqli_fetch_array($articles_query)) {
 ?>
 <li>

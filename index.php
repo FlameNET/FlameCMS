@@ -78,7 +78,7 @@ $(function(){
 </div>
 </div>
 </div>
-<?php include('webkit/footer.php'); ?>
+<?php footer(); ?>
 </div>
 <script>
 //<![CDATA[

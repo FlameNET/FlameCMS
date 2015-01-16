@@ -1,5 +1,15 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('system/config.php'); ?>
+<?php require_once('system/config.php');
+if (isset($_GET['id'])){
+	$mysqli->query("SET NAMES 'utf8'");
+	$news = $mysqli->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
+	$rows = $news->fetch_assoc();
+	if (!$rows['id']){
+	  $error = true;
+	}
+}else{
+ $error = true;
+}?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
@@ -9,7 +19,7 @@
 <!-- Description of CMS -->
 <?php include(dirname(__FILE__).'../webkit/desc.php'); ?>
 <!-- Description of CMS END -->
-<title><?php echo TITLE ?></title>
+<title><?php echo $rows['title'].' - '.$rows['date'].' - '.TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <?php include(dirname(__FILE__).'../webkit/core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
@@ -54,12 +64,12 @@
 <div class="article-meta">
 <a class="article-author" href="/wow/en/search?a=Blizzard%20Entertainment&amp;f=article">
 <span class="author-icon"></span>
-<span itemprop="author">Blizzard Entertainment</span>
+<span itemprop="author"><?php echo $rows['author']; ?></span>
 </a>
 <span class="publish-date" title="06 May 2014 14:00 BST">
 06/05/2014
 </span>
-<a href="#comments" class="comments-link">106</a>
+<a href="#comments" class="comments-link"><?php echo $rows['comments']; ?></a>
 </div>
 <meta itemprop="datePublished" content="2014-05-06T14:00:00+01" />
 <meta itemprop="dateModified" content="2014-05-06T14:17:18+01" />
@@ -69,49 +79,7 @@
 <div class="article-content">
 <div class="header-image"><img itemprop="image" alt="Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor" src="//bnetcmsus-a.akamaihd.net/cms/blog_header/B62ZF0FW1MFZ1384811756770.jpg" /></div>
 <div class="detail" itemprop="articleBody">
-<style type="text/css">#blog .detail img {
--moz-border-radius:4px;
--webkit-border-radius:4px;
-border-radius:4px;
--moz-box-shadow:0 0 20px #000000;
--webkit-box-shadow:0 0 20px #000000;
-box-shadow:0 0 20px #000000;
-border: 1px solid #372511;
-max-width: 570px !important;
-padding: 1px;
-}
-#blog .detail td:hover > a img, #blog .detail a img:hover {
-border: 1px solid #CD9000;
-}
-</style>
-<p>In the recent <a href="http://eu.battle.net/wow/en/blog/13942448/" target="_blank">Dev Watercooler: Raiding Azeroth Part 3—Warlords of Draenor</a>, we discussed some of the raid changes coming in the next WoW expansion. Before Warlords of Draenor launches, players will have a chance to experience the new raid structure firsthand in the Siege of Orgrimmar.</p>
-<p>In the upcoming Patch 6.0, the pre-expansion “systems” update planned to go live in the weeks leading up to Warlords of Draenor’s release, we’ll be converting Siege of Orgrimmar to use the new Normal, Heroic, and Mythic difficulties. Both Normal and Heroic difficulties will support flexible raid sizes and our cross-server Group Finder tool, while Mythic will be a fixed 20-player size. At the same time, “<a href="http://eu.battle.net/wow/en/blog/13107743" target="_blank">stat squish</a>” will be in effect, the new class changes will be live, and Hit and Expertise will no longer be stats on items, so those will be replaced with more useful ones on all existing items. The raid as a whole will be retuned for the new numbers and scaling size—overall, it should prove no more difficult than it is currently, and will likely be easier in many places.</p>
-<p>With the end of an expansion and a raid tier, along with introduction of a new level cap, we’ll also be retiring a handful of rewards. We want to encourage everyone to enjoy one last hurrah in the Siege of Orgrimmar before your adventure on Draenor begins.</p>
-<p style="text-align: center;"><img alt="5.4_roundup_dividerb_585x50.jpg" data-id="10816346" src="https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/0F2XDN6DHRSP1377900398270.jpg" /></p>
-<p><strong>In addition to the above changes, when Patch 6.0 arrives:</strong></p>
-<ul>
-<li>Flexible Raid difficulty will cease to exist as it does now, and will be removed from the raid queue interface. The new Normal difficulty of Siege of Orgrimmar will offer a similar experience to that of Flexible Raid.</li>
-<li>The new Group Finder tool will be available, designed to help players create and find groups for Normal and Heroic Siege of Orgrimmar and other cross-realm group content.</li>
-<li>Siege of Orgrimmar achievements will be relabeled according to the new difficulty structure (e.g. “Heroic: Malkorok” will now be “Mythic: Malkorok”). Credit for these will be retroactively awarded to players who earned them before Patch 6.0.</li>
-<li>The Garrosh Hellscream “<a href="http://www.wowhead.com/achievement=8399/ahead-of-the-curve-garrosh-hellscream-25-player" target="_blank">Ahead of the Curve</a>” and “<a href="http://www.wowhead.com/achievement=8400/cutting-edge-garrosh-hellscream-10-player" target="_blank">Cutting Edge</a>” Feats of Strength will cease to be obtainable.
-<ul style="list-style-type:circle;">
-<li>This means that the Kor’kron War Wolf, awarded by the “Ahead of the Curve” Feat of Strength, will also cease to be obtainable upon release of the pre-expansion Patch 6.0.</li>
-</ul>
-</li>
-<li>With the release of Patch 6.0, the drop rate of the Heirloom weapons from Garrosh Hellscream on Normal, Heroic, and Mythic difficulties will be <u>significantly increased</u>.
-<ul style="list-style-type:circle;">
-<li>Players who have yet to get any Heirlooms will have a <strong>100%</strong> (<em>guaranteed</em>) chance of getting a spec-appropriate Heirloom when defeating Garrosh on Normal difficulty or higher.</li>
-<li>The chance of receiving additional Heirlooms beyond the first will also be increased.</li>
-</ul>
-</li>
-</ul>
-<p style="text-align: center;"><img alt="5.4_roundup_divider5_585x50.jpg" data-id="10795152" src="https://bnetcmsus-a.akamaihd.net/cms/gallery/HEW1QVB1484Q1377731386847.jpg" /></p>
-<p><strong>When Warlords of Draenor is released and players are able to head to Draenor and level past 90:</strong></p>
-<ul>
-<li>Garrosh Hellscream will no longer drop Heirloom weapons.</li>
-<li>The <a href="http://eu.battle.net/wow/en/item/104253" target="_blank">Kor’kron Juggernaut</a> mount will cease being a guaranteed drop from Mythic Garrosh Hellscream, and will instead become a rare drop (like <a href="http://eu.battle.net/wow/en/item/50818">Invincible’s Reins</a>, <a href="http://eu.battle.net/wow/en/item/45693">Mimiron’s Head</a>, etc.).</li>
-</ul>
-<p>All other loot, achievements, and cosmetic rewards (e.g. the Kor’kron Dark Shaman transmog set, rare battle pets, etc.) will remain unchanged.</p>
+<?php echo  html_entity_decode($rows['content']); ?>
 </div>
 </div>
 <div class="community-share">
