@@ -77,7 +77,7 @@ textarea { resize: none; }
 .input-row-radio .input-right input,
 .input-row-checkbox .input-right input,
 .input-radio-inline input,
-.input-checkbox-inline input { width: 32px; height: 32px; overflow: hidden; margin: 0; padding: 0; display: inline-block; vertical-align: top; }
+.input-checkbox-inline input { width: 15px; height: 34px; overflow: hidden; margin: 0; padding: 0; display: inline-block; vertical-align: top; }
 .input-row-radio .label-text,
 .input-row-checkbox .label-text { line-height: 16px; padding-top: 8px; }
 

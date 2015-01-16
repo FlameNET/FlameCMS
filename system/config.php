@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2014 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -89,7 +89,7 @@ define('WORLD',		'world');
 |--------------------------------------------------------------------------|
 */
 define('BASE_URL',	'http://localhost/projects/FlameCMS/');
-define('CORE',		'webkit/"');
+define('CORE',		'webkit/');
 define('ROOT',		'/');
 
 /*

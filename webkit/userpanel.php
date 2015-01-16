@@ -4,13 +4,13 @@
 <a href="#" tabindex="50" accessKey="1" title="<?php echo TITLE ?> HOME" data-action="<?php echo TITLE ?> HOME">&nbsp;</a>
 </li>
 <li class="service-cell service-welcome">
-<a href="?login" onclick="return Login.open()">Log in</a> or <a href="#">Create an Account</a>
+<a href="?login" onclick="return Login.open()">Log in</a> or <a href="register.php">Create an Account</a>
 </li>
 <li class="service-cell service-shop">
 <a href='<?php echo CORE ?>shop/' class="service-link" data-action="Shop">Shop</a>
 </li>
 <li class="service-cell service-account">
-<a href="<?php echo CORE ?>management/" class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
+<a href='<?php echo CORE ?>management/' class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
 </li>
 <li class="service-cell service-support service-support-enhanced">
 <a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Support - Support">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>

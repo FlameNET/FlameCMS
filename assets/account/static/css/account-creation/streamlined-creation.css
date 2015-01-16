@@ -30,7 +30,7 @@
 .input-row-checkbox .input-left { width: 300px; }
 .input-row-checkbox .input-right { width: 680px; }
 .input-row-checkbox .label-text { width: 595px; }
-.input-row-important .label-text { font-size: 14px; }
+.input-row-important .label-text { font-size: 10px; }
 
 .password-result { display: inline-block; vertical-align: middle; font: normal 13px/24px "Lucida Sans Unicode","Lucida Grande", "Arial", sans-serif; }
 .password-rating { display: inline-block; vertical-align: middle; width: 125px; height: 10px; margin: 7px 0; background: #bfbfbf; float: right; }

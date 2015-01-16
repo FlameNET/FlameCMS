@@ -74,7 +74,8 @@ include("config.php");
 									Database Host: <input type="text" name="hostname" placeholder="127.0.0.1">
 									Database Username: <input type="text" name="username" placeholder="root">
 									Database Password: <input type="password" name="password" placeholder="password">
-									Database Port: <input type="port" name="port" placeholder="3306">
+									Database Port:
+									<input type="text" name="port" placeholder="3306">
 									<a href="#" title="First, create an empty database with this name!">Website Database:</a>
 									<input type="text" name="dbname" placeholder="DB Name">
 									Auth Database:
@@ -94,7 +95,7 @@ include("config.php");
 	if (isset($_POST["Submit"])) {
 		$string = '<?php
 /**
-* Copyright (C) 2014 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by

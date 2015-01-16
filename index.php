@@ -84,7 +84,7 @@ $(function(){
 //<![CDATA[
 var xsToken = '';
 var supportToken = '';
-var jsonSearchHandlerUrl = '//eu.Flame.net';
+var jsonSearchHandlerUrl = '<?php echo BASE_URL ?>';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',

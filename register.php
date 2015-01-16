@@ -1,29 +1,36 @@
-
-<html>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
+<!-- DO NOT TOUCH -->
+<?php require_once('system/config.php'); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
+<head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>Battle.net Account</title>
-<link rel="shortcut icon" href="http://bneteu-a.akamaihd.net/account/static/images/meta/favicon.2dy4z.ico" />
+<!-- YOU CAN TOUCH NOW -->
+<!-- (If you know what you're doing) -->
+<!-- Description of CMS -->
+<?php include('webkit/desc.php'); ?>
+<!-- Description of CMS END -->
+<title><?php echo TITLE ?> | Registration</title>
+<!-- The Styles & Javascripts of the CMS -->
+<link rel="shortcut icon" href="assets/images/logos/favicon.png" />
 <link rel="search" type="application/opensearchdescription+xml" href="en-gb/data/opensearch" title="Battle.net Search" />
-<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/local-common/css/common.2ZTrP180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/bnet.3Loj4180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="print" href="assets/account/static/css/bnet-print.0dd98180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/legal/ratings.1GSJA180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/inputs.3rjB9.css" />
-<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/account-creation/streamlined-creation.15MkW.css" />
-<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/locale/en-gb.00000.css" />
-<script type="text/javascript" src="assets/account/static/local-common/js/third-party/jquery-1.7.1.min.0vCiz180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/local-common/js/common/bootstrap.3Pnh6180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/local-common/js/third-party/class-inheritance.4V7WX180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/local-common/js/third-party/swfobject-2.2.1.min.0INo9180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/local-common/js/common.4Tp8T180f.js?v=58-28"></script>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/local-common/css/common.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/css/bnet.css" />
+<link rel="stylesheet" type="text/css" media="print" href="<?php echo BASE_URL ?>assets/account/static/css/bnet-print.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/css/legal/ratings.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/css/inputs.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/css/account-creation/streamlined-creation.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/css/locale/en-gb.css" />
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/third-party/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/common/bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/third-party/class-inheritance.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/third-party/swfobject-2.2.1.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/common.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 var Core = Core || {},
 Login = Login || {};
-Core.staticUrl = 'assets/account/static';
-Core.sharedStaticUrl = 'assets/account/static/local-common';
+Core.staticUrl = '<?php echo BASE_URL ?>assets/account/static';
+Core.sharedStaticUrl = '<?php echo BASE_URL ?>assets/account/static/local-common';
 Core.baseUrl = 'account';
 Core.projectUrl = 'account';
 Core.cdnUrl = 'http://media.blizzard.com/';
@@ -37,7 +44,7 @@ Core.shortDateFormat = 'dd/MM/yyyy';
 Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = 'login/login.frag';
+Login.embeddedUrl = '<?php echo CORE ?>loginframe.php';
 var Flash = Flash || {};
 Flash.videoPlayer = '';
 Flash.videoBase = '';
@@ -63,7 +70,7 @@ _gaq.push(['_trackPageview']);
 <h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>
 <div id="navigation">
 <div id="page-menu" class="large">
-<h2><a href="assets/account/management/"> Account Creation
+<h2><a href="<?php echo BASE_URL ?>assets/account/management/"> Account Creation
 </a></h2>
 <h2 class="second-header"></h2>
 <span class="clear"><!-- --></span>
@@ -71,236 +78,18 @@ _gaq.push(['_trackPageview']);
 <span class="clear"><!-- --></span>
 </div>
 </div>
-<div id="service">
-<ul class="service-bar">
-<li class="service-cell service-home">
-<a href="" tabindex="50" accessKey="1" title="Battle.net Home" data-action="Battle.net Home"> </a>
-</li>
-<li class="service-cell service-welcome">
-<a href="login/en/?ref=account/creation/tos.html&amp;app=bam" onclick="return Login.open()">Log in</a> or <a href="tos.html">Create an Account</a>
-</li>
-<li class="service-cell service-shop">
-<a href='shop/' class="service-link" data-action="Shop">Shop</a>
-</li>
-<li class="service-cell service-account">
-<a href="assets/account/management/" class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
-</li>
-<li class="service-cell service-support service-support-enhanced">
-<a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Support - Support">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>
-<div class="support-menu" id="support-menu" style="display:none;">
-<div class="support-primary">
-<ul class="support-nav">
-<li>
-<a href="support/" tabindex="55" class="support-category" id="support-nav-kb" data-action="Support - Knowledge Center">
-<strong class="support-caption">Knowledge Center</strong>
-Browse our support articles
-</a>
-</li>
-<li>
-<a href="support/ticket/status" tabindex="55" class="support-category" id="support-nav-tickets" data-action="Support - Your Support Tickets">
-<strong class="support-caption">Your Support Tickets</strong>
-View your active tickets (login required).
-</a>
-</li>
-</ul>
-<span class="clear"><!-- --></span>
-</div>
-<div class="support-secondary"></div>
-<!--[if IE 6]> <iframe id="support-shim" src="javascript:false;" frameborder="0" scrolling="no" style="display: block; position: absolute; top: 0; left: 9px; width: 297px; height: 400px; z-index: -1;"></iframe>
-<script type="text/javascript">
-//<![CDATA[
-(function(){
-var doc = document;
-var shim = doc.getElementById('support-shim');
-shim.style.filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
-shim.style.display = 'block';
-})();
-//]]>
-</script>
-<![endif]-->
-</div>
-</li>
-<li class="service-cell service-explore">
-<a href="#explore" tabindex="50" accesskey="5" class="dropdown" id="explore-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Explore - Explore">Explore</a>
-<div class="explore-menu" id="explore-menu" style="display:none;">
-<div class="explore-primary">
-<ul class="explore-nav">
-<li>
-<a href="" tabindex="55" data-action="Explore - Battle.net Home">
-<strong class="explore-caption">Battle.net Home</strong>
-</a>
-</li>
-<li>
-<a href="shop/" tabindex="55" data-action="Explore - Shop">
-<strong class="explore-caption">Shop</strong>
-</a>
-</li>
-<li>
-<a href="assets/account/management/" tabindex="55" data-action="Explore - Account">
-<strong class="explore-caption">Account</strong>
-</a>
-</li>
-<li>
-<a href="support/" tabindex="55" data-action="Explore - Support">
-<strong class="explore-caption">Support</strong>
-</a>
-</li>
-</ul>
-<div class="explore-links">
-<h2 class="explore-caption">More</h2>
-<ul>
-<li><a href="what-is/" tabindex="55" data-action="Explore - What is Battle.net?">What is Battle.net?</a></li>
-<li><a href="realid/" tabindex="55" data-action="Explore - What is Real ID?">What is Real ID?</a></li>
-<li><a href="assets/account/parental-controls/index.html" tabindex="55" data-action="Explore - Parental Controls">Parental Controls</a></li>
-<li><a href="security/" tabindex="55" data-action="Explore - Account Security">Account Security</a></li>
-<li><a href="http://jobs.blizzard.com/?utm_campaign=Blizzard_Jobs&amp;utm_source=Battle_net&amp;utm_medium=Explore" tabindex="55" data-action="Explore - Work At Blizzard">Work At Blizzard</a></li>
-<li><a href="games/classic" tabindex="55" data-action="Explore - Classic Games">Classic Games</a></li>
-<li><a href="assets/account/support/index.html" tabindex="55" data-action="Explore - Account Support">Account Support</a></li>
-</ul>
-</div>
-<a class="explore-get-app" href="en/app/">
-<div class="app-preview"></div>
-<div class="app-tagline">
-Get the desktop app for Battle.net
-</div>
-</a>
-<span class="clear"><!-- --></span>
-<!--[if IE 6]> <iframe id="explore-shim" src="javascript:false;" frameborder="0" scrolling="no" style="display: block; position: absolute; top: 0; left: 9px; width: 409px; height: 400px; z-index: -1;"></iframe>
-<script type="text/javascript">
-//<![CDATA[
-(function(){
-var doc = document;
-var shim = doc.getElementById('explore-shim');
-shim.style.filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
-shim.style.display = 'block';
-})();
-//]]>
-</script>
-<![endif]-->
-</div>
-<ul class="explore-secondary">
-<li class="explore-game explore-game-wow">
-<a href="wow/" tabindex="55" data-action="Explore - wow">
-<span class="explore-game-inner">
-<strong class="explore-caption">World of Warcraft®</strong>
-</span>
-</a>
-</li>
-<li class="explore-game explore-game-d3">
-<a href="d3/" tabindex="55" data-action="Explore - d3">
-<span class="explore-game-inner">
-<strong class="explore-caption">Diablo® III</strong>
-</span>
-</a>
-</li>
-<li class="explore-game explore-game-sc2">
-<a href="sc2/" tabindex="55" data-action="Explore - sc2">
-<span class="explore-game-inner">
-<strong class="explore-caption">StarCraft® II</strong>
-</span>
-</a>
-</li>
-<li class="explore-game explore-game-hs">
-<a href="hearthstone/" tabindex="55" data-action="Explore - hs">
-<span class="explore-game-inner">
-<strong class="explore-caption">Hearthstone™</strong>
-</span>
-</a>
-</li>
-<li class="explore-game explore-game-heroes">
-<a href="http://www.heroesofthestorm.com/en-gb" tabindex="55" data-action="Explore - heroes">
-<span class="explore-game-inner">
-<strong class="explore-caption">Heroes of the Storm™</strong>
-</span>
-</a>
-</li>
-<li class="explore-game explore-game-overwatch">
-<a href="overwatch/" tabindex="55" data-action="Explore - overwatch">
-<span class="explore-game-inner">
-<strong class="explore-caption">Overwatch™</strong>
-</span>
-</a>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-<div id="warnings-wrapper">
-<script type="text/javascript">
-//<![CDATA[
-$(function() {
-App.saveCookie('html5Warning');
-App.resetCookie('browserWarning');
-});
-//]]>
-</script>
-<!--[if lt IE 8]> <div id="browser-warning" class="warning warning-red">
-<div class="warning-inner2">
-You are using an outdated web browser.<br />
-<a href="support/article/browserupdate">Upgrade</a> or <a href="http://www.google.com/chromeframe/?hl=en-GB" id="chrome-frame-link">install Google Chrome Frame</a>.
-<a href="#close" class="warning-close" onclick="App.closeWarning('#browser-warning', 'browserWarning'); return false;"></a>
-</div>
-</div>
-<![endif]-->
-<!--[if lt IE 8]> <script type="text/javascript" src="//bneteu-a.akamaihd.net/account/static/local-common/js/third-party/CFInstall.min.4B6F8.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(function() {
-var age = 365 * 24 * 60 * 60 * 1000;
-var src = 'https://www.google.com/chromeframe/?hl=en-GB';
-if ('http:' == document.location.protocol) {
-src = 'http://www.google.com/chromeframe/?hl=en-GB';
-}
-document.cookie = "disableGCFCheck=0;path=/;max-age="+age;
-$('#chrome-frame-link').bind({
-'click': function() {
-App.closeWarning('#browser-warning');
-CFInstall.check({
-mode: 'overlay',
-url: src
-});
-return false;
-}
-});
-});
-//]]>
-</script>
-<![endif]-->
-<noscript>
-<div id="javascript-warning" class="warning warning-red">
-<div class="warning-inner2">
-JavaScript must be enabled to use this site.
-</div>
-</div>
-</noscript>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-$(function() {
-var category = Core.project + ' - GNB';
-Core.bindTrackEvent('#service .service-home a', category);
-Core.bindTrackEvent('#service .service-account a', category);
-Core.bindTrackEvent('#service .service-shop a', category);
-Core.bindTrackEvent('#support-link', category);
-Core.bindTrackEvent('#support-nav-kb', category);
-Core.bindTrackEvent('#support-nav-tickets', category);
-Core.bindTrackEvent('#ticket-summary', category);
-Core.bindTrackEvent('#explore-link', category);
-Core.bindTrackEvent('.explore-nav li a', category);
-});
-//]]>
-</script>
-</div>
+<!-- User Panel -->
+<?php include('webkit/userpanel.php'); ?>
+<!-- User Panel END -->
 </div>
 </div>
 <div id="layout-middle">
 <div class="wrapper">
 <div id="content">
 <div id="page-header">
-<p class="privacy-message"><b>We value and respect your privacy.</b> Find out how Blizzard safeguards user information by reading our <a href="en-gb/company/about/privacy.html" onclick="window.open(this.href); return false;">Online Privacy Policy</a>.</p>
+<p class="privacy-message"><b>We value and respect your privacy.</b> Find out how <?php echo TITLE ?> safeguards user information by reading our <a href="#" onclick="window.open(this.href); return false;">Online Privacy Policy</a>.</p>
 </div>
-<form action="/account/creation/tos.html" method="get" class="country-select">
-<input type="hidden" id="csrftoken" name="csrftoken" value="d5900273-0304-4b32-9913-ae5ccd950907" />
+<form action="#" method="get" class="country-select">
 <div xmlns="http://www.w3.org/1999/xhtml" class="input-row input-row-select">
 <span class="input-left">
 <label for="country">
@@ -315,7 +104,7 @@ Country of Residence:
 <select name="country" id="country" class="small border-5 glow-shadow-2" tabindex="1">
 <option value="" selected="selected">Select a country</option>
 <option value="AFG">Afghanistan</option>
-<option value="ALA">Åland Islands</option>
+<option value="ALA">&#197;land Islands</option>
 <option value="ALB">Albania</option>
 <option value="DZA">Algeria</option>
 <option value="ASM">American Samoa</option>
@@ -554,7 +343,7 @@ Country of Residence:
 <option value="ZMB">Zambia</option>
 <option value="ZWE">Zimbabwe</option>
 </select>
-<span class="inline-message " id="country-message"> </span>
+<span class="inline-message " id="country-message">&#160;</span>
 </span>
 <button class="ui-button button1" type="submit" id="country-submit" tabindex="1" style="display: none;"><span class="button-left"><span class="button-right">Change Country</span></span></button>
 </span>
@@ -618,7 +407,7 @@ Date of Birth:
 <option value="30">30</option>
 <option value="31">31</option>
 </select>
-<span class="inline-message no-text-clear" id="dobDay-message"> </span>
+<span class="inline-message no-text-clear" id="dobDay-message">&#160;</span>
 </span>
 <span class="input-select input-select-extra-extra-small">
 <select name="dobMonth" id="dobMonth" class="extra-extra-small border-5 glow-shadow-2" tabindex="1" required="required">
@@ -636,7 +425,7 @@ Date of Birth:
 <option value="11">November</option>
 <option value="12">December</option>
 </select>
-<span class="inline-message no-text-clear" id="dobMonth-message"> </span>
+<span class="inline-message no-text-clear" id="dobMonth-message">&#160;</span>
 </span>
 <span class="input-select input-select-extra-extra-extra-small">
 <select name="dobYear" id="dobYear" class="extra-extra-extra-small border-5 glow-shadow-2" tabindex="1" required="required">
@@ -753,7 +542,7 @@ Date of Birth:
 <option value="1906">1906</option>
 <option value="1905">1905</option>
 </select>
-<span class="inline-message no-text-clear" id="dobYear-message"> </span>
+<span class="inline-message no-text-clear" id="dobYear-message">&#160;</span>
 </span>
 <span class="inline-note">
 <span class="caption">Parents registering for children, <a href="/account/creation/parent-signup.html?country=ALA&amp;theme=bnet">click here.</a></span>
@@ -772,11 +561,11 @@ Name:
 --><span class="input-right">
 <span class="input-text input-text-small">
 <input type="text" name="firstname" value="" id="firstname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="First Name" />
-<span class="inline-message " id="firstname-message"> </span>
+<span class="inline-message " id="firstname-message">&#160;</span>
 </span>
 <span class="input-text input-text-small">
 <input type="text" name="lastname" value="" id="lastname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="Last Name" />
-<span class="inline-message " id="lastname-message"> </span>
+<span class="inline-message " id="lastname-message">&#160;</span>
 </span>
 </span>
 </div>
@@ -818,18 +607,18 @@ Password:
 --><span class="input-right">
 <span class="input-text input-text-small">
 <input type="password" id="password" name="password" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="Enter Password" />
-<span class="inline-message " id="password-message"> </span>
+<span class="inline-message " id="password-message">&#160;</span>
 </span>
 <span class="input-text input-text-small">
 <input type="password" id="rePassword" name="rePassword" value="" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="16" tabindex="1" required="required" placeholder="Re-enter Password" />
-<span class="inline-message " id="rePassword-message"> </span>
+<span class="inline-message " id="rePassword-message">&#160;</span>
 </span>
 </span>
 </div>
 <div class="input-row input-row-note" id="password-strength" style="display: none">
 <div class="input-note border-5 glow-shadow">
 <div class="input-note-left">
-<p class="caption">For your security, we highly recommend that you choose a unique password that you don’t use for any other online account.</p>
+<p class="caption">For your security, we highly recommend that you choose a unique password that you don’t use for any other online&#160;account.</p>
 </div>
 <div class="input-note-right border-5">
 <div class="password-strength">
@@ -842,15 +631,15 @@ Password Strength:
 <ul class="password-level" id="password-level">
 <li id="password-level-0">
 <span class="icon-16"></span>
-<span class="icon-16-label">Your password must be between 8–16 characters in length.</span>
+<span class="icon-16-label">Your password must be between 8–16 characters in&#160;length.</span>
 </li>
 <li id="password-level-1">
 <span class="icon-16"></span>
-<span class="icon-16-label">Your password may only contain alphabetic characters (A–Z), numeric characters (0–9), and punctuation.</span>
+<span class="icon-16-label">Your password may only contain alphabetic characters (A–Z), numeric characters (0–9), and&#160;punctuation.</span>
 </li>
 <li id="password-level-2">
 <span class="icon-16"></span>
-<span class="icon-16-label">Your password must contain at least one alphabetic character and one numeric character.</span>
+<span class="icon-16-label">Your password must contain at least one alphabetic character and one numeric&#160;character.</span>
 </li>
 <li id="password-level-3">
 <span class="icon-16"></span>
@@ -908,7 +697,7 @@ Secret Question &amp; Answer:
 </span>
 <span class="input-right">
 <div class="agreement-check">
-<p class="tou-desc">As part of the Battle.net Service, Blizzard provides various tools to allow communication between your characters and the characters of other players. As these communication tools do not constitute an electronic communication service (in legal terms), messages sent using them should not be considered private or personal. So that we can provide a fun, safe and lawful environment for all our players, we have a policy of storing and reviewing both sent and received in-game chats and other messages. By clicking the check box below, you agree that Blizzard (or one of Blizzard’s affiliates) shall have the right to (i) store in-game chats and other messages you send or receive on the Battle.net Service, or through any game that is playable on the Battle.net Service, and (ii) review such in-game chats and other messages to investigate potential violations of the law, the Battle.net Terms of Use, or the Terms of Use agreement specific to any game playable on the Battle.net Service. Blizzard will only use the information contained in the stored in-game chats and other messages for investigating and acting on such violations.</p>
+<p class="tou-desc">As part of the <?php echo TITLE ?> Server, <?php echo TITLE ?> provides various tools to allow you communicate between characters and characters of other players. As these communication tools do not constitute an electronic communication service (in legal terms), messages sent using them should not be considered private or personal. So be careful cause we keep an eye of what you are talking about. Illegal behavior and hacks will not be tolerated. Anything against the Server and the Gameplay or any other tool that makes the gameplay easier is considered a hack tool and your account will be suspended without consideration.</p>
 </div>
 </span>
 </div>
@@ -922,7 +711,7 @@ Secret Question &amp; Answer:
 <label for="agreedToChatPolicy">
 <input type="checkbox" name="agreedToChatPolicy" value="true" id="agreedToChatPolicy" tabindex="1" required="required" />
 <span class="label-text">
-I consent to Blizzard storing and reviewing both sent and received in-game chats and other messages.<span class="input-required">*</span>
+I consent to <?php echo TITLE ?> storing and reviewing both sent and received in-game chats and other messages.<span class="input-required">*</span>
 </span>
 </label>
 </span>
@@ -935,41 +724,13 @@ I consent to Blizzard storing and reviewing both sent and received in-game chats
 <label for="agreedToToU">
 <input type="checkbox" name="agreedToToU" value="true" id="agreedToToU" tabindex="1" required="required" />
 <span class="label-text">
-I accept the <a href="en-gb/company/about/termsofuse.html" onclick="window.open(this.href); return false;">Terms of Use</a> applicable to my country of residence and if under 18 years old, agree and acknowledge that my parent or guardian has also reviewed and accepted the Terms of Use on my behalf.<span class="input-required">*</span>
-</span>
-</label>
-</span>
-<span class="input-left">
-<span class="title-text">
-</span>
-<span class="input-required"></span>
-</span><!--
---><span class="input-right">
-<label for="agreedToAntiCheating">
-<input type="checkbox" name="agreedToAntiCheating" value="true" id="agreedToAntiCheating" tabindex="1" required="required" />
-<span class="label-text">
-I understand and agree to the <a href="/account/legal/anticheating.html" onclick="window.open(this.href); return false;">anti-cheating agreement</a> and acknowledge that Blizzard Entertainment may utilize anti-cheating utility on my computer in this respect.<span class="input-required">*</span>
-</span>
-</label>
-</span>
-</div>
-<div class="input-row input-row-checkbox input-row-disclaimer">
-<span class="input-left">
-<span class="title-text">
-</span>
-<span class="input-required"></span>
-</span><!--
---><span class="input-right">
-<label for="blizzardNewsletter">
-<input type="checkbox" name="blizzardNewsletter" value="true" id="blizzardNewsletter" tabindex="1" />
-<span class="label-text">
-Sign up to receive news and special offers from Blizzard Entertainment to this Battle.net account’s e-mail address.<span class="input-required"></span>
+I accept the <a href="#" onclick="window.open(this.href); return false;">Terms of Use</a> applicable to my country of residence and if under 18 years old, agree and acknowledge that my parent or guardian has also reviewed and accepted the Terms of Use on my behalf.<span class="input-required">*</span>
 </span>
 </label>
 </span>
 </div>
 <div class="submit-row">
-<div class="input-left"> </div>
+<div class="input-left">&#160;</div>
 <div class="input-right">
 <button class="ui-button button1" type="submit" id="creation-submit" tabindex="1"><span class="button-left"><span class="button-right">Create Free Account</span></span></button>
 <a class="ui-cancel "
@@ -1061,136 +822,7 @@ DD_belatedPNG.fix('.input-note-arrow');
 <div id="layout-bottom-divider"></div>
 <div id="layout-bottom">
 <div class="wrapper">
-<div class="footer" id="footer">
-<div id="sitemap">
-<div class="column">
-<h3 class="bnet">
-<a href="" tabindex="100" data-action="Battle.net Home - Battle.net Home">Battle.net Home</a>
-</h3>
-<ul>
-<li><a href="what-is/" data-action="Battle.net Home - What is Battle.net®?">What is Battle.net®?</a></li>
-<li><a href="shop/" data-action="Battle.net Home - Shop">Shop</a></li>
-<li><a href="assets/account/management/" data-action="Battle.net Home - Account">Account</a></li>
-<li><a href="support/" data-action="Battle.net Home - Support">Support</a></li>
-<li><a href="realid/" data-action="Battle.net Home - Real ID">Real ID</a></li>
-<li><a href="battletag/" data-action="Battle.net Home - BattleTag®">BattleTag®</a></li>
-</ul>
-</div>
-<div class="column">
-<h3 class="games">
-<a href="" tabindex="100" data-action="Games - Games">Games</a>
-</h3>
-<ul>
-<li><a href="sc2/" data-action="Games - StarCraft® II">StarCraft® II</a></li>
-<li><a href="wow/" data-action="Games - World of Warcraft®">World of Warcraft®</a></li>
-<li><a href="d3/" data-action="Games - Diablo® III">Diablo® III</a></li>
-<li><a href="hearthstone/" data-action="Games - Hearthstone™">Hearthstone™</a></li>
-<li><a href="games/classic" data-action="Games - Classic Games">Classic Games</a></li>
-<li><a href="assets/account/download/" data-action="Games - Game Client Downloads">Game Client Downloads</a></li>
-</ul>
-</div>
-<div class="column">
-<h3 class="account">
-<a href="assets/account/management/" tabindex="100">Account</a>
-</h3>
-<ul>
-<li><a href="assets/account/support/login-support.html" data-action="Account - Can’t log in?">Can’t log in?</a></li>
-<li><a href="tos.html" data-action="Account - Create Account">Create Account</a></li>
-<li><a href="assets/account/management/" data-action="Account - Account Summary">Account Summary</a></li>
-<li><a href="security" data-action="Account - Account Security">Account Security</a></li>
-<li><a href="assets/account/management/claim-code.html" data-action="Account - Redeem Codes">Redeem Codes</a></li>
-</ul>
-</div>
-<div class="column">
-<h3 class="support">
-<a href="support/" tabindex="100" data-action="Support - Support">Support</a>
-</h3>
-<ul>
-<li><a href="support/" data-action="Support - Support Articles">Support Articles</a></li>
-<li><a href="assets/account/parental-controls/index.html" data-action="Support - Parental Controls">Parental Controls</a></li>
-<li><a href="security/" data-action="Support - Protect Your Account">Protect Your Account</a></li>
-<li><a href="security/help" data-action="Support - Help! I got hacked!">Help! I got hacked!</a></li>
-</ul>
-</div>
-<div class="column">
-<h3 class="jobs">
-<a href="?utm_campaign=Blizzard_Jobs&amp;utm_source=Battle_net&amp;utm_medium=Footer">Work At Blizzard</a>
-</h3>
-<ul>
-<li><a href="company/careers/directory.html" data-action="Jobs - Search for Jobs">Search for Jobs</a></li>
-<li><a href="careersection/2/profile.ftl" data-action="Jobs - Candidate Profile">Candidate Profile</a></li>
-<li><a href="company/careers/university.html" data-action="Jobs - University Relations">University Relations</a></li>
-<li><a href="company/careers/form/support.html" data-action="Jobs - Job Site Support">Job Site Support</a></li>
-<li><a href="company/careers/faq.html" data-action="Jobs - Jobs FAQ">Jobs FAQ</a></li>
-</ul>
-</div>
-<span class="clear"><!-- --></span>
-</div>
-<div class="lower-footer-wrapper">
-<div class="lower-footer">
-<div id="copyright">
-<a href="javascript:;" tabindex="100" id="change-language">
-<span>Europe - English (EU)</span>
-</a>
-<span class="legal-links">
-<a onclick="return Core.open(this);" href="company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use">Terms of Use</a>
-<a onclick="return Core.open(this);" href="company/legal/" tabindex="100" data-action="Footer - Legal">Legal</a>
-<a onclick="return Core.open(this);" href="company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy">Privacy Policy</a>
-<a onclick="return Core.open(this);" href="company/about/infringementnotice.html" tabindex="100" data-action="Footer - Copyright Infringement">Copyright Infringement</a>
-<a target="_blank" href="company/about/contact.html" tabindex="100">Contact Us</a>
-</span>
-©2015 Blizzard Entertainment, Inc. All rights reserved
-</div>
-<div id="international"></div>
-<div id="legal">
-<div id="legal-ratings" class="png-fix">
-</div>
-<script type="text/javascript">
-//<![CDATA[
-Feedback.showForm = false;
-if (window.location.protocol === 'tos.html') {
-Feedback.showForm = true;
-}
-//]]>
-</script>
-<div class="common-feedback-buttons" style="display: none;">
-<a id="open-feedback-form" href="javascript:void(0);" class="feedback feedback-suggestion-open"><span class="feedback-icon"></span>Send Website Feedback</a>
-<a id="open-error-form" href="javascript:void(0);" class="error feedback-error-open"><span class="feedback-icon"></span>Report Website Error</a>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-if (Feedback.showForm) {
-$('.common-feedback-buttons').css('display', 'block');
-Feedback.initialize();
-Feedback.titleWebsiteSuggestion = 'Send Website Feedback';
-Feedback.titleWebsiteFeedback = 'Report Website Error';
-Feedback.pageReferring = 'tos.html';
-if (Feedback.pageReferring === '') {
-Feedback.pageReferring = window.location.href;
-}
-Feedback.feedbackError = 'Error';
-Feedback.introError = 'Found a problem with our sites? Let us know!';
-Feedback.introFeedback = 'Send your website suggestions and ideas directly to Battle.net!';
-}
-//]]>
-</script>
-<span class="clear"><!-- --></span>
-</div>
-</div>
-<div id="marketing-trackers">
-<div class="marketing-cover"></div>
-</div>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-$(function() {
-var category = Core.project + ' - Footer Navigation';
-Core.bindTrackEvent('#sitemap a', category);
-Core.bindTrackEvent('#copyright a[data-action]', category);
-});
-//]]>
-</script>
-</div>
+<?php footer(); ?>
 </div>
 </div>
 <script type="text/javascript">
@@ -1210,13 +842,13 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to {1}.',
+ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
 ticketCanceled: 'Cancelled',
 ticketArchived: 'Archived',
-ticketInfo: 'Need Info',
+ticketInfo: 'Need&#160;Info',
 ticketAll: 'View All Tickets'
 };
 Msg.cms = {
@@ -1314,12 +946,12 @@ other: 'Other'
 };
 //]]>
 </script>
-<script type="text/javascript" src="assets/account/static/js/bam.2MTss180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/local-common/js/common/menu.2LSka180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/local-common/js/third-party/jquery-ui-1.10.2.custom.min.4DFLs180f.js?v=58-28"></script>
-<script type="text/javascript" src="assets/account/static/js/inputs.0VDAS.js"></script>
-<script type="text/javascript" src="assets/account/static/js/account-creation/streamlined-creation.47Owv.js"></script>
-<script type="text/javascript" src="assets/account/static/js/account-creation/analytics.06HDz.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/js/bam.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/common/menu.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/local-common/js/third-party/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/js/inputs.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/js/account-creation/streamlined-creation.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/account/static/js/account-creation/analytics.js"></script>
 <script>
 //<![CDATA[
 (function() {
@@ -1345,13 +977,13 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to {1}.',
+ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
 ticketCanceled: 'Cancelled',
 ticketArchived: 'Archived',
-ticketInfo: 'Need Info',
+ticketInfo: 'Need&#160;Info',
 ticketAll: 'View All Tickets'
 };
 Msg.cms = {
