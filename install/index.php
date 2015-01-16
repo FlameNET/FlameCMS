@@ -41,7 +41,7 @@ if (!isset($_SESSION))
 | Creates Sessions that are saved so that accounts can stay connected.
 |--------------------------------------------------------------------------|
 */
-define('__ROOT__', dirname(dirname(__FILE__)));
+define("__ROOT__", dirname(dirname(__FILE__)));
 
 /*
 |--------------------------------------------------------------------------|

@@ -16,91 +16,25 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
+
 /*
 |--------------------------------------------------------------------------|
-| Info: Session for Accounts.
+| Info: Dirname __ROOT__ .
 | Special: DO NOT TOUCH!
 |--------------------------------------------------------------------------|
 | Creates Sessions that are saved so that accounts can stay connected.
 |--------------------------------------------------------------------------|
 */
-if (!isset($_SESSION))
-    session_start();
-/*
-|--------------------------------------------------------------------------|
-| Info: Session for Accounts. END.
-|--------------------------------------------------------------------------|
-*/
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Language System.
-|--------------------------------------------------------------------------|
-| Specifies the Language that your CMS will show.
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-define("LANGUAGE",	"es");
+define('__ROOT__', dirname(dirname(__FILE__)));
 
 /*
 |--------------------------------------------------------------------------|
-| Info: CMS Language System END.
+| Info: Dirname __ROOT__ . END.
 |--------------------------------------------------------------------------|
 */
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Community System.
-|--------------------------------------------------------------------------|
-| Important Links to Social sites & the title of the CMS.
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-define("TITLE",		"FlameCMS");
-define("FACEBOOK", 	"https://www.facebook.com/");
-define("TWITTER",  	"https://twitter.com/");
-define("YOUTUBE",  	"https://www.youtube.com/");
-define("REDDIT",   	"https://www.reddit.com/");
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Community System END.
-|--------------------------------------------------------------------------|
-*/
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection Variables.
-|--------------------------------------------------------------------------|
-| Please set these to your MySQL Connection. 
-| If you don"t know what you are doing, please contact with one of FlameCMS
-| Developers to help you.
-|--------------------------------------------------------------------------|
-*/
-define('HOST',		'127.0.0.1');
-define('USER',		'root');
-define('PASSWORD',	'password');
-define('PORT',		'3306');
-define('DB',		'cms');
-define('AUTH',		'auth');
-define('CHARACTERS','characters');
-define('WORLD',		'world');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
-|--------------------------------------------------------------------------|
-*/
-define('BASE_URL',	'http://localhost/projects/FlameCMS/');
-define('CORE',		'webkit/');
-define('ROOT',		'/');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection Variables END.
-|--------------------------------------------------------------------------|
-*/
-
 /*
 |--------------------------------------------------------------------------|
 | System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-require( str_replace("//","/",dirname(__FILE__)."/") ."../system/core.php");
+require(__ROOT__."/system/core.php");
