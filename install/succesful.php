@@ -57,11 +57,8 @@ include("config.php");
 								<textarea disabled name="message" placeholder="" rows="8">
 								Trying to connect to database...
 								<?php
-								// Create connection
-								define('__ROOT__', dirname(dirname(__FILE__))); 
-								require_once(__ROOT__.'/webkit/config.php'); 
-
-								$con=mysqli_connect($cms_host,$cms_user,$cms_pass,$cms_db);
+								require_once(__ROOT__.'/system/config.php'); 
+								$con=mysqli_connect(HOST,USER,PASSWORD,DB);
 
 								// Check connection
 								if (mysqli_connect_errno($con))
@@ -74,7 +71,7 @@ include("config.php");
 								Attempting to import SQL files...
 								<?php
 
-								$mysqli = new mysqli($cms_host,$cms_user,$cms_pass,$cms_db);
+								$mysqli = new mysqli(HOST,USER,PASSWORD,DB);
 
 								if (mysqli_connect_error()) {
 									exit('Connect Error (' . mysqli_connect_errno() . ') '
@@ -98,8 +95,7 @@ include("config.php");
 						</div>
 					</form>
 				</article>			
-			</div>
-		
+			</div>	
 			<!-- Footer -->
 			<div id="footer">
 				<ul class="copyright">

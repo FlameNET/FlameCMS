@@ -27,33 +27,47 @@ if(isset($_GET['lang'])){
 }
 
 switch ($lang) {
-  case 'bg':
-  $lang_file = 'lang.bg.php';
-  break;
+
   case 'cn':
   $lang_file = 'lang.cn.php';
   break;
+  
   case 'de':
   $lang_file = 'lang.de.php';
   break;
+  
   case 'en':
   $lang_file = 'lang.en.php';
   break;
+  
   case 'fr':
   $lang_file = 'lang.fr.php';
   break;
+  
   case 'gr':
   $lang_file = 'lang.gr.php';
   break;
+  
   case 'it':
   $lang_file = 'lang.it.php';
   break;
+  
+  case 'ko':
+  $lang_file = 'lang.ko.php';
+  break;
+  
+  case 'pt':
+  $lang_file = 'lang.pt.php';
+  break;
+  
   case 'ro':
   $lang_file = 'lang.ro.php';
   break;
+  
   case 'ru':
   $lang_file = 'lang.ru.php';
   break;
+  
   case 'tw':
   $lang_file = 'lang.tw.php';
   break;
