@@ -1,6 +1,5 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('webkit/config.php'); ?>
-<?php require_once('assets/lang/english.php'); ?>
+<?php require_once('system/config.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
@@ -8,25 +7,26 @@
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include('webkit/desc'); ?>
+<?php include(dirname(__FILE__).'../webkit/desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<?php include('webkit/core'); ?>
+<?php include(dirname(__FILE__).'../webkit/core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <body class="en-gb blog-article news">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include('webkit/usrpanel'); ?>
+<?php include(dirname(__FILE__).'../webkit/userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include('webkit/search'); ?>
+<?php include(dirname(__FILE__).'../webkit/search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?></a></h1>
 <!-- Header -->
-<?php include('webkit/header'); ?>
+<?php include(dirname(__FILE__).'../webkit/header.php'); ?>
+<?php include(dirname(__FILE__).'../webkit/userplate.php');?>
 <!-- Header END -->
 </div>
 <div id="content">
@@ -46,7 +46,7 @@
 </ol>
 </div>
 <div class="content-bot clear">
-<?php include ('webkit/sidebar'); ?>
+<?php include (dirname(__FILE__).'../webkit/sidebar.php'); ?>
 <div class="left-content">
 <div id="blog" class="article-wrapper" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
 <h2 class="header-2" > <span itemprop="headline">Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor</span>
@@ -174,7 +174,7 @@ Blog.init();
 </script></div>
 </div>
 </div>
-<?php include('webkit/footer'); ?>
+<?php include(dirname(__FILE__).'../webkit/footer.php'); ?>
 </div>
 <script>
 //<![CDATA[

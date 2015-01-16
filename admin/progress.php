@@ -1,6 +1,4 @@
-<?php require_once('../webkit/config.php'); ?>
-<?php require_once('../assets/lang/english.php'); ?>
-
+<?php require_once('../system/config.php'); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7 fluid top-full menuh-top sticky-top sidebar sidebar-full sidebar-collapsible sidebar-width-mini sticky-sidebar sidebar-hat"> <![endif]-->
 <!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8 fluid top-full menuh-top sticky-top sidebar sidebar-full sidebar-collapsible sidebar-width-mini sticky-sidebar sidebar-hat"> <![endif]-->

@@ -39,6 +39,8 @@ if (!isset($_SESSION))
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
+define("LANGUAGE",	"es");
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Language System END.
@@ -68,7 +70,7 @@ define("REDDIT",   	"https://www.reddit.com/");
 | Info: CMS Connection Variables.
 |--------------------------------------------------------------------------|
 | Please set these to your MySQL Connection. 
-| If you don't know what you are doing, please contact with one of FlameCMS
+| If you don"t know what you are doing, please contact with one of FlameCMS
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */
@@ -95,38 +97,10 @@ define('ROOT',		'/');
 | Info: CMS Connection Variables END.
 |--------------------------------------------------------------------------|
 */
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection System.
-|--------------------------------------------------------------------------|
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
-
-if (mysqli_connect_error()) {
-	die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-}
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection System END.
-|--------------------------------------------------------------------------|
-*/
-
 
 /*
 |--------------------------------------------------------------------------|
-| Install CMS Required
+| System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-if(file_exists("install"))
-{
-	header("Location: install");
-	die();
-}
-/*
-|--------------------------------------------------------------------------|
-| Functions CMS
-|--------------------------------------------------------------------------|
-*/
-include( str_replace("//","/",dirname(__FILE__)."/") ."../functions/function.php");
+require( str_replace("//","/",dirname(__FILE__)."/") ."../system/core.php");

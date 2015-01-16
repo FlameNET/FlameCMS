@@ -25,7 +25,7 @@
 <div class="sidebar-module " id="sidebar-social-media">
 	<div class="sidebar-title">
 		<h3 class="header-3 title-social-media">
-		<?php echo $cms_lang['1']; ?>
+		<?php echo $cms_lang['1'] ?>
 		</h3>
 	</div>
 <div class="sidebar-content">
@@ -79,8 +79,8 @@
 <a href="#" class="latest-patch"></a>
 </div>
 </div>
-<?php include('webkit/screenshot'); ?>
-<?php include('webkit/latestpost'); ?>
+<?php include('webkit/screenshot.php'); ?>
+<?php include('webkit/latestpost.php'); ?>
 </div>
 </div>
 </div>

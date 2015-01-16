@@ -83,6 +83,8 @@ include("config.php");
 									<input type="text" name="chardb" placeholder="Characters Db Name">
 									World Database:
 									<input type="text" name="worlddb" placeholder="World DB Name">
+									Language:
+									<input type="text" name="lang" placeholder="Language CMS">
 									<a href="#" title="If you don't have a domain just add the following: http://localhost/">Domain:</a>
 									<input type="text" name="cfgdom">
 									<p><center><input type="submit" name="Submit" value="Install FlameCMS Now"></center></p>
@@ -131,6 +133,8 @@ if (!isset($_SESSION))
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
+define("LANGUAGE",	"'.$_POST['lang'].'");
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Language System END.
@@ -186,44 +190,16 @@ define("ROOT",		"/");
 | Info: CMS Connection Variables END.
 |--------------------------------------------------------------------------|
 */
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection System.
-|--------------------------------------------------------------------------|
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
-
-if (mysqli_connect_error()) {
-	die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-}
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection System END.
-|--------------------------------------------------------------------------|
-*/
-
 
 /*
 |--------------------------------------------------------------------------|
-| Install CMS Required
+| System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-if(file_exists("install"))
-{
-	header("Location: install");
-	die();
-}
-/*
-|--------------------------------------------------------------------------|
-| Functions CMS
-|--------------------------------------------------------------------------|
-*/
-include( str_replace("//","/",dirname(__FILE__)."/") ."../functions/function.php");
+require( str_replace("//","/",dirname(__FILE__)."/") ."../system/core.php");
 
 ';
-		$fp = fopen("../webkit/config.php", "w");
+		$fp = fopen("../system/config.php", "w");
 		fwrite($fp, $string);
 		fclose($fp);
 		header("Location: succesful.php");

@@ -1,8 +1,0 @@
-<div class="search-bar">
-<form action="/wow/en/search" method="get" autocomplete="off">
-<div>
-<input type="text" class="search-field input" name="q" id="search-field" maxlength="200" tabindex="40" alt="Search characters, items, forums and more…" value="Search characters, items, forums and more…" />
-<input type="submit" class="search-button" value="" tabindex="41" />
-</div>
-</form>
-</div>

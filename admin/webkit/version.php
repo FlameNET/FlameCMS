@@ -1,16 +1,16 @@
 <?php
-	$mysqli->query("SET NAMES 'utf8'");
-	if(isset($_GET['new'])){
-	$vers = intval($_GET['new']);
-	}else{
-		$vers = 0;
-	}
-	$vers_query = $mysqli->query("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
-	$counter = 1;
-	
-	while($counter<=7 && $vers=mysqli_fetch_array($vers_query)){
-	if($counter == 1){}else{}
-	$counter++;
+if(isset($_GET['new'])){
+$vers = intval($_GET['new']);
+}else{
+	$vers = 0;
+}
+$mysqli->query("SET NAMES 'utf8'");
+$vers_query = $mysqli->query("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
+$counter = 1;
+
+while($counter<=7 && $vers=mysqli_fetch_array($vers_query)){
+if($counter == 1){}else{}
+$counter++;
 ?>
 
 <div id="footer" class="hidden-print">		

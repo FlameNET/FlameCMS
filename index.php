@@ -1,6 +1,5 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('webkit/config.php'); ?>
-<?php require_once('assets/lang/english.php'); ?>
+<?php require_once('system/config.php'); ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
@@ -8,39 +7,39 @@
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include('webkit/desc'); ?>
+<?php include('webkit/desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<?php include('webkit/core'); ?>
+<?php include('webkit/core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <body class="en-gb homepage news">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include('webkit/usrpanel'); ?>
+<?php include('webkit/userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include('webkit/search'); ?>
+<?php include('webkit/search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
-<?php include('webkit/header'); ?>
-<?php include('webkit/usrplate');?>
+<?php include('webkit/header.php'); ?>
+<?php include('webkit/userplate.php');?>
 <!-- Header END -->
 </div>
 <div id="content">
 <div class="content-top body-top">
 <!-- Content Trail -->
-<?php include('webkit/breadcrumb'); ?>
+<?php include('webkit/breadcrumb.php'); ?>
 <!-- Content Trail END -->
 <div class="content-bot clear">
 <!-- Slideshow -->
 <?php include('webkit/slideshow.php'); ?>
 <!-- Slideshow END -->
 <!-- Sidebar -->
-<?php include ('webkit/sidebar'); ?>
+<?php include ('webkit/sidebar.php'); ?>
 <!-- Sidebar END -->
 <div class="left-content" itemscope="itemscope" itemtype="http://schema.org/WebPageElement">
 <div class= "left-content-inner">
@@ -79,7 +78,7 @@ $(function(){
 </div>
 </div>
 </div>
-<?php include('webkit/footer'); ?>
+<?php include('webkit/footer.php'); ?>
 </div>
 <script>
 //<![CDATA[
