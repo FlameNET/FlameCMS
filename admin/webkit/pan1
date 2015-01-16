@@ -1,5 +1,5 @@
 <?php
-require_once('../webkit/config.php');
+require_once('../system/config.php');
 if(isset($_GET['new'])){
 $vers = intval($_GET['new']);
 }else{

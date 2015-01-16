@@ -7,7 +7,7 @@
 <!-- Not Blank page -->
 <!-- Full Top Style -->
 <ul class="topnav pull-left">
-<li class="active"><a href="#" class="glyphicons dashboard"><i></i> Dashboard</a></li>
+<li class="active"><a href="index.php" class="glyphicons dashboard"><i></i> Dashboard</a></li>
 <li class="dropdown dd-1">
 <a href="" data-toggle="dropdown" class="glyphicons settings"><i></i>Administration <span class="caret"></span></a>
 <ul class="dropdown-menu pull-left">
