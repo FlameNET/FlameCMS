@@ -6,24 +6,24 @@
 <title>Battle.net Account</title>
 <link rel="shortcut icon" href="http://bneteu-a.akamaihd.net/account/static/images/meta/favicon.2dy4z.ico" />
 <link rel="search" type="application/opensearchdescription+xml" href="en-gb/data/opensearch" title="Battle.net Search" />
-<link rel="stylesheet" type="text/css" media="all" href="account/static/local-common/css/common.2ZTrP180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="all" href="account/static/css/bnet.3Loj4180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="print" href="account/static/css/bnet-print.0dd98180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="all" href="account/static/css/legal/ratings.1GSJA180f.css?v=58-28" />
-<link rel="stylesheet" type="text/css" media="all" href="account/static/css/inputs.3rjB9.css" />
-<link rel="stylesheet" type="text/css" media="all" href="account/static/css/account-creation/streamlined-creation.15MkW.css" />
-<link rel="stylesheet" type="text/css" media="all" href="account/static/css/locale/en-gb.00000.css" />
-<script type="text/javascript" src="account/static/local-common/js/third-party/jquery-1.7.1.min.0vCiz180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/local-common/js/common/bootstrap.3Pnh6180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/local-common/js/third-party/class-inheritance.4V7WX180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/local-common/js/third-party/swfobject-2.2.1.min.0INo9180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/local-common/js/common.4Tp8T180f.js?v=58-28"></script>
+<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/local-common/css/common.2ZTrP180f.css?v=58-28" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/bnet.3Loj4180f.css?v=58-28" />
+<link rel="stylesheet" type="text/css" media="print" href="assets/account/static/css/bnet-print.0dd98180f.css?v=58-28" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/legal/ratings.1GSJA180f.css?v=58-28" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/inputs.3rjB9.css" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/account-creation/streamlined-creation.15MkW.css" />
+<link rel="stylesheet" type="text/css" media="all" href="assets/account/static/css/locale/en-gb.00000.css" />
+<script type="text/javascript" src="assets/account/static/local-common/js/third-party/jquery-1.7.1.min.0vCiz180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/local-common/js/common/bootstrap.3Pnh6180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/local-common/js/third-party/class-inheritance.4V7WX180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/local-common/js/third-party/swfobject-2.2.1.min.0INo9180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/local-common/js/common.4Tp8T180f.js?v=58-28"></script>
 <script type="text/javascript">
 //<![CDATA[
 var Core = Core || {},
 Login = Login || {};
-Core.staticUrl = 'account/static';
-Core.sharedStaticUrl = 'account/static/local-common';
+Core.staticUrl = 'assets/account/static';
+Core.sharedStaticUrl = 'assets/account/static/local-common';
 Core.baseUrl = 'account';
 Core.projectUrl = 'account';
 Core.cdnUrl = 'http://media.blizzard.com/';
@@ -63,7 +63,7 @@ _gaq.push(['_trackPageview']);
 <h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>
 <div id="navigation">
 <div id="page-menu" class="large">
-<h2><a href="account/management/"> Account Creation
+<h2><a href="assets/account/management/"> Account Creation
 </a></h2>
 <h2 class="second-header"></h2>
 <span class="clear"><!-- --></span>
@@ -83,7 +83,7 @@ _gaq.push(['_trackPageview']);
 <a href='shop/' class="service-link" data-action="Shop">Shop</a>
 </li>
 <li class="service-cell service-account">
-<a href="account/management/" class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
+<a href="assets/account/management/" class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
 </li>
 <li class="service-cell service-support service-support-enhanced">
 <a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Support - Support">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>
@@ -136,7 +136,7 @@ shim.style.display = 'block';
 </a>
 </li>
 <li>
-<a href="account/management/" tabindex="55" data-action="Explore - Account">
+<a href="assets/account/management/" tabindex="55" data-action="Explore - Account">
 <strong class="explore-caption">Account</strong>
 </a>
 </li>
@@ -151,11 +151,11 @@ shim.style.display = 'block';
 <ul>
 <li><a href="what-is/" tabindex="55" data-action="Explore - What is Battle.net?">What is Battle.net?</a></li>
 <li><a href="realid/" tabindex="55" data-action="Explore - What is Real ID?">What is Real ID?</a></li>
-<li><a href="account/parental-controls/index.html" tabindex="55" data-action="Explore - Parental Controls">Parental Controls</a></li>
+<li><a href="assets/account/parental-controls/index.html" tabindex="55" data-action="Explore - Parental Controls">Parental Controls</a></li>
 <li><a href="security/" tabindex="55" data-action="Explore - Account Security">Account Security</a></li>
 <li><a href="http://jobs.blizzard.com/?utm_campaign=Blizzard_Jobs&amp;utm_source=Battle_net&amp;utm_medium=Explore" tabindex="55" data-action="Explore - Work At Blizzard">Work At Blizzard</a></li>
 <li><a href="games/classic" tabindex="55" data-action="Explore - Classic Games">Classic Games</a></li>
-<li><a href="account/support/index.html" tabindex="55" data-action="Explore - Account Support">Account Support</a></li>
+<li><a href="assets/account/support/index.html" tabindex="55" data-action="Explore - Account Support">Account Support</a></li>
 </ul>
 </div>
 <a class="explore-get-app" href="en/app/">
@@ -1070,7 +1070,7 @@ DD_belatedPNG.fix('.input-note-arrow');
 <ul>
 <li><a href="what-is/" data-action="Battle.net Home - What is Battle.net®?">What is Battle.net®?</a></li>
 <li><a href="shop/" data-action="Battle.net Home - Shop">Shop</a></li>
-<li><a href="account/management/" data-action="Battle.net Home - Account">Account</a></li>
+<li><a href="assets/account/management/" data-action="Battle.net Home - Account">Account</a></li>
 <li><a href="support/" data-action="Battle.net Home - Support">Support</a></li>
 <li><a href="realid/" data-action="Battle.net Home - Real ID">Real ID</a></li>
 <li><a href="battletag/" data-action="Battle.net Home - BattleTag®">BattleTag®</a></li>
@@ -1086,19 +1086,19 @@ DD_belatedPNG.fix('.input-note-arrow');
 <li><a href="d3/" data-action="Games - Diablo® III">Diablo® III</a></li>
 <li><a href="hearthstone/" data-action="Games - Hearthstone™">Hearthstone™</a></li>
 <li><a href="games/classic" data-action="Games - Classic Games">Classic Games</a></li>
-<li><a href="account/download/" data-action="Games - Game Client Downloads">Game Client Downloads</a></li>
+<li><a href="assets/account/download/" data-action="Games - Game Client Downloads">Game Client Downloads</a></li>
 </ul>
 </div>
 <div class="column">
 <h3 class="account">
-<a href="account/management/" tabindex="100">Account</a>
+<a href="assets/account/management/" tabindex="100">Account</a>
 </h3>
 <ul>
-<li><a href="account/support/login-support.html" data-action="Account - Can’t log in?">Can’t log in?</a></li>
+<li><a href="assets/account/support/login-support.html" data-action="Account - Can’t log in?">Can’t log in?</a></li>
 <li><a href="tos.html" data-action="Account - Create Account">Create Account</a></li>
-<li><a href="account/management/" data-action="Account - Account Summary">Account Summary</a></li>
+<li><a href="assets/account/management/" data-action="Account - Account Summary">Account Summary</a></li>
 <li><a href="security" data-action="Account - Account Security">Account Security</a></li>
-<li><a href="account/management/claim-code.html" data-action="Account - Redeem Codes">Redeem Codes</a></li>
+<li><a href="assets/account/management/claim-code.html" data-action="Account - Redeem Codes">Redeem Codes</a></li>
 </ul>
 </div>
 <div class="column">
@@ -1107,7 +1107,7 @@ DD_belatedPNG.fix('.input-note-arrow');
 </h3>
 <ul>
 <li><a href="support/" data-action="Support - Support Articles">Support Articles</a></li>
-<li><a href="account/parental-controls/index.html" data-action="Support - Parental Controls">Parental Controls</a></li>
+<li><a href="assets/account/parental-controls/index.html" data-action="Support - Parental Controls">Parental Controls</a></li>
 <li><a href="security/" data-action="Support - Protect Your Account">Protect Your Account</a></li>
 <li><a href="security/help" data-action="Support - Help! I got hacked!">Help! I got hacked!</a></li>
 </ul>
@@ -1314,12 +1314,12 @@ other: 'Other'
 };
 //]]>
 </script>
-<script type="text/javascript" src="account/static/js/bam.2MTss180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/local-common/js/common/menu.2LSka180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/local-common/js/third-party/jquery-ui-1.10.2.custom.min.4DFLs180f.js?v=58-28"></script>
-<script type="text/javascript" src="account/static/js/inputs.0VDAS.js"></script>
-<script type="text/javascript" src="account/static/js/account-creation/streamlined-creation.47Owv.js"></script>
-<script type="text/javascript" src="account/static/js/account-creation/analytics.06HDz.js"></script>
+<script type="text/javascript" src="assets/account/static/js/bam.2MTss180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/local-common/js/common/menu.2LSka180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/local-common/js/third-party/jquery-ui-1.10.2.custom.min.4DFLs180f.js?v=58-28"></script>
+<script type="text/javascript" src="assets/account/static/js/inputs.0VDAS.js"></script>
+<script type="text/javascript" src="assets/account/static/js/account-creation/streamlined-creation.47Owv.js"></script>
+<script type="text/javascript" src="assets/account/static/js/account-creation/analytics.06HDz.js"></script>
 <script>
 //<![CDATA[
 (function() {
