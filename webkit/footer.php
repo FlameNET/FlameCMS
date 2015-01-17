@@ -79,7 +79,97 @@
 &#169;2014 Blizzard Entertainment, Inc. All rights reserved
 <p><?php echo TITLE ?>, All rights reserved | Powered by Flame.NET | Coded by Flame.NET</p>
 </div>
-<div id="international"></div>
+<div id="international">
+	<div class="column">
+		<h3>Americas</h3>
+		<ul>
+			<li>
+			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to en'); return true;">
+			English (US) </a>
+			</li>
+			<li>
+			<a href="?lang=es" class="selected" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to es'); return true;">
+			Español (AL) </a>
+			</li>
+			<li>
+			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to pt'); return true;">
+			Português (AL) </a>
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<h3>Europe</h3>
+		<ul>
+			<li>
+			<a href="?lang=de" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to de'); return true;">
+			Deutsch </a>
+			</li>
+			<li>
+			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to en'); return true;">
+			English (EU) </a>
+			</li>
+			<li>
+			<a href="?lang=es" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to es'); return true;">
+			Español (EU) </a>
+			</li>
+			<li>
+			<a href="?lang=fr" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to fr'); return true;">
+			Français </a>
+			</li>
+			<li>
+			<a href="?lang=it" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to it'); return true;">
+			Italiano </a>
+			</li>
+			<li>
+			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to pt'); return true;">
+			Português (EU) </a>
+			</li>
+			<li>
+			<a href="?lang=ru" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to ru'); return true;">
+			Русский </a>
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<h3>Korea</h3>
+		<ul>
+			<li>
+			<a href="?lang=ko" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to ko'); return true;">
+			한국어 </a>
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<h3>Taiwan</h3>
+		<ul>
+			<li>
+			<a href="?lang=tw" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to tw'); return true;">
+			繁體中文 </a>
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<h3>China</h3>
+		<ul>
+			<li>
+			<a href="?lang=cn" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to cn'); return true;">
+			简体中文 </a>
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<h3>Southeast Asia</h3>
+		<ul>
+			<li>
+			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to en'); return true;">
+			English (US) </a>
+			</li>
+		</ul>
+	</div>
+	<span class="clear">
+	<!-- -->
+	</span>
+</div>
 <div id="legal">
 <!-- legal:true eu-en-gb id:WORLD_OF_WARCRAFT_MISTS_OF_PANDARIA ratings:true -->
 <div id="legal-ratings" class="png-fix">

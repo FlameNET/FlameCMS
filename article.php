@@ -38,8 +38,10 @@ if (isset($_GET['id'])){
 <h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
-<?php Menu(); ?>
-<?php include(__ROOT__.'/webkit/userplate.php');?>
+<?php
+$page = "menu-home";
+include(__ROOT__.'/webkit/menu.php');
+include(__ROOT__.'/webkit/userplate.php');?>
 </div>
 <!-- Header END -->
 </div>
