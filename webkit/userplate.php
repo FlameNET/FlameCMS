@@ -5,4 +5,3 @@
 <span class="login-msg"><strong>Log in now</strong> to enhance and personalize your experience!</span>
 </a>
 </div>
-</div>
