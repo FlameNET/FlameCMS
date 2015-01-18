@@ -9,7 +9,7 @@ if(isset($page))
 ?>
 	<li class="<?php echo $menu["menu_class"]; ?>" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 		<a itemprop="url" href="<?php echo BASE_URL.$menu["menu_url"]; ?>" <?php if($page==$menu["menu_class"]) echo'class="menu-active"'; ?> >
-			<span itemprop="name"><?php echo $menu["menu_".$_SESSION['lang'].""]; ?></span>
+			<span itemprop="name"><?php echo $menu["menu_$lang"]; ?></span>
 		</a>
 	</li>
 <?php
@@ -26,7 +26,7 @@ else
 ?>
 	<li class="<?php echo $menu["menu_class"]; ?>" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 		<a itemprop="url" href="<?php echo BASE_URL.$menu["menu_url"]; ?>">
-			<span itemprop="name"><?php echo $menu["menu_".$_SESSION['lang'].""]; ?></span>
+			<span itemprop="name"><?php echo $menu["menu_$lang"]; ?></span>
 		</a>
 	</li>
 <?php
