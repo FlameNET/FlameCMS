@@ -1,4 +1,0 @@
-1) Create "Login": Player - GM - Admin | (includes: userplate and avatar)
-2) Create Admin Panel
-3) Create Main Pages ( Guide Game, Community, Media, Forums, Shop)
-4) Implement news and blog 85%

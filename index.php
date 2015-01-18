@@ -27,7 +27,7 @@
 <!-- Header -->
 <div class="header-plate">
 <?php
-$page = "home";
+$page = "menu-home";
 include(__ROOT__.'/webkit/menu.php');
 include(__ROOT__.'/webkit/userplate.php');?>
 </div>

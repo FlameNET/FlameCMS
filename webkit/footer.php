@@ -89,11 +89,11 @@
 			</li>
 			<li>
 			<a href="?lang=es" class="selected" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to es'); return true;">
-			Español (AL) </a>
+			Espa&#241;ol (AL) </a>
 			</li>
 			<li>
 			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to pt'); return true;">
-			Português (AL) </a>
+			Portugu&#234;s (AL) </a>
 			</li>
 		</ul>
 	</div>
@@ -110,11 +110,11 @@
 			</li>
 			<li>
 			<a href="?lang=es" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to es'); return true;">
-			Español (EU) </a>
+			Espa&#241;ol (EU) </a>
 			</li>
 			<li>
 			<a href="?lang=fr" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to fr'); return true;">
-			Français </a>
+			Fran&#231;ais </a>
 			</li>
 			<li>
 			<a href="?lang=it" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to it'); return true;">
@@ -122,11 +122,11 @@
 			</li>
 			<li>
 			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to pt'); return true;">
-			Português (EU) </a>
+			Portugu&#234;s (EU) </a>
 			</li>
 			<li>
 			<a href="?lang=ru" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to ru'); return true;">
-			Русский </a>
+			&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; </a>
 			</li>
 		</ul>
 	</div>
@@ -135,7 +135,7 @@
 		<ul>
 			<li>
 			<a href="?lang=ko" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to ko'); return true;">
-			한국어 </a>
+			&#54620;&#44397;&#50612; </a>
 			</li>
 		</ul>
 	</div>
@@ -144,7 +144,7 @@
 		<ul>
 			<li>
 			<a href="?lang=tw" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to tw'); return true;">
-			繁體中文 </a>
+			&#32321;&#39636;&#20013;&#25991; </a>
 			</li>
 		</ul>
 	</div>
@@ -153,7 +153,7 @@
 		<ul>
 			<li>
 			<a href="?lang=cn" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to cn'); return true;">
-			简体中文 </a>
+			&#31616;&#20307;&#20013;&#25991; </a>
 			</li>
 		</ul>
 	</div>

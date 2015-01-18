@@ -1,16 +1,16 @@
 <div id="service">
 <ul class="service-bar">
 <li class="service-cell service-home">
-<a href="#" tabindex="50" accessKey="1" title="<?php echo TITLE ?> HOME" data-action="<?php echo TITLE ?> HOME">&nbsp;</a>
+<a href="<?php echo BASE_URL ?>" tabindex="50" accessKey="1" title="<?php echo TITLE ?> HOME" data-action="<?php echo TITLE ?> HOME">&nbsp;</a>
 </li>
 <li class="service-cell service-welcome">
 <a href="?login" onclick="return Login.open()">Log in</a> or <a href="register.php">Create an Account</a>
 </li>
 <li class="service-cell service-shop">
-<a href='<?php echo CORE ?>shop/' class="service-link" data-action="Shop">Shop</a>
+<a href='<?php echo BASE_URL ?>shop/' class="service-link" data-action="Shop">Shop</a>
 </li>
 <li class="service-cell service-account">
-<a href='<?php echo CORE ?>management/' class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
+<a href='<?php echo BASE_URL ?><?php echo CORE ?>management/' class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
 </li>
 <li class="service-cell service-support service-support-enhanced">
 <a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Support - Support">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>
@@ -53,22 +53,22 @@ shim.style.display = 'block';
 <div class="explore-primary">
 <ul class="explore-nav">
 <li>
-<a href="http://eu.Flame.net/" tabindex="55" data-action="Explore - Flame.net Home">
+<a href="<?php echo BASE_URL ?>" tabindex="55" data-action="Explore - Flame.net Home">
 <strong class="explore-caption">Flame.net Home</strong>
 </a>
 </li>
 <li>
-<a href="https://eu.Flame.net/shop/" tabindex="55" data-action="Explore - Shop">
+<a href="<?php echo BASE_URL ?>shop/" tabindex="55" data-action="Explore - Shop">
 <strong class="explore-caption">Shop</strong>
 </a>
 </li>
 <li>
-<a href="https://eu.Flame.net/account/management/" tabindex="55" data-action="Explore - Account">
+<a href="<?php echo BASE_URL ?><?php echo CORE ?>management/" tabindex="55" data-action="Explore - Account">
 <strong class="explore-caption">Account</strong>
 </a>
 </li>
 <li>
-<a href="http://eu.Flame.net/support/" tabindex="55" data-action="Explore - Support">
+<a href="<?php echo BASE_URL ?>support/" tabindex="55" data-action="Explore - Support">
 <strong class="explore-caption">Support</strong>
 </a>
 </li>
@@ -76,13 +76,13 @@ shim.style.display = 'block';
 <div class="explore-links">
 <h2 class="explore-caption">More</h2>
 <ul>
-<li><a href="http://eu.Flame.net/what-is/" tabindex="55" data-action="Explore - What is Flame.net?">What is Flame.net?</a></li>
-<li><a href="http://eu.Flame.net/realid/" tabindex="55" data-action="Explore - What is Real ID?">What is Real ID?</a></li>
-<li><a href="https://eu.Flame.net/account/parental-controls/index.html" tabindex="55" data-action="Explore - Parental Controls">Parental Controls</a></li>
-<li><a href="http://eu.Flame.net/security/" tabindex="55" data-action="Explore - Account Security">Account Security</a></li>
-<li><a href="http://jobs.blizzard.com/?utm_campaign=Blizzard_Jobs&amp;utm_source=Battle_net&amp;utm_medium=Explore" tabindex="55" data-action="Explore - Work At Blizzard">Work At Blizzard</a></li>
-<li><a href="http://eu.Flame.net/games/classic" tabindex="55" data-action="Explore - Classic Games">Classic Games</a></li>
-<li><a href="https://eu.Flame.net/account/support/index.html" tabindex="55" data-action="Explore - Account Support">Account Support</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - What is Flame.net?">What is Flame.net?</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - What is Real ID?">What is Real ID?</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - Parental Controls">Parental Controls</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - Account Security">Account Security</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - Work At Blizzard">Work At Blizzard</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - Classic Games">Classic Games</a></li>
+<li><a href="#" tabindex="55" data-action="Explore - Account Support">Account Support</a></li>
 </ul>
 </div>
 <span class="clear"><!-- --></span>
