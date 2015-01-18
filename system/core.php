@@ -81,10 +81,6 @@ switch ($lang) {
 	$lang_file = 'lang.pt.php';
 	break;
 
-	case 'ro':
-	$lang_file = 'lang.ro.php';
-	break;
-
 	case 'ru':
 	$lang_file = 'lang.ru.php';
 	break;
