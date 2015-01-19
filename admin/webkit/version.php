@@ -4,7 +4,6 @@ $vers = intval($_GET['new']);
 }else{
 	$vers = 0;
 }
-Connect()->query("SET NAMES 'utf8'");
 $vers_query = Connect()->query("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
 $counter = 1;
 

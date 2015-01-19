@@ -6,7 +6,6 @@
 		$new = 0;
 	}
 	$news_first = $new ? $new : 9999999999;
-	Connect()->query("SET NAMES 'utf8'");
 	$news_query = Connect()->query("SELECT * FROM news WHERE id <= '".$news_first."' ORDER BY `id` DESC LIMIT 8");
 	$counter = 1;
 	while($counter<=7 && $news=mysqli_fetch_array($news_query)){

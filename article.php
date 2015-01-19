@@ -2,7 +2,6 @@
 <?php
 require_once('system/config.php');
 if (isset($_GET['id'])){
-	Connect()->query("SET NAMES 'utf8'");
 	$news = Connect()->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
 	$rows = $news->fetch_assoc();
 	if (!$rows['id']){
