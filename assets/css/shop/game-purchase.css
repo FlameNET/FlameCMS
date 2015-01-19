@@ -1,0 +1,745 @@
+@charset "utf-8";
+
+.game-purchase #content .content-top {
+	background: url("../../images/shop/game-purchase/bg-top.jpg") 0 0 no-repeat;
+	color: #b39265;
+}
+
+.game-purchase h4 {
+	color: #e2c7a3;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.game-purchase .summary-div {
+	height: 460px;
+	margin: 50px 50px 0 50px;
+	position: relative;
+}
+.game-purchase .summary-div .page-titles {
+	color: #ffa800;
+	font-size: 14px;
+	height: 390px;
+	position: relative;
+}
+.game-purchase .summary-div .page-titles span {
+	color: #efe3d2;
+	display: block;
+	font-family: "Palatino Linotype", Serif;
+	font-size: 52px;
+	line-height: 60px;
+	width: 600px;
+}
+.game-purchase .summary-div .page-titles .quick-links {
+	background: rgba(0,0,0, .5);
+	border: 1px solid #3d1f15;
+	border-radius: 8px;
+	padding: 10px 16px;
+	position: absolute;
+	right: 30px;
+	top: 155px;
+}
+.game-purchase .summary-div .page-titles .quick-links ul {
+	list-style-type: disc;
+	padding-left: 16px;
+}
+.game-purchase .page-sub-titles {
+	color: #efe3d2;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.game-purchase .page-titles p,
+.game-purchase .page-sub-titles p {
+	color: #b79855;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 30px;
+	text-transform: none;
+	width: 500px;
+}
+
+.game-purchase .box {
+	background: url("../../images/shop/game-purchase/bg-game-box.jpg") 0 0 no-repeat;
+	height: 384px;
+	padding: 30px 50px 0;
+}
+.game-purchase .box .game-box {
+	background: url("../../images/shop/game-purchase/game-boxes-6.0f15d.png?v=47") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 367px;
+	width: 334px;
+}
+.game-purchase .battle-chest .game-box {
+	background-position: 0 0;
+}
+.game-purchase .mists-of-pandaria .game-box {
+	background-position: -17px -367px;
+}
+.game-purchase .warlords-of-draenor .game-box {
+	background-position: -17px -734px;
+}
+.game-purchase .box .box-desc {
+	color: #b39265;
+	float: right;
+	font-size: 13px;
+	margin-top: 35px;
+	width: 550px;
+}
+.game-purchase .box .box-desc .sub-title {
+	color: #714d2a;
+	display: block;
+	font-size: 17px;
+}
+.game-purchase .box .box-desc ul {
+	margin: 10px 0 30px;
+}
+.game-purchase .box .box-desc li:first-child {
+	margin-top: 10px;
+}
+.game-purchase .box .box-desc li {
+	background: url("../../images/icons/bullet2.gif") no-repeat 0 5px;
+	font-weight: bold;
+	margin-left: 15px;
+	padding-left: 20px;
+}
+.game-purchase .box .box-desc li a {
+	background: url("../../images/icons/goto-fansite.gif") no-repeat right 3px;
+	color: #ffb100;
+	padding-right: 18px;
+}
+.game-purchase .box .box-desc li a:hover {
+	background-position: right -18px;
+}
+.game-purchase .button2 span {
+	font-size: 12px;
+}
+.game-purchase .button2 span {
+	padding: 0 0 0 15px;
+}
+.game-purchase .button2 span span {
+	padding: 0 15px 0 0;
+}
+.game-purchase .button6 span {
+	font-size: 12px;
+}
+.game-purchase .button6 span {
+	padding: 0 0 0 15px;
+}
+.game-purchase .button6 span span {
+	padding: 0 15px 0 0;
+}
+
+.game-purchase .table-feature {
+	background: url("../../images/shop/game-purchase/bg-table.jpg") 0 bottom no-repeat;
+	padding: 0 50px 40px;
+}
+.game-purchase .box-feature {
+	background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat;
+ -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+         border-radius: 4px;
+ -webkit-box-shadow: #0d0703 0 0 5px;
+    -moz-box-shadow: #0d0703 0 0 5px;
+         box-shadow: #0d0703 0 0 5px;
+	color: #b79855;
+	margin: 20px auto 0;
+	opacity: .95;
+	padding: 25px;
+}
+.game-purchase .box-feature .title {
+	color: #e2c7a3;
+	font-family: arial;
+	font-size: 20px;
+}
+.game-purchase table {
+	color: #b39265;
+	font-size: 13px;
+	line-height: 40px;
+	width: 100%;
+}
+.game-purchase table th,
+.game-purchase table tr {
+	border-bottom: 1px solid #462b19;
+}
+.game-purchase table .logo {
+	height: 80px;
+	width: 140px;
+}
+.game-purchase table .logo,
+.game-purchase table td span {
+	background: url("../../images/shop/game-purchase/box-logos-wod.png") 0 0 no-repeat;
+	padding-left: 20px;
+}
+.game-purchase table th.battle-chest {
+	background-position: center -8px;
+}
+.game-purchase table th.lich-king {
+	background-position: center -93px;
+}
+.game-purchase table th.cataclysm {
+	background-position: center -180px;
+}
+.game-purchase table th.mists-of-pandaria {
+	background-position: center -267px;
+}
+.game-purchase table th.warlords-of-draenor {
+	background-position: center -354px;
+}
+
+.game-purchase table td span {
+	display: block;
+	height: 15px;
+	margin: 0 auto;
+	width: 15px;
+}
+.game-purchase table td,
+.game-purchase table tr {
+	border-bottom: 1px solid #462b19;
+	padding-left: 20px;
+}
+.game-purchase table tr.alternate {
+	background-color: #301c0d;
+	border-bottom: 1px solid #462b19;
+	padding-left: 20px;
+}
+.game-purchase table td.battle-chest span {
+	background-position: -5px -456px;
+}
+.game-purchase table td.mists-of-pandaria span {
+	background-position: -118px -456px;
+}
+.game-purchase table td.warlords-of-draenor span {
+	background-position: -80px -456px;
+}
+
+.game-purchase .options {
+	background: url("../../images/shop/game-purchase/bg-options.jpg") 0 top no-repeat;
+	padding: 30px 50px 100px 50px;
+}
+.game-purchase .options .left {
+	float: left;
+	width: 500px;
+}
+.game-purchase .options .right {
+	float: right;
+}
+.game-purchase .options h4 {
+	margin: 40px 0 30px;
+}
+.game-purchase .options p {
+	line-height: 2em;
+}
+.game-purchase .compare-box {
+	background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat;
+ -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+         border-radius: 4px;
+ -webkit-box-shadow: #0d0703 0 0 5px;
+    -moz-box-shadow: #0d0703 0 0 5px;
+         box-shadow: #0d0703 0 0 5px;
+	color: #b79855;
+	margin: 50px auto 0;
+	opacity: .95;
+	padding: 25px;
+	width: 267px;
+}
+.game-purchase .compare-box h4 {
+	margin: 0;
+}
+.game-purchase .options .ui-button {
+	margin: 10px 0 0 17px;
+}
+.game-purchase .options .button4 span {
+	width: 200px;
+	overflow: visible;
+}
+.game-purchase .button1 span {
+	font-size: 12px;
+	text-transform: none;
+	width: 175px;
+	overflow: visible;
+}
+.game-purchase .options .button4.button-top {
+	margin-top: 30px;
+}
+
+.game-purchase .compare {
+	color: #da9500;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.game-purchase .compare span {
+	font-size: 10px;
+}
+.game-purchase .compare .under-line {
+	border-bottom: 1px dotted #da9500;
+	display: inline-block;
+	margin: 0 10px;
+	width: 65px;
+}
+.game-purchase .compare .under-line.short {
+	width: 57px;
+}
+.game-purchase .compare-box .billed {
+	color: #5b3d21;
+	display: block;
+	font-size: 11px;
+	height: 12px;
+	text-align: right;
+}
+
+.game-purchase .options .subs {
+	background: url("../../images/shop/game-purchase/bg-card.jpg") right top no-repeat;
+}
+.game-purchase .options .subs p {
+	width: 600px;
+}
+.game-purchase .options .subs .payment {
+	margin: 50px 0 0 -70px;
+}
+.game-purchase .options .subs .payment-method {
+	display: block;
+	float: left;
+	font-size: 11px;
+	margin: 0 0 30px 50px;
+	min-height: 59px;
+	padding-bottom: 20px;
+	padding-left: 105px;
+	position: relative;
+	width: 320px;
+}
+.game-purchase .options .subs .payment-method h6 {
+	color: #e2c7a3;
+	font-size: 14px;
+	font-weight: normal;
+}
+.game-purchase .options .subs .payment-method p {
+	line-height: 1.8em;
+	margin: 5px 0 0;
+	width: 100%;
+}
+.game-purchase .options .subs .payment-method span {
+	color: #714d2a;
+	font-style: italic;
+}
+
+.game-purchase .options .subs .icon-thumb {
+	background: url("../../images/shop/game-purchase/payment-method.jpg") 0 0 no-repeat;
+	height: 84px;
+	left: 0;
+	min-height: 59px;
+	position: absolute;
+	top: 0;
+	width: 100px;
+}
+.game-purchase .options .subs .paypal .icon-thumb {
+	background-position: 0 -10px;
+}
+.game-purchase .options .subs .direct-debit .icon-thumb {
+	background-position: 0 -113px;
+}
+.game-purchase .options .subs .t-online .icon-thumb {
+	background-position: 0 -216px;
+}
+.game-purchase .options .subs .elv .icon-thumb {
+	background-position: 0 -319px;
+}
+.game-purchase .options .subs .giorpay .icon-thumb {
+	background-position: 0 -422px;
+}
+.game-purchase .options .subs .webmoney .icon-thumb {
+	background-position: 0 -525px;
+}
+.game-purchase .options .subs .bank-transfer .icon-thumb {
+	background-position: 0 -628px;
+}
+.game-purchase .options .subs .qiwi .icon-thumb {
+	background-position: 0 -731px;
+}
+
+.game-purchase .options .subs .visa .icon-thumb {
+	background-position: -111px -10px;
+}
+.game-purchase .options .subs .amex .icon-thumb {
+	background-position: -111px -113px;
+}
+.game-purchase .options .subs .master .icon-thumb {
+	background-position: -111px -216px;
+}
+.game-purchase .options .subs .oxxo .icon-thumb {
+	background-position: -111px -319px;
+}
+.game-purchase .options .subs .seven-eleven .icon-thumb {
+	background-position: -111px -422px;
+}
+.game-purchase .options .subs .dinero .icon-thumb {
+	background-position: -111px -525px;
+}
+.game-purchase .options .subs .paco-facil .icon-thumb {
+	background-position: -111px -628px;
+}
+.game-purchase .options .subs .rapipago .icon-thumb {
+	background-position: -111px -731px;
+}
+.game-purchase .options .subs .servipag .icon-thumb {
+	background-position: -222px -10px;
+}
+.game-purchase .options .subs .presto .icon-thumb {
+	background-position: -222px -113px;
+}
+.game-purchase .options .subs .scotiabank .icon-thumb {
+	background-position: -222px -216px;
+}
+.game-purchase .options .subs .bbva .icon-thumb {
+	background-position: -222px -319px;
+}
+.game-purchase .options .subs .santander .icon-thumb {
+	background-position: -222px -422px;
+}
+.game-purchase .options .subs .hsbc .icon-thumb {
+	background-position: -222px -525px;
+}
+.game-purchase .options .subs .aura .icon-thumb {
+	background-position: -222px -628px;
+}
+.game-purchase .options .subs .hipercard .icon-thumb {
+	background-position: -222px -731px;
+}
+.game-purchase .options .subs .boleto .icon-thumb {
+	background-position: -333px -10px;
+}
+.game-purchase .options .subs .bradesco .icon-thumb {
+	background-position: -333px -113px;
+}
+.game-purchase .options .subs .banco .icon-thumb {
+	background-position: -333px -216px;
+}
+.game-purchase .options .subs .oi-paggo .icon-thumb {
+	background-position: -333px -319px;
+}
+
+.game-box .sticker {
+	background: url("../../images/shop/game-purchase/sticker-en-gb.png") -5px -15px no-repeat;
+	display: block;
+	height: 90px;
+	left: 192px;
+	position: absolute;
+	top: 210px;
+	width: 100px;
+}
+
+/* Locale overrides */
+.game-purchase .boxes-europe .box .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-mop-engb.png");
+}
+.game-purchase .boxes-europe .box.mists-of-pandaria .game-box {
+	background-position: -17px -1180px;
+	margin-top: -30px;
+}
+
+/*de-de*/
+.de-de .game-purchase .compare-box {
+	height: 315px;
+}
+.de-de .sticker {
+	background-image: url("../../images/shop/game-purchase/sticker-de-de.png");
+}
+.de-de .game-purchase .boxes-europe .box .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-mop-de.png");
+}
+
+/*es-es*/
+.es-es .game-purchase .compare-box {
+	height: 345px;
+}
+.es-es .button4 span span {
+	font-size: 13px;
+}
+.es-es .sticker {
+	background-image: url("../../images/shop/game-purchase/sticker-es-es.png");
+}
+.es-es .game-purchase .boxes-europe .box .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-mop-es.png");
+}
+
+/*es-mx*/
+.es-mx .game-purchase .la-price {
+	font-size: 11px;
+	font-style: italic;
+	margin: 15px 0;
+	width: 180px;
+}
+.es-mx .game-purchase .box .box-desc {
+	margin-top: 0;
+}
+.es-mx .game-purchase .options .subs {
+	background: url("../../images/shop/game-purchase/bg-dragon.jpg") right top no-repeat;
+}
+.es-mx .game-purchase .compare .under-line {
+	width: 92px;
+}
+.es-mx .game-purchase .compare .under-line.short {
+	width: 85px;
+}
+.es-mx .game-purchase .compare .price {
+	display: inline-block;
+	font-size: 13px;
+	position: relative;
+	text-align: left;
+	top: 22px;
+	width: 85px;
+}
+.es-mx .game-purchase .options .subs .payment-method h6 {
+	text-transform: uppercase;
+}
+
+/*fr-fr*/
+.fr-fr .game-purchase .compare-box {
+	height: 315px;
+}
+.fr-fr .button4 span span {
+	font-size: 13px;
+}
+.fr-fr .sticker {
+	background-image: url("../../images/shop/game-purchase/sticker-fr-fr.png");
+}
+.fr-fr .game-purchase .boxes-europe .box .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-mop-fr.png");
+}
+
+/*it-it*/
+.it-it .button4 span span {
+	font-size: 14px;
+}
+.it-it .sticker {
+	background-image: url("../../images/shop/game-purchase/sticker-it-it.png");
+}
+.it-it .game-purchase .boxes-europe .box .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-mop-it.png");
+}
+
+/*pt-br*/
+.pt-br .game-purchase .options .subs {
+	background: url("../../images/shop/game-purchase/bg-dragon.jpg") right top no-repeat;
+}
+.pt-br .game-purchase .compare .under-line {
+	width: 125px;
+}
+.pt-br .game-purchase .compare .under-line.short {
+	width: 117px;
+}
+.pt-br .game-purchase .valid-brazil {
+	color: #5b3d21;
+	font-size: 11px;
+	margin-top: 10px;
+	text-align: center;
+}
+.pt-br .game-purchase .box {
+	background-position: 0 bottom;
+}
+
+/*pt-pt*/
+.pt-pt .button4 span span {
+	font-size: 13px;
+}
+
+/*ru-ru*/
+.ru-ru .button4 span span {
+	font-size: 13px;
+}
+.ru-ru .sticker {
+	background-image: url("../../images/shop/game-purchase/sticker-ru-ru.png");
+}
+.ru-ru .game-purchase .boxes-europe .box .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-mop-ru.png");
+}
+
+.game-purchase .boxes-europe .box.warlords-of-draenor .game-box,
+.de-de .game-purchase .boxes-europe .box.warlords-of-draenor .game-box,
+.es-es .game-purchase .boxes-europe .box.warlords-of-draenor .game-box,
+.fr-fr .game-purchase .boxes-europe .box.warlords-of-draenor .game-box,
+.it-it .game-purchase .boxes-europe .box.warlords-of-draenor .game-box,
+.pt-pt .game-purchase .boxes-europe .box.warlords-of-draenor .game-box,
+.ru-ru .game-purchase .boxes-europe .box.warlords-of-draenor .game-box {
+	background-image: url("../../images/shop/game-purchase/game-boxes-6.0f15d.png?v=47");
+}
+
+/*zh-tw*/
+.zh-tw .game-purchase #content .content-top {
+	background: url("../../images/shop/game-purchase/bg-top-tw.jpg") 0 0 no-repeat;
+	color: #b39265;
+}
+
+.zh-tw .game-purchase .summary-div {
+ 	height: auto;
+}
+
+.zh-tw .game-purchase .page-titles {
+	height: 195px;
+}
+.zh-tw .game-purchase .page-titles p {
+	font-size: 25px;
+	margin-top: 50px;
+	width: 490px;
+}
+.zh-tw .game-purchase .page-titles p.white {
+	color: #ffffff;
+}
+.zh-tw .game-purchase .page-sub-titles {
+	font-size: 42px;
+	padding: 0px 0px 32px 38px;
+}
+.zh-tw .game-purchase .box {
+	height: 500px;
+	padding: 10px 50px 0 0;
+	background: none;
+}
+.zh-tw .game-purchase .box .game-box {
+	background: url("../../images/shop/game-purchase/game-box-tw.png") no-repeat 0 0;
+	float: left;
+	height: 322px;
+	width: 360px;
+}
+.zh-tw .game-purchase .options{
+	padding: 36px 0px 42px 0px;
+}
+.zh-tw .game-purchase h4 {
+	font-size: 29px;
+	font-weight: bold;
+}
+.zh-tw .game-purchase .box .box-desc {
+	margin-top: 0;
+}
+.zh-tw .game-purchase .box .box-desc ul {
+	font-size: 17px;
+}
+.zh-tw .game-purchase .button-wrapper {
+	left: 390px;
+	position: relative;
+	top: -25px;
+}
+.zh-tw .game-purchase .button4 span {
+	color: #ffae00;
+	font-size: 23px;
+	font-weight: bold;
+}
+.zh-tw .game-purchase .options .page-sub-titles p {
+	width: 100%;
+}
+.zh-tw .game-purchase .options .page-sub-titles h5 {
+	font-size: 20px;
+}
+.zh-tw .game-purchase .box-feature {
+	background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat;
+ -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+         border-radius: 4px;
+ -webkit-box-shadow: #0d0703 0 0 5px;
+    -moz-box-shadow: #0d0703 0 0 5px;
+         box-shadow: #0d0703 0 0 5px;
+	color: #b79855;
+	font-size: 20px;
+	height: 920px;
+	margin: 30px auto 0;
+	opacity: .95;
+	padding: 30px;
+	margin: 10px 34px 10px 34px;
+	position: relative;
+}
+.zh-tw .game-purchase .options .tw-game-amount {
+	background: url("../../images/shop/game-purchase/bg-tw-amont.png") no-repeat center 40px;
+	height: 315px;
+}
+.zh-tw .game-purchase .options .amount-desc {
+	font-size: 20px;
+	line-height: 1.5em;
+	padding: 0 260px 0 70px;
+}
+.zh-tw .game-purchase .options .amount-desc p {
+	line-height: 1.5em;
+}
+.zh-tw .game-purchase .options .logo {
+	background: url("../../images/shop/game-purchase/logo.png") no-repeat center 0;
+	height: 221px;
+	position: absolute;
+	right: 0px;
+	top: -160px;
+	width: 342px;
+}
+.zh-tw .game-purchase .amount-table {
+	display: inline-block;
+	margin-bottom: 40px;
+	width: 400px;
+}
+.zh-tw .game-purchase .table-title {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.zh-tw .game-purchase table {
+	font-size: 20px;
+	text-align: right;
+	width: 370px;
+}
+.zh-tw .game-purchase table .amount {
+	text-align: left;
+	width: 250px;
+}
+.zh-tw .game-purchase table td {
+	padding-left: 0;
+}
+.zh-tw .game-purchase .tw-payment-table{
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+.zh-tw .game-purchase .tw-payment-table td {
+	border: 0px;
+}
+.zh-tw .game-purchase .tw-payment-table tr {
+	border: 0px;
+}
+.zh-tw .game-purchase .tw-payment-table a {
+	width: 206px;
+	height: 206px;
+	display: block;
+	background-size: 206px 206px;
+}
+.zh-tw .game-purchase .tw-payment-table a.faq-pay {
+	background: url("../../images/shop/game-purchase/faq_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+}
+.zh-tw .game-purchase .tw-payment-table a.mycard-pay {
+	background: url("../../images/shop/game-purchase/mycard_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+}
+.zh-tw .game-purchase .tw-payment-table a.atm-pay {
+	background: url("../../images/shop/game-purchase/atm_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+	background-position: 0px -12px;
+}
+.zh-tw .game-purchase .tw-payment-table a.ali-pay {
+	background: url("../../images/shop/game-purchase/alipay_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+	background-position: 0px -12px;
+}
+.zh-tw .game-purchase .tw-payment-table a.paypal-pay {
+	background: url("../../images/shop/game-purchase/paypal_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+	background-position: 0px -12px;
+}
+.zh-tw .game-purchase .tw-payment-table a.credit-pay {
+	background: url("../../images/shop/game-purchase/credit_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+}
+.zh-tw .game-purchase .tw-payment-table a.battle-pay {
+	background: url("../../images/shop/game-purchase/battle_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+}
+.zh-tw .game-purchase .tw-payment-table a.e-wallet-pay {
+	background: url("../../images/shop/game-purchase/eWallet_btn.png") no-repeat center 0 rgba(56, 33, 14, .9);
+	background-size: 206px 206px;
+	background-position: 0px -10px;
+}
+.zh-tw .game-purchase .tw-payment-table a:hover {
+	background-color: rgba(82, 44, 11, 1);
+}

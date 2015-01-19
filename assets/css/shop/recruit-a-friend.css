@@ -1,0 +1,55 @@
+.recruit-a-friend #content .content-top { background: url("../../images/shop/recruit-a-friend/video-bg.jpg") no-repeat 0 0; position:relative; }
+.recruit-a-friend #content .content-top .wing { background: url("../../images/shop/recruit-a-friend/wing.png") no-repeat 0 0; display:block; width:75px; height:263px; position:absolute; right:-64px; top:-198px;}
+.recruit-a-friend #content .content-top .tail { background: url("../../images/shop/recruit-a-friend/tail.png") no-repeat 0 0; display:block; width:44px; height:34px; position:absolute; right:-34px; top:228px;}
+.recruit-a-friend #content .content-top .horn { background: url("../../images/shop/recruit-a-friend/horn.png") no-repeat 0 0; display:block; width:26px; height:24px; position:absolute; left:-26px; top:482px;}
+
+.summary-div { position:relative; margin:50px 50px 0 50px; height:170px; }
+.summary-div .page-titles { font-family:"Palatino Linotype", Serif; letter-spacing:-1px; float:left; }
+.summary-div .page-titles span { font-size:48px; line-height:60px; color:#efe3d2; margin-bottom:40px; display:block; }
+.summary-div .page-titles em{ color:#dd6800; display:block; font-size:26px; }
+.summary-div .sub-desc { color:#b79855; font-size:16px; width:530px; }
+.summary-div .sub-desc p { margin:20px 0; }
+
+.summary-div-top { height:250px; width:94%; margin:-80px auto 50px; padding-top:270px; }
+.summary-div-top h1 { color:#fff; font-size:16px; font-weight:normal; margin:10px 0px; }
+.summary-div-top p { line-height:22px; color:#b79855; }
+.summary-div-top .step-1 { width:32.6%; float:left; position:relative; }
+.summary-div-top .step-1 p { width:90%; line-height:22px; }
+.summary-div-top .step-1 a { position:absolute; height:20px; width:280px; text-align:center; top:-186px; left:0px; padding-top:160px; display:block; }
+.summary-div-top .step-2 { width:30%; float:left; padding-left:10px; }
+.summary-div-top .step-3 { width:30%; float:left;padding-left:35px; }
+.summary-div-top .step-3 .block { width:70px;float:right; height:30px; } 
+.summary-div-top .step-3 p { margin-bottom:20px; }
+.summary-div-top .icon1 { background: url("../../images/shop/recruit-a-friend/icon01.png") no-repeat 0px 4px transparent; padding-bottom: 10px; padding-left: 40px; }
+.summary-div-top .icon2 { background: url("../../images/shop/recruit-a-friend/icon02.png") 0px 4px no-repeat transparent; padding-bottom: 10px; padding-left: 40px; }
+.summary-div-top .icon3 { background: url("../../images/shop/recruit-a-friend/icon03.png") 0px 4px no-repeat transparent; padding-bottom: 10px; padding-left: 40px;  }
+
+.summary-div-bottom { padding-bottom:50px; }
+.summary-div-bottom .desc { font-size:16px; padding:20px 0; color:#b79855; width:90%; margin:0 auto; padding-left:30px; }
+
+.video-container { height:750px; }
+.video-container .youtube-player { position:absolute; top:278px; left:175px; }
+.sub-title { font-family:"Palatino Linotype", Serif; letter-spacing:-1px; color:#dd6800; display:block; font-size:26px; margin-left:48px; }
+
+.summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/enus.png") no-repeat 0 0; }
+.en-us .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/enus.png") no-repeat 0 0; }
+.de-de .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/dede.png") no-repeat 0 0; }
+.es-es .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/eses.png") no-repeat 0 0; }
+.es-mx .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/esmx.png") no-repeat 0 0; }
+.fr-fr .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/frfr.png") no-repeat 0 0; }
+.it-it .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/itit.png") no-repeat 0 0; }
+.ko-kr .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/kokr.png") no-repeat 0 0; }
+.pt-br .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/ptbr.png") no-repeat 0 0; }
+.pt-pt .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/ptpt.png") no-repeat 0 0; }
+.ru-ru .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/ruru.png") no-repeat 0 0; }
+.zh-cn .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/zhcn.png") no-repeat 0 0; }
+.zh-tw .summary-div-top { background :url("../../images/shop/recruit-a-friend/how-does-it-work/zhtw.png") no-repeat 0 0; }
+
+.reward-thumb { text-align: center; width:188px; float:left; margin:0px 34px 20px 0px; }
+.reward-thumb img { border:1px solid #4f351c; }
+.reward-thumb p { font-size:12px; color:#b79855; }
+.reward-thumb:hover p { color:#c8a966; }
+
+.faq-section { border-top:1px solid #2f2114; width:90%; margin:50px auto 100px; font-size:16px; padding:20px 0; color:#b79855; width:90%; text-align:center; }
+
+.faq-section object, .faq-section iframe { visibility: hidden; height: 1px; width: 1px; }

@@ -1,25 +1,25 @@
 parsererror { position:absolute; }
 html { min-width: 1006px; }
-body { background: #000 url("../images/body/bg/body-bg-baked.jpg?v=2") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
+body { background: #000 url("../images/body/bg/body-bg-baked.jpg") 50% 0 no-repeat; -webkit-background-size: auto; color: #efc9a0; font: normal 12px/1.5 Arial, Verdana, sans-serif; }
 
 @media (max-width: 1920px) {
-	body { background-image: url("../images/body/bg/body-bg-baked-1920px.jpg?v=2") }
+	body { background-image: url("../images/body/bg/body-bg-baked-1920px.jpg") }
 }
 
 @media (max-width: 1680px) {
-	body { background-image: url("../images/body/bg/body-bg-baked-1680px.jpg?v=2") }
+	body { background-image: url("../images/body/bg/body-bg-baked-1680px.jpg") }
 }
 
 @media (max-width: 1440px) {
-	body { background-image: url("../images/body/bg/body-bg-baked-1440px.jpg?v=2") }
+	body { background-image: url("../images/body/bg/body-bg-baked-1440px.jpg") }
 }
 
 @media (max-width: 1280px) {
-	body { background-image: url("../images/body/bg/body-bg-baked-1280px.jpg?v=2") }
+	body { background-image: url("../images/body/bg/body-bg-baked-1280px.jpg") }
 }
 
 @media (max-width: 1024px) {
-  body { background-image: url("../images/body/bg/body-bg-baked-1024px.jpg?v=2") }
+  body { background-image: url("../images/body/bg/body-bg-baked-1024px.jpg") }
 }
 
 
@@ -244,6 +244,26 @@ tr:hover .fansite-link,
 .button4-download.disabled span,
 .button4-download.processing span { color: #b1bac3 }
 
+.button5 .button-left,
+.button5 .button-right { background-image: url("../images/buttons/button-5.png"); background-repeat: no-repeat; color: #ffae00; }
+.button5 .button-left { padding:0 0 0 28px; background-position:0 0; height:38px; line-height:37px; }
+.button5 .button-right { padding: 0 28px 0 0; background-position: 100% -123px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:12px; height:38px; line-height:38px; text-transform: uppercase; }
+.ko-kr .button5 .button-right { font-family: Dotum; }
+.button5:hover .button-left { background-position: 0 -41px; }
+.button5:hover .button-right { color:#FFF; background-position:100% -164px; }
+
+.button6 span { background-image: url("../images/buttons/button-6.png"); background-repeat: no-repeat; color: #ffae00 }
+.button6 .button-left { background-position:0 0; }
+.button6 .button-right { background-position:right -123px; }
+
+.button6.hover span,
+.button6:hover span { color: #fff }
+.button6:hover .button-left { background-position:0 -41px; }
+.button6:hover .button-right { background-position: right -164px; }
+.button6 span { padding: 0 0 0 13px; height: 30px; line-height: 30px; font-size: 11px }
+.button6 span span { padding: 0 13px 0 0 }
+
+
 /* menu */
 .flyout-menu { background: #161413; opacity: .99; border: 1px solid #353837; padding: 1px; -moz-border-radius: 5px; -moz-box-shadow: 0 0 10px #000; -webkit-border-radius: 5px; -webkit-box-shadow: 0 0 10px #000; border-radius: 5px; box-shadow: 0 0 10px #000 }
 .flyout-menu ul { width: 199px; border-right: 1px solid #2A292B; }
@@ -334,7 +354,7 @@ tr:hover .fansite-link,
 #header .user-plate .card-character strong { color: #ffb100; }
 #header .user-plate .card-character .login-msg { display:block; float:left; width:210px; margin-top:18px;  text-shadow:1px 1px 1px #555 }
 #header .user-plate .card-character .wow-login-key { display:block; position:absolute; right:50px; top:31px; width:50px; height:42px; background:url(../images/user/key.png) no-repeat }
-.ie6 #header .user-plate .card-character .wow-login-key { background-image:url(../images/body/cards-mop/key.gif) }
+.ie6 #header .user-plate .card-character .wow-login-key { background-image:url(../images/user/key.png) }
 #header .user-plate a.card-character:hover { color: #fff; background-position: 0 -84px; }
 #header .user-plate a.card-character:hover strong { color: white; }
 #header .user-plate .card-character .card-portrait { width:58px; height:58px; display:block; float:right; border:1px solid #c3ff00; background:url(../images/user/avatar-neutral.jpg) 50% 50% no-repeat; margin-top:7px; margin-right:21px }
@@ -346,8 +366,8 @@ tr:hover .fansite-link,
 #header .user-plate .card-character.plate-alliance .card-portrait,
 #header .user-plate .card-character.plate-horde    .card-portrait { background-size:74px }
 
-#header .user-plate .card-character.plate-alliance { background-image:url(../images/body/cards-mop/charcard-alliance.jpg) }
-#header .user-plate .card-character.plate-horde { background-image:url(../images/body/cards-mop/charcard-horde.jpg) }
+#header .user-plate .card-character.plate-alliance { background-image:url(../images/user/charcard-alliance.jpg) }
+#header .user-plate .card-character.plate-horde { background-image:url(../images/user/charcard-horde.jpg) }
 
 #header .user-plate .meta-default .meta { width:240px; margin-top:13px }
 
@@ -627,6 +647,7 @@ tr:hover .fansite-link,
 	.color-tooltip-green { color: #0f0 !important; }
 	.color-tooltip-blue { color: #71D5FF !important; }
 	.color-tooltip-beige { color: #FFFF98 !important; }
+	.color-tooltip-gray { color: #6D6E70 !important; }
 
 	/* faction */
 	.color-tooltip-alliance { color: #247FAA; }
@@ -661,6 +682,7 @@ tr:hover .fansite-link,
 	.color-ex2, .color-exp2 { color: #68ccef !important; } /* wrath of the lich king */
 	.color-ex3, .color-exp3 { color: #ff7c0a !important; } /* cataclysm */
 	.color-ex4, .color-exp4 { color: #00ffba !important; } /* Mists of Pandaria */
+	.color-ex5, .color-exp5 { color: #ff320a !important; } /* warlords of draenor */
 
 	/* 50% opaque dotted underlines for links with a tooltip */
 	.color-c1  a.tip { border-bottom: 1px dotted #634e37; }
@@ -977,9 +999,9 @@ li.item-spec-group { margin-top: 10px; }
 .model-viewer .model .zoom:hover { background-position: -23px 0; }
 
 	/* model - draggable */
-	.model-viewer .can-drag { cursor: url("/wow/static/images/cursors/grab.cur"), e-resize; }
+	.model-viewer .can-drag { cursor: url("http://eu.battle.net/wow/static/images/cursors/grab.cur"), e-resize; }
 	.model-viewer .can-drag .zoom { display: block; }
-	.model-viewer .dragging { cursor: url("/wow/static/images/cursors/grabbing.cur"), e-resize !important; }
+	.model-viewer .dragging { cursor: url("http://eu.battle.net/wow/static/images/cursors/grabbing.cur"), e-resize !important; }
 	.model-viewer .can-drag:hover,
 	.model-viewer .dragging { border: 1px solid #542818; }
 
@@ -1101,8 +1123,8 @@ div.forum-options a.active { color:#fff; font-weight: bold; }
 .bluetracker #posts .content { color:#00B4FF; }
 .bluetracker #posts .desc { color:#006a8e; }
 .bluetracker #posts .post-title .forum-source { color: #93e1f7; }
-.bluetracker-icon-home  { background-image:url(../images/body/cms/bluetracker_icon.png); }
-.bluetracker { background-image: url(../images/body/cms/bluetracker_bg.jpg); }
+.bluetracker-icon-home  { background-image:url(../images/body/cms/bluetracker_icon.html); }
+.bluetracker { background-image: url(../images/body/cms/bluetracker_bg.html); }
 
 /* Topic */
 .nextBlizz { background-image:url("../images/body/cms/next_blizz.gif"); }
@@ -1252,14 +1274,14 @@ div.forum-options a.active { color:#fff; font-weight: bold; }
 
 /* Polls */
 #poll-container { position:relative; margin:20px 80px 50px; font-size:11px; background:#1f1d1b; border: solid 1px #8b8775; border-radius:8px; box-shadow:0 0 3px #000; }
-#poll-container .poll-interior { color:#fff; padding:12px 40px 15px; }
+#poll-container .poll-interior { color:#fff; padding:12px 40px 44px; }
 #poll-container, #poll-container .poll-interior { border-radius:8px 0 4px 0; }
 #poll-container h2 { font-size:14px; color:white; font-weight:normal; padding:5px 100px 14px 0; }
 #poll-container .selection-count { color:#BCA857; font:italic bold 11px/14px Trebuchet MS; position:absolute; right:14px; top:14px; text-align:right; }
 
 #poll-container .poll-stats { position:relative; bottom:-16px; left:0; z-index:1; padding-right:200px; display:block;  color:#66655c; }
 #poll-container .poll-stats span { color:#b6af8f;  }
-#poll-container .poll-actions { position:absolute; right:14px; bottom:-17px; z-index:2; }
+#poll-container .poll-actions { position:absolute; right:14px; bottom:13px; z-index:2; }
 
 #poll-container .results { display:none; }
 #poll-container.results-only .results { display:block; }
@@ -1280,5 +1302,3 @@ div.forum-options a.active { color:#fff; font-weight: bold; }
 #poll-container .verbose table td:last-child { width:50%; }
 
 #blog #poll-container .results { width:460px; }
-
-

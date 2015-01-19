@@ -1,0 +1,119 @@
+.services-iphone #content .content-top {background:url("../../images/shop/mobile/bg-top.jpg") no-repeat 0 0; }
+.services-iphone #content .content-bot { padding-bottom:61px;}
+
+.title { color:#efe3d2; font:normal 28px "Palatino Linotype"}
+.comment {color: #c35801; font: normal 14px Arial;}
+.market-link { text-align:center; margin: 50px 0 70px }
+
+.button4 span {line-height:17px;}
+.button4 span span { padding-right:20px }
+.button4 span span span { background:url("../../images/shop/mobile/icon-mobile.png") no-repeat 0 0; margin-top:10px; text-transform:none; letter-spacing:0; height:40px; padding-left:40px; letter-spacing:-0.05em}
+.button4 span span em {font-style:normal; text-transform:none; display:block; font-size:12px; color:#c35801; text-align:left}
+.button4.android span span span, .button4.android:hover span span span { background-position:-15px -10px }
+.button4.ios span span span, .button4.ios:hover span span span { background-position:-13px -102px }
+
+.screenshots {height:380px; }
+.screenshots .title { margin-left:50px }
+.screenshots .screenshots-div {background:url("../../images/shop/bg-screenshots-bottom.jpg") no-repeat 0 100%; width:100%; margin-top:20px}
+.screenshots .screenshots-div .wrapper {background:url("../../images/shop/bg-screenshots-top.jpg") no-repeat 0 0; width:100%; height:300px;}
+.screenshots .screenshots-div .ss-prev { background:url("../../images/shop/mobile/button-arrow.jpg") no-repeat 0 0; width:44px; height:78px; display:inline-block; float:left; position:relative; top:85px }
+.screenshots .screenshots-div .ss-prev:hover { background-position:-44px 0}
+.screenshots .screenshots-div .ss-next { background:url("../../images/shop/mobile/button-arrow.jpg") no-repeat 0 -78px; width:44px; height:78px; display:block; float:right; position:relative; top:85px }
+.screenshots .screenshots-div .ss-next:hover { background-position:-44px -78px}
+.screenshots .screenshots-div .wrapper .screen-list { width:891px; height:280px;  margin-left:6px; padding-top:21px; float:left; overflow:hidden; position:relative}
+.screenshots .screenshots-div .wrapper .screen-list .screen-wrapper { width:1844px; height:220px; position:absolute }
+.screenshots .screenshots-div .wrapper .screen-list a {border:2px solid #4f371e; display:inline-block; margin:0 16px ; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; box-shadow: 0 0 10px #000; -moz-box-shadow: 0 0 10px #000; -webkit-box-shadow: 0 0 10px #000;}
+.screenshots .screenshots-div .wrapper .screen-list a:hover {border:2px solid #cd9000;}
+.screenshots .screenshots-div .wrapper .screen-list a.last {margin-right:0;}
+
+.feature-wrapper { padding:0 50px; }
+.feature-box { color: #b79855; margin: 20px auto 0; padding: 0 25px 25px; background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;-moz-box-shadow: #0d0703 0 0 5px; -webkit-box-shadow: #0d0703 0 0 5px; box-shadow: #0d0703 0 0 5px; }
+
+.mobile-authenticator  { max-width: 510px; background: url("../../images/shop/mobile/mobile-authenticator-cn.jpg") 0 0 no-repeat #2e1b0d; padding-left: 57px; margin-left: 160px; margin-top: 3px; }
+.faq .mobile-authenticator  { margin-left: 107px; }
+.mobile-authenticator  .wrapper { background: url("../../images/shop/mobile/mobile-authenticator-cn.jpg") 100% 0 no-repeat #2e1b0d; padding-right: 81px; }
+.mobile-authenticator  .inner-wrapper {  min-height: 71px; background-color: #2e1b0d; text-align: left; padding: 7px 0 7px 10px; }
+.mobile-authenticator  .inner-wrapper p { color: #7f3311; }
+.mobile-authenticator  .inner-wrapper a { margin-right: 40px; }
+
+.services-iphone #content .mid-contents {width:880px; margin:0 auto;}
+.services-iphone #content .section-title { margin-top:43px; min-height: 420px; }
+.services-iphone #content .section-title em { color: #DD6800; display: block; font:italic 26px "Palatino Linotype"; margin: 14px 0 35px; width:55% }
+.services-iphone #content .section-title em  span{ font-size: 21px !important; }
+.services-iphone #content .section-title .feature-desc {color:#b79855; font-size:16px; line-height:30px; width:450px; }
+.services-iphone #content h1 {color:#efe3d2; font:normal 52px "Palatino Linotype", serif; width:550px; line-height:1.1em }
+.services-iphone #content h2 {color:#efe3d2; font-weight:normal; line-height:2em; font-size: 13px;}
+
+.remote-features {padding: 10px 25px;}
+.remote-features li {background: url("../../images/shop/mobile/feature-separator-line.gif") repeat-y 100% 0; display: block; width: 200px; float: left; text-align: center;}
+.remote-features li.auction { width: 220px; }
+.remote-features li.guild { width: 220px; }
+.remote-features li.other {background: none; width: 200px;}
+.remote-features li .feature-icon {background: url("../../images/shop/mobile/feature-icons.png") no-repeat 0 0; display: inline-block; width: 87px; height: 89px; margin-bottom: 3px;}
+.remote-features li .feature-title {display: inline-block; margin-bottom: 12px;}
+.remote-features li.auction .feature-icon {background-position: -87px 0;}
+.remote-features li.guild .feature-icon {background-position: -175px 0;}
+.remote-features li.other .feature-icon {background-position: 100% 0;}
+
+
+.feature-detail {width: 100%; color: #967648; font-size: 12px; border-bottom: 1px solid #321d11;}
+.feature-detail .feature-box {padding-top: 13px;}
+.feature-detail .feature-box ul {margin-top: 15px;}
+.feature-detail .feature-box ul li {background: url("../../images/icons/bullet2.gif") no-repeat 0 8px; padding-left: 23px; line-height: 24px; font-size: 13px; padding-bottom: 9px; color: #efc9a0;}
+.feature-detail .feature-box ul li strong {color: #efe3d2; font-size: 14px; font-weight: normal;}
+
+.feature-detail .title, .feature-detail .comment {display: block;}
+.feature-detail p {margin-top: 25px; line-height: 24px;}
+.feature-detail p strong {color: #e9bd7f; font-size: 14px; font-weight: normal; display: block;}
+
+
+#feature4 {border-bottom: none;}
+
+#feature1 {background: url("../../images/shop/mobile/bg-feature01.jpg") no-repeat 0 0; min-height: 478px; margin-top: 36px; position: relative;}
+#feature2 {background: url("../../images/shop/mobile/bg-feature02.jpg") no-repeat 0 100%; min-height: 538px;}
+#feature3 {background: url("../../images/shop/mobile/bg-feature03.jpg") no-repeat 100% 100%; min-height: 576px;}
+#feature4 {background: url("../../images/shop/mobile/bg-feature04.jpg") no-repeat 0 0; min-height: 560px;}
+
+.es-mx #feature1 {background-image: url("../../images/shop/mobile/bg-feature01-es-mx.jpg");}
+.es-mx #feature2 {background-image: url("../../images/shop/mobile/bg-feature02-es-mx.jpg");}
+.es-mx #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-es-mx.jpg");}
+.es-mx #feature4 {background-image: url("../../images/shop/mobile/bg-feature04-es-mx.jpg");}
+
+.pt-br #feature1 {background-image: url("../../images/shop/mobile/bg-feature01-pt-br.jpg");}
+.pt-br #feature2 {background-image: url("../../images/shop/mobile/bg-feature02-pt-br.jpg");}
+.pt-br #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-pt-br.jpg");}
+.pt-br #feature4 {background-image: url("../../images/shop/mobile/bg-feature04-pt-br.jpg");}
+
+.ko-kr #feature1 {background-image: url("../../images/shop/mobile/bg-feature01-ko-kr.jpg");}
+.ko-kr #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-ko-kr.jpg");}
+.ko-kr #feature4 {background-image: url("../../images/shop/mobile/bg-feature04-ko-kr.jpg");}
+
+.de-de #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-de-de.jpg");}
+.es-es #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-es-es.jpg");}
+.fr-fr #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-fr-fr.jpg");}
+.it-it #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-it-it.jpg");}
+.ru-ru #feature3 {background-image: url("../../images/shop/mobile/bg-feature03-ru-ru.jpg");}
+
+#feature1 .feature-detail-wrapper {padding-top: 114px; margin-left: 557px; width: 395px;}
+#feature1 .view-3d, #feature1 .view-detail {color: #c35801; font: normal 14px Arial; width: 186px; position: absolute; top: 10px; text-align: center;}
+#feature1 .view-3d {left: 68px;}
+#feature1 .view-detail {left: 280px;}
+
+#feature2 .feature-detail-wrapper {padding-top: 46px; margin-left: 50px;}
+#feature2 .feature-detail-wrapper p {width: 420px; float: left;}
+#feature2 .feature-detail-wrapper .feature-box {width: 385px; float: right; margin: 28px 0 50px;}
+
+
+#feature3 .feature-detail-wrapper {padding-top: 46px; margin-left: 50px;}
+#feature3 .feature-detail-wrapper p {width: 350px; }
+#feature3 .feature-detail-wrapper .feature-box {width: 385px; margin: 35px 0 45px; float: left;}
+
+#feature4 .feature-detail-wrapper {padding-top: 101px; margin-left: 576px; width: 370px;}
+
+.faq .feature-box { padding-top:20px; }
+.faq .feature-box .market-link { margin:30px }
+
+.separator-div { background: url("../../images/shop/pra/separator.gif") no-repeat 50% 0; height: 21px; margin: 40px 0 36px; width: 100%; }
+.legal-div { color: #855B47; font-size: 9px; font-style: italic; line-height: 20px; margin: 0 auto; width: 900px; }
+
+.ie7 .mobile-authenticator  { margin-left: 0; }

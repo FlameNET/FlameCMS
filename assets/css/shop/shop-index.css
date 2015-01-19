@@ -1,6 +1,6 @@
 
 .services-home #content .content-top {
-	background: url("../../images/shop/bg-wod-services-top.jpg?v=47") 0 0 no-repeat;
+	background: url("../../images/shop/bg-wod-services-topf15d.jpg?v=47") 0 0 no-repeat;
 }
 
 .ui-tooltip ul li {
@@ -295,7 +295,7 @@
 	background-position: 0 -1554px;
 }
 .wiki.directory .free-paid-services .ad-raf {
-	background: url("../../images/shop/bg-services-category.png?v=47") 0 0 no-repeat;
+	background: url("../../images/shop/bg-services-categoryf15d.png?v=47") 0 0 no-repeat;
 	display: block;
 	height: 248px;
 	position: absolute;
@@ -320,7 +320,7 @@
 }
 
 .game-subscriptions .subscription-col {
-	background-image: url("../../images/shop/subscriptions.jpg?v=47");
+	background-image: url("../../images/shop/subscriptionsf15d.jpg?v=47");
 	background-repeat: no-repeat;
 	float: left;
 	margin-right: 12px;
@@ -679,7 +679,7 @@
 
 /* Localization - regional designs */
 .ko-kr .services-home #content .content-top {
-	background: url("../../images/shop/bg-services-top-kr.jpg?v=47") 0 0 no-repeat;
+	background: url("../../images/shop/bg-services-top-krf15d.jpg?v=47") 0 0 no-repeat;
 }
 .ko-kr .main-banners .expansion {
 	margin-left: 351px;
@@ -713,7 +713,7 @@
 }
 
 .zh-tw .services-home #content .content-top {
-	background: url("../../images/shop/bg-services-top-tw.jpg?v=47") 0 0 no-repeat;
+	background: url("../../images/shop/bg-services-top-twf15d.jpg?v=47") 0 0 no-repeat;
 }
 .zh-tw .main-banners .expansion {
 	margin-left: 391px;
@@ -781,7 +781,7 @@
 }
 
 .zh-cn .services-home #content .content-top {
-	background: url("../../images/shop/bg-services-top-cn.jpg?v=47") 0 0 no-repeat;
+	background: url("../../images/shop/bg-services-top-cnf15d.jpg?v=47") 0 0 no-repeat;
 }
 .zh-cn .main-banners .expansion {
 	margin-left: 78px;
