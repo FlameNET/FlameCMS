@@ -57,7 +57,7 @@ include("config.php");
 								<textarea disabled name="message" placeholder="" rows="8">
 								Trying to connect to database...
 								<?php
-								require_once(__ROOT__.'/system/config.php'); 
+								require_once('../system/config.php'); 
 								$con=mysqli_connect(HOST,USER,PASSWORD,DB);
 
 								// Check connection
