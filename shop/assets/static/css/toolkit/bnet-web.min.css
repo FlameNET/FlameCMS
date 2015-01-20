@@ -2097,7 +2097,7 @@ a.inverse:focus,a.inverse:hover{color:#fff}
 .navbar-static .navbar.header+.navbar,.navbar-fixed .navbar.header+.navbar{border-top:1px solid rgba(255,255,255,0.07)}
 .navbar-fixed{width:100%;position:fixed;z-index:1030}
 .navbar.header .brand{float:left;display:block;text-transform:uppercase;font-weight:300;font-size:23px;line-height:30px;height:30px;padding:25px 0;color:#fff}
-.navbar.header .brand.mark{background:transparent url("../../images/toolkit/defaults/logos/bnet/mark.4MNOa.png") no-repeat left 18px;display:inline-block;padding-left:60px}
+.navbar.header .brand.mark{background:transparent url("../../main/images/logos/main.png") no-repeat left 18px;display:inline-block;padding-left:60px}
 .navbar.header a.brand{-webkit-transition:text-shadow .2s,color .2s;transition:text-shadow .2s,color .2s}
 .navbar.header a.brand:hover,.navbar.header a.brand:focus{color:#fff;text-shadow:0 0 10px rgba(255,255,255,0.3),0 0 10px rgba(255,255,255,0.3)}
 .navbar.header .brand .tag{color:rgba(255,255,255,0.5);display:inline-block;font-size:12px;line-height:20px;text-transform:uppercase;letter-spacing:.075em;padding:1px 0 0 3px;vertical-align:text-top}

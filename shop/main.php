@@ -236,10 +236,10 @@ other: 'Other'
 };
 //]]>
 </script>
-<script src="assets/static/js/toolkit/toolkit.min.4dTX7.js"></script>
-<script type="text/javascript" src="assets/static/js/global/global.min.1J1uV.js"></script>
-<script type="text/javascript" src="assets/static/js/browse/browse-carousel-banner.min.4MwfV25f6.js?v=1.16.20"></script>
-<script src="assets/static/js/legal/legal.min.4HZeE.js"></script>
+<script src="assets/static/main/js/toolkit.min.js"></script>
+<script type="text/javascript" src="assets/static/main/js/global.min.js"></script>
+<script type="text/javascript" src="assets/static/main/js/browse-carousel-banner.min.js"></script>
+<script src="assets/static/main/js/legal.min.js"></script>
 <div id="ajax-indicator" class="ajax-indicator"></div>
 </body>
 </html>
