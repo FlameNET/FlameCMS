@@ -1,0 +1,41 @@
+html {
+height: auto;
+min-width: 480px;
+}
+body {
+height: 100%;
+}
+html,
+body {
+background: #000000 url("../../../../assets/static/main/images/backgrounds/bnet-background-1920.jpg") no-repeat center -200px !important;
+}
+.body-content {
+background: none !important;
+}
+.navbar-static {
+background: #000000 url("../../../../assets/static/main/images/backgrounds/bnet-background-1920.jpg") no-repeat center 0 !important;
+}
+@media (max-width: 1280px) {
+html,
+body {
+background: #000000 url("../../../../assets/static/main/images/backgrounds/bnet-background-1280.jpg") no-repeat center -200px !important;
+}
+.body-content {
+background: none !important;
+}
+.navbar-static {
+background: #000000 url("../../../../assets/static/main/images/backgrounds/bnet-background-1280.jpg") no-repeat center 0 !important;
+}
+}
+@media (max-width: 1024px) {
+html,
+body {
+background: #000000 url("../../../../assets/static/main/images/backgrounds/bnet-background-1024.jpg") no-repeat center -200px !important;
+}
+.body-content {
+background: none !important;
+}
+.navbar-static {
+background: #000000 url("../../../../assets/static/main/images/backgrounds/bnet-background-1024.jpg") no-repeat center 0 !important;
+}
+}

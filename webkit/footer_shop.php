@@ -1,4 +1,5 @@
-<div id="footer">
+<footer class="footer">
+<div class="grid-container">
 <div id="sitemap">
 <div class="column">
 <h3 class="bnet">
@@ -170,27 +171,8 @@
 	<!-- -->
 	</span>
 </div>
-<div id="legal">
-<!-- legal:true eu-en-gb id:WORLD_OF_WARCRAFT_MISTS_OF_PANDARIA ratings:true -->
-<div id="legal-ratings" class="png-fix">
-<div class="product-rating pegi-rating clearfix">
-<a href="http://www.pegi.info/" tabindex="1" rel="external" target="_blank">
-<img class="pegi-logo" src="<?php echo BASE_URL ?>assets/images/icons/legal/12.png" alt="PEGI 12" title="" width="65" height="65" />
-</a>
-<img class="pegi-descriptor-image" src="<?php echo BASE_URL ?>assets/images/icons/legal/bad-language.png" alt="Bad Language" title="Game contains bad language." width="65" height="65" />
-<img class="pegi-descriptor-image" src="<?php echo BASE_URL ?>assets/images/icons/legal/violence.png" alt="Violence" title="Game contains depictions of violence." width="65" height="65" />
-<img class="pegi-descriptor-image" src="<?php echo BASE_URL ?>assets/images/icons/legal/online-gameplay.png" alt="Online Gameplay" title="Game can be played online." width="65" height="65" />
-</div>
-</div>
 <div id="blizzard" class="png-fix">
 <a href="<?php echo BASE_URL ?>" tabindex="100"><img src="<?php echo BASE_URL ?>assets/images/logos/flame.png" alt="" /></a>
-</div>
-<span class="clear"><!-- --></span>
-</div>
-</div>
-<div id="marketing-trackers">
-<div class="marketing-cover"></div>
-</div>
 </div>
 <script type="text/javascript">
 //<![CDATA[
@@ -202,3 +184,4 @@ Core.bindTrackEvent('#copyright a[data-action]', category);
 //]]>
 </script>
 </div>
+</footer>

@@ -9,7 +9,7 @@
 <!-- Description of CMS -->
 <?php include(__ROOT__.'/webkit/desc.php'); ?>
 <!-- Description of CMS END -->
-<title><?php echo TITLE ?></title>
+<title><?php echo TITLE ?> | Shop</title>
 <!-- The Styles & Javascripts of the CMS -->
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/wow.css" />
