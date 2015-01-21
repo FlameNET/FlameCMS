@@ -90,4 +90,35 @@ function NewsWordLimit($string, $length = 75, $ellipsis = "...") {
 		return $string;
 	}
 }
-?>
+
+/**
+ *  Register Account
+ */
+
+function Countries($country, $get){
+
+	$country = Connect()->query("SELECT * FROM countries");
+	while($get = mysqli_fetch_array($country))
+	{
+	echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
+	}
+	return $country;
+}
+
+function Day($day){
+ 
+	for($day=1;$day<=31;$day++){
+	echo'<option value="'.$day.'">'.$day.'</option>';
+	}
+
+	return $day;
+} 
+
+function Year($year){
+ 
+	for($year=2015;$year>=1905;$year--){
+	echo'<option value="'.$year.'">'.$year.'</option>';
+	}
+
+	return $year;
+}
