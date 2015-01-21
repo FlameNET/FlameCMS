@@ -18,7 +18,7 @@ LOCK TABLES `countries` WRITE;
 
 INSERT INTO `countries` (`id`, `countryName`, `isoAlpha2`, `isoAlpha3`, `numeric_code`) VALUES
 (1, 'Afghanistan', 'AF', 'AFG', 4),
-(2, 'Åland Islands', 'AX', 'ALA', 248),
+(2, '&#197;land Islands', 'AX', 'ALA', 248),
 (3, 'Albania', 'AL', 'ALB', 8),
 (4, 'Algeria', 'DZ', 'DZA', 12),
 (5, 'American Samoa', 'AS', 'ASM', 16),
@@ -71,7 +71,7 @@ INSERT INTO `countries` (`id`, `countryName`, `isoAlpha2`, `isoAlpha3`, `numeric
 (52, 'Congo, the Democratic Republic of the', 'CD', 'COD', 180),
 (53, 'Cook Islands', 'CK', 'COK', 184),
 (54, 'Costa Rica', 'CR', 'CRI', 188),
-(55, 'Côte d''Ivoire', 'CI', 'CIV', 384),
+(55, 'C&#244;te d''Ivoire', 'CI', 'CIV', 384),
 (56, 'Croatia', 'HR', 'HRV', 191),
 (57, 'Cuba', 'CU', 'CUB', 192),
 (58, 'Cura', 'CW', 'CUW', 531),
@@ -197,7 +197,7 @@ INSERT INTO `countries` (`id`, `countryName`, `isoAlpha2`, `isoAlpha3`, `numeric
 (178, 'Portugal', 'PT', 'PRT', 620),
 (179, 'Puerto Rico', 'PR', 'PRI', 630),
 (180, 'Qatar', 'QA', 'QAT', 634),
-(181, 'Réunion', 'RE', 'REU', 638),
+(181, 'R&#233;union', 'RE', 'REU', 638),
 (182, 'Romania', 'RO', 'ROU', 642),
 (183, 'Russian Federation', 'RU', 'RUS', 643),
 (184, 'Rwanda', 'RW', 'RWA', 646),
