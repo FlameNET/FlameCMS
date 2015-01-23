@@ -28,6 +28,7 @@ website at [FlameCMS](http://flamenet.github.io/FlameCMS).
 + Processor with SSE2 support
 + PHP ? 5.5.1
 + MySQL ? 5.1.0
++ Apache HTTP server
 
 
 ## Install
