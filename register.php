@@ -124,6 +124,22 @@ countrySubmit.style.display = 'none';
 <div id="page-content">
 <form action="#" method="post" id="creation">
 <div class="form-blockable" id="country-change">
+<div class="input-row input-row-text">
+<span class="input-left">
+<label for="firstname">
+<span class="label-text">
+Username:
+</span>
+<span class="input-required">*</span>
+</label>
+</span><!--
+--><span class="input-right">
+<span class="input-text input-text-small">
+<input type="text" name="firstname" value="" id="firstname" class="small border-5 glow-shadow-2" autocomplete="off" maxlength="32" tabindex="1" required="required" placeholder="Username" />
+<span class="inline-message " id="firstname-message">&#160;</span>
+</span>
+</span>
+</div>
 <div class="input-row input-row-select">
 <span class="input-left">
 <label for="dobDay">
@@ -132,7 +148,8 @@ Date of Birth:
 </span>
 <span class="input-required">*</span>
 </label>
-</span><!--
+</span>
+<!--
 --><span class="input-right">
 <span class="input-select input-select-extra-extra-extra-small">
 <select name="dobDay" id="dobDay" class="extra-extra-extra-small border-5 glow-shadow-2" tabindex="1" required="required">
