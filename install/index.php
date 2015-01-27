@@ -223,7 +223,7 @@ include('config.php');
 									  <option value='tw'>繁體中文</option>
 									</select>
 									</span>
-									<a href='#' title='If you don't have a domain just add the following: http://localhost/'>Domain:</a>
+									<a href='#' title='If you do not have a domain just add the following: http://localhost/'>Domain:</a>
 									<input type='text' name='cfgdom' required />
 									<p><center><input type='submit' name='Submit' value='Install FlameCMS Now'></center></p>
 									</form>
