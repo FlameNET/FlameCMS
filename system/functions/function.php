@@ -121,6 +121,10 @@ function Year($year){
 	return $year;
 }
 
+
+/**
+ *  Reporting Error 
+ */
 function setReporting() {
 	if (DEVELOPMENT_ENVIRONMENT == true) {
 		error_reporting(E_ALL);
@@ -129,7 +133,37 @@ function setReporting() {
 		error_reporting(E_ALL);
 		ini_set('display_errors','Off');
 		ini_set('log_errors', 'On');
-		ini_set('error_log', ROOT.DS.'system'.DS.'tmp'.DS.'logs'.DS.'error.log');
+		ini_set('error_log', __ROOT__.DS.'system'.DS.'tmp'.DS.'logs'.DS.'error.log');
 	}
 }
 setReporting();
+
+/**
+ *  Maintenance Mode 
+ */
+function maintain($mode = MAINTENANCE){ # $mode either equals true or false 
+    if($mode){ 
+        # if we are in maintenance, require all pages to go to the maintenance page 
+        if(filename($_SERVER['SCRIPT_FILENAME']) != 'maintenance.php'){ 
+            # Replace the location to the loacation of your maintenance page 
+            header("Location: ".BASE_URL."maintenance.php"); 
+            exit; 
+        } 
+    }else{
+        # if we are not in maintenance, don't allow link to maintenance page
+        if(filename($_SERVER['SCRIPT_FILENAME']) == 'maintenance.php'){
+            # Replace the location to the loacation to your home page
+            header("Location: BASE_URL");
+            exit;
+        }
+    }
+} 
+# Run maintenance mode 
+maintain(); # Leave blank to not be in maintenance mode or use maintain(TRUE); 
+
+# get the file name 
+function filename($url){ 
+    $pos = strrpos($url,'/'); 
+    $str = substr($url,$pos+1); 
+    return $str; 
+}

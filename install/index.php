@@ -101,14 +101,17 @@ define('ROOT',		'/');
 
 /*
 |--------------------------------------------------------------------------|
+| MAINTENANCE
 | DEVELOPMENT_ENVIRONMENT
-| Info: Dirname __ROOT__
+| DIRECTORY_SEPARATOR
+| Dirname __ROOT__
 | Special: DO NOT TOUCH!
 |--------------------------------------------------------------------------|
 | Creates Sessions that are saved so that accounts can stay connected.
 |--------------------------------------------------------------------------|
 */
-define('DEVELOPMENT_ENVIRONMENT',true);
+define('MAINTENANCE', false);
+define('DEVELOPMENT_ENVIRONMENT', false);
 define('DS', DIRECTORY_SEPARATOR);
 define('__ROOT__', dirname(dirname(__FILE__)));
 
