@@ -16,8 +16,8 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
-function Connect(){
 
+function Connect(){
 	$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
 	/**
 	* Language support in the database
@@ -32,27 +32,9 @@ function Connect(){
 
 }
 
-function ago($time)
-{
-	$periods	= array("second", "minute", "hour", "day", "week", "month", "year", "decade");
-	$lengths	= array("60","60","24","7","4.35","12","10");
-	$now		= time();
-	$difference	= $now - $time;
-	$tense		= "ago";
-
-	for($j = 0; $difference >= $lengths[$j] && $j < count($lengths)-1; $j++) {
-		$difference /= $lengths[$j];
-	}
-
-	$difference = round($difference);
-
-	if($difference != 1) {
-		$periods[$j].= "s";
-	}
-
-	return "$difference $periods[$j] ago";
-}
-
+/**
+ *  URL Clean String
+ */
 function CleanString($toClean) {
 	$chars = array(
         '?' => 'S', '?' => 's', 'Ð' => 'Dj','?' => 'Z', '?' => 'z', 'À' => 'A', 'Á' => 'A', 'Â' => 'A', 'Ã' => 'A', 'Ä' => 'A',
@@ -74,9 +56,14 @@ function CleanString($toClean) {
 	$toClean = str_replace('--', '-', $toClean);
 	$toClean = str_replace('--', '-', $toClean);
 	$toClean = preg_replace('/[^\w\d_ -]/si', '', $toClean);
+
 	return trim($toClean);
+
 }
 
+/**
+ *  News System
+ */
 function NewsWordLimit($string, $length = 75, $ellipsis = "...") {
 	$words = explode(' ', $string);
 	if (count($words) > $length)
@@ -89,38 +76,56 @@ function NewsWordLimit($string, $length = 75, $ellipsis = "...") {
 	}
 }
 
+function ago($time) {
+	$periods	= array("second", "minute", "hour", "day", "week", "month", "year", "decade");
+	$lengths	= array("60","60","24","7","4.35","12","10");
+	$now		= time();
+	$difference	= $now - $time;
+	$tense		= "ago";
+
+	for($j = 0; $difference >= $lengths[$j] && $j < count($lengths)-1; $j++) {
+		$difference /= $lengths[$j];
+	}
+
+	$difference = round($difference);
+
+	if($difference != 1) {
+		$periods[$j].= "s";
+	}
+
+	return "$difference $periods[$j] ago";
+
+}
+
 /**
  *  Register Account
  */
 
 function Countries($country, $get){
-
 	$country = Connect()->query("SELECT * FROM countries");
 	while($get = mysqli_fetch_array($country))
 	{
-	echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
+		echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
 	}
+
 	return $country;
 }
 
 function Day($day){
- 
 	for($day=1;$day<=31;$day++){
-	echo'<option value="'.$day.'">'.$day.'</option>';
+		echo'<option value="'.$day.'">'.$day.'</option>';
 	}
 
 	return $day;
 } 
 
 function Year($year){
- 
 	for($year=2015;$year>=1905;$year--){
-	echo'<option value="'.$year.'">'.$year.'</option>';
+		echo'<option value="'.$year.'">'.$year.'</option>';
 	}
 
 	return $year;
 }
-
 
 /**
  *  Reporting Error 
@@ -141,14 +146,14 @@ setReporting();
 /**
  *  Maintenance Mode 
  */
-function maintain($mode = MAINTENANCE){ # $mode either equals true or false 
-    if($mode){ 
-        # if we are in maintenance, require all pages to go to the maintenance page 
-        if(filename($_SERVER['SCRIPT_FILENAME']) != 'maintenance.php'){ 
-            # Replace the location to the loacation of your maintenance page 
-            header("Location: ".BASE_URL."maintenance.php"); 
-            exit; 
-        } 
+function MaintenanceMode($mode = MAINTENANCE){ # $mode either equals true or false 
+    if($mode){
+        # if we are in maintenance, require all pages to go to the maintenance page
+        if(filename($_SERVER['SCRIPT_FILENAME']) != 'maintenance.php'){
+            # Replace the location to the loacation of your maintenance page
+            header("Location: ".BASE_URL."maintenance.php");
+            exit;
+        }
     }else{
         # if we are not in maintenance, don't allow link to maintenance page
         if(filename($_SERVER['SCRIPT_FILENAME']) == 'maintenance.php'){
@@ -157,13 +162,15 @@ function maintain($mode = MAINTENANCE){ # $mode either equals true or false
             exit;
         }
     }
-} 
-# Run maintenance mode 
-maintain(); # Leave blank to not be in maintenance mode or use maintain(TRUE); 
+}
+# Run maintenance mode
+MaintenanceMode(); # Leave blank to not be in maintenance mode or use maintenance(TRUE);
 
 # get the file name 
-function filename($url){ 
-    $pos = strrpos($url,'/'); 
-    $str = substr($url,$pos+1); 
-    return $str; 
+function filename($url){
+    $pos = strrpos($url,'/');
+    $str = substr($url,$pos+1);
+
+    return $str;
+
 }
