@@ -35,6 +35,10 @@ website at [FlameCMS](http://flamenet.github.io/FlameCMS).
 
 You can install the CMS super easily as you access it. Remember to delete the "install" folder after installing everything successfully.
 
+## Developers CMS
+
+To develop the "CMS" we recommend to activate the option [DEVELOPMENT_ENVIRONMENT](https://github.com/FlameNET/FlameCMS/blob/master/system/config.php#L129)
+
 ## Reporting issues
 
 Issues can be reported via the [Github issue tracker](https://github.com/FlameNET/FlameCMS/issues).
