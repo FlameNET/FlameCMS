@@ -47,7 +47,6 @@ if(isset($_GET['lang'])){
 switch ($lang) {
 
 	case 'cn':
-	89*
 	$lang_file = 'lang.cn.php';
 	break;
 
