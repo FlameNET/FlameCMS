@@ -26,8 +26,8 @@ website at [FlameCMS](http://flamenet.github.io/FlameCMS).
 
 + Platform: Linux, Windows (Have not tested on MAC)
 + Processor with SSE2 support
-+ PHP ? 5.5.1
-+ MySQL ? 5.1.0
++ PHP ≥ 5.5.1
++ MySQL ≥ 5.1.0
 + Apache HTTP server
 
 
