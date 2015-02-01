@@ -17,7 +17,20 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
 
-function footer() {
-	include(__ROOT__.'/webkit/footer.php');
-}
+class Connection {
 
+	public function Connect(){
+		$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+		/**
+		* Language support in the database
+		*/
+		$mysqli ->query("SET NAMES 'utf8'");
+
+		if (mysqli_connect_error()) {
+			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+		}
+
+		return $mysqli;
+
+	}
+}

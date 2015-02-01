@@ -16,6 +16,7 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
+
 /*
 |--------------------------------------------------------------------------|
 | Info: CMS Language System.
@@ -46,6 +47,7 @@ if(isset($_GET['lang'])){
 switch ($lang) {
 
 	case 'cn':
+	89*
 	$lang_file = 'lang.cn.php';
 	break;
 
@@ -93,7 +95,7 @@ switch ($lang) {
 	$lang_file = 'lang.en.php';
 
 }
-include_once (__ROOT__."/system/languages/".$lang_file);
+include_once (__ROOT__.DS."system".DS."languages".DS.$lang_file);
 
 /*
 |--------------------------------------------------------------------------|
@@ -110,10 +112,25 @@ if(file_exists("install"))
 	header("Location: install");
 	die();
 }
+
 /*
 |--------------------------------------------------------------------------|
 | Functions CMS
 |--------------------------------------------------------------------------|
 */
-include( __ROOT__."/system/functions/function.php");
-include( __ROOT__."/system/functions/function.page.php");
+include( __ROOT__.DS."system".DS."functions".DS."function.php");
+
+/*
+|--------------------------------------------------------------------------|
+| Autoload Class
+|--------------------------------------------------------------------------|
+*/
+function __autoload($className) {
+	if (file_exists(__ROOT__ . DS . 'system' . DS . 'library' . DS . strtolower($className) . '.class.php')) {
+		require_once(__ROOT__ . DS . 'system' . DS . 'library' . DS . strtolower($className) . '.class.php');
+	}
+}
+$connect =& new Connection();
+$news =& new News();
+$register =& new Register();
+$url =& new Url();
