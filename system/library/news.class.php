@@ -51,4 +51,5 @@ class News {
 		return "$difference $periods[$j] ago";
 
 	}
+
 }
