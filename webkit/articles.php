@@ -13,7 +13,7 @@
 	if($row['contentlnk'] != NULL)
 	?>
 	<div class="article-wrapper">
-		<a href="<?php echo BASE_URL.'blog/'.$row['id'].'/'.Url::CleanString($row['title']); ?>/" itemprop="url">
+		<a href="<?php echo BASE_URL.'blog/'.$row['id'].'/'.$url->CleanString($row['title']); ?>/" itemprop="url">
 		<div class="article-image" style="background-image:url(assets/images/news/<?php echo $row['image']; ?>.jpg)">
 			<div class="article-image-frame"></div>
 		</div>
@@ -33,7 +33,7 @@
 		</a>
 		<div class="article-meta">
 			<span class="publish-date" title="<?php echo $row['date']; ?>"><?php echo $news->ago(strtotime($row['date'])); ?></span>
-			<a href="<?php echo BASE_URL.'blog/'.$row['id'].'/'.Url::CleanString($row['title']); ?>/#comments" class="comments-link"><?php echo $row['comments']; ?></a>
+			<a href="<?php echo BASE_URL.'blog/'.$row['id'].'/'.$url->CleanString($row['title']); ?>/#comments" class="comments-link"><?php echo $row['comments']; ?></a>
 		</div>
 		<span class="clear"><!-- --></span>
 	</div>
