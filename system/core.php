@@ -129,7 +129,8 @@ function __autoload($className) {
 		require_once(__ROOT__ . DS . 'system' . DS . 'library' . DS . strtolower($className) . '.class.php');
 	}
 }
-$connect =& new Connection();
-$news =& new News();
-$register =& new Register();
-$url =& new Url();
+$connect = new Connection();
+$news = new News();
+$register = new Register();
+$url = new Url();
+
