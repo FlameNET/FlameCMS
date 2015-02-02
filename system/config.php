@@ -34,29 +34,13 @@ if (!isset($_SESSION))
 
 /*
 |--------------------------------------------------------------------------|
-| Info: Dirname __ROOT__ .
-| Special: DO NOT TOUCH!
-|--------------------------------------------------------------------------|
-| Creates Sessions that are saved so that accounts can stay connected.
-|--------------------------------------------------------------------------|
-*/
-define("__ROOT__", dirname(dirname(__FILE__)));
-
-/*
-|--------------------------------------------------------------------------|
-| Info: Dirname __ROOT__ . END.
-|--------------------------------------------------------------------------|
-*/
-
-/*
-|--------------------------------------------------------------------------|
 | Info: CMS Language System.
 |--------------------------------------------------------------------------|
 | Specifies the Language that your CMS will show.
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-define("LANGUAGE",	"en");
+define('LANGUAGE',	'en');
 
 /*
 |--------------------------------------------------------------------------|
@@ -71,11 +55,30 @@ define("LANGUAGE",	"en");
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-define("TITLE",		"FlameCMS");
-define("FACEBOOK", 	"https://www.facebook.com/");
-define("TWITTER",  	"https://twitter.com/");
-define("YOUTUBE",  	"https://www.youtube.com/");
-define("REDDIT",   	"https://www.reddit.com/");
+define('TITLE',		'FlameCMS');
+define('FACEBOOK', 	'https://www.facebook.com/');
+define('TWITTER',  	'https://twitter.com/');
+define('YOUTUBE',  	'https://www.youtube.com/');
+define('REDDIT',   	'https://www.reddit.com/');
+
+/*
+|--------------------------------------------------------------------------|
+| Info: CMS Community System END.
+|--------------------------------------------------------------------------|
+*/
+/*
+|--------------------------------------------------------------------------|
+| Info: CMS Community System.
+|--------------------------------------------------------------------------|
+| Important Links to Social sites & the title of the CMS.
+| Under Heavy Work. Please do not touch.
+|--------------------------------------------------------------------------|
+*/
+define('TITLE',		'FlameCMS');
+define('FACEBOOK', 	'https://www.facebook.com/');
+define('TWITTER',  	'https://twitter.com/');
+define('YOUTUBE',  	'https://www.youtube.com/');
+define('REDDIT',   	'https://www.reddit.com/');
 
 /*
 |--------------------------------------------------------------------------|
@@ -91,22 +94,22 @@ define("REDDIT",   	"https://www.reddit.com/");
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */
-define("HOST",		"127.0.0.1");
-define("USER",		"root");
-define("PASSWORD",	"password");
-define("PORT",		"3306");
-define("DB",		"cms");
-define("AUTH",		"auth");
-define("CHARACTERS","char");
-define("WORLD",		"world");
+define('HOST',		'127.0.0.1');
+define('USER',		'root');
+define('PASSWORD',	'password');
+define('PORT',		'3306');
+define('DB',		'cms');
+define('AUTH',		'auth');
+define('CHARACTERS','char');
+define('WORLD',		'world');
 /*
 |--------------------------------------------------------------------------|
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-define("BASE_URL",	"http://localhost/projects/FlameCMS/");
-define("CORE",		"webkit/");
-define("ROOT",		"/");
+define('BASE_URL',	'http://localhost/projects/FlameCMS/');
+define('CORE',		'webkit/');
+define('ROOT',		'/');
 
 /*
 |--------------------------------------------------------------------------|
