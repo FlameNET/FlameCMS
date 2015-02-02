@@ -1,5 +1,5 @@
 <!-- Le Styles -->
-<link rel="shortcut icon" href="assets/images/logos/favicon.png" />
+<link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/lightbox.css" />

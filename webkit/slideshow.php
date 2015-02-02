@@ -1,7 +1,7 @@
 <div id="slideshow" class="ui-slideshow">
         <div class="slideshow">
 			<?php
-			$slideshows = Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
+			$slideshows = $connect->Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 			$i=0;
 			while($slideshow = mysqli_fetch_array($slideshows))
 			{
@@ -36,7 +36,7 @@
         <div class="mask"></div>
     </div>
 		<?php
-		$slideshows = Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
+		$slideshows = $connect->Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 		?>
 		<script type="text/javascript">
 		//<![CDATA[

@@ -3,7 +3,7 @@
 <?php
 if(isset($page))
 {
-	$menus = Connect()->query("SELECT * FROM menu");
+	$menus = $connect->Connect()->query("SELECT * FROM menu");
 	while($menu = mysqli_fetch_array($menus))
 	{
 ?>
@@ -20,7 +20,7 @@ if(isset($page))
 }
 else
 {
-	$menus = Connect()->query("SELECT * FROM menu");
+	$menus = $connect->Connect()->query("SELECT * FROM menu");
 	while($menu = mysqli_fetch_array($menus))
 	{
 ?>
