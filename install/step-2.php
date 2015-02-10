@@ -18,19 +18,9 @@ include('config.php');
         <script src="js/flame.min.js"></script>
         <script src="js/highlight.js"></script>
         <script src="js/docs.js"></script>
-		<style>
-		/*
-		 * Sections
-		 */
-
-		.tm-section .uk-heading-large { margin-bottom: 20px; }
-		.tm-section .uk-text-large { margin-bottom: 60px; }
-
-		.tm-section-color-1 { background: #0AE821 url("images/logoslider.png") 50% 50% no-repeat; }
-		</style>
     </head>
 
-    <body class="tm-background">
+    <body>
 
         <nav class="tm-navbar uk-navbar uk-navbar-attached">
             <div class="uk-container uk-container-center">
@@ -41,7 +31,7 @@ include('config.php');
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
                     <li><a href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact.php"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
                 <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
@@ -51,23 +41,69 @@ include('config.php');
             </div>
         </nav>
 
-        <div class="tm-section tm-section-color-1 tm-section-colored">
+        <div class="tm-section uk-overflow-container">
             <div class="uk-container uk-container-center uk-text-center">
 
-                <img class="tm-logo" src="images/logo.png" width="281" height="217" title="<?php echo $title ?>" alt="<?php echo $title ?>">
+				<div class="uk-overflow-container">
+					<table class="uk-table uk-table-hover uk-table-striped uk-table-condensed">
+						<caption>
+							<h3 class="tm-article-subtitle">Application requirements</h3>
+						</caption>
+						<thead>
+							<tr>
+								<th><center>Modules</center></th>
+								<th><center>Required version</center></th>
+								<th><center>Installed version</center></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>PHP Version</td>
+								<td>5.5.1</td>
+								<td><?php echo phpversion(); ?></td>
+							</tr>
+							<tr>
+								<td>MySQL Version</td>
+								<td>5.1.0</td>
+								<td><?php echo mysql_get_server_info(); ?></td>
+							</tr>
+							<tr>
+								<td>Apache Server Version</td>
+								<td>2.2.29</td>
+								<td><?php echo apache_get_version(); ?></td>
+							</tr>
+							<tr>
+								<td>Operating System</td>
+								<td>Windows/Linux</td>
+								<td> <?php echo php_uname('s'); echo " "; echo php_uname('v'); ?></td>
+							</tr>
+						</tbody>
+					</table>
+					
+				
+					<a href="step-3" class="uk-button uk-button-large uk-button-primary"><i class="fa fa-check-circle-o"></i> Install Now</a>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="uk-container uk-container-center uk-text-center">
 
-                <p class="uk-text-large sombra">Welcome to <?php echo $title ?><br class="uk-hidden-small">Content Management System for World of Warcraft Servers.</p>
+						<ul class="uk-subnav uk-subnav-line">
+							<li><a href="https://github.com/FlameNET/">GitHub</a></li>
+							<li><a href="https://github.com/FlameNET/FlameCMS/issues">Issues</a></li>
+							<li><a href="https://github.com/FlameNET/FlameCMS/blob/master/CHANGELOG.md">Changelog</a></li>
+							<li><a href="https://twitter.com/FlameCMS">Twitter</a></li>
+						</ul>
 
-                <a href="step-2" class="uk-button tm-button-download"><i class="fa fa-check-circle-o"></i> Install Now</a>
-                <a href="https://google.com/" class="uk-button tm-button-download"> No, Thanks</a>
+						<div class="uk-panel">
+							<p>Made by <a href="http://flamenet.github.io/FlameCMS/">FlameNET</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="https://github.com/FlameNET/FlameCMS/blob/master/COPYING">GNU license</a>.</p>
+							<a href="http://flamenet.github.io/FlameCMS/">
+							</a>
+						</div>
 
-                <ul class="tm-subnav uk-subnav">
-                    <li><a href="https://github.com/FlameNET/FlameCMS/stargazers"><i class="fa fa-star"></i> <span data-uikit-stargazers>3700</span> Stargazers</a></li>
-                    <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> <?php echo $title ?></a></li>
-                    <li><a href="https://twitter.com/FlameCMS"><i class="fa fa-twitter"></i> @<?php echo $title ?></a></li>
-                    <li><a href="https://www.facebook.com/"><i class="uk-icon-facebook"></i> <?php echo $title ?></a></li>
-                </ul>
+					</div>
 
+				</div>
             </div>
         </div>
 
@@ -87,4 +123,3 @@ include('config.php');
         </div>
     </body>
 </html>
-
