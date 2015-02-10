@@ -1,6 +1,6 @@
 <!-- DO NOT TOUCH -->
 <?php require_once('system/config.php'); ?>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
+<html xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -196,16 +196,16 @@ other: 'Other'
 };
 //]]>
 </script>
-<script type="text/javascript" src="assets/js/menu.js"></script>
-<script type="text/javascript" src="assets/js/wow.js"></script>
-<script type="text/javascript" src="assets/js/search-pane.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/menu.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/wow.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/search-pane.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
-Menu.initialize(__ROOT__.'/assets/data/menu.json');
+Menu.initialize(<?php echo __ROOT__ ?>'/assets/data/menu.json');
 });
 //]]>
 </script>
-<script type="text/javascript" src="assets/js/cms.min.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/cms.min.js"></script>
 </body>
 </html>
