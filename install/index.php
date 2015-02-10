@@ -40,8 +40,8 @@ include('config.php');
                 <ul class="uk-navbar-nav uk-hidden-small">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact.php"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
                 <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
@@ -78,8 +78,8 @@ include('config.php');
                 <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
             </div>

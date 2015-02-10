@@ -30,7 +30,7 @@ include('config.php');
                 <ul class="uk-navbar-nav uk-hidden-small">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
                     <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
@@ -73,7 +73,7 @@ include('config.php');
 						<img class="uk-border-circle" width="250" height="250" src="https://avatars1.githubusercontent.com/u/3411968?v=3&s=460" alt="">
 						<div class="uk-overlay-area uk-border-circle">
 							<div class="uk-overlay-area-content">
-								<a href="mailto:luiscortesj@gmail.com" class="uk-icon-button uk-icon-envelope"></a>
+								<a href="mailto:luizcortesj@gmail.com" class="uk-icon-button uk-icon-envelope"></a>
 								<a href="https://www.facebook.com/oneluiz" class="uk-icon-button uk-icon-facebook"></a>
 								<a href="https://github.com/oneluiz" class="uk-icon-button uk-icon-github"></a>
 							</div>
@@ -112,8 +112,8 @@ include('config.php');
                 <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact.php"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
             </div>
