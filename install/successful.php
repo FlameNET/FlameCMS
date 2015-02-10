@@ -1,4 +1,26 @@
 <?php
+require_once('../system/config.php');
+$domain = BASE_URL;
+$htaccess = '# Copyright (C) '.date("Y").' FlameCMS <YET TO BE DETERMINED>
+
+# Page Error
+ErrorDocument 404 '.$domain.'404
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# PHP redirect if any.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+## Enable Apache mod_rewrite to rewrite the URL
+RewriteEngine On
+
+## Friendly URL of Articles
+RewriteRule ^blog/(.+)/(.+)$ article.php?id=$1&title=$2 [QSA]
+';
 include('config.php');
 ?>
 <!DOCTYPE html>
@@ -49,8 +71,7 @@ include('config.php');
 							<h2>Finalizing...</h2>
 						</header>
 						<div class="uk-alert uk-alert-success">Trying to connect to database...
-							<?php
-							require_once('../system/config.php'); 
+							<?php 
 							$con=mysqli_connect(HOST,USER,PASSWORD,DB);
 
 							// Check connection
@@ -85,6 +106,16 @@ include('config.php');
 						?>
 						Succesful!
 						</div>
+						<br class="uk-hidden-small">
+						<?php
+						$fp = fopen(__ROOT__.'/.htaccess','w');
+						if($fp)
+						{
+							fwrite($fp, $htaccess);
+							fclose($fp);
+						}
+						?>
+						<div class="uk-alert uk-alert-success">The .htaccess file has been created successfully!</div>
 						<br class="uk-hidden-small">
 						<div class="uk-alert uk-alert-warning">Please delete the install folder to start using FlameCMS!</div>
 					<br>
