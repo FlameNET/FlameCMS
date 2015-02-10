@@ -231,11 +231,12 @@ include('config.php');
 							<button type="submit" name="Submit"  class="u-button uk-button-large uk-button-primary" type="button" data-uk-button><i class="fa fa-check-circle-o"></i> Install FlameCMS Now</button>
 					</fieldset>
 				</form>
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="uk-container uk-container-center uk-text-center">
+			</div>
+		</div>
+        <div class="tm-section uk-overflow-container">
+            <div class="uk-container uk-container-center uk-text-center">
+
+				<div class="uk-overflow-container">
 
 					<ul class="uk-subnav uk-subnav-line">
 						<li><a href="https://github.com/FlameNET/">GitHub</a></li>

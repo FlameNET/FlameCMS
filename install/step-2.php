@@ -1,5 +1,12 @@
 <?php
 include('config.php');
+ob_start(); 
+phpinfo(INFO_MODULES); 
+$info = ob_get_contents(); 
+ob_end_clean(); 
+$info = stristr($info, 'Client API version'); 
+preg_match('/[1-9].[0-9].[1-9][0-9]/', $info, $match); 
+$mysqlVersion = $match[0]; 
 ?>
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
@@ -63,9 +70,9 @@ include('config.php');
 								<td><?php echo phpversion(); ?></td>
 							</tr>
 							<tr>
-								<td>MySQL Version</td>
-								<td>5.1.0</td>
-								<td><?php echo mysql_get_server_info(); ?></td>
+								<td>MySQLI Client API version</td>
+								<td>5.0.11</td>
+								<td><?php echo $mysqlVersion ?></td>
 							</tr>
 							<tr>
 								<td>Apache Server Version</td>
