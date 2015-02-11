@@ -68,29 +68,10 @@ define('REDDIT',   	'https://www.reddit.com/');
 */
 /*
 |--------------------------------------------------------------------------|
-| Info: CMS Community System.
-|--------------------------------------------------------------------------|
-| Important Links to Social sites & the title of the CMS.
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-define('TITLE',		'FlameCMS');
-define('FACEBOOK', 	'https://www.facebook.com/');
-define('TWITTER',  	'https://twitter.com/');
-define('YOUTUBE',  	'https://www.youtube.com/');
-define('REDDIT',   	'https://www.reddit.com/');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Community System END.
-|--------------------------------------------------------------------------|
-*/
-/*
-|--------------------------------------------------------------------------|
 | Info: CMS Connection Variables.
 |--------------------------------------------------------------------------|
 | Please set these to your MySQL Connection. 
-| If you don't know what you are doing, please contact with one of FlameCMS
+| If you don\'t know what you are doing, please contact with one of FlameCMS
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */

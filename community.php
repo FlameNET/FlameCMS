@@ -3,12 +3,11 @@
 <html xml:lang="en-us" class="en-us">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <script>window['adrum-start-time'] = new Date().getTime();</script>
-<script type="text/javascript" src="../../static/js/vendor/adrum.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/vendor/adrum.js"></script>
 <meta http-equiv="imagetoolbar" content="false"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <title>Community - <?php echo TITLE ?></title>
-<link rel="shortcut icon" href="http://us.battle.net/wow/static/images/meta/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="http://us.battle.net/en-us/data/opensearch" title="Battle.net Search"/>
+<link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/wow.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/lightbox.css" />
@@ -436,7 +435,7 @@ other: 'Other'
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
-Menu.initialize(<?php echo __ROOT__ ?>'/assets/data/menu.json');
+Menu.initialize('assets/data/menu.json');
 });
 //]]>
 </script>
