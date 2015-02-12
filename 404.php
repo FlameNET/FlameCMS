@@ -10,7 +10,7 @@
 try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"1241d2d2c55155c724d4e2f1ed900b60",petok:"06fd1f55f9fa416f3b7ee9946db03423ad337489-1423654506-1800",zone:"tonybogdanov.com",rocket:"0",apps:{}}];CloudFlare.push({"apps":{"ape":"88830b01fac5ac18aab0f099f034c785"}});!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="<?php echo BASE_URL ?>assets/js/404/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
 //]]>
 </script>
-<link href="http://preview.tonybogdanov.com/project/creatica-error/css/style.css" rel="stylesheet">    
+<link href="<?php echo BASE_URL ?>assets/css/404/main.css" rel="stylesheet">    
 <script src="<?php echo BASE_URL ?>assets/js/404/jquery.min.js"></script>    
 <link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png" />
 </head>
@@ -35,6 +35,6 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag
 </ul>
 </div>
 </footer>
-<script src="http://preview.tonybogdanov.com/project/creatica-error/js/style.js"></script>
+<script src="<?php echo BASE_URL ?>assets/js/404/style.js"></script>
 </body>
 </html>
