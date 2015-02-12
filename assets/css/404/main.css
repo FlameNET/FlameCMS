@@ -1,11 +1,10 @@
 /* common */
 * { outline: none; }
-body { margin: 0; background: url(../img/bg-navy.png) #000; font-family: arial; font-size: 14px; line-height: 20px; }
+.body { margin: 0; background: url(../img/bg-navy.png) #000; font-family: arial; font-size: 14px; line-height: 20px; }
 header, section, footer { text-align: center; margin: 40px 0 0 0; }
 section { margin-top: 30px; }
 img { border: 0; }
 .ribbon { margin-top: 31px; }
-
 /* backgrounds */
 .background-asfalt { background: url(../img/bg-asfalt.png) #000; }
 .background-brick { background: url(../img/bg-brick.png) #000; }

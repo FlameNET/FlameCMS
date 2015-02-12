@@ -14,7 +14,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag
 <script src="<?php echo BASE_URL ?>assets/js/404/jquery.min.js"></script>    
 <link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png" />
 </head>
-<body class="background-navy">
+<body class="background-navy body">
 <header>
 <div class="logo"><a href="<?php echo BASE_URL ?>"><img src="<?php echo BASE_URL ?>assets/images/404/logo.png" class="logo" alt="" /></a></div>
 <div class="ribbon"><img src="<?php echo BASE_URL ?>assets/images/404/ribbon.png" alt="" /></div>
