@@ -19,7 +19,6 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag
 <div class="logo"><a href="<?php echo BASE_URL ?>"><img src="<?php echo BASE_URL ?>assets/images/404/logo.png" class="logo" alt="" /></a></div>
 <div class="ribbon"><img src="<?php echo BASE_URL ?>assets/images/404/ribbon.png" alt="" /></div>
 </header>
-        
 <section data-error="404" class="error">
 <div class="number">
 <div id="n1"></div>

@@ -202,7 +202,7 @@ other: 'Other'
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
-Menu.initialize(<?php echo __ROOT__ ?>'/assets/data/menu.json');
+Menu.initialize('assets/data/menu.json');
 });
 //]]>
 </script>
