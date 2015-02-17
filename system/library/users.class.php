@@ -17,13 +17,19 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
 
-class Register {
+class Users extends Connection {
 
 	public function Countries($country, $get){
-		$country = Connection::Connect()->query("SELECT * FROM countries");
+		
+		$country = $this->Connect()->query("SELECT * FROM countries");
+
 		while($get = mysqli_fetch_array($country))
 		{
-			echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
+			if($get['isoAlpha3'] == $_GET['country'] ){
+				echo'<option value="'.$get["isoAlpha3"].'"selected="selected">'.$get["countryName"].'</option>';
+			}else{
+				echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
+			}
 		}
 
 		return $country;
@@ -44,4 +50,26 @@ class Register {
 
 		return $year;
 	}
+
+	public function accountCreate($email, $password) {
+		
+		$client = new SoapClient(NULL, array(
+		'location' 		=> 'http://'.SOAP_IP.':'.SOAP_PORT.'/',
+		'uri'      		=> 'urn:TC',
+		'user_agent'    => 'aframework',
+		'style'    		=> SOAP_RPC,
+		'trace'         => 1,
+		'exceptions'    => 0,
+		'login'			=> SOAP_USER,
+		'password'		=> SOAP_PASS,
+		));
+
+		$command="bnetaccount create ".$email." ".$password."";
+		try {
+			$result = $client->executeCommand(new SoapParam($command, "command"));
+		} catch (Exception $e) {
+			die($e->getMessage());
+		}
+	}
+
 }

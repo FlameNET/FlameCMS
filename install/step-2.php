@@ -13,8 +13,8 @@ $mysqlVersion = $match[0];
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dashboard - <?php echo $title ?></title>
-        <link rel="shortcut icon" href="docs/images/favicon.ico" type="image/x-icon">
+        <title>Step 2 - <?php echo $title ?></title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link id="data-uikit-theme" rel="stylesheet" href="css/flame.docs.min.css">
@@ -37,7 +37,7 @@ $mysqlVersion = $match[0];
                 <ul class="uk-navbar-nav uk-hidden-small">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
                     <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
@@ -121,7 +121,7 @@ $mysqlVersion = $match[0];
                 <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
                     <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 

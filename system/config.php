@@ -83,14 +83,33 @@ define('DB',		'cms');
 define('AUTH',		'auth');
 define('CHARACTERS','char');
 define('WORLD',		'world');
+
+/*
+|--------------------------------------------------------------------------|
+|  Soap settings
+|--------------------------------------------------------------------------|
+| Bind SOAP service to IP/hostname.
+| TCP port to reach the SOAP service.
+| SOAP IP		= 127.0.0.1
+| SOAP PORT		= 7878
+| SOAP SOAP		= 1#1 // EXAMPLE
+| USER PASSWORD = your password account
+| SOAP KEY		= your key
+*/
+define('SOAP_IP',		'127.0.0.1');
+define('SOAP_PORT', 	'7878');
+define('SOAP_USER', 	'your user account');
+define('SOAP_PASS', 	'your password account');
+define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
+
 /*
 |--------------------------------------------------------------------------|
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-define('BASE_URL',	'http://localhost/projects/FlameCMS/');
-define('CORE',		'webkit/');
-define('ROOT',		'/');
+define('BASE_URL',		'http://localhost/');
+define('ADMIN_URL',		'http://localhost/admin/');
+define('ACCOUNT_URL',	'http://localhost/account/');
 
 /*
 |--------------------------------------------------------------------------|

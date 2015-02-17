@@ -1,5 +1,6 @@
-<!-- DO NOT TOUCH -->
-<?php require_once('system/config.php'); ?>
+<?php session_start();
+require_once('../system/config.php');
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false"/>
@@ -7,11 +8,11 @@
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include('webkit/desc.php'); ?>
+<?php include('../webkit/desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo $cms_lang['12']; ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<link rel="shortcut icon" href="assets/images/logos/favicon.png"/>
+<link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png"/>
 <link rel="search" type="application/opensearchdescription+xml" href="en-gb/data/opensearch" title="Battle.net Search"/>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/local-common/css/common.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/account/static/css/bnet.css" />
@@ -31,12 +32,12 @@ var Core = Core || {},
 Login = Login || {};
 Core.staticUrl = '<?php echo BASE_URL ?>assets/account/static';
 Core.sharedStaticUrl = '<?php echo BASE_URL ?>assets/account/static/local-common';
-Core.baseUrl = 'account';
-Core.projectUrl = 'account';
+Core.baseUrl = '<?php echo BASE_URL ?>assets/account/static';
+Core.projectUrl = '<?php echo BASE_URL ?>assets/account/static';
 Core.cdnUrl = 'http://media.blizzard.com/';
 Core.supportUrl = 'support/';
 Core.secureSupportUrl = 'support/';
-Core.project = 'bam';
+Core.project = 'FlameCMS';
 Core.locale = 'en-gb';
 Core.language = 'en';
 Core.region = 'eu';
@@ -44,7 +45,7 @@ Core.shortDateFormat = 'dd/MM/yyyy';
 Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = '<?php echo CORE ?>loginframe.php';
+Login.embeddedUrl = '<?php echo BASE_URL ?>account/login';
 var Flash = Flash || {};
 Flash.videoPlayer = '';
 Flash.videoBase = '';
@@ -84,7 +85,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include('webkit/userpanel.php'); ?>
+		<?php include('../webkit/userpanel.php'); ?>
 		<!-- User Panel END -->
 	</div>
 </div>
@@ -96,13 +97,106 @@ _gaq.push(['_trackPageview']);
 					<?php echo $cms_lang['14']; ?>
 				</p>
 			</div>
-			<form action="#" method="get" class="country-select">
+		</div>
+		<div id="page-content">
+		<?php
+		if(isset($_POST['submit']))
+		{
+			$country		= $_POST['country'];
+			$dobD			= $_POST['dobDay'];
+			$dobM			= $_POST['dobMonth'];
+			$dobY			= $_POST['dobYear'];
+			$dob			= date("Y-m-d", strtotime($dobY . "-" . $dobM . "-" . $dobD));
+			$firstName		= filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
+			$lastName		= filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
+			$email			= filter_var($_POST['emailAddress'], FILTER_VALIDATE_EMAIL);
+			$password		= filter_var($_POST['password'], FILTER_SANITIZE_STRING);
+			$question		= filter_var($_POST['question1'], FILTER_SANITIZE_STRING);
+			$answer			= filter_var($_POST['answer1'], FILTER_SANITIZE_STRING);
+            $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
+			$code			= md5(uniqid(rand()));
+
+			/**
+			 *  Whether the email format is correct
+			 */
+			if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+				$checkEmailSQL 	= $connect->Connect()->query("SELECT * FROM account WHERE email = '".$email."'");
+				$checkEmail	= mysqli_num_rows($checkEmailSQL) > 0;
+				if($checkEmail){
+					
+					echo'
+					<center>
+						<p class="text-red title">This Email is already used.</p>
+					</center>
+					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
+				}
+				else
+				{
+					$createAccount	= $connect->Connect()->query("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('".$firstName."','".$lastName."','".$email."','".$sha_pass_hash."','" . $question . "',UPPER('" . $answer . "'),'" . $country . "','" . $dob . "','".$code."')");
+					$register->accountCreate($email, $password);
+					if($createAccount)
+					{
+						$to		  = $email;
+						$subject  = "Confirmation from ".TITLE." to ".$firstName." ".$lastName."";
+						$header   = ": Confirmation from ".TITLE."";
+						$message  = "Please click the link below to verify and activate your account. rn";
+						$message .= "".BASE_URL."confirm?passkey=".$code."";
+
+						$sentmail = mail($to,$subject,$message,$header);
+
+						if($sentmail)
+						{
+						echo '
+						<div class="alert-page ">
+							<div class="alert-page-message success-page">
+								<p class="text-green title">
+									<strong>Account Creation Successful!</strong>
+								</p>
+								<div class="result-desc">
+									<div class="email-verification-highlight">
+										<h6>Next: Confirm your email address.</h6>
+										<p>
+											A verification email has been sent to the e-mail address displayed below.
+										</p>
+										<p>
+											Click the link in the email to verify this e-mail address. Verifying your email address ensures that Customer Support can contact you if you need help. It also allows you to make purchases and make changes to your account security.
+										</p>
+									</div>
+									<h6>Account Name (Email):</h6>
+									<p class="account-name">
+										'. $email.'
+									</p>
+									<h6>You will log in with this email address.</h6>
+									<p>
+										You will be asked for this address when logging into the Battle.net application, web sites, or game clients. You can change this address any time in <a href="'.ACCOUNT_URL.'login" tabindex="1">Account Management</a>.
+									</p>
+								</div>
+							</div>
+						</div>
+						<br/>
+						<br/>';
+						}
+						else
+						{
+							echo '<p class="text-red title"><strong>Cannot send Confirmation link to your e-mail address</strong></p>';
+						}
+					}
+				}
+			}else{
+				echo'<center>
+						<p class="text-red title">Email invalid</p>
+					</center>
+					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
+			}
+		}else{
+		?>
+			<form action="" method="post" class="country-select">
+				<input type="hidden" id="csrftoken" name="csrftoken" value="6d42030c-2ad6-4fa2-b3be-0ba74e5aa7aa"/>
 				<div class="input-row input-row-select">
 					<span class="input-left">
 					<label for="country">
-					<span class="label-text">
-					<?php echo $cms_lang['15']; ?>
-					</span>
+					<span class="label-text"><?php echo $cms_lang['15']; ?> </span>
 					<span class="input-required"></span>
 					</label>
 					</span>
@@ -111,28 +205,63 @@ _gaq.push(['_trackPageview']);
 					<span class="input-right">
 					<span class="input-select input-select-small">
 					<select name="country" id="country" class="small border-5 glow-shadow-2" tabindex="1">
-						<option value="" selected="selected"><?php echo $cms_lang['16']; ?>
-						</option>
 						<?php $register->Countries(); ?>
 					</select>
-					<span class="inline-message " id="country-message">&#160;</span>
+					<span class="inline-message " id="country-message">&nbsp;</span>
 					</span>
-					<button class="ui-button button1" type="submit" id="country-submit" tabindex="1" style="display: none;"><span class="button-left"><span class="button-right">Change Country</span></span></button>
+					<button class="ui-button button1" type="submit" id="country-submit" tabindex="1" style="display: none;"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></button>
 					</span>
 				</div>
 				<div class="input-row input-row-note" id="country-warning" style="display: none">
+					<div class="input-note border-5 glow-shadow">
+						<div id="countryGlobal" class="input-note-content">
+							<p class="caption">
+								<?php echo $cms_lang[101]; ?>
+							</p>
+							<p>
+								<a class="ui-button button1" href="<?php echo BASE_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
+								<a class="ui-cancel " href="<?php echo BASE_URL ?>register" tabindex="1">
+								<span>
+								<?php echo $cms_lang[68]; ?> </span>
+								</a>
+							</p>
+						</div>
+						<div id="countryCHINA" class="input-note-content">
+							<p class="caption">
+								<?php echo $cms_lang[102]; ?>
+							</p>
+							<p>
+								<a class="ui-button button1" href="?country=CHINA" id="stayTaiwan" tabindex="1"><span class="button-left"><span class="button-right">YES, I HAVE A TAIWANESE WORLD OF WARCRAFT ACCOUNT</span></span></a><br/>
+								<a class="ui-button button1" href="<?php echo BASE_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
+								<a class="ui-cancel " href="<?php echo BASE_URL ?>register" tabindex="1">
+								<span>
+								<?php echo $cms_lang[68]; ?> </span>
+								</a>
+							</p>
+						</div>
+						<div class="input-note-arrow">
+						</div>
+					</div>
 				</div>
 			</form>
 			<script type="text/javascript">
-			//<![CDATA[
-			(function() {
-			var countrySubmit = document.getElementById('country-submit');
-			countrySubmit.style.display = 'none';
-			})();
-			//]]>
+		//<![CDATA[
+		(function() {
+		var countrySubmit = document.getElementById('country-submit');
+		countrySubmit.style.display = 'none';
+		})();
+		//]]>
 			</script>
 			<div id="page-content">
-				<form action="#" method="post" id="creation">
+				<form action="" method="post" id="creation" novalidate="novalidate">
+					<div class="input-hidden">
+						<div class="input-hidden">
+							<input type="hidden" id="csrftoken" name="csrftoken" value="6d42030c-2ad6-4fa2-b3be-0ba74e5aa7aa"/>
+						</div>
+						<input type="hidden" name="country" value="CRI"/>
+						<input type="hidden" name="ret" value=""/>
+						<input type="hidden" name="sourceType" value=""/>
+					</div>
 					<div class="form-blockable" id="country-change">
 						<div class="input-row input-row-select">
 							<span class="input-left">
@@ -185,6 +314,10 @@ _gaq.push(['_trackPageview']);
 							</span>
 							</span>
 						</div>
+						<?php
+						/*
+						// It currently only supports TrinityCore 6.x.x
+						// Still will not support 3.3.5a, 4.3.4 and 5.4.8
 						<div class="input-row input-row-text">
 							<span class="input-left">
 							<label for="firstname">
@@ -201,6 +334,8 @@ _gaq.push(['_trackPageview']);
 							</span>
 							</span>
 						</div>
+						*/
+						?>
 						<div class="input-row input-row-text">
 							<span class="input-left">
 							<label for="firstname">
@@ -234,14 +369,14 @@ _gaq.push(['_trackPageview']);
 -->
 							<span class="input-right">
 							<span class="input-text input-text-small">
-							<input type="email" name="emailAddress" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo $cms_lang['38']; ?>"/>
+							<input type="email" name="emailAddress" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="" id="emailAddress" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo $cms_lang['38']; ?>"/>
 							<span class="inline-message " id="emailAddress-message"><span class="tip-inline tip-default"></span>
 							<span class="tip-inline tip-information" style="display: none;"><?php echo $cms_lang['39']; ?></span>
 							<span class="tip-inline tip-warning" style="display: none;"><?php echo $cms_lang['40']; ?></span>
 							</span>
 							</span>
 							<span class="input-text input-text-small">
-							<input type="email" name="emailAddressConfirmation" value="" id="emailAddressConfirmation" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo $cms_lang['41']; ?>"/>
+							<input type="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="emailAddressConfirmation" value="" id="emailAddressConfirmation" class="small border-5 glow-shadow-2" autocomplete="off" onpaste="return false;" maxlength="320" tabindex="1" required="required" placeholder="<?php echo $cms_lang['41']; ?>"/>
 							<span class="inline-message " id="emailAddressConfirmation-message"><span class="tip-inline tip-default"></span>
 							<span class="tip-inline tip-information" style="display: none;"></span>
 							<span class="tip-inline tip-warning" style="display: none;"><?php echo $cms_lang['42']; ?></span>
@@ -397,7 +532,11 @@ _gaq.push(['_trackPageview']);
 								&#160;
 							</div>
 							<div class="input-right">
-								<button class="ui-button button1" type="submit" id="creation-submit" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['67']; ?></span></span></button>
+								<button class="ui-button button1" type="submit" name="submit" onclick="Form.submit(this)" id="country-submit" tabindex="1">
+									<span class="button-left">
+										<span class="button-right"><?php echo $cms_lang['67']; ?></span>
+									</span>
+								</button>
 								<a class="ui-cancel " href="" tabindex="1">
 								<span> <?php echo $cms_lang['68']; ?> </span>
 								</a>
@@ -443,6 +582,9 @@ _gaq.push(['_trackPageview']);
 					//]]>
 					</script>
 				</form>
+				
+		<?php }?>
+				<?php //$register->accountCreate(); ?>
 			</div>
 			<div class="templates">
 				<div class="alert error closeable border-4 glow-shadow" style=" ">
@@ -486,8 +628,7 @@ _gaq.push(['_trackPageview']);
 		</div>
 	</div>
 </div>
-<div id="layout-bottom-divider">
-</div>
+<div id="layout-bottom-divider"></div>
 <div id="layout-bottom">
 	<div class="wrapper">
 		<?php footer(); ?>
@@ -510,7 +651,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}â€™s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -561,10 +702,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loadingâ€¦',
+loading: 'Loading…',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this onâ€¦',
-fansiteFindType: 'Find {0} onâ€¦',
+fansiteFind: 'Find this on…',
+fansiteFindType: 'Find {0} on…',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -575,7 +716,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: 'â€¦'
+ellipsis: '…'
 };
 Msg.fansite= {
 achievement: 'achievement',
@@ -645,7 +786,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}â€™s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -696,10 +837,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loadingâ€¦',
+loading: 'Loading…',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this onâ€¦',
-fansiteFindType: 'Find {0} onâ€¦',
+fansiteFind: 'Find this on…',
+fansiteFindType: 'Find {0} on…',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -710,7 +851,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: 'â€¦'
+ellipsis: '…'
 };
 Msg.fansite= {
 achievement: 'achievement',

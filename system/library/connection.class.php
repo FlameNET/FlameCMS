@@ -20,6 +20,7 @@
 class Connection {
 
 	public function Connect(){
+
 		$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
 		/**
 		* Language support in the database
@@ -31,6 +32,54 @@ class Connection {
 		}
 
 		return $mysqli;
+
+	}
+
+	public function Auth(){
+
+		$auth = new mysqli(HOST, USER, PASSWORD, AUTH, PORT);
+		/**
+		* Language support in the database
+		*/
+		$auth->query("SET NAMES 'utf8'");
+
+		if (mysqli_connect_error()) {
+			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+		}
+
+		return $auth;
+
+	}
+
+	public function Characters(){
+
+		$characters = new mysqli(HOST, USER, PASSWORD, CHARACTERS, PORT);
+		/**
+		* Language support in the database
+		*/
+		$characters->query("SET NAMES 'utf8'");
+
+		if (mysqli_connect_error()) {
+			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+		}
+
+		return $characters;
+
+	}
+
+	public function World(){
+
+		$world = new mysqli(HOST, USER, PASSWORD, WORLD, PORT);
+		/**
+		* Language support in the database
+		*/
+		$world->query("SET NAMES 'utf8'");
+
+		if (mysqli_connect_error()) {
+			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+		}
+
+		return $world;
 
 	}
 }

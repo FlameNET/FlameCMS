@@ -84,14 +84,33 @@ define('DB',		'". $_POST['dbname']. "');
 define('AUTH',		'". $_POST['authdb']. "');
 define('CHARACTERS','". $_POST['chardb']. "');
 define('WORLD',		'". $_POST['worlddb']. "');
+
+/*
+|--------------------------------------------------------------------------|
+|  Soap settings
+|--------------------------------------------------------------------------|
+| Bind SOAP service to IP/hostname.
+| TCP port to reach the SOAP service.
+| SOAP IP		= 127.0.0.1
+| SOAP PORT		= 7878
+| SOAP SOAP		= 1#1 // EXAMPLE
+| USER PASSWORD = your password account
+| SOAP KEY		= your key
+*/
+define('SOAP_IP',		'". $_POST['soap_ip']. "');
+define('SOAP_PORT', 	'". $_POST['soap_port']. "');
+define('SOAP_USER', 	'". $_POST['soap_acc']. "');
+define('SOAP_PASS', 	'". $_POST['soap_pass']. "');
+define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
+
 /*
 |--------------------------------------------------------------------------|
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-define('BASE_URL',	'". $_POST['cfgdom']. "');
-define('CORE',		'webkit/');
-define('ROOT',		'/');
+define('BASE_URL',		'". $_POST['cfgdom']. "');
+define('ADMIN_URL',		'". $_POST['cfgdom']. "admin/');
+define('ACCOUNT_URL',	'". $_POST['cfgdom']. "account/');
 
 /*
 |--------------------------------------------------------------------------|
@@ -133,8 +152,8 @@ include('config.php');
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dashboard - <?php echo $title ?></title>
-        <link rel="shortcut icon" href="docs/images/favicon.ico" type="image/x-icon">
+        <title>Step 3 - <?php echo $title ?></title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link id="data-uikit-theme" rel="stylesheet" href="css/flame.docs.min.css">
@@ -164,7 +183,7 @@ include('config.php');
                 <ul class="uk-navbar-nav uk-hidden-small">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
                     <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 
@@ -209,6 +228,20 @@ include('config.php');
 							<div class="uk-form-row">
 							<input type="text" name="cfgdom" placeholder="Domain" required />
 							</div>
+							
+							<div class="uk-form-row">
+							<input type="text" name="soap_ip" placeholder="Soap IP e.g.: 127.0.0.1" required />
+							</div>
+							<div class="uk-form-row">
+							<input type="text" name="soap_port" placeholder="Soap Port e.g.: 7878" required />
+							</div>
+							<div class="uk-form-row">
+							<input type="text" name="soap_user" placeholder="Soap User e.g.: 1#1" required />
+							</div>
+							<div class="uk-form-row">
+							<input type="text" name="soap_pass" placeholder="Soap Password e.g.: 123" required />
+							</div>
+							
 							<div class="uk-form-row">
 							<span>
 							Select Your Language:
@@ -263,7 +296,7 @@ include('config.php');
                 <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
                     <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="http://flamenet.github.io/FlameCMS"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
                     <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
                 </ul>
 

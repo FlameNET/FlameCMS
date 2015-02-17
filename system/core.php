@@ -131,6 +131,6 @@ function __autoload($className) {
 }
 $connect = new Connection();
 $news = new News();
-$register = new Register();
+$register = new Users();
 $url = new Url();
 
