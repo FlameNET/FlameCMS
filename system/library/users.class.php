@@ -51,7 +51,7 @@ class Users extends Connection {
 		return $year;
 	}
 
-	public function accountCreate($email, $password) {
+	public function ConnectSOAP() {
 		
 		$client = new SoapClient(NULL, array(
 		'location' 		=> 'http://'.SOAP_IP.':'.SOAP_PORT.'/',
@@ -63,10 +63,12 @@ class Users extends Connection {
 		'login'			=> SOAP_USER,
 		'password'		=> SOAP_PASS,
 		));
+	}
 
+	public function accountCreate($email, $password){
 		$command="bnetaccount create ".$email." ".$password."";
 		try {
-			$result = $client->executeCommand(new SoapParam($command, "command"));
+			$result = $this->ConnectSOAP()->executeCommand(new SoapParam($command, "command"));
 		} catch (Exception $e) {
 			die($e->getMessage());
 		}

@@ -37,7 +37,7 @@ class Connection {
 
 	public function Auth(){
 
-		$auth = new mysqli(HOST, USER, PASSWORD, AUTH, PORT);
+		$auth = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, AUTH, SERVERPORT);
 		/**
 		* Language support in the database
 		*/
@@ -53,7 +53,7 @@ class Connection {
 
 	public function Characters(){
 
-		$characters = new mysqli(HOST, USER, PASSWORD, CHARACTERS, PORT);
+		$characters = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, CHARACTERS, SERVERPORT);
 		/**
 		* Language support in the database
 		*/
@@ -69,7 +69,7 @@ class Connection {
 
 	public function World(){
 
-		$world = new mysqli(HOST, USER, PASSWORD, WORLD, PORT);
+		$world = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, WORLD, SERVERPORT);
 		/**
 		* Language support in the database
 		*/

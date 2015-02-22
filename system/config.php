@@ -80,9 +80,24 @@ define('USER',		'root');
 define('PASSWORD',	'password');
 define('PORT',		'3306');
 define('DB',		'cms');
-define('AUTH',		'auth');
-define('CHARACTERS','char');
-define('WORLD',		'world');
+
+
+/*
+|--------------------------------------------------------------------------|
+| Info: Server Connection Variables.
+|--------------------------------------------------------------------------|
+| Please set these to your MySQL Connection. 
+| If you don\'t know what you are doing, please contact with one of FlameCMS
+| Developers to help you.
+|--------------------------------------------------------------------------|
+*/
+define('SERVERHOST',	'127.0.0.1');
+define('SERVERUSER',	'root');
+define('SERVERPASSWORD','password');
+define('SERVERPORT',	'3306');
+define('AUTH',			'auth');
+define('CHARACTERS',	'char');
+define('WORLD',			'world');
 
 /*
 |--------------------------------------------------------------------------|

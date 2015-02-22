@@ -81,10 +81,24 @@ define('USER',		'". $_POST['username']. "');
 define('PASSWORD',	'". $_POST['password']. "');
 define('PORT',		'". $_POST['port']. "');
 define('DB',		'". $_POST['dbname']. "');
-define('AUTH',		'". $_POST['authdb']. "');
-define('CHARACTERS','". $_POST['chardb']. "');
-define('WORLD',		'". $_POST['worlddb']. "');
 
+
+/*
+|--------------------------------------------------------------------------|
+| Info: Server Connection Variables.
+|--------------------------------------------------------------------------|
+| Please set these to your MySQL Connection. 
+| If you don\'t know what you are doing, please contact with one of FlameCMS
+| Developers to help you.
+|--------------------------------------------------------------------------|
+*/
+define('SERVERHOST',	'". $_POST['serverhostname']. "');
+define('SERVERUSER',	'". $_POST['serverusername']. "');
+define('SERVERPASSWORD','". $_POST['serverpassword']. "');
+define('SERVERPORT',	'". $_POST['serverport']. "');
+define('AUTH',			'". $_POST['authdb']. "');
+define('CHARACTERS',	'". $_POST['chardb']. "');
+define('WORLD',			'". $_POST['worlddb']. "');
 /*
 |--------------------------------------------------------------------------|
 |  Soap settings
@@ -200,68 +214,77 @@ include('config.php');
 
 				<form action="" method="post" name="install" class="uk-form" >
 					<fieldset data-uk-margin>
-					<legend>Install now FlameCMS World Of WarCraft Private Servers</legend>
-							<div class="uk-form-row">
+						<legend>Install now FlameCMS World Of WarCraft Private Servers</legend>
+						<div class="uk-form-row">
 							<input type="text" name="hostname" placeholder="Database Host" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="username" placeholder="Database Username" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="password" name="password" placeholder="Database Password" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="port" placeholder="Database Port" required />
-							</div>
-							<div class="uk-form-row">
-							<input type="text" name="dbname" placeholder="Website Database" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
+							<input type="text" name="serverhostname" placeholder="Database Server Host" required />
+						</div>
+						<div class="uk-form-row">
+							<input type="text" name="serverusername" placeholder="Database Server Username" required />
+						</div>
+						<div class="uk-form-row">
+							<input type="password" name="serverpassword" placeholder="Database Server Password" required />
+						</div>
+						<div class="uk-form-row">
+							<input type="text" name="serverport" placeholder="Database Server Port" required />
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="authdb" placeholder="Auth Database" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="chardb" placeholder="Characters Database" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="worlddb" placeholder="World Database" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="cfgdom" placeholder="Domain" required />
-							</div>
-							
-							<div class="uk-form-row">
+						</div>
+						
+						<div class="uk-form-row">
 							<input type="text" name="soap_ip" placeholder="Soap IP e.g.: 127.0.0.1" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="soap_port" placeholder="Soap Port e.g.: 7878" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="soap_user" placeholder="Soap User e.g.: 1#1" required />
-							</div>
-							<div class="uk-form-row">
+						</div>
+						<div class="uk-form-row">
 							<input type="text" name="soap_pass" placeholder="Soap Password e.g.: 123" required />
-							</div>
-							
-							<div class="uk-form-row">
-							<span>
-							Select Your Language:
-							<select name="lang">
-							  <option value="cn">简体中文</option>
-							  <option value="en" selected="selected">English</option>
-							  <option value="es">Espa&ntilde;ol</option>
-							  <option value="de">Deutsch</option>
-							  <option value="fr">Fran&ccedil;ais</option>
-							  <option value="gr">ελληνικά</option>
-							  <option value="it">Italiano</option>
-							  <option value="ko">한국어</option>
-							  <option value="pt">Portugu&ecirc;s</option>
-							  <option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
-							  <option value="tw">繁體中文</option>
-							</select>
-							</span>
-							</div>
-							<br>
-							<button type="submit" name="Submit"  class="u-button uk-button-large uk-button-primary" type="button" data-uk-button><i class="fa fa-check-circle-o"></i> Install FlameCMS Now</button>
+						</div>
+						
+						<div class="uk-form-row">
+						<span>
+						Select Your Language:
+						<select name="lang">
+							<option value="cn">简体中文</option>
+							<option value="en" selected="selected">English</option>
+							<option value="es">Espa&ntilde;ol</option>
+							<option value="de">Deutsch</option>
+							<option value="fr">Fran&ccedil;ais</option>
+							<option value="gr">ελληνικά</option>
+							<option value="it">Italiano</option>
+							<option value="ko">한국어</option>
+							<option value="pt">Portugu&ecirc;s</option>
+							<option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+							<option value="tw">繁體中文</option>
+						</select>
+						</span>
+						</div>
+						<br>
+						<button type="submit" name="Submit"  class="u-button uk-button-large uk-button-primary" type="button" data-uk-button><i class="fa fa-check-circle-o"></i> Install FlameCMS Now</button>
 					</fieldset>
 				</form>
 			</div>
