@@ -222,6 +222,9 @@ include('config.php');
 							<input type="text" name="username" placeholder="Database Username" required />
 						</div>
 						<div class="uk-form-row">
+							<input type="text" name="dbname" placeholder="Database CMS" required />
+						</div>
+						<div class="uk-form-row">
 							<input type="password" name="password" placeholder="Database Password" required />
 						</div>
 						<div class="uk-form-row">
