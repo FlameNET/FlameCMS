@@ -3,9 +3,19 @@
 <li class="service-cell service-home">
 <a href="<?php echo BASE_URL ?>" tabindex="50" accessKey="1" title="<?php echo TITLE ?> HOME" data-action="<?php echo TITLE ?> HOME">&nbsp;</a>
 </li>
+<?php if(isset($_SESSION['email'])){ ?>
 <li class="service-cell service-welcome">
-<a href="?login" onclick="return Login.open()">Log in</a> or <a href="<?php echo ACCOUNT_URL ?>register">Create an Account</a>
+	Welcome, <?php echo $profile['first_name']; ?> |  <a href="<?php echo ACCOUNT_URL ?>signout" tabindex="50" accesskey="2">log out</a>
 </li>
+<?php
+}else{
+?>
+<li class="service-cell service-welcome">
+<a href="<?php echo ACCOUNT_URL ?>login.php">Log in</a> or <a href="<?php echo ACCOUNT_URL ?>register">Create an Account</a>
+</li>
+<?php
+}
+?>
 <li class="service-cell service-shop">
 <a href='<?php echo BASE_URL ?>shop/' class="service-link" data-action="Shop">Shop</a>
 </li>

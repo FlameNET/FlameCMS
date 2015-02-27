@@ -129,8 +129,15 @@ function __autoload($className) {
 		require_once(__ROOT__ . DS . 'system' . DS . 'library' . DS . strtolower($className) . '.class.php');
 	}
 }
-$connect = new Connection();
-$news = new News();
-$register = new Users();
-$url = new Url();
+$connect	= new Connection();
+$news		= new News();
+$register	= new Users();
+$account	= new Users();
+$url		= new Url();
 
+
+$rankSQL	= $connect->Connect()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+$profile	= $rankSQL->fetch_assoc();
+
+$authSQL	= $connect->Auth()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+$profileAuth= $authSQL->fetch_assoc();

@@ -99,8 +99,11 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<div id="page-content">
-			<center><h2>Sign Out</h2></center>
+			<center>
+				<p class="text-green title"><strong>Sign Out</strong></p>
+			</center>
             <?php session_unset(); session_destroy(); ?>
+			<meta http-equiv="refresh" content="3;url=<?php echo BASE_URL ?>"/>
 			<div class="templates">
 				<div class="alert error closeable border-4 glow-shadow" style=" ">
 					<div class="alert-inner">
