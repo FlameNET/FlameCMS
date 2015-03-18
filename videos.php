@@ -1,5 +1,7 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('system/config.php'); ?>
+<?php require_once('system/config.php');
+$account->AccountLoginQuery();
+?>
 <html xml:lang="en-us" class="en-us">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <script>window['adrum-start-time'] = new Date().getTime();</script>

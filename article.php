@@ -1,6 +1,9 @@
 <!-- DO NOT TOUCH -->
 <?php
 require_once('system/config.php');
+
+$account->AccountLoginQuery();
+
 if (isset($_GET['id'])){
 	$news = $connect->Connect()->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
 	$rows = $news->fetch_assoc();

@@ -51,6 +51,34 @@ class Users extends Connection {
 		return $year;
 	}
 
+	public function AccountLoginQuery(){
+		
+		global $profile;
+		global $profileAuth;
+		
+		$rankSQL	= $this->Connect()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+		$profile	= $rankSQL->fetch_assoc();
+
+		$authSQL	= $this->Auth()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+		$profileAuth= $authSQL->fetch_assoc();
+	}
+
+	public function AccountLoginCheck(){
+		
+		global $profile;
+		
+		if($_SESSION['email'] == ''){
+			header("Location: ".ACCOUNT_URL."login");
+			exit();
+		}
+		if($profile['roles_account'] < 2){
+			die('<center>
+					<h2>What are you doing here?</h2>
+				</center>');
+			header("Location: ".ACCOUNT_URL."login");
+		}
+	}
+
 	public function ConnectSOAP() {
 		
 		$client = new SoapClient(NULL, array(

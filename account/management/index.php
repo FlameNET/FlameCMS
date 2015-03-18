@@ -1,16 +1,8 @@
 <?php
 session_start();
 require_once('../../system/config.php');
-if($_SESSION['email'] == ''){
-	header("Location: ".ACCOUNT_URL."login");
-	exit();
-}
-if($profile['roles_account'] < 3){
-	die('<center>
-			<h2>What are you doing here?</h2>
-		</center>');
-	header("Location: ".ACCOUNT_URL."login");
-}
+$account->AccountLoginQuery();
+$account->AccountLoginCheck();
 ?> 
 <!-- DO NOT TOUCH -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">

@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -96,9 +96,8 @@ define('SERVERUSER',	'root');
 define('SERVERPASSWORD','password');
 define('SERVERPORT',	'3306');
 define('AUTH',			'auth');
-define('CHARACTERS',	'char');
+define('CHARACTERS',	'characters');
 define('WORLD',			'world');
-
 /*
 |--------------------------------------------------------------------------|
 |  Soap settings
@@ -122,9 +121,9 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-define('BASE_URL',		'http://localhost/');
-define('ADMIN_URL',		'http://localhost/admin/');
-define('ACCOUNT_URL',	'http://localhost/account/');
+define('BASE_URL',		'');
+define('ADMIN_URL',		'');
+define('ACCOUNT_URL',	'');
 
 /*
 |--------------------------------------------------------------------------|

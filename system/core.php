@@ -134,10 +134,3 @@ $news		= new News();
 $register	= new Users();
 $account	= new Users();
 $url		= new Url();
-
-
-$rankSQL	= $connect->Connect()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
-$profile	= $rankSQL->fetch_assoc();
-
-$authSQL	= $connect->Auth()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
-$profileAuth= $authSQL->fetch_assoc();

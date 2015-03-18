@@ -1,7 +1,7 @@
 <?php if (isset($_POST['Submit'])) {
 $string = "<?php
 /**
-* Copyright (C) ".date("Y")." FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) ".date("Y")." FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -153,7 +153,8 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 | System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-require(__ROOT__.DS.'system'.DS.'core.php');";
+require(__ROOT__.DS.'system'.DS.'core.php');
+";
 $fp = fopen('../system/config.php', 'w');
 fwrite($fp, $string);
 fclose($fp);
