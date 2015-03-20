@@ -9,28 +9,28 @@ $account->AccountLoginQuery();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__WEBKIT__'desc'); ?>
+<?php include(__WEBKIT__.'desc'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<?php include(__WEBKIT__'core'); ?>
+<?php include(__WEBKIT__.'core'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
 <!-- Character Background. DO NOT TOUCH -->
-<?php include(__WEBKIT__'armorybg'); ?>
+<?php include(__WEBKIT__.'armorybg'); ?>
 <!-- Character Background END -->
 </head>
 <body class="en-gb ">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__WEBKIT__'userpanel'); ?>
+<?php include(__WEBKIT__.'userpanel'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__WEBKIT__'search'); ?>
+<?php include(__WEBKIT__.'search'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?></a></h1>
 <!-- Header -->
-<?php include(__WEBKIT__'header'); ?>
+<?php include(__WEBKIT__.'header'); ?>
 <!-- Header END -->
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml" id="content">
@@ -4146,7 +4146,7 @@ Your Death Grip spell no longer taunts the target.				</div>
 
 </div>
 </div>
-</div><?php include(__WEBKIT__'footer'); ?>
+</div><?php include(__WEBKIT__.'footer'); ?>
 </div>
 <script>
 //<![CDATA[
