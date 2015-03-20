@@ -61,10 +61,18 @@ include(__WEBKIT__.'userplate.php');?>
 <?php include(__WEBKIT__.'articles.php'); ?>
 <!-- Articles END -->
 <span class="clear"><!-- --></span>
+<?php
+$pageQuery	= $connect->Connect()->query("SELECT * FROM news WHERE id");
+$pageNumber	= mysqli_num_rows($pageQuery) > 10;
+if($pageNumber){
+?>
 <div class="blog-load-more">
 <a class="load-more" id="load-more" href="javascript:;"><?php echo $cms_lang['10']; ?></a>
 <span class="clear"><!-- --></span>
 </div>
+<?php
+}
+?>
 </div>
 </div>
 <span class="clear"><!-- --></span>
