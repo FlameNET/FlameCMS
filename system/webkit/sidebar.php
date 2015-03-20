@@ -79,8 +79,8 @@
 <a href="#" class="latest-patch"></a>
 </div>
 </div>
-<?php include('webkit/screenshot.php'); ?>
-<?php include('webkit/latestpost.php'); ?>
+<?php include(__WEBKIT__.'screenshot.php'); ?>
+<?php include(__WEBKIT__.'latestpost.php'); ?>
 </div>
 </div>
 </div>
