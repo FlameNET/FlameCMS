@@ -47,19 +47,19 @@ Flash.expressInstall = 'http://media.blizzard.com/global-video-player/expressIns
 <body class="en-us community-home">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__ROOT__.'/webkit/userpanel.php'); ?>
+<?php include(__WEBKIT__.'userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__ROOT__.'/webkit/search.php'); ?>
+<?php include(__WEBKIT__.'search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
 <?php
 $page = "menu-community";
-include(__ROOT__.'/webkit/menu.php');
-include(__ROOT__.'/webkit/userplate.php');?>
+include(__WEBKIT__.'menu.php');
+include(__WEBKIT__.'userplate.php');?>
 </div>
 <!-- Header END -->
 </div>

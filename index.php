@@ -9,56 +9,56 @@ $account->AccountLoginQuery();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__ROOT__.'/webkit/desc.php'); ?>
+<?php include(__WEBKIT__.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<?php include(__ROOT__.'/webkit/core.php'); ?>
+<?php include(__WEBKIT__.'core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <body class="en-gb homepage news">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__ROOT__.'/webkit/userpanel.php'); ?>
+<?php include(__WEBKIT__.'userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__ROOT__.'/webkit/search.php'); ?>
+<?php include(__WEBKIT__.'search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
 <?php
 $page = "menu-home";
-include(__ROOT__.'/webkit/menu.php');
-include(__ROOT__.'/webkit/userplate.php');?>
+include(__WEBKIT__.'menu.php');
+include(__WEBKIT__.'userplate.php');?>
 </div>
 <!-- Header END -->
 </div>
 <div id="content">
 <div class="content-top body-top">
 <!-- Content Trail -->
-<?php include(__ROOT__.'/webkit/breadcrumb.php'); ?>
+<?php include(__WEBKIT__.'breadcrumb.php'); ?>
 <!-- Content Trail END -->
 <div class="content-bot clear">
 <!-- Slideshow -->
-<?php include(__ROOT__.'/webkit/slideshow.php'); ?>
+<?php include(__WEBKIT__.'slideshow.php'); ?>
 <!-- Slideshow END -->
 <!-- Sidebar -->
-<?php include (__ROOT__.'/webkit/sidebar.php'); ?>
+<?php include (__WEBKIT__.'sidebar.php'); ?>
 <!-- Sidebar END -->
 <div class="left-content" itemscope="itemscope" itemtype="http://schema.org/WebPageElement">
 <div class= "left-content-inner">
 <div class="featured-news-container">
 <ul class="featured-news">
 <!-- Featured News -->
-<?php include(__ROOT__.'/webkit/featuresnews.php'); ?>
+<?php include(__WEBKIT__.'featuresnews.php'); ?>
 </ul>
 </div>
 <span class="clear"><!-- --></span>
 <!-- Featured News END -->
 <!-- Articles -->
-<?php include(__ROOT__.'/webkit/articles.php'); ?>
+<?php include(__WEBKIT__.'articles.php'); ?>
 <!-- Articles END -->
 <span class="clear"><!-- --></span>
 <div class="blog-load-more">

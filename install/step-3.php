@@ -147,6 +147,7 @@ define('MAINTENANCE', false);
 define('DEVELOPMENT_ENVIRONMENT', false);
 define('DS', DIRECTORY_SEPARATOR);
 define('__ROOT__', dirname(dirname(__FILE__)));
+define('__WEBKIT__', __ROOT__.DS.'system'.DS.'webkit'.DS.'');
 
 /*
 |--------------------------------------------------------------------------|

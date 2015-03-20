@@ -66,5 +66,5 @@ function filename($url){
 }
 
 function footer() {
-	include(__ROOT__.'/webkit/footer.php');
+	include(__WEBKIT__.'footer.php');
 }

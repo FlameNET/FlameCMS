@@ -8,7 +8,7 @@ require_once('../system/config.php');
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include('../webkit/desc.php'); ?>
+<?php include(__WEBKIT__.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo $cms_lang['12']; ?></title>
 <!-- The Styles & Javascripts of the CMS -->
@@ -85,7 +85,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include('../webkit/userpanel.php'); ?>
+		<?php include(__WEBKIT__.'userpanel.php'); ?>
 		<!-- User Panel END -->
 	</div>
 </div>

@@ -12,7 +12,7 @@ $account->AccountLoginCheck();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include('../../webkit/desc.php'); ?>
+<?php include(__WEBKIT__.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?> Account</title>
 <!-- The Styles & Javascripts of the CMS -->
@@ -66,7 +66,7 @@ _gaq.push(['_trackPageview']);
 	<div class="wrapper">
 		<div id="header">
 			<div id="search-bar">
-				<form action="https://eu.battle.net/search" id="search-form" method="get">
+				<form action="#" id="search-form" method="get">
 					<input type="hidden" id="csrftoken" name="csrftoken" value="#"/>
 					<div>
 						<input accesskey="q" alt="Search Battle.net" id="search-field" maxlength="35" name="q" tabindex="50" type="text" value="Search Battle.net"/>
@@ -74,7 +74,7 @@ _gaq.push(['_trackPageview']);
 					</div>
 				</form>
 			</div>
-			<h1 id="logo"><a accesskey="h" href="http://eu.battle.net/" tabindex="50"></a></h1>
+			<h1 id="logo"><a accesskey="h" href="<?php echo ACCOUNT_URL ?>management/" tabindex="50"></a></h1>
 			<div id="navigation">
 				<div id="page-menu" class="large">
 					<h2><a href="/account/management/"> Account </a></h2>
@@ -233,7 +233,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include('../../webkit/userpanel.php'); ?>
+		<?php include(__WEBKIT__.'userpanel.php'); ?>
 		<!-- User Panel END -->
 	</div>
 </div>
@@ -352,7 +352,7 @@ _gaq.push(['_trackPageview']);
 </div>
 <div id="layout-bottom">
 	<div class="wrapper">
-		<?php include('../../webkit/footer.php'); ?>
+		<?php include(__WEBKIT__.'footer.php'); ?>
 	</div>
 </div>
 <script type="text/javascript">
