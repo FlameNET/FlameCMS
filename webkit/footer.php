@@ -84,15 +84,15 @@
 		<h3>Americas</h3>
 		<ul>
 			<li>
-			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to en'); return true;">
+			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to en'); return true;">
 			English (US) </a>
 			</li>
 			<li>
-			<a href="?lang=es" class="selected" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to es'); return true;">
+			<a href="?lang=es" class="selected" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to es'); return true;">
 			Espa&#241;ol (AL) </a>
 			</li>
 			<li>
-			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', ''<?php echo $_SESSION['lang']; ?> to pt'); return true;">
+			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to pt'); return true;">
 			Portugu&#234;s (AL) </a>
 			</li>
 		</ul>
@@ -101,31 +101,31 @@
 		<h3>Europe</h3>
 		<ul>
 			<li>
-			<a href="?lang=de" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to de'); return true;">
+			<a href="?lang=de" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to de'); return true;">
 			Deutsch </a>
 			</li>
 			<li>
-			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to en'); return true;">
+			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to en'); return true;">
 			English (EU) </a>
 			</li>
 			<li>
-			<a href="?lang=es" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to es'); return true;">
+			<a href="?lang=es" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to es'); return true;">
 			Espa&#241;ol (EU) </a>
 			</li>
 			<li>
-			<a href="?lang=fr" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to fr'); return true;">
+			<a href="?lang=fr" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to fr'); return true;">
 			Fran&#231;ais </a>
 			</li>
 			<li>
-			<a href="?lang=it" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to it'); return true;">
+			<a href="?lang=it" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to it'); return true;">
 			Italiano </a>
 			</li>
 			<li>
-			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to pt'); return true;">
+			<a href="?lang=pt" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to pt'); return true;">
 			Portugu&#234;s (EU) </a>
 			</li>
 			<li>
-			<a href="?lang=ru" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to ru'); return true;">
+			<a href="?lang=ru" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to ru'); return true;">
 			&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; </a>
 			</li>
 		</ul>
@@ -134,7 +134,7 @@
 		<h3>Korea</h3>
 		<ul>
 			<li>
-			<a href="?lang=ko" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to ko'); return true;">
+			<a href="?lang=ko" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to ko'); return true;">
 			&#54620;&#44397;&#50612; </a>
 			</li>
 		</ul>
@@ -143,7 +143,7 @@
 		<h3>Taiwan</h3>
 		<ul>
 			<li>
-			<a href="?lang=tw" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to tw'); return true;">
+			<a href="?lang=tw" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to tw'); return true;">
 			&#32321;&#39636;&#20013;&#25991; </a>
 			</li>
 		</ul>
@@ -152,7 +152,7 @@
 		<h3>China</h3>
 		<ul>
 			<li>
-			<a href="?lang=cn" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to cn'); return true;">
+			<a href="?lang=cn" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to cn'); return true;">
 			&#31616;&#20307;&#20013;&#25991; </a>
 			</li>
 		</ul>
@@ -161,7 +161,7 @@
 		<h3>Southeast Asia</h3>
 		<ul>
 			<li>
-			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo $_SESSION['lang']; ?> to en'); return true;">
+			<a href="?lang=en" tabindex="100" onclick="Locale.trackEvent('Change Language', '<?php echo LANGUAGE ?> to en'); return true;">
 			English (US) </a>
 			</li>
 		</ul>

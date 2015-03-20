@@ -19,13 +19,24 @@
 
 class Users extends Connection {
 
+	public $day;
+	public $country;
+	public $year;
+	
+
+	public function __construct($day ='', $country  = '', $year  = '' ){
+		$this->day		= $day;
+		$this->country	= $country;
+		$this->year		= $year;
+	}
+
 	public function Countries($country, $get){
 		
-		$country = $this->Connect()->query("SELECT * FROM countries");
-
-		while($get = mysqli_fetch_array($country))
+		$country	= $this->Connect()->query("SELECT * FROM countries WHERE id");
+		$countries	= isset($_GET['country']) ? $_GET['country'] : null ;
+		while($get	= mysqli_fetch_array($country))
 		{
-			if($get['isoAlpha3'] == $_GET['country'] ){
+			if($get['isoAlpha3'] == $countries ){
 				echo'<option value="'.$get["isoAlpha3"].'"selected="selected">'.$get["countryName"].'</option>';
 			}else{
 				echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
@@ -56,10 +67,10 @@ class Users extends Connection {
 		global $profile;
 		global $profileAuth;
 		
-		$rankSQL	= $this->Connect()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+		@$rankSQL	= $this->Connect()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
 		$profile	= $rankSQL->fetch_assoc();
 
-		$authSQL	= $this->Auth()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+		@$authSQL	= $this->Auth()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
 		$profileAuth= $authSQL->fetch_assoc();
 	}
 

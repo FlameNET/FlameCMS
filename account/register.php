@@ -45,7 +45,7 @@ Core.shortDateFormat = 'dd/MM/yyyy';
 Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = '<?php echo BASE_URL ?>account/login';
+Login.embeddedUrl = '<?php echo ACCOUNT_URL ?>login';
 var Flash = Flash || {};
 Flash.videoPlayer = '';
 Flash.videoBase = '';
@@ -72,7 +72,7 @@ _gaq.push(['_trackPageview']);
 			<h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>
 			<div id="navigation">
 				<div id="page-menu" class="large">
-					<h2><a href="<?php echo BASE_URL ?>#"> <?php echo $cms_lang['13']; ?>
+					<h2><a href="<?php echo ACCOUNT_URL ?>#"> <?php echo $cms_lang['13']; ?>
 					</a></h2>
 					<h2 class="second-header"></h2>
 					<span class="clear">
@@ -215,27 +215,23 @@ _gaq.push(['_trackPageview']);
 				<div class="input-row input-row-note" id="country-warning" style="display: none">
 					<div class="input-note border-5 glow-shadow">
 						<div id="countryGlobal" class="input-note-content">
-							<p class="caption">
-								<?php echo $cms_lang[101]; ?>
-							</p>
+							<p class="caption"><?php echo $cms_lang['101']; ?></p>
 							<p>
-								<a class="ui-button button1" href="<?php echo BASE_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
-								<a class="ui-cancel " href="<?php echo BASE_URL ?>register" tabindex="1">
+								<a class="ui-button button1" href="<?php echo ACCOUNT_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
+								<a class="ui-cancel " href="<?php echo ACCOUNT_URL ?>register" tabindex="1">
 								<span>
-								<?php echo $cms_lang[68]; ?> </span>
+								<?php echo $cms_lang['68']; ?> </span>
 								</a>
 							</p>
 						</div>
 						<div id="countryCHINA" class="input-note-content">
-							<p class="caption">
-								<?php echo $cms_lang[102]; ?>
-							</p>
+							<p class="caption"><?php echo $cms_lang['102']; ?></p>
 							<p>
 								<a class="ui-button button1" href="?country=CHINA" id="stayTaiwan" tabindex="1"><span class="button-left"><span class="button-right">YES, I HAVE A TAIWANESE WORLD OF WARCRAFT ACCOUNT</span></span></a><br/>
-								<a class="ui-button button1" href="<?php echo BASE_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
-								<a class="ui-cancel " href="<?php echo BASE_URL ?>register" tabindex="1">
+								<a class="ui-button button1" href="<?php echo ACCOUNT_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
+								<a class="ui-cancel " href="<?php echo ACCOUNT_URL ?>register" tabindex="1">
 								<span>
-								<?php echo $cms_lang[68]; ?> </span>
+								<?php echo $cms_lang['68']; ?> </span>
 								</a>
 							</p>
 						</div>

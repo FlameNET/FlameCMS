@@ -121,3 +121,6 @@ $cms_lang[97]	= "In order to continue, you must agree to the anti-cheating agree
 $cms_lang[98]	= "Deber&aacute;s seleccionar un pa&iacute;s de residencia.";
 $cms_lang[99]	= "&iexcl;Oops! Este problema require tu atenci&oacute;n.";
 $cms_lang[100]	= "Cerrar";
+$cms_lang[101]	= "Si cambias el pa&iacute;s, aparecer&aacute;n campos de texto diferentes sobre la creaci&oacute;n de la cuenta y la direcci&oacute;n postal que quiz&aacute;s no concuerden con tu situaci&oacute;n actual. &iquest;Deseas continuar?";
+$cms_lang[102]	= "Te encuentras en el sitio web regional taiwan&eacute;s de Battle.net. S&oacute;lo los titulares de cuentas taiwanesas de World of Warcraft deber&aacute;n crear sus cuentas aqu&iacute;. Si tienes una cuenta china de World of Warcraft, visita Battle.net china.";
+

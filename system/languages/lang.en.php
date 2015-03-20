@@ -121,3 +121,5 @@ $cms_lang[97]	= "In order to continue, you must agree to the anti-cheating agree
 $cms_lang[98]	= "You must select a Country of Residence.";
 $cms_lang[99]	= "Oops! This needs your attention:";
 $cms_lang[100]	= "Close";
+$cms_lang[101]	= "If you change your country, you will get different form fields for account creation and address entry that may not match your situation. Proceed?";
+$cms_lang[102]	= "You are on the Taiwanese regional Battle.net website. Only account holders who have a Taiwanese World of Warcraft account should create a Battle.net account here. If you have a Chinese World of Warcraft account, go to Battle.net China instead.";

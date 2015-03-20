@@ -120,4 +120,6 @@ $cms_lang[96]	= "Um weiter zu machen, musst die der Chat Einverständniserkläru
 $cms_lang[97]	= "Um weiter zu machen, musst du der Anti-Cheating Einverständniserklärung zustimmen.";
 $cms_lang[98]	= "Du musst ein Heimatland wählen.";
 $cms_lang[99]	= "Oops! Da stimmt etwas nicht:";
-$cms_lang[100]	= "Schliessen"; 
+$cms_lang[100]	= "Schliessen";
+$cms_lang[101]	= "If you change your country, you will get different form fields for account creation and address entry that may not match your situation. Proceed?";
+$cms_lang[102]	= "You are on the Taiwanese regional Battle.net website. Only account holders who have a Taiwanese World of Warcraft account should create a Battle.net account here. If you have a Chinese World of Warcraft account, go to Battle.net China instead.";
