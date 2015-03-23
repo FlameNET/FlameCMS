@@ -126,9 +126,14 @@ _gaq.push(['_trackPageview']);
 				if($checkEmail){
 					
 					echo'
-					<center>
-						<p class="text-red title">This Email is already used.</p>
-					</center>
+<div class="alert error border-4 glow-shadow" style=" ">
+<div class="alert-inner">
+<div class="alert-message">
+<p class="title"><strong>Oops! This needs your attention:</strong></p>
+<ul><li>This email is already in use.</li><li>You must fix this to continue.</li></ul></div>
+</div>
+<span class="clear"><!-- --></span>
+</div>
 					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
 				}
 				else
@@ -698,10 +703,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'Loading&#8230;',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this on&#8230;',
+fansiteFindType: 'Find {0} on&#8230;',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -712,7 +717,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: '&#8230;'
 };
 Msg.fansite= {
 achievement: 'achievement',
@@ -833,10 +838,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'Loading&#8230;',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this on&#8230;',
+fansiteFindType: 'Find {0} on&#8230;',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -847,7 +852,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: '&#8230;'
 };
 Msg.fansite= {
 achievement: 'achievement',

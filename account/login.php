@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-		echo '<center>You have not activated your account</center>';
+		echo '<div class="alert alert-error"><ul class="unstyled"><li>You have not activated your account</li></ul></div>';
 	}
 }
 ?>
