@@ -36,6 +36,7 @@ Uncompleted work scheduled so far & Under development!
 * Registration System **(5%)**
 * Media Template **(20%)**
 * Shop Template **(5%)**
+* Userplate **(5%)**
 
 #### Future Work
 Future work that is scheduled to be made after some time!
