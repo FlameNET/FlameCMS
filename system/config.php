@@ -153,4 +153,4 @@ define('__WEBKIT__', __ROOT__.DS.'system'.DS.'webkit'.DS.'');
 | System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-require(__ROOT__.DS.'system'.DS.'core.php');
+require(__ROOT__.DS.'system'.DS.'FlameCore.php');

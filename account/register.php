@@ -311,9 +311,9 @@ _gaq.push(['_trackPageview']);
 							</span>
 						</div>
 						<?php
-						/*
 						// It currently only supports TrinityCore 6.x.x
 						// Still will not support 3.3.5a, 4.3.4 and 5.4.8
+						?>
 						<div class="input-row input-row-text">
 							<span class="input-left">
 							<label for="firstname">
@@ -330,8 +330,6 @@ _gaq.push(['_trackPageview']);
 							</span>
 							</span>
 						</div>
-						*/
-						?>
 						<div class="input-row input-row-text">
 							<span class="input-left">
 							<label for="firstname">
