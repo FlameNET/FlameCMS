@@ -29,6 +29,7 @@ CREATE TABLE `account` (
   `date_of_birth` VARCHAR(25) NOT NULL DEFAULT '',
   `roles_account` VARCHAR(1) NOT NULL DEFAULT '2',
   `activation_code` VARCHAR(255) DEFAULT NULL,
+  `avatar` VARCHAR(55) NOT NULL DEFAULT 'avatar.jpg' COMMENT 'User Avatar',
   PRIMARY KEY (`Id`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8;
 

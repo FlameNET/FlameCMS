@@ -102,11 +102,12 @@ _gaq.push(['_trackPageview']);
 		<?php
 		if(isset($_POST['submit']))
 		{
-			$country		= $_POST['country'];
+			$country		= $_GET['country'];
 			$dobD			= $_POST['dobDay'];
 			$dobM			= $_POST['dobMonth'];
 			$dobY			= $_POST['dobYear'];
 			$dob			= date("Y-m-d", strtotime($dobY . "-" . $dobM . "-" . $dobD));
+			$username		= filter_var($_POST['username'], FILTER_SANITIZE_STRING);
 			$firstName		= filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
 			$lastName		= filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
 			$email			= filter_var($_POST['emailAddress'], FILTER_VALIDATE_EMAIL);
@@ -133,8 +134,14 @@ _gaq.push(['_trackPageview']);
 				}
 				else
 				{
+					// Register Server
+					$register	= $connect->Auth()->query("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('".$username."'),'".$sha_pass_hash."','".$email."')");
+					$IdAccount	= $connect->Auth()->query("SELECT MAX(id) FROM account");
+					$IdWoW		= MysqliResultFlame($IdAccount);
+					// RBAC Account Permissions
+					$register	= $connect->Auth()->query("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '".$IdWoW."','195')");
+					// Register CMS
 					$createAccount	= $connect->Connect()->query("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('".$firstName."','".$lastName."','".$email."','".$sha_pass_hash."','" . $question . "',UPPER('" . $answer . "'),'" . $country . "','" . $dob . "','".$code."')");
-					$register->accountCreate($email, $password);
 					if($createAccount)
 					{
 						$to		  = $email;
@@ -205,7 +212,18 @@ _gaq.push(['_trackPageview']);
 					<span class="input-right">
 					<span class="input-select input-select-small">
 					<select name="country" id="country" class="small border-5 glow-shadow-2" tabindex="1">
-						<?php $register->Countries(); ?>
+						<?php
+						$country	= $connect->Connect()->query("SELECT * FROM countries WHERE id");
+						$countries	= isset($_GET['country']) ? $_GET['country'] : null ;
+						while($get	= mysqli_fetch_array($country))
+						{
+							if($get['isoAlpha3'] == $countries ){
+								echo'<option value="'.$get["isoAlpha3"].'"selected="selected">'.$get["countryName"].'</option>';
+							}else{
+								echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
+							}
+						}
+						?>
 					</select>
 					<span class="inline-message " id="country-message">&nbsp;</span>
 					</span>
@@ -296,7 +314,11 @@ _gaq.push(['_trackPageview']);
 							<select name="dobDay" id="dobDay" class="extra-extra-extra-small border-5 glow-shadow-2" tabindex="1" required="required">
 								<option value="" selected="selected"><?php echo $cms_lang['31']; ?>
 								</option>
-								<?php $register->Day(); ?>
+								<?php
+								for($day=1;$day<=31;$day++){
+									echo'<option value="'.$day.'">'.$day.'</option>';
+								}
+								?>
 							</select>
 							<span class="inline-message no-text-clear" id="dobDay-message">&#160;</span>
 							</span>
@@ -304,7 +326,11 @@ _gaq.push(['_trackPageview']);
 							<select name="dobYear" id="dobYear" class="extra-extra-extra-small border-5 glow-shadow-2" tabindex="1" required="required">
 								<option value="" selected="selected"><?php echo $cms_lang['32']; ?>
 								</option>
-								<?php $register->Year(); ?>
+								<?php
+								for($year=2015;$year>=1905;$year--){
+									echo'<option value="'.$year.'">'.$year.'</option>';
+								}
+								?>
 							</select>
 							<span class="inline-message no-text-clear" id="dobYear-message">&#160;</span>
 							</span>

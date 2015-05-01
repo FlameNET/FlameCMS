@@ -19,49 +19,6 @@
 
 class Users extends Connection {
 
-	public $day;
-	public $country;
-	public $year;
-	
-
-	public function __construct($day ='', $country  = '', $year  = '' ){
-		$this->day		= $day;
-		$this->country	= $country;
-		$this->year		= $year;
-	}
-
-	public function Countries($country, $get){
-		
-		$country	= $this->Connect()->query("SELECT * FROM countries WHERE id");
-		$countries	= isset($_GET['country']) ? $_GET['country'] : null ;
-		while($get	= mysqli_fetch_array($country))
-		{
-			if($get['isoAlpha3'] == $countries ){
-				echo'<option value="'.$get["isoAlpha3"].'"selected="selected">'.$get["countryName"].'</option>';
-			}else{
-				echo'<option value="'.$get["isoAlpha3"].'">'.$get["countryName"].'</option>';
-			}
-		}
-
-		return $country;
-	}
-
-	public function Day($day){
-		for($day=1;$day<=31;$day++){
-			echo'<option value="'.$day.'">'.$day.'</option>';
-		}
-
-		return $day;
-	}
-
-	public function Year($year){
-		for($year=2015;$year>=1905;$year--){
-			echo'<option value="'.$year.'">'.$year.'</option>';
-		}
-
-		return $year;
-	}
-
 	public function AccountLoginQuery(){
 		
 		global $profile;
@@ -102,15 +59,6 @@ class Users extends Connection {
 		'login'			=> SOAP_USER,
 		'password'		=> SOAP_PASS,
 		));
-	}
-
-	public function accountCreate($email, $password){
-		$command="bnetaccount create ".$email." ".$password."";
-		try {
-			$result = $this->ConnectSOAP()->executeCommand(new SoapParam($command, "command"));
-		} catch (Exception $e) {
-			die($e->getMessage());
-		}
 	}
 
 }

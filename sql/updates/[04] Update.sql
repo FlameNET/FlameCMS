@@ -1,1 +1,0 @@
-UPDATE `cms`.`cms_ver` SET `progress`='1.1', `ddmmyyyy`='2015-01-16', `hour`='13  :12:30', `commit`='27', `version`='0.0.5', `last_update`='2015-01-16 13:11:30' WHERE  `id`=1 AND `pack`='1' AND `progress`='0.2' AND `ddmmyyyy`='2015-01-10' AND `hour`='23:27:29' AND `commit`='11' AND `version`='0.0.1' AND `last_update`='2015-01-10 22:10:39' LIMIT 1;
