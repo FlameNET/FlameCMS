@@ -114,8 +114,10 @@ _gaq.push(['_trackPageview']);
 			$password		= filter_var($_POST['password'], FILTER_SANITIZE_STRING);
 			$question		= filter_var($_POST['question1'], FILTER_SANITIZE_STRING);
 			$answer			= filter_var($_POST['answer1'], FILTER_SANITIZE_STRING);
-            $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
 			$code			= md5(uniqid(rand()));
+			// Sha Password Hash
+            $sha_pass_hash_server	= sha1(strtoupper($username) . ":" . strtoupper($password));
+            $sha_pass_hash_cms		= sha1(strtoupper($email) . ":" . strtoupper($password));
 
 			/**
 			 *  Whether the email format is correct
@@ -135,13 +137,13 @@ _gaq.push(['_trackPageview']);
 				else
 				{
 					// Register Server
-					$register	= $connect->Auth()->query("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('".$username."'),'".$sha_pass_hash."','".$email."')");
+					$register	= $connect->Auth()->query("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('".$username."'),'".$sha_pass_hash_server."','".$email."')");
 					$IdAccount	= $connect->Auth()->query("SELECT MAX(id) FROM account");
 					$IdWoW		= MysqliResultFlame($IdAccount);
-					// RBAC Account Permissions
+					// RBAC Account Permissions Server
 					$register	= $connect->Auth()->query("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '".$IdWoW."','195')");
 					// Register CMS
-					$createAccount	= $connect->Connect()->query("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('".$firstName."','".$lastName."','".$email."','".$sha_pass_hash."','" . $question . "',UPPER('" . $answer . "'),'" . $country . "','" . $dob . "','".$code."')");
+					$createAccount	= $connect->Connect()->query("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('".$firstName."','".$lastName."','".$email."','".$sha_pass_hash_cms."','" . $question . "',UPPER('" . $answer . "'),'" . $country . "','" . $dob . "','".$code."')");
 					if($createAccount)
 					{
 						$to		  = $email;
