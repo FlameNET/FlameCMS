@@ -116,8 +116,8 @@ _gaq.push(['_trackPageview']);
 			$answer			= filter_var($_POST['answer1'], FILTER_SANITIZE_STRING);
 			$code			= md5(uniqid(rand()));
 			// Sha Password Hash
-            $sha_pass_hash_server	= sha1(strtoupper($username) . ":" . strtoupper($password));
-            $sha_pass_hash_cms		= sha1(strtoupper($email) . ":" . strtoupper($password));
+			$sha_pass_hash_server	= sha1(strtoupper($username) . ":" . strtoupper($password));
+			$sha_pass_hash_cms		= sha1(strtoupper($email) . ":" . strtoupper($password));
 
 			/**
 			 *  Whether the email format is correct
@@ -127,7 +127,7 @@ _gaq.push(['_trackPageview']);
 				$checkEmailSQL 	= $connect->Connect()->query("SELECT * FROM account WHERE email = '".$email."'");
 				$checkEmail	= mysqli_num_rows($checkEmailSQL) > 0;
 				if($checkEmail){
-					
+
 					echo'
 					<center>
 						<p class="text-red title">This Email is already used.</p>
@@ -604,9 +604,9 @@ _gaq.push(['_trackPageview']);
 					//]]>
 					</script>
 				</form>
-				
-		<?php }?>
-				<?php //$register->accountCreate(); ?>
+		<?php
+		}
+		?>
 			</div>
 			<div class="templates">
 				<div class="alert error closeable border-4 glow-shadow" style=" ">
@@ -673,7 +673,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}Â’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -724,10 +724,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'LoadingÂ…',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onÂ…',
+fansiteFindType: 'Find {0} onÂ…',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -738,7 +738,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'Â…'
 };
 Msg.fansite= {
 achievement: 'achievement',
@@ -808,7 +808,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}Â’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -859,10 +859,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'LoadingÂ…',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onÂ…',
+fansiteFindType: 'Find {0} onÂ…',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -873,7 +873,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'Â…'
 };
 Msg.fansite= {
 achievement: 'achievement',
