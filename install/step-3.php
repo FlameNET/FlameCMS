@@ -125,6 +125,7 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 define('BASE_URL',		'". $_POST['cfgdom']. "');
 define('ADMIN_URL',		'". $_POST['cfgdom']. "admin/');
 define('ACCOUNT_URL',	'". $_POST['cfgdom']. "account/');
+define('REALMLIST',		'". $_POST['realmlist']. "');
 
 /*
 |--------------------------------------------------------------------------|
@@ -268,6 +269,10 @@ include('config.php');
 						</div>
 						<div class="uk-form-row">
 							<input type="text" name="soap_pass" placeholder="Soap Password e.g.: 123" required />
+						</div>
+						
+						<div class="uk-form-row">
+							<input type="text" name="realmlist" placeholder="Your Set Realmlist without &quot;Set Realmlist&quot;" required />
 						</div>
 						
 						<div class="uk-form-row">

@@ -22,32 +22,33 @@
 	</div>
 	<img width="1" height="1" style="border:0" src="HTTPS://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=417046&amp;ns=1" />
 	-->
+<?php include(__WEBKIT__.'sidebar/serverstatus.php'); ?>
 <div class="sidebar-module " id="sidebar-social-media">
 	<div class="sidebar-title">
 		<h3 class="header-3 title-social-media">
 		<?php echo $cms_lang['1'] ?>
 		</h3>
 	</div>
-<div class="sidebar-content">
-	<ul class="social-media">
-		<li class="atom-feed">
-		<a href="#" target="_blank"></a>
-		</li>
-		<li class="facebook">
-		<a href="<?php echo FACEBOOK ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Facebook"></a>
-		</li>
-		<li class="twitter">
-		<a href="<?php echo TWITTER ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Twitter"></a>
-		</li>
-		<li class="youtube">
-		<a href="<?php echo YOUTUBE ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Youtube"></a>
-		</li>
-		<li class="reddit">
-		<a href="<?php echo REDDIT ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> reddit"></a>
-		</li>
-	<span class="clear"><!-- --></span>
-	</ul>
-</div>
+	<div class="sidebar-content">
+		<ul class="social-media">
+			<li class="atom-feed">
+			<a href="#" target="_blank"></a>
+			</li>
+			<li class="facebook">
+			<a href="<?php echo FACEBOOK ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Facebook"></a>
+			</li>
+			<li class="twitter">
+			<a href="<?php echo TWITTER ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Twitter"></a>
+			</li>
+			<li class="youtube">
+			<a href="<?php echo YOUTUBE ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> Youtube"></a>
+			</li>
+			<li class="reddit">
+			<a href="<?php echo REDDIT ?>" title="<?php echo TITLE ?> <?php echo $cms_lang['11']; ?> reddit"></a>
+			</li>
+		<span class="clear"><!-- --></span>
+		</ul>
+	</div>
 </div>
 <div id="fb-root"></div>
 <div id="dynamic-sidebar-target"><div class="sidebar-module " id="sidebar-expansion" style="">
@@ -79,8 +80,8 @@
 <a href="#" class="latest-patch"></a>
 </div>
 </div>
-<?php include(__WEBKIT__.'screenshot.php'); ?>
-<?php include(__WEBKIT__.'latestpost.php'); ?>
+<?php include(__WEBKIT__.'sidebar/screenshot.php'); ?>
+<?php include(__WEBKIT__.'sidebar/latestpost.php'); ?>
 </div>
 </div>
 </div>

@@ -124,6 +124,7 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 define('BASE_URL',		'');
 define('ADMIN_URL',		'');
 define('ACCOUNT_URL',	'');
+define('REALMLIST',		'127.0.0.1');
 
 /*
 |--------------------------------------------------------------------------|
