@@ -35,6 +35,25 @@ website at [FlameCMS](http://flamenet.github.io/FlameCMS).
 
 You can install the CMS super easily as you access it. Remember to delete the "install" folder after installing everything successfully.
 
+## * IIS 8.0:
+http://www.iis.net/downloads/microsoft/url-rewrite
+
+## * NGINX:
+http://winginx.com/en/htaccess
+
+example
+```
+# nginx configuration
+error_page 404 http://localhost/404;
+location / {
+if (!-e $request_filename){
+rewrite ^(.*)$ /$1.php break;
+}
+}
+location /blog {
+rewrite ^/blog/(.+)/(.+)$ /article.php?id=$1&title=$2;
+}
+```
 ## Developers CMS
 
 To develop the "CMS" we recommend to activate the option [DEVELOPMENT_ENVIRONMENT](https://github.com/FlameNET/FlameCMS/blob/master/system/config.php#L129)
