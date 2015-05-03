@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/zone.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/summary.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/pet.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/modules/sidebar.css" />
 <!-- Le Javascripts -->
 <script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/third-party.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/common-game-site.js"></script>
