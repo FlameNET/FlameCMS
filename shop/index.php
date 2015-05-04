@@ -9,7 +9,7 @@ $account->AccountLoginQuery();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__ROOT__.'/webkit/desc.php'); ?>
+<?php include(__WEBKIT__.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?> | Shop</title>
 <!-- The Styles & Javascripts of the CMS -->
@@ -28,19 +28,19 @@ $account->AccountLoginQuery();
 <body class="en-gb homepage news">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__ROOT__.'/webkit/userpanel.php'); ?>
+<?php include(__WEBKIT__.'userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__ROOT__.'/webkit/search.php'); ?>
+<?php include(__WEBKIT__.'search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
 <?php
 $page = "menu-services";
-include(__ROOT__.'/webkit/menu.php');
-include(__ROOT__.'/webkit/userplate.php');?>
+include(__WEBKIT__.'menu.php');
+include(__WEBKIT__.'userplate.php');?>
 </div>
 <!-- Header END -->
 </div>
@@ -48,7 +48,7 @@ include(__ROOT__.'/webkit/userplate.php');?>
 <div id="content">
 <div class="content-top body-top">
 <!-- Content Trail -->
-<?php include(__ROOT__.'/webkit/breadcrumb.php'); ?>
+<?php include(__WEBKIT__.'breadcrumb.php'); ?>
 <!-- Content Trail END -->
 <div class="content-bot clear">
 <div class="wod-no-banner"></div>
