@@ -24,10 +24,10 @@ class Users extends Connection {
 		global $profile;
 		global $profileAuth;
 		
-		@$rankSQL	= $this->Connect()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+		@$rankSQL	= $this->Connect()->query("SELECT * FROM account where email = '{$_SESSION['email']}'");
 		$profile	= $rankSQL->fetch_assoc();
 
-		@$authSQL	= $this->Auth()->query("SELECT * FROM account where email = '".$_SESSION['email']."'");
+		@$authSQL	= $this->Auth()->query("SELECT * FROM account where email = '{$_SESSION['email']}'");
 		$profileAuth= $authSQL->fetch_assoc();
 	}
 

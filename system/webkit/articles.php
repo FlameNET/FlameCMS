@@ -6,10 +6,14 @@
 		$new = 0;
 	}
 	$row_first = $new ? $new : 9999999999;
-	$row_query = $connect->Connect()->query("SELECT * FROM news WHERE id <= '".$row_first."' ORDER BY `id` DESC LIMIT 8");
+	$row_query = $connect->Connect()->query("SELECT * FROM news WHERE id <= '{$row_first}' ORDER BY `id` DESC LIMIT 8");
 	$counter = 1;
 	while($counter<=7 && $row=mysqli_fetch_array($row_query)){
-	if($counter == 1){}else{}
+	if($counter == 1){
+		// $counter
+	}else{
+		// $counter
+	}
 	if($row['contentlnk'] != NULL)
 	?>
 	<div class="article-wrapper">
@@ -24,8 +28,8 @@
 				<span class="clear"><!-- --></span>
 				<div class="article-summary" itemprop="description"><?php echo $news->NewsWordLimit($row['content']); ?></div>
 				<span class="clear"><!-- --></span>
-				<meta itemprop="datePublished" content="2014-03-05T15:58:48Z" />
-				<meta itemprop="dateModified" content="2014-03-05T15:58:48Z" />
+				<meta itemprop="datePublished" content="<?php echo $news->ago(strtotime($row['date'])); ?>" />
+				<meta itemprop="dateModified" content="<?php echo $news->ago(strtotime($row['date'])); ?>" />
 				<meta itemprop="inLanguage" content="en-GB" />
 				<meta itemprop="interactionCount" content="UserComments:0" />
 				<meta itemprop="thumbnailUrl" content="<?php echo BASE_URL ?>assets/images/news/<?php echo $row['image']; ?>.jpg" />

@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
 	$email			= trim($_POST['accountName']);
 	$password		= trim($_POST['password']);
     $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
-	$query			= $connect->Connect()->query("SELECT * FROM account WHERE email='".$email."' AND password='".$sha_pass_hash."' AND activation_code IS NULL");
+	$query			= $connect->Connect()->query("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}' AND activation_code IS NULL");
 	$num_row		= $query->num_rows;
 	$row			= $query->fetch_array();
 
@@ -164,7 +164,7 @@ Core.bindTrackEvent('#copyright a[data-action]', category);
 //]]>
 </script>
 </footer> </div>
-<script src="/login/static/js/embedded-javascript/embed-0.1.5.min.js?v=23-1"></script>
+<script src="<?php echo BASE_URL ?>assets/login/static/js/embedded-javascript/embed-0.1.5.min.js"></script>
 <script>
 //<![CDATA[
 var xsToken = '';
