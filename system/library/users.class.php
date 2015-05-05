@@ -25,11 +25,11 @@ class Users extends Connection {
 		global $profileAuth;
 		global $_SESSION;
 		
-		@$rankSQL	= $this->Connect()->query("SELECT * FROM account where email = '{$_SESSION['email']}'");
-		$profile	= $rankSQL->fetch_assoc();
-
-		@$authSQL	= $this->Auth()->query("SELECT * FROM account where email = '{$_SESSION['email']}'");
-		$profileAuth= $authSQL->fetch_assoc();
+		$SessionEmail	= isset($_SESSION['email']) ? $_SESSION['email'] : null;
+		$rankSQL		= $this->Connect()->query("SELECT * FROM account where email = '{$SessionEmail}'");
+		$profile		= $rankSQL->fetch_assoc();
+		$authSQL		= $this->Auth()->query("SELECT * FROM account where email = '{$SessionEmail}'");
+		$profileAuth	= $authSQL->fetch_assoc();
 	}
 
 	public function AccountLoginCheck(){

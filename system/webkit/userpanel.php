@@ -5,7 +5,7 @@
 </li>
 <?php if(isset($_SESSION['email'])){ ?>
 <li class="service-cell service-welcome">
-	Welcome, <?php echo @$profile['first_name']; ?> |  <a href="<?php echo ACCOUNT_URL ?>signout" tabindex="50" accesskey="2">log out</a>
+	Welcome, <?php echo isset($profile['first_name']) ? $profile['first_name'] : null ; ?> |  <a href="<?php echo ACCOUNT_URL ?>signout" tabindex="50" accesskey="2">log out</a>
 </li>
 <?php
 }else{
