@@ -8,7 +8,7 @@
 	$row_first = $new ? $new : 9999999999;
 	$row_query = $connect->Connect()->query("SELECT * FROM news WHERE id <= '{$row_first}' ORDER BY `id` DESC LIMIT 8");
 	$counter = 1;
-	while($counter<=7 && $row=mysqli_fetch_array($row_query)){
+	while($counter<=7 && $row = $row_query->fetch_array()){
 	if($counter == 1){
 		// $counter
 	}else{

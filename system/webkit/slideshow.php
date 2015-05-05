@@ -3,7 +3,7 @@
 			<?php
 			$slideshows = $connect->Connect()->query("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 			$i=0;
-			while($slideshow = mysqli_fetch_array($slideshows))
+			while($slideshow = $slideshows->fetch_array())
 			{
 			if($i == 0)
 			{
@@ -44,7 +44,7 @@
             Slideshow.initialize('#slideshow', [
 				<?php
 				$i=0; 
-				while($slideshow = mysqli_fetch_array($slideshows)){
+				while($slideshow = $slideshows->fetch_array()){
 				echo '
 				{
 				image: "assets/images/slideshows/'.$slideshow['image'].'",

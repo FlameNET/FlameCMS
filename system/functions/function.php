@@ -65,11 +65,20 @@ function filename($url){
 
 }
 
+
+/**
+ *  Mysqli Num Row function
+ */
+function MysqliNumRowsFlame($result){
+        $numRows = mysqli_num_rows($result); 
+        return $numRows==1; 
+}
+
 /**
  *  Mysqli result function
  */
 function MysqliResultFlame($res,$row=0,$col=0){ 
-    $numrows = mysqli_num_rows($res); 
+    $numrows = MysqliNumRowsFlame($res); 
     if ($numrows && $row <= ($numrows-1) && $row >=0){
         mysqli_data_seek($res,$row);
         $resrow = (is_numeric($col)) ? mysqli_fetch_row($res) : mysqli_fetch_assoc($res);

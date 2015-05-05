@@ -4,7 +4,7 @@
 if(isset($page))
 {
 	$menus = $connect->Connect()->query("SELECT * FROM menu");
-	while($menu = mysqli_fetch_array($menus))
+	while($menu = $menus->fetch_array())
 	{
 ?>
 	<li class="<?php echo $menu["menu_class"]; ?>" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
@@ -21,7 +21,7 @@ if(isset($page))
 else
 {
 	$menus = $connect->Connect()->query("SELECT * FROM menu");
-	while($menu = mysqli_fetch_array($menus))
+	while($menu = $menus->fetch_array())
 	{
 ?>
 	<li class="<?php echo $menu["menu_class"]; ?>" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">

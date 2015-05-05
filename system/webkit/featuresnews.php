@@ -1,6 +1,6 @@
 <?php
 $articles_query = $connect->Connect()->query("SELECT * FROM news ORDER BY DATE DESC LIMIT 3");
-while($articles = mysqli_fetch_array($articles_query)) {
+while($articles = $articles_query->fetch_array()){
 ?>
 <li>
 	<div class="article-wrapper">
