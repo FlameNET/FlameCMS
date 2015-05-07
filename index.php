@@ -50,10 +50,8 @@ include(__WEBKIT__.'userplate.php');?>
 <div class="left-content" itemscope="itemscope" itemtype="http://schema.org/WebPageElement">
 <div class= "left-content-inner">
 <div class="featured-news-container">
-<ul class="featured-news">
-<!-- Featured News -->
-<?php include(__WEBKIT__.'featuresnews.php'); ?>
-</ul>
+<!-- Featured Welcoming -->
+<?php include(__WEBKIT__.'welcoming.php'); ?>
 </div>
 <span class="clear"><!-- --></span>
 <!-- Featured News END -->
