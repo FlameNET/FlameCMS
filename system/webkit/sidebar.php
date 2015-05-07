@@ -68,102 +68,43 @@
     <span>Spell / Class</span>
 </div>
 </div>
-		
-					
+<!-- Top Voters -->	
+<div class="top_voters home_container">
+ <div class="sub_header">
+<p>Top Voters</p>
+<h2>Resets Every Month</h2>
+<span class="title_overlay"></span>
+</div>
+<div class="cont_container">
+<ul class="top_voters_list">
+<li>
+<p>1</p>
+<a href="#">AwesomeJo</a>
+<span>55 <i>Votes</i></span>
+</li>
+<li>
+<p>2</p>
+<a href="#">iFeelStupid</a>
+<span>53 <i>Votes</i></span>
+</li>
+<li>
+<p>3</p>
+<a href="#">RealLifeDrama</a>
+<span>51 <i>Votes</i></span>
+</li>
+<li>
+<p>4</p>
+<a href="#">iSuckATpvp</a>
+<span>49 <i>Votes</i></span>
+</li>
+<li>
+<p>5</p>
+<a href="http:/#">FailZorD</a>
+<span>40 <i>Votes</i></span>
+</li>
+</ul>
+ </div>
+ </div>
 
 </div>
 <!-- NEW VERSION END -->
-<!-- OLD VERSION - BLIZZLIKE
-<div class="right-sidebar">
-
-	<div id="sidebar-marketing" class="sidebar-module">
-	<div class="bnet-offer">
-	<div class="bnet-offer-bg">
-		<a href="#" target="_blank" id="#" class="bnet-offer-image">
-		<img src="//bnetcmsus-a.akamaihd.net/cms/ad_300x250/32WKK501BM5G1384352523717.jpg" width="300" height="250" alt="" />
-		</a>
-	</div>
-	</div>
-	</div>
-
-<div class="sidebar" id="sidebar">
-	<div class="sidebar-top">
-	<div class="sidebar-bot">
-
-<div class="sidebar-module " id="sidebar-social-media">
-	<div class="sidebar-title">
-		<h3 class="header-3 title-social-media">
-		<?php/* echo $cms_lang['1'] */ ?>
-		</h3>
-	</div>
-<div class="sidebar-content">
-	<ul class="social-media">
-		<li class="atom-feed">
-		<a href="#" target="_blank"></a>
-		</li>
-		<li class="facebook">
-		<a href="<?php/* echo FACEBOOK*/ ?>" title="<?php/* echo TITLE  */?> <?php/* echo $cms_lang['11']; */ ?> Facebook"></a>
-		</li>
-		<li class="twitter">
-		<a href="<?php/* echo TWITTER*/ ?>" title="<?php/* echo TITLE  */?> <?php/* echo $cms_lang['11']; */ ?> Twitter"></a>
-		</li>
-		<li class="youtube">
-		<a href="<?php/* echo YOUTUBE*/ ?>" title="<?php/* echo TITLE  */?> <?php/* echo $cms_lang['11']; */ ?> Youtube"></a>
-		</li>
-		<li class="reddit">
-		<a href="<?php /*echo REDDIT*/ ?>" title="<?php/* echo TITLE  */?> <?php/* echo $cms_lang['11']; */ ?> reddit"></a>
-		</li>
-	<span class="clear"></span>
-	</ul>
-</div>
-</div>
-<div id="fb-root"></div>
-<div id="dynamic-sidebar-target"><div class="sidebar-module " id="sidebar-expansion" style="">
-<div class="sidebar-title">
-<h3 class="header-3 title-expansion">
-	<a href="#"><?php /* echo $cms_lang['2']; */ ?></a>
-</h3>
-</div>
-<div class="sidebar-content">
-<a href="#" class="sidebar-expansion"></a>
-<ul id="expansion" class="trending-topics">
-<ul>
-<li><a href="#"><?php /* echo $cms_lang['3']; */ ?></a></li>
-<li><a href="#"><?php /* echo $cms_lang['4']; */ ?></a></li>
-<li><a href="#"><?php /* echo $cms_lang['5']; */ ?></a></li>
-<li><a href="#"><?php /* echo $cms_lang['6']; */ ?></a></li>
-<li><a href="#"><?php /* echo $cms_lang['7']; */ ?></a></li>
-</ul>
-</ul>
-</div>
-</div>
-<div class="sidebar-module " id="sidebar-under-dev" style="">
-<div class="sidebar-title">
-<h3 class="header-3 title-under-dev">
-<a href="#"><?php /* echo $cms_lang['8'];  */?></a>
-</h3>
-</div>
-<div class="sidebar-content">
-<a href="#" class="latest-patch"></a>
-</div>
-</div>
-<?php /* include(__WEBKIT__.'screenshot.php'); */ ?>
-<?php /* include(__WEBKIT__.'latestpost.php'); */?>
-</div>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-	$(function() {
-		Sidebar.sidebar([
-			{ "type": "expansion", "query": "" },
-			{ "type": "under-dev", "query": "" },
-			{ "type": "sotd", "query": "" },
-			{ "type": "blizzard-posts", "query": "" }
-		]);
-	});
-//]]>
-</script>
-</div>
--->
