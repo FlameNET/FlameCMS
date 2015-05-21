@@ -40,7 +40,7 @@ class Users extends Connection {
 			header("Location: ".ACCOUNT_URL."login");
 			exit();
 		}
-		if($profile['roles_account'] < 2){
+		if($profile['roles'] < 1){
 			die('<center>
 					<h2>What are you doing here?</h2>
 				</center>');

@@ -18,20 +18,22 @@ MySQL - 5.6.21 : Database - FlameNET
 DROP TABLE IF EXISTS `account`;
 
 CREATE TABLE `account` (
-  `Id` INT(5) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `first_name` VARCHAR(35) NOT NULL DEFAULT '',
-  `last_name` VARCHAR(35) NOT NULL DEFAULT '',
-  `email` VARCHAR(25) NOT NULL DEFAULT '' COMMENT 'example@example.com',
-  `password` VARCHAR(44) NOT NULL DEFAULT '',
-  `secret_question` VARCHAR(35) NOT NULL DEFAULT '',
-  `answer_question` VARCHAR(35) NOT NULL DEFAULT '',
-  `country` VARCHAR(15) NOT NULL DEFAULT '',
-  `date_of_birth` VARCHAR(25) NOT NULL DEFAULT '',
-  `roles_account` VARCHAR(1) NOT NULL DEFAULT '2',
-  `activation_code` VARCHAR(255) DEFAULT NULL,
-  `avatar` VARCHAR(55) NOT NULL DEFAULT 'avatar.jpg' COMMENT 'User Avatar',
-  PRIMARY KEY (`Id`)
-) ENGINE=INNODB DEFAULT CHARSET=utf8;
+  `Id` int(5) unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(35) NOT NULL DEFAULT '',
+  `last_name` varchar(35) NOT NULL DEFAULT '',
+  `email` varchar(25) NOT NULL DEFAULT '' COMMENT 'example@example.com',
+  `password` varchar(44) NOT NULL DEFAULT '',
+  `secret_question` varchar(35) NOT NULL DEFAULT '',
+  `answer_question` varchar(35) NOT NULL DEFAULT '',
+  `country` varchar(15) NOT NULL DEFAULT '',
+  `date_of_birth` varchar(25) NOT NULL DEFAULT '',
+  `avatar` varchar(55) NOT NULL DEFAULT 'avatar.jpg' COMMENT 'User Avatar',
+  `rol` int(1) NOT NULL DEFAULT '1',
+  `activation_code` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  KEY `FK_account` (`rol`),
+  CONSTRAINT `FK_account` FOREIGN KEY (`rol`) REFERENCES `roles` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `account` */
 
@@ -410,44 +412,28 @@ LOCK TABLES `realms` WRITE;
 
 UNLOCK TABLES;
 
-/*Table structure for table `roles_account_permissions` */
-
-DROP TABLE IF EXISTS `roles_account_permissions`;
-
-CREATE TABLE `roles_account_permissions` (
-  `id` INT(5) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `permissions` INT(1) UNSIGNED NOT NULL DEFAULT '2',
-  PRIMARY KEY (`id`,`permissions`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=INNODB DEFAULT CHARSET=utf8;
-
-/*Data for the table `roles_account_permissions` */
-
-LOCK TABLES `roles_account_permissions` WRITE;
-
-UNLOCK TABLES;
-
 /*Table structure for table `roles_permissions` */
 
-DROP TABLE IF EXISTS `roles_permissions`;
+DROP TABLE IF EXISTS `roles`;
 
-CREATE TABLE `roles_permissions` (
-  `id` INT(2) NOT NULL AUTO_INCREMENT,
-  `roles` VARCHAR(25) NOT NULL DEFAULT '',
-  `permissions` VARCHAR(1) NOT NULL DEFAULT '',
+CREATE TABLE `roles` (
+  `id` int(2) NOT NULL,
+  `roles` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=INNODB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `roles_permissions` */
+/*Data for the table `roles` */
 
-LOCK TABLES `roles_permissions` WRITE;
+LOCK TABLES `roles` WRITE;
 
-INSERT  INTO `roles_permissions`(`id`,`roles`,`permissions`) VALUES
-(1,'Player','2'),
-(2,'Moderator','3'),
-(3,'Game Master','4'),
-(4,'Administrator','5'),
-(5,'Owner','6');
+INSERT  INTO `roles`(`id`,`roles`) VALUES
+(0,'Banned'),
+(1,'Player'),
+(2,'Moderator'),
+(3,'Game Master'),
+(4,'Administrator'),
+(5,'Owner');
 
 UNLOCK TABLES;
 
