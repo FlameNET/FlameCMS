@@ -15,7 +15,7 @@ while($articles = $articles_query->fetch_array()){
 			</a>
 		<div class="article-meta">
 			<a href="<?php echo BASE_URL.'blog/'.$articles['id'].'/'.$url->CleanString($articles['title']); ?>/#comments" class="comments-link"><?php echo $articles['comments']; ?></a>
-			<span class="publish-date" title="<?php echo $news->ago(strtotime($articles['date'])); ?>"><?php echo $news->ago(strtotime($articles['date'])); ?></span>
+			<span class="publish-date" title="<?php echo $news->AgoTimeFlame($articles['date']); ?>"><?php echo $news->AgoTimeFlame(strtotime($articles['date'])); ?></span>
 		</div>
 	</div>
 </li>

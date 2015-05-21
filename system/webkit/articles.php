@@ -28,15 +28,15 @@
 				<span class="clear"><!-- --></span>
 				<div class="article-summary" itemprop="description"><?php echo $news->NewsWordLimit($row['content']); ?></div>
 				<span class="clear"><!-- --></span>
-				<meta itemprop="datePublished" content="<?php echo $news->ago(strtotime($row['date'])); ?>" />
-				<meta itemprop="dateModified" content="<?php echo $news->ago(strtotime($row['date'])); ?>" />
+				<meta itemprop="datePublished" content="<?php echo $news->AgoTimeFlame($row['date']); ?>" />
+				<meta itemprop="dateModified" content="<?php echo $news->AgoTimeFlame($row['date']); ?>" />
 				<meta itemprop="inLanguage" content="en-GB" />
 				<meta itemprop="interactionCount" content="UserComments:0" />
 				<meta itemprop="thumbnailUrl" content="<?php echo BASE_URL ?>assets/images/news/<?php echo $row['image']; ?>.jpg" />
 			</div>
 		</a>
 		<div class="article-meta">
-			<span class="publish-date" title="<?php echo $row['date']; ?>"><?php echo $news->ago(strtotime($row['date'])); ?></span>
+			<span class="publish-date" title="<?php echo $row['date']; ?>"><?php echo $news->AgoTimeFlame($row['date']); ?></span>
 			<a href="<?php echo BASE_URL.'blog/'.$row['id'].'/'.$url->CleanString($row['title']); ?>/#comments" class="comments-link"><?php echo $row['comments']; ?></a>
 		</div>
 		<span class="clear"><!-- --></span>
