@@ -1,15 +1,8 @@
-/*
-SQLyog Ultimate v8.82 
-MySQL - 5.6.21 : Database - FlameNET
-*********************************************************************
-*/
-
-
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
-
-/*!40101 SET SQL_MODE=''*/;
-
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
@@ -18,18 +11,18 @@ MySQL - 5.6.21 : Database - FlameNET
 DROP TABLE IF EXISTS `account`;
 
 CREATE TABLE `account` (
-  `Id` int(5) unsigned NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(35) NOT NULL DEFAULT '',
-  `last_name` varchar(35) NOT NULL DEFAULT '',
-  `email` varchar(25) NOT NULL DEFAULT '' COMMENT 'example@example.com',
-  `password` varchar(44) NOT NULL DEFAULT '',
-  `secret_question` varchar(35) NOT NULL DEFAULT '',
-  `answer_question` varchar(35) NOT NULL DEFAULT '',
-  `country` varchar(15) NOT NULL DEFAULT '',
-  `date_of_birth` varchar(25) NOT NULL DEFAULT '',
-  `avatar` varchar(55) NOT NULL DEFAULT 'avatar.jpg' COMMENT 'User Avatar',
-  `rol` int(1) NOT NULL DEFAULT '1',
-  `activation_code` varchar(255) DEFAULT NULL,
+  `Id` INT(5) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(35) NOT NULL DEFAULT '',
+  `last_name` VARCHAR(35) NOT NULL DEFAULT '',
+  `email` VARCHAR(25) NOT NULL DEFAULT '' COMMENT 'example@example.com',
+  `password` VARCHAR(44) NOT NULL DEFAULT '',
+  `secret_question` VARCHAR(35) NOT NULL DEFAULT '',
+  `answer_question` VARCHAR(35) NOT NULL DEFAULT '',
+  `country` VARCHAR(15) NOT NULL DEFAULT '',
+  `date_of_birth` VARCHAR(25) NOT NULL DEFAULT '',
+  `avatar` VARCHAR(55) NOT NULL DEFAULT 'avatar.jpg' COMMENT 'User Avatar',
+  `rol` INT(1) NOT NULL DEFAULT '1',
+  `activation_code` VARCHAR(255) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `FK_account` (`rol`),
   CONSTRAINT `FK_account` FOREIGN KEY (`rol`) REFERENCES `roles` (`id`) ON UPDATE CASCADE
@@ -77,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `countries` (
   `numeric_code` SMALLINT(6) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=INNODB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=250;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=250;
 
 /*Data for the table `countries` */
 
@@ -355,7 +348,7 @@ CREATE TABLE `menu` (
   `menu_ru` VARCHAR(20) NOT NULL DEFAULT '',
   `menu_tw` VARCHAR(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`Id`)
-) ENGINE=INNODB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 /*Data for the table `menu` */
 
@@ -400,9 +393,9 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `realms`;
 
 CREATE TABLE `realms` (
-  `Id` int(2) unsigned NOT NULL AUTO_INCREMENT,
-  `realmName` varchar(55) NOT NULL DEFAULT 'FlameCMS',
-  `rate` varchar(20) NOT NULL DEFAULT 'x1',
+  `Id` INT(2) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `realmName` VARCHAR(55) NOT NULL DEFAULT 'FlameCMS',
+  `rate` VARCHAR(20) NOT NULL DEFAULT 'x1',
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -417,8 +410,8 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `roles`;
 
 CREATE TABLE `roles` (
-  `id` int(2) NOT NULL,
-  `roles` varchar(25) NOT NULL DEFAULT '',
+  `id` INT(2) NOT NULL,
+  `roles` VARCHAR(25) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -462,6 +455,9 @@ INSERT  INTO `slideshows`(`id`,`title`,`description`,`image`,`link`,`duration`) 
 
 UNLOCK TABLES;
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
