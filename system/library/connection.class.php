@@ -19,67 +19,75 @@
 
 class Connection {
 
+	private $mysqli;
+	private $auth;
+	private $characters;
+	private $world;
+
+	function __construct() {
+    }
+
 	public function Connect(){
 
-		$mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+		$this->mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
 		/**
 		* Language support in the database
 		*/
-		$mysqli ->query("SET NAMES 'utf8'");
+		$this->mysqli->query("SET NAMES 'utf8'");
 
 		if (mysqli_connect_error()) {
 			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 		}
 
-		return $mysqli;
+		return $this->mysqli;
 
 	}
 
 	public function Auth(){
 
-		$auth = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, AUTH, SERVERPORT);
+		$this->auth = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, AUTH, SERVERPORT);
 		/**
 		* Language support in the database
 		*/
-		$auth->query("SET NAMES 'utf8'");
+		$this->auth->query("SET NAMES 'utf8'");
 
 		if (mysqli_connect_error()) {
 			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 		}
 
-		return $auth;
+		return $this->auth;
 
 	}
 
 	public function Characters(){
 
-		$characters = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, CHARACTERS, SERVERPORT);
+		$this->characters = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, CHARACTERS, SERVERPORT);
 		/**
 		* Language support in the database
 		*/
-		$characters->query("SET NAMES 'utf8'");
+		$this->characters->query("SET NAMES 'utf8'");
 
 		if (mysqli_connect_error()) {
 			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 		}
 
-		return $characters;
+		return $this->$characters;
 
 	}
 
 	public function World(){
 
-		$world = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, WORLD, SERVERPORT);
+		$this->world = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, WORLD, SERVERPORT);
 		/**
 		* Language support in the database
 		*/
-		$world->query("SET NAMES 'utf8'");
+		$this->world->query("SET NAMES 'utf8'");
 
 		if (mysqli_connect_error()) {
 			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 		}
 
-		return $world;
+		return $this->world;
 
 	}
 }

@@ -10,7 +10,7 @@ $account->AccountLoginQuery();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__ROOT__.'/webkit/desc.php'); ?>
+<?php include(__WEBKIT__.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?> | Shop Main</title>
 <link rel="stylesheet" type="text/css" media="all" href="assets/static/main/css/maincustom.css" />
@@ -39,7 +39,7 @@ body.className = body.className + " js-enabled";
 </div>
 <div class="grid-75">
 <!-- User Panel -->
-<?php include(__ROOT__.'/webkit/userpanel.php'); ?>
+<?php include(__WEBKIT__.'userpanel.php'); ?>
 <!-- User Panel END --></div>
 </div>
 </header>
@@ -152,7 +152,7 @@ body.className = body.className + " js-enabled";
 </a>
 </div>
 </div>
-<?php include(__ROOT__.'/webkit/rewards.php'); ?>
+<?php include(__WEBKIT__.'rewards.php'); ?>
 </div>
 </div>
 <script>
@@ -166,7 +166,7 @@ _gaq.push(['_trackPageview', '/shop/en/']);
 //]]>
 </script>
 </div>
-<?php include(__ROOT__.'/webkit/footer_shop.php'); ?>
+<?php include(__WEBKIT__.'footer_shop.php'); ?>
 <script>
 //<![CDATA[
 if (typeof Msg === "undefined") {
