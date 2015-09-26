@@ -44,6 +44,7 @@ Future work that is scheduled to be made after some time!
 * Donation System
 * Full Character Services
 * Economy / Auction System
+* Updater
 
 ### Development
 
