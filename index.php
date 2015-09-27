@@ -1,4 +1,5 @@
-<?php //<!-- DO NOT TOUCH -->
+<?php 
+//<!-- DO NOT TOUCH -->
 //this is an temporary patch, if it work, tell us ()
 //for: Warning: session_start() .....
 require_once('system/config.php');
