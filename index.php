@@ -1,5 +1,7 @@
-<!-- DO NOT TOUCH -->
-<?php require_once('system/config.php');
+<?php //<!-- DO NOT TOUCH -->
+//this is an temporary patch, if it work, tell us ()
+//for: Warning: session_start() .....
+require_once('system/config.php');
 $account->AccountLoginQuery();
 ?>
 <html xml:lang="en-gb" class="en-gb">
