@@ -1,7 +1,5 @@
 <?php 
-//<!-- DO NOT TOUCH -->
-//this is an temporary patch, if it work, tell us ()
-//for: Warning: session_start() .....
+//DO NOT TOUCH!
 require_once('system/config.php');
 $account->AccountLoginQuery();
 ?>
