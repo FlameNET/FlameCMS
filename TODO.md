@@ -32,7 +32,7 @@ Completed Work done so far!
 
 Uncompleted work scheduled so far & Under development!
 
-* Login System **(10%)**
+* Login System **(12%)**
 * Registration System **(5%)**
 * Media Template **(20%)**
 * Shop Template **(5%)**
