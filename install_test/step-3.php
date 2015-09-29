@@ -25,6 +25,10 @@ include('config.php');
 		.row{
 			max-width:95%;
 		}
+		fieldset legend
+		{
+			background-color:rgba(0, 0, 0, 0.0);
+		}
 		</style>
     </head>
 
@@ -57,115 +61,126 @@ include('config.php');
 						<div class="row">please fill all the fields, and make sure that the data it's correct.</div>
 						<img src="assets/images/bg-step-3.png" width="100%">
 						</fieldset>
-						<fieldset>
-							<legend>CMS Mysql configuration</legend>
-								<div class="row">
-									<div class="medium-6 columns">
-										<label>Database Host
-											<input type="text" name="hostname" placeholder="Database Host" required /></label>
+						<div class="panel callout">
+							<fieldset>
+								<legend>CMS Mysql configuration</legend>
+									<div class="row">
+										<div class="medium-6 columns">
+											<label>Database Host
+												<input type="text" name="hostname" placeholder="Database Host" required /></label>
+										</div>
+										<div class="medium-6 columns">
+											<label>Database Username
+												<input type="text" name="username" placeholder="Database Username" required /></label>
+										</div>
+										<div class="medium-6 columns">
+											<label>Database CMS
+												<input type="text" name="dbname" placeholder="Database CMS" required /></label>
+										</div>
+										<div class="medium-6 columns">
+											<label>Database Password
+												<input type="password" name="password" placeholder="Database Password" required /></label>
+										</div>
+										<div class="medium-6 columns left">
+											<label>Database Port
+												<input type="text" name="port" placeholder="Database Port" required /></label>
+										</div>
 									</div>
-									<div class="medium-6 columns">
-										<label>Database Username
-											<input type="text" name="username" placeholder="Database Username" required /></label>
+							</fieldset>
+						</div>
+						<div class="panel callout">
+							<fieldset>
+								<legend>Wow Mysql configuration</legend>
+									<div class="row">
+										<div class="medium-6 columns">
+											<label>Database Server Host
+											<input type="text" name="serverhostname" placeholder="Database Server Host" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Database Server Username
+											<input type="text" name="serverusername" placeholder="Database Server Username" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Database Server Password
+											<input type="password" name="serverpassword" placeholder="Database Server Password" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Database Server Port
+											<input type="text" name="serverport" placeholder="Database Server Port" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Auth Database
+											<input type="text" name="authdb" placeholder="Auth Database" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Characters Database
+											<input type="text" name="chardb" placeholder="Characters Database" required /></label></div>
+										<div class="medium-6 columns left">
+											<label>World Database
+											<input type="text" name="worlddb" placeholder="World Database" required /></label></div>
 									</div>
-									<div class="medium-6 columns">
-										<label>Database CMS
-											<input type="text" name="dbname" placeholder="Database CMS" required /></label>
-									</div>
-									<div class="medium-6 columns">
-										<label>Database Password
-											<input type="password" name="password" placeholder="Database Password" required /></label>
-									</div>
-									<div class="medium-6 columns left">
-										<label>Database Port
-											<input type="text" name="port" placeholder="Database Port" required /></label>
-									</div>
-						</fieldset>
-						<fieldset>
-							<legend>Wow Mysql configuration</legend>
-								<div class="row">
-									<div class="medium-6 columns">
-										<label>Database Server Host
-										<input type="text" name="serverhostname" placeholder="Database Server Host" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Database Server Username
-										<input type="text" name="serverusername" placeholder="Database Server Username" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Database Server Password
-										<input type="password" name="serverpassword" placeholder="Database Server Password" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Database Server Port
-										<input type="text" name="serverport" placeholder="Database Server Port" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Auth Database
-										<input type="text" name="authdb" placeholder="Auth Database" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Characters Database
-										<input type="text" name="chardb" placeholder="Characters Database" required /></label></div>
-									<div class="medium-6 columns left">
-										<label>World Database
-										<input type="text" name="worlddb" placeholder="World Database" required /></label></div>
+							</fieldset>
+						</div>
+						<div class="panel callout">
+							<fieldset>
+								<legend>Wow soap configuration</legend>
+									<div class="row">
+										<div class="medium-6 columns">
+											<label>Soap IP
+											<input type="text" name="soap_ip" placeholder="127.0.0.1" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Soap Port
+											<input type="text" name="soap_port" placeholder="7878" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Soap User
+											<input type="text" name="soap_user" placeholder="1#1" required /></label></div>
+										<div class="medium-6 columns">
+											<label>Soap Password
+											<input type="password" name="soap_pass" placeholder="123" required /></label></div>
 								</div>
-						</fieldset>
-						<fieldset>
-							<legend>Wow soap configuration</legend>
-								<div class="row">
-									<div class="medium-6 columns">
-										<label>Soap IP
-										<input type="text" name="soap_ip" placeholder="127.0.0.1" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Soap Port
-										<input type="text" name="soap_port" placeholder="7878" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Soap User
-										<input type="text" name="soap_user" placeholder="1#1" required /></label></div>
-									<div class="medium-6 columns">
-										<label>Soap Password
-										<input type="password" name="soap_pass" placeholder="123" required /></label></div>
-							</div>
-						</fieldset>
-						<fieldset>
-							<legend>CMS configuration</legend>
-								<div class="row">
-									<div class="medium-6 columns">
-										<label>Domain e.g (http://your.host/ or http://your.host/3.3.5a (if this cms is inside an folder))<input type="text" name="cfgdom" placeholder="http://you.host/3.3.5a" required /></label></div>
-									<div class="medium-6 columns">
-										<label>realmlist<input type="text" name="realmlist" placeholder="my.realmlist.host" required /></label></div>
-									<div class="medium-6 columns left">
-										<label>
-										Default CMS Language:
-										<select name="lang">
-											<option value="cn">简体中文</option>
-											<option value="en" selected="selected">English</option>
-											<option value="es">Espa&ntilde;ol</option>
-											<option value="de">Deutsch</option>
-											<option value="fr">Fran&ccedil;ais</option>
-											<option value="gr">ελληνικά</option>
-											<option value="it">Italiano</option>
-											<option value="ko">한국어</option>
-											<option value="pt">Portugu&ecirc;s</option>
-											<option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
-											<option value="tw">繁體中文</option>
-										</select>
-										</label>
+							</fieldset>
+						</div>
+						<div class="panel callout">
+							<fieldset>
+								<legend>CMS configuration</legend>
+									<div class="row">
+										<div class="medium-6 columns">
+											<label>Domain e.g (http://your.host/ or http://your.host/3.3.5a (if this cms is inside an folder))<input type="text" name="cfgdom" placeholder="http://you.host/3.3.5a" required /></label></div>
+										<div class="medium-6 columns">
+											<label>realmlist<input type="text" name="realmlist" placeholder="my.realmlist.host" required /></label></div>
+										<div class="medium-6 columns left">
+											<label>
+											Default CMS Language:
+											<select name="lang">
+												<option value="cn">简体中文</option>
+												<option value="en" selected="selected">English</option>
+												<option value="es">Espa&ntilde;ol</option>
+												<option value="de">Deutsch</option>
+												<option value="fr">Fran&ccedil;ais</option>
+												<option value="gr">ελληνικά</option>
+												<option value="it">Italiano</option>
+												<option value="ko">한국어</option>
+												<option value="pt">Portugu&ecirc;s</option>
+												<option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+												<option value="tw">繁體中文</option>
+											</select>
+											</label>
+										</div>
 									</div>
+							</fieldset>
+						</div>
+						<div class="panel callout">
+							<fieldset>
+								<legend>Admin Account</legend>
+								<div class='row'>
+									<div class="medium-6 columns">
+											<label>First name<input type="text" name="admin_first" placeholder="admin" required /></label></div>
+									<div class="medium-6 columns">
+											<label>Last name<input type="text" name="admin_last" placeholder="cms" required /></label></div>
+									<div class="medium-6 columns">
+											<label>Username<input type="text" name="admin_user" placeholder="admin" required /></label></div>
+									<div class="medium-6 columns">
+											<label>Password<input type="password" name="admin_pass" placeholder="pass" required /></label></div>
+									<div class="medium-6 columns left">
+											<label>Email<input type="text" name="admin_email" placeholder="email@provider.ex" required /></label></div>
 								</div>
-						</fieldset>
-						<fieldset>
-							<legend>Admin Account</legend>
-							<div class='row'>
-								<div class="medium-6 columns">
-										<label>First name<input type="text" name="admin_first" placeholder="admin" required /></label></div>
-								<div class="medium-6 columns">
-										<label>Last name<input type="text" name="admin_last" placeholder="cms" required /></label></div>
-								<div class="medium-6 columns">
-										<label>Username<input type="text" name="admin_user" placeholder="admin" required /></label></div>
-								<div class="medium-6 columns">
-										<label>Password<input type="password" name="admin_pass" placeholder="pass" required /></label></div>
-								<div class="medium-6 columns left">
-										<label>Email<input type="text" name="admin_email" placeholder="email@provider.ex" required /></label></div>
-							</div>
-						</fieldset>
+							</fieldset>
+						</div>
 						<br>
 						<div class="row" align="center">
 							<button type="submit" name="Submit"  class="u-button uk-button-large uk-button-primary" type="button" data-uk-button><i class="fa fa-check-circle-o"></i> Install FlameCMS Now</button>
