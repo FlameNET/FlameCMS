@@ -22,10 +22,8 @@ include('config.php');
         <script src="assets/js/highlight.js"></script>
         <script src="assets/js/docs.js"></script>
 		<style>
-		body{
-			background-image: url("assets/images/bg-step-3.png");
-			background-repeat: no-repeat;
-			background-color: #fff;
+		.row{
+			max-width:95%;
 		}
 		</style>
     </head>
@@ -57,6 +55,7 @@ include('config.php');
 						<fieldset>
 						<legend>Install now FlameCMS World Of WarCraft Private Servers</legend>
 						<div class="row">please fill all the fields, and make sure that the data it's correct.</div>
+						<img src="assets/images/bg-step-3.png" width="100%">
 						</fieldset>
 						<fieldset>
 							<legend>CMS Mysql configuration</legend>
