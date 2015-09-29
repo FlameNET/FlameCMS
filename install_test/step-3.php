@@ -54,7 +54,10 @@ include('config.php');
 		<div class="row">
 			<div class="medium-12 columns">
 				<form action="./successful" method="post" name="install">
+						<fieldset>
 						<legend>Install now FlameCMS World Of WarCraft Private Servers</legend>
+						<div class="row">please fill all the fields, and make sure that the data it's correct.</div>
+						</fieldset>
 						<fieldset>
 							<legend>CMS Mysql configuration</legend>
 								<div class="row">
@@ -119,7 +122,7 @@ include('config.php');
 										<input type="text" name="soap_user" placeholder="1#1" required /></label></div>
 									<div class="medium-6 columns">
 										<label>Soap Password
-										<input type="text" name="soap_pass" placeholder="123" required /></label></div>
+										<input type="password" name="soap_pass" placeholder="123" required /></label></div>
 							</div>
 						</fieldset>
 						<fieldset>
