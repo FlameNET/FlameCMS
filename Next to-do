@@ -1,0 +1,8 @@
+#this is an mere type of organization. (3.3.5a)
+##adomasalcore3
++ install_test
+++ working (everything, no bugs reported - done)
++ login
+++ login frame (done)
+++ user-plate (logged in/logged out)
++++ working (login only)
