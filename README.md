@@ -34,6 +34,7 @@ website at [FlameCMS](http://flamenet.github.io/FlameCMS).
 ## Install
 
 You can install the CMS super easily as you access it. Remember to delete the "install" folder after installing everything successfully.
+--#if you are having trouble with the admin account, try the install_test (3.3.5a only) it creates the admin account too.
 
 ## * IIS 8.0:
 http://www.iis.net/downloads/microsoft/url-rewrite
