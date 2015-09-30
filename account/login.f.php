@@ -126,7 +126,12 @@ Log In
 </div>
 <ul id="help-links">
 <li>
-<a class="btn btn-block btn-large" rel="external" href="<?php ACCOUNT_URL ?>register" tabindex="1">
+<script>
+function register(){
+  window.location.assign('<?php echo BASE_URL ?>account/register');
+});
+</script>
+<a class="btn btn-block btn-large" rel="external" tabindex="1" onclick="register()">
 Create Free Account
 <i class="icon-external-link"></i>
 </a>
