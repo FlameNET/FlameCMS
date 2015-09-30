@@ -1,4 +1,4 @@
-<?php session_start();
+﻿<?php session_start();
 require_once('../system/config.php');
 if(isset($_POST['submit']))
 {
@@ -84,9 +84,10 @@ $('body').removeClass('preload');
 </script>
 <?php if(isset($activate_trick) && ($activate_trick==TRUE)){?>
 <script>
-$(document).ready(function(){
+  parent.location.reload();
   window.top.location.reload();
-});
+  window.parent.location.reload();
+  console.log('got_here');
 </script>
 <?php }?>
 <div class="grid-container wrapper" >
@@ -128,8 +129,8 @@ Log In
 <li>
 <script>
 function register(){
-  window.location.assign('<?php echo BASE_URL ?>account/register');
-});
+  window.top.location.assign('<?php echo BASE_URL ?>account/register');
+};
 </script>
 <a class="btn btn-block btn-large" rel="external" tabindex="1" onclick="register()">
 Create Free Account
