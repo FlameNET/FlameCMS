@@ -24,7 +24,8 @@ Completed Work done so far!
 * News **(85%)**
 * Blog **(85%)**
 * Slideshow **(100%)**
-* Installation System **(100%)**
+* Installation System **(80%)**
+* Installation System (TEST) **(100%)**
 * Language System **(100%)**
 * Admin Templates **(20%)**
 
@@ -32,7 +33,7 @@ Completed Work done so far!
 
 Uncompleted work scheduled so far & Under development!
 
-* Login System **(12%)**
+* Login System **(20%)**
 * Registration System **(5%)**
 * Media Template **(20%)**
 * Shop Template **(5%)**
