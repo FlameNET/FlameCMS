@@ -355,7 +355,7 @@ CREATE TABLE `menu` (
 LOCK TABLES `menu` WRITE;
 
 INSERT  INTO `menu`(`Id`,`menu_class`,`menu_url`,`menu_cn`,`menu_de`,`menu_en`,`menu_es`,`menu_fr`,`menu_gr`,`menu_it`,`menu_ko`,`menu_pt`,`menu_ru`,`menu_tw`) VALUES 
-(1,'menu-home','','主页','Hauptseite','Home','Principal','Accueil','Αρχική','Home','홈페이지','Início','Главная','購買'),
+(1,'menu-home','','主页','Hauptseite','Home','Principal','Accueil','Αρχική','Home','홈페이지','In&iacute;cio','Главная','購買'),
 (2,'menu-game','game','游戏指南','Spiel','Game Guide','Juego','Jeu','Οδηγός','Gioco','게임 가이드','Jogo','Игра','遊戲'),
 (3,'menu-community','community','社区','Community','Community','Comunidad','Communauté','Κοινότητα','Comunità','커뮤니티','Comunidade','Сообщество','社群'),
 (4,'menu-media','media','媒体','Media','Media','Medios','Médias','Μέσα','Media','자료실','M&eacute;dia','Материалы','媒體'),
