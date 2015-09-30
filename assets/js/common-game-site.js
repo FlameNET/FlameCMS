@@ -3105,7 +3105,7 @@ var Login = {
 	/**
 	 * Embedded login URL.
 	 */
-	embeddedUrl: "./account/login.f.php",
+	embeddedUrl: "./account/login_f.php",
 
 	/**
 	 * Use token to log in behind the scenes.
