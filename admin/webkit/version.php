@@ -4,7 +4,7 @@ $vers = intval($_GET['new']);
 }else{
 	$vers = 0;
 }
-$vers_query = Connect()->query("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
+$vers_query = WebQuery("SELECT * FROM cms_ver WHERE id = 1 ORDER BY `id` DESC LIMIT 1");
 $counter = 1;
 
 while($counter<=7 && $vers=mysqli_fetch_array($vers_query)){

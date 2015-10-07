@@ -28,7 +28,7 @@ function setReporting() {
 		error_reporting(E_ALL);
 		ini_set('display_errors','Off');
 		ini_set('log_errors', 'On');
-		ini_set('error_log', __ROOT__.DS.'system'.DS.'tmp'.DS.'logs'.DS.'error.log');
+		ini_set('error_log', SYSTEM.'tmp'.DS.'logs'.DS.'error.log');
 	}
 }
 setReporting();
@@ -90,5 +90,5 @@ function MysqliResultFlame($res,$row=0,$col=0){
 }
 
 function footer() {
-	include(__WEBKIT__.'footer.php');
+	include(WEBKIT.'footer.php');
 }

@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
+* Copyright (C) 2015 FlameCMS <https://github.com/FlameNET/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -17,8 +17,18 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
 
-$title		= "FlameCMS";
-$author		= "FlameCMS";
-$linkAuthor	= "https://github.com/FlameNET/FlameCMS/";
-$baseUrl	= "index.php";
-$animate	= "flip";
+/*
+|--------------------------------------------------------------------------|
+| Autoload Class
+|--------------------------------------------------------------------------|
+*/
+function __autoload($className) {
+	if (file_exists(CLASS_DIR . strtolower($className).'.class.php')) {
+		require_once(CLASS_DIR . strtolower($className).'.class.php');
+	}
+}
+$connect	= new Connection();
+$news		= new News();
+$register	= new Users();
+$account	= new Users();
+$url		= new Url();

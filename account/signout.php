@@ -8,7 +8,7 @@ require_once('../system/config.php');
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__WEBKIT__.'desc.php'); ?>
+<?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title>Sign Out <?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
@@ -85,7 +85,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include(__WEBKIT__.'userpanel.php'); ?>
+		<?php include(WEBKIT.'userpanel.php'); ?>
 		<!-- User Panel END -->
 	</div>
 </div>

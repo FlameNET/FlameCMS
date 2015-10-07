@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
 	$email			= trim($_POST['accountName']);
 	$password		= trim($_POST['password']);
     $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
-	$query			= $connect->Connect()->query("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}' AND activation_code IS NULL");
+	$query			= $connect->WebQuery("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}' AND activation_code IS NULL");
 	$num_row		= $query->num_rows;
 	$row			= $query->fetch_array();
 

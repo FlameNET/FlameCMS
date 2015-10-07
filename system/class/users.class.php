@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -26,9 +26,9 @@ class Users extends Connection {
 		global $_SESSION;
 		
 		$SessionEmail	= isset($_SESSION['email']) ? $_SESSION['email'] : null;
-		$rankSQL		= $this->Connect()->query("SELECT * FROM account where email = '{$SessionEmail}'");
+		$rankSQL		= $this->WebQuery("SELECT * FROM account where email = '{$SessionEmail}'");
 		$profile		= $rankSQL->fetch_assoc();
-		$authSQL		= $this->Auth()->query("SELECT * FROM account where email = '{$SessionEmail}'");
+		$authSQL		= $this->AuthQuery("SELECT * FROM account where email = '{$SessionEmail}'");
 		$profileAuth	= $authSQL->fetch_assoc();
 	}
 

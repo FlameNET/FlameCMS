@@ -1,7 +1,7 @@
 # Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
 
 # Page Error
-ErrorDocument 404 http://localhost/projects/FlameCMS/404
+ErrorDocument 404 http://localhost/404
 
 Options +FollowSymLinks
 RewriteEngine On

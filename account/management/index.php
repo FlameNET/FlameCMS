@@ -12,7 +12,7 @@ $account->AccountLoginCheck();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__WEBKIT__.'desc.php'); ?>
+<?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?> Account</title>
 <!-- The Styles & Javascripts of the CMS -->
@@ -233,7 +233,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include(__WEBKIT__.'userpanel.php'); ?>
+		<?php include(WEBKIT.'userpanel.php'); ?>
 		<!-- User Panel END -->
 	</div>
 </div>
@@ -352,7 +352,7 @@ _gaq.push(['_trackPageview']);
 </div>
 <div id="layout-bottom">
 	<div class="wrapper">
-		<?php include(__WEBKIT__.'footer.php'); ?>
+		<?php include(WEBKIT.'footer.php'); ?>
 	</div>
 </div>
 <script type="text/javascript">

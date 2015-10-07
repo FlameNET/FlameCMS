@@ -8,7 +8,7 @@ require_once('../system/config.php');
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__WEBKIT__.'desc.php'); ?>
+<?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo $cms_lang['12']; ?></title>
 <!-- The Styles & Javascripts of the CMS -->
@@ -85,7 +85,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include(__WEBKIT__.'userpanel.php'); ?>
+		<?php include(WEBKIT.'userpanel.php'); ?>
 		<!-- User Panel END -->
 	</div>
 </div>
@@ -124,7 +124,7 @@ _gaq.push(['_trackPageview']);
 			 */
 			if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-				$checkEmailSQL 	= $connect->Connect()->query("SELECT * FROM account WHERE email = '{$email}'");
+				$checkEmailSQL 	= $connect->WebQuery("SELECT * FROM account WHERE email = '{$email}'");
 				$checkEmail	= mysqli_num_rows($checkEmailSQL) > 0;
 				if($checkEmail){
 					
@@ -137,13 +137,13 @@ _gaq.push(['_trackPageview']);
 				else
 				{
 					// Register Server
-					$register	= $connect->Auth()->query("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('{$username}),'{$sha_pass_hash_server}','{$email}')");
-					$IdAccount	= $connect->Auth()->query("SELECT MAX(id) FROM account");
+					$register	= $connect->AuthQuery("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('{$username}),'{$sha_pass_hash_server}','{$email}')");
+					$IdAccount	= $connect->AuthQuery("SELECT MAX(id) FROM account");
 					$IdWoW		= MysqliResultFlame($IdAccount);
 					// RBAC Account Permissions Server
-					$register	= $connect->Auth()->query("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '{$IdWoW}','195')");
+					$register	= $connect->AuthQuery("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '{$IdWoW}','195')");
 					// Register CMS
-					$createAccount	= $connect->Connect()->query("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})");
+					$createAccount	= $connect->WebQuery("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})");
 					if($createAccount)
 					{
 						$to		  = $email;
@@ -215,7 +215,7 @@ _gaq.push(['_trackPageview']);
 					<span class="input-select input-select-small">
 					<select name="country" id="country" class="small border-5 glow-shadow-2" tabindex="1">
 						<?php
-						$country	= $connect->Connect()->query("SELECT * FROM countries WHERE id");
+						$country	= $connect->WebQuery("SELECT * FROM countries WHERE id");
 						$countries	= isset($_GET['country']) ? $_GET['country'] : null ;
 						while($get	= mysqli_fetch_array($country))
 						{

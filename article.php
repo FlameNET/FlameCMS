@@ -5,7 +5,7 @@ require_once('system/config.php');
 $account->AccountLoginQuery();
 
 if (isset($_GET['id'])){
-	$news = $connect->Connect()->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
+	$news = $connect->WebQuery("SELECT * FROM news WHERE id = '".$_GET['id']."'");
 	$rows = $news->fetch_assoc();
 	if (!$rows['id']){ 
 		$error = true;
@@ -21,21 +21,21 @@ if (isset($_GET['id'])){
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__WEBKIT__.'desc.php'); ?>
+<?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo $rows['title'].' - '.$rows['date'].' - '.TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<?php include(__WEBKIT__.'core.php'); ?>
+<?php include(WEBKIT.'core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <body class="en-gb blog-article news">
 <div id="wrapper">
 	<!-- User Panel -->
-	<?php include(__WEBKIT__.'userpanel.php'); ?>
+	<?php include(WEBKIT.'userpanel.php'); ?>
 	<!-- User Panel END -->
 	<div id="header">
 		<!-- Search -->
-		<?php include(__WEBKIT__.'search.php'); ?>
+		<?php include(WEBKIT.'search.php'); ?>
 		<!-- Search END -->
 		<h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?>
 		</a></h1>
@@ -43,8 +43,8 @@ if (isset($_GET['id'])){
 		<div class="header-plate">
 			<?php
 			$page = "menu-home";
-			include(__WEBKIT__.'menu.php');
-			include(__WEBKIT__.'userplate.php');
+			include(WEBKIT.'menu.php');
+			include(WEBKIT.'userplate.php');
 			?>
 		</div>
 		<!-- Header END -->
@@ -66,7 +66,7 @@ if (isset($_GET['id'])){
 				</ol>
 			</div>
 			<div class="content-bot clear">
-				<?php include (__WEBKIT__.'sidebar.php'); ?>
+				<?php include (WEBKIT.'sidebar.php'); ?>
 				<div class="left-content">
 					<div id="blog" class="article-wrapper" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
 						<h2 class="header-2"><span itemprop="headline">Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor</span></h2>

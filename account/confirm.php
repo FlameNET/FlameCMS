@@ -102,7 +102,7 @@ _gaq.push(['_trackPageview']);
 			<?php
 			$passkey = filter_var($_GET['passkey'], FILTER_SANITIZE_STRING);
 
-			if($activation = $connect->Connect()->query("UPDATE account SET activation_code=NULL WHERE activation_code='{$passkey}'"))
+			if($activation = $connect->WebQuery("UPDATE account SET activation_code=NULL WHERE activation_code='{$passkey}'"))
 			{
 				echo '
 				<div class="alert-page ">

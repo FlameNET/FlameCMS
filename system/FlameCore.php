@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <https://github.com/FlameNET/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -18,128 +18,64 @@
 **/
 
 /**
- |-------------------------------------------------------------------------|
- | FLAME Version
- |-------------------------------------------------------------------------|
- | @var string
- |-------------------------------------------------------------------------|
- */
-	define('FLAME_VERSION', '1.0');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Language System.
-|--------------------------------------------------------------------------|
-| Specifies the Language that your CMS will show.
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
+|-------------------------------------------------------------------------|
+| FLAME Version
+|-------------------------------------------------------------------------|
+| @var string
+|-------------------------------------------------------------------------|
 */
-header('Cache-control: private'); // IE 6 FIX
-if(isset($_GET['lang'])){
-	$lang = $_GET['lang'];
+define('FLAME_VERSION', '1.0');
 
-	//register session
-	$_SESSION['lang'] = $lang;
-	
-	//define cookie
-	setcookie('lang', $lang, time() + (3600 * 24 * 30));
-	
-//Searches cookie and session var
-}else if(isSet($_SESSION['lang'])){
-	$lang = $_SESSION['lang'];
-}else if(isSet($_COOKIE['lang'])){
-	$lang = $_COOKIE['lang'];
-}else{
-	$lang = LANGUAGE;
-}
-
-switch ($lang) {
-
-	case 'cn':
-	$lang_file = 'lang.cn.php';
-	break;
-
-	case 'de':
-	$lang_file = 'lang.de.php';
-	break;
-
-	case 'en':
-	$lang_file = 'lang.en.php';
-	break;
-
-	case 'es':
-	$lang_file = 'lang.es.php';
-	break;
-
-	case 'fr':
-	$lang_file = 'lang.fr.php';
-	break;
-
-	case 'gr':
-	$lang_file = 'lang.gr.php';
-	break;
-
-	case 'it':
-	$lang_file = 'lang.it.php';
-	break;
-
-	case 'ko':
-	$lang_file = 'lang.ko.php';
-	break;
-
-	case 'pt':
-	$lang_file = 'lang.pt.php';
-	break;
-
-	case 'ru':
-	$lang_file = 'lang.ru.php';
-	break;
-
-	case 'tw':
-	$lang_file = 'lang.tw.php';
-	break;
-
-	default:
-	$lang_file = 'lang.en.php';
-
-}
-include_once (__ROOT__.DS."system".DS."languages".DS.$lang_file);
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Language System END.
-|--------------------------------------------------------------------------|
-*/
 /*
 |--------------------------------------------------------------------------|
 | Install CMS Required
 |--------------------------------------------------------------------------|
 */
-if(file_exists("install"))
-{
-	header("Location: install");
+if(file_exists("installs")){
+	header("Location: installs");
 	die();
 }
 
 /*
 |--------------------------------------------------------------------------|
-| Functions CMS
+| Prevent most browsers can not handle javascript through the "HttpOnly" attribute
 |--------------------------------------------------------------------------|
 */
-include( __ROOT__.DS."system".DS."functions".DS."function.php");
+ ini_set('session.cookie_httponly', 1);
 
 /*
 |--------------------------------------------------------------------------|
-| Autoload Class
+| Only use cookies for session id propagation.
 |--------------------------------------------------------------------------|
 */
-function __autoload($className) {
-	if (file_exists(__ROOT__ . DS . 'system' . DS . 'library' . DS . strtolower($className) . '.class.php')) {
-		require_once(__ROOT__ . DS . 'system' . DS . 'library' . DS . strtolower($className) . '.class.php');
-	}
-}
-$connect	= new Connection();
-$news		= new News();
-$register	= new Users();
-$account	= new Users();
-$url		= new Url();
+ ini_set('session.use_only_cookies', 1);
+
+/*
+|--------------------------------------------------------------------------|
+| Set the default time zone UTC.
+|--------------------------------------------------------------------------|
+*/
+date_default_timezone_set(TIMEZONE);
+
+/*
+|--------------------------------------------------------------------------|
+| CORE CMS
+|--------------------------------------------------------------------------|
+*/
+define('MAINTENANCE', false);
+define('DEVELOPMENT_ENVIRONMENT', false);
+define('DS', DIRECTORY_SEPARATOR);
+// Directory Root
+define('__ROOT__', dirname(dirname(__FILE__)));
+// Static files
+define('STATIC', BASE_URL.'static/');
+// Directory WebKit
+define('SYSTEM', __ROOT__.'/system/');
+define('WEBKIT', SYSTEM.'webkit/');
+define('LANG', SYSTEM.'languages/');
+define('CLASS_DIR', SYSTEM.'class/');
+
+include(LANG."lang.php");
+include(SYSTEM."class.php");
+include(SYSTEM."function.php");
+include(SYSTEM."OOP.php");

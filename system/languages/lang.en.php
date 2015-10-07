@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by

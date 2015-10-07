@@ -3,7 +3,7 @@
 <?php
 if(isset($page))
 {
-	$menus = $connect->Connect()->query("SELECT * FROM menu");
+	$menus = $connect->WebQuery("SELECT * FROM menu");
 	while($menu = $menus->fetch_array())
 	{
 ?>
@@ -20,7 +20,7 @@ if(isset($page))
 }
 else
 {
-	$menus = $connect->Connect()->query("SELECT * FROM menu");
+	$menus = $connect->WebQuery("SELECT * FROM menu");
 	while($menu = $menus->fetch_array())
 	{
 ?>

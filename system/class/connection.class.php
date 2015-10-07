@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
+* Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -30,17 +30,11 @@ class Connection {
 	public function Connect(){
 
 		$this->mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
-		/**
-		* Language support in the database
-		*/
 		$this->mysqli->query("SET NAMES 'utf8'");
-
 		if (mysqli_connect_error()) {
 			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 		}
-
 		return $this->mysqli;
-
 	}
 
 	public function Auth(){
@@ -89,5 +83,21 @@ class Connection {
 
 		return $this->world;
 
+	}
+
+	public function WebQuery($WebQuery){
+		return $this->Connect()->query($WebQuery);
+	}
+
+	public function AuthQuery($AuthQuery){
+		return $this->Auth()->query($AuthQuery);
+	}
+
+	public function CharQuery($CharQuery){
+		return $this->Characters()->query($CharQuery);
+	}
+
+	public function WorldQuery($WorldQuery){
+		return $this->World()->query($WorldQuery);
 	}
 }

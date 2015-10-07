@@ -1,6 +1,5 @@
-<?php
-if (isset($_POST['Submit'])) {
-$string = "<?php
+<?php if (isset($_POST['Submit'])) {
+$string = "<?php if (!isset($_SESSION)) session_start();
 /**
 * Copyright (C) ".date("Y")." FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
@@ -126,36 +125,14 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 define('BASE_URL',		'". $_POST['cfgdom']. "');
 define('ADMIN_URL',		'". $_POST['cfgdom']. "admin/');
 define('ACCOUNT_URL',	'". $_POST['cfgdom']. "account/');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection Variables END.
-|--------------------------------------------------------------------------|
-*/
-
-/*
-|--------------------------------------------------------------------------|
-| MAINTENANCE
-| DEVELOPMENT_ENVIRONMENT
-| DIRECTORY_SEPARATOR
-| Dirname __ROOT__
-| Special: DO NOT TOUCH!
-|--------------------------------------------------------------------------|
-| Creates Sessions that are saved so that accounts can stay connected.
-|--------------------------------------------------------------------------|
-*/
-define('MAINTENANCE', false);
-define('DEVELOPMENT_ENVIRONMENT', false);
-define('DS', DIRECTORY_SEPARATOR);
-define('__ROOT__', dirname(dirname(__FILE__)));
-define('__WEBKIT__', __ROOT__.DS.'system'.DS.'webkit'.DS.'');
+define('TIMEZONE',		'America/Costa_Rica');
 
 /*
 |--------------------------------------------------------------------------|
 | System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-require(__ROOT__.DS.'system'.DS.'FlameCore.php');
+require('FlameCore.php');
 ";
 $fp = fopen('../system/config.php', 'w');
 fwrite($fp, $string);

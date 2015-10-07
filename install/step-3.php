@@ -1,5 +1,5 @@
 <?php if (isset($_POST['Submit'])) {
-$string = "<?php
+$string = "<?php if (!isset($_SESSION)) session_start();
 /**
 * Copyright (C) ".date("Y")." FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
@@ -17,21 +17,6 @@ $string = "<?php
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
-/*
-|--------------------------------------------------------------------------|
-| Info: Session for Accounts.
-| Special: DO NOT TOUCH!
-|--------------------------------------------------------------------------|
-| Creates Sessions that are saved so that accounts can stay connected.
-|--------------------------------------------------------------------------|
-*/
-if (!isset(\$_SESSION))
-    session_start();
-/*
-|--------------------------------------------------------------------------|
-| Info: Session for Accounts. END.
-|--------------------------------------------------------------------------|
-*/
 
 /*
 |--------------------------------------------------------------------------|
@@ -79,8 +64,8 @@ define('REDDIT',   	'https://www.reddit.com/');
 define('HOST',		'". $_POST['hostname']. "');
 define('USER',		'". $_POST['username']. "');
 define('PASSWORD',	'". $_POST['password']. "');
-define('PORT',		'". $_POST['port']. "');
-define('DB',		'". $_POST['dbname']. "');
+define('PORT',		'". $_POST['port'].		"');
+define('DB',		'". $_POST['dbname'].	"');
 
 
 /*
@@ -95,7 +80,7 @@ define('DB',		'". $_POST['dbname']. "');
 define('SERVERHOST',	'". $_POST['serverhostname']. "');
 define('SERVERUSER',	'". $_POST['serverusername']. "');
 define('SERVERPASSWORD','". $_POST['serverpassword']. "');
-define('SERVERPORT',	'". $_POST['serverport']. "');
+define('SERVERPORT',	'". $_POST['serverport'].	"');
 define('AUTH',			'". $_POST['authdb']. "');
 define('CHARACTERS',	'". $_POST['chardb']. "');
 define('WORLD',			'". $_POST['worlddb']. "');
@@ -126,36 +111,14 @@ define('BASE_URL',		'". $_POST['cfgdom']. "');
 define('ADMIN_URL',		'". $_POST['cfgdom']. "admin/');
 define('ACCOUNT_URL',	'". $_POST['cfgdom']. "account/');
 define('REALMLIST',		'". $_POST['realmlist']. "');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection Variables END.
-|--------------------------------------------------------------------------|
-*/
-
-/*
-|--------------------------------------------------------------------------|
-| MAINTENANCE
-| DEVELOPMENT_ENVIRONMENT
-| DIRECTORY_SEPARATOR
-| Dirname __ROOT__
-| Special: DO NOT TOUCH!
-|--------------------------------------------------------------------------|
-| Creates Sessions that are saved so that accounts can stay connected.
-|--------------------------------------------------------------------------|
-*/
-define('MAINTENANCE', false);
-define('DEVELOPMENT_ENVIRONMENT', false);
-define('DS', DIRECTORY_SEPARATOR);
-define('__ROOT__', dirname(dirname(__FILE__)));
-define('__WEBKIT__', __ROOT__.DS.'system'.DS.'webkit'.DS.'');
+define('TIMEZONE',		'America/Costa_Rica');
 
 /*
 |--------------------------------------------------------------------------|
 | System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-require(__ROOT__.DS.'system'.DS.'FlameCore.php');
+require('FlameCore.php');
 ";
 $fp = fopen('../system/config.php', 'w');
 fwrite($fp, $string);

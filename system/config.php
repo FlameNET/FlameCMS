@@ -1,4 +1,4 @@
-<?php
+<?php if (!isset($_SESSION)) session_start();
 /**
 * Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
@@ -16,16 +16,7 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
-/*
-|--------------------------------------------------------------------------|
-| Info: Session for Accounts.
-| Special: DO NOT TOUCH!
-|--------------------------------------------------------------------------|
-| Creates Sessions that are saved so that accounts can stay connected.
-|--------------------------------------------------------------------------|
-*/
-if (!isset($_SESSION))
-    session_start();
+
 /*
 |--------------------------------------------------------------------------|
 | Info: Session for Accounts. END.
@@ -98,6 +89,7 @@ define('SERVERPORT',	'3306');
 define('AUTH',			'auth');
 define('CHARACTERS',	'characters');
 define('WORLD',			'world');
+
 /*
 |--------------------------------------------------------------------------|
 |  Soap settings
@@ -128,30 +120,7 @@ define('REALMLIST',		'127.0.0.1');
 
 /*
 |--------------------------------------------------------------------------|
-| Info: CMS Connection Variables END.
-|--------------------------------------------------------------------------|
-*/
-
-/*
-|--------------------------------------------------------------------------|
-| MAINTENANCE
-| DEVELOPMENT_ENVIRONMENT
-| DIRECTORY_SEPARATOR
-| Dirname __ROOT__
-| Special: DO NOT TOUCH!
-|--------------------------------------------------------------------------|
-| Creates Sessions that are saved so that accounts can stay connected.
-|--------------------------------------------------------------------------|
-*/
-define('MAINTENANCE', false);
-define('DEVELOPMENT_ENVIRONMENT', false);
-define('DS', DIRECTORY_SEPARATOR);
-define('__ROOT__', dirname(dirname(__FILE__)));
-define('__WEBKIT__', __ROOT__.DS.'system'.DS.'webkit'.DS.'');
-
-/*
-|--------------------------------------------------------------------------|
 | System Core CMS FlameNet.
 |--------------------------------------------------------------------------|
 */
-require(__ROOT__.DS.'system'.DS.'FlameCore.php');
+require('FlameCore.php');

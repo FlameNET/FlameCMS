@@ -10,60 +10,60 @@ $account->AccountLoginQuery();
 <!-- YOU CAN TOUCH NOW -->
 <!-- (If you know what you're doing) -->
 <!-- Description of CMS -->
-<?php include(__WEBKIT__.'desc.php'); ?>
+<?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
 <title><?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
-<?php include(__WEBKIT__.'core.php'); ?>
+<?php include(WEBKIT.'core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
 </head>
 <body class="en-gb homepage news">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__WEBKIT__.'userpanel.php'); ?>
+<?php include(WEBKIT.'userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__WEBKIT__.'search.php'); ?>
+<?php include(WEBKIT.'search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
 <?php
 $page = "menu-home";
-include(__WEBKIT__.'menu.php');
-include(__WEBKIT__.'userplate.php');?>
+include(WEBKIT.'menu.php');
+include(WEBKIT.'userplate.php');?>
 </div>
 <!-- Header END -->
 </div>
 <div id="content">
 <div class="content-top body-top">
 <!-- Content Trail -->
-<?php include(__WEBKIT__.'breadcrumb.php'); ?>
+<?php include(WEBKIT.'breadcrumb.php'); ?>
 <!-- Content Trail END -->
 <div class="content-bot clear">
 <!-- Slideshow -->
-<?php include(__WEBKIT__.'slideshow.php'); ?>
+<?php include(WEBKIT.'slideshow.php'); ?>
 <!-- Slideshow END -->
 <!-- Sidebar -->
-<?php include (__WEBKIT__.'sidebar.php'); ?>
+<?php include (WEBKIT.'sidebar.php'); ?>
 <!-- Sidebar END -->
 <div class="left-content" itemscope="itemscope" itemtype="http://schema.org/WebPageElement">
 <div class= "left-content-inner">
 <div class="featured-news-container">
 <ul class="featured-news">
 <!-- Featured News -->
-<?php include(__WEBKIT__.'featuresnews.php'); ?>
+<?php include(WEBKIT.'featuresnews.php'); ?>
 </ul>
 </div>
 <span class="clear"><!-- --></span>
 <!-- Featured News END -->
 <!-- Articles -->
-<?php include(__WEBKIT__.'articles.php'); ?>
+<?php include(WEBKIT.'articles.php'); ?>
 <!-- Articles END -->
 <span class="clear"><!-- --></span>
 <?php
-$pageQuery	= $connect->Connect()->query("SELECT * FROM news WHERE id");
+$pageQuery	= $connect->WebQuery("SELECT * FROM news WHERE id");
 $pageNumber	= mysqli_num_rows($pageQuery) > 10;
 if($pageNumber){
 ?>

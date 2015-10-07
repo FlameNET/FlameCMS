@@ -1,5 +1,5 @@
 <?php
-$articles_query = $connect->Connect()->query("SELECT * FROM news ORDER BY DATE DESC LIMIT 3");
+$articles_query = $connect->WebQuery("SELECT * FROM news ORDER BY DATE DESC LIMIT 3");
 while($articles = $articles_query->fetch_array()){
 ?>
 <li>

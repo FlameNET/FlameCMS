@@ -3,7 +3,7 @@
 <div class="right-sidebar">
 	<!-- Players Online / Status Bar-->
 	<?php
-	$RealmQuerySQL = $connect->Connect()->query("SELECT * FROM realms WHERE Id");
+	$RealmQuerySQL = $connect->WebQuery("SELECT * FROM realms WHERE Id");
 	while($Realm = $RealmQuerySQL->fetch_array()){
 	?>
 	<div class="sts a-realm sidebar-container box-shadow">
@@ -25,7 +25,7 @@
 			</p>
 			<p id="uptime">
 				<?php
-				$sql = $connect->Auth()->query("SELECT * FROM `uptime` WHERE realmid='{$Realm['Id']}' ORDER BY `starttime` DESC LIMIT 1");  
+				$sql = $connect->AuthQuery("SELECT * FROM `uptime` WHERE realmid='{$Realm['Id']}' ORDER BY `starttime` DESC LIMIT 1");  
 				$uptime_results = $sql->fetch_array();    
 
 				if ($uptime_results['uptime'] > 2592000){
