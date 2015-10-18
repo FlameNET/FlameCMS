@@ -47,7 +47,7 @@ CREATE TABLE `cms_ver` (
   `commit` TEXT,
   `version` TEXT,
   `last_update` DATETIME DEFAULT NULL
-) ENGINE=MYISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `cms_ver` */
 

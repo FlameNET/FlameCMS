@@ -1,303 +1,253 @@
-<?php if (isset($_POST['Submit'])) {
-$string = "<?php if (!isset($_SESSION)) session_start();
-/**
-* Copyright (C) ".date("Y")." FlameCMS <http://flamenet.github.io/FlameCMS/>
-*
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; either version 2 of the License, or
-* (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-* GNU General Public License for more details.
-*
-* You should have received a copy of the GNU General Public License
-* along with this program; if not, write to the Free Software
-* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-**/
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Language System.
-|--------------------------------------------------------------------------|
-| Specifies the Language that your CMS will show.
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-define('LANGUAGE',	'".$_POST['lang']."');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Language System END.
-|--------------------------------------------------------------------------|
-*/
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Community System.
-|--------------------------------------------------------------------------|
-| Important Links to Social sites & the title of the CMS.
-| Under Heavy Work. Please do not touch.
-|--------------------------------------------------------------------------|
-*/
-define('TITLE',		'FlameCMS');
-define('FACEBOOK', 	'https://www.facebook.com/');
-define('TWITTER',  	'https://twitter.com/');
-define('YOUTUBE',  	'https://www.youtube.com/');
-define('REDDIT',   	'https://www.reddit.com/');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Community System END.
-|--------------------------------------------------------------------------|
-*/
-/*
-|--------------------------------------------------------------------------|
-| Info: CMS Connection Variables.
-|--------------------------------------------------------------------------|
-| Please set these to your MySQL Connection. 
-| If you don\'t know what you are doing, please contact with one of FlameCMS
-| Developers to help you.
-|--------------------------------------------------------------------------|
-*/
-define('HOST',		'". $_POST['hostname']. "');
-define('USER',		'". $_POST['username']. "');
-define('PASSWORD',	'". $_POST['password']. "');
-define('PORT',		'". $_POST['port'].		"');
-define('DB',		'". $_POST['dbname'].	"');
-
-
-/*
-|--------------------------------------------------------------------------|
-| Info: Server Connection Variables.
-|--------------------------------------------------------------------------|
-| Please set these to your MySQL Connection. 
-| If you don\'t know what you are doing, please contact with one of FlameCMS
-| Developers to help you.
-|--------------------------------------------------------------------------|
-*/
-define('SERVERHOST',	'". $_POST['serverhostname']. "');
-define('SERVERUSER',	'". $_POST['serverusername']. "');
-define('SERVERPASSWORD','". $_POST['serverpassword']. "');
-define('SERVERPORT',	'". $_POST['serverport'].	"');
-define('AUTH',			'". $_POST['authdb']. "');
-define('CHARACTERS',	'". $_POST['chardb']. "');
-define('WORLD',			'". $_POST['worlddb']. "');
-/*
-|--------------------------------------------------------------------------|
-|  Soap settings
-|--------------------------------------------------------------------------|
-| Bind SOAP service to IP/hostname.
-| TCP port to reach the SOAP service.
-| SOAP IP		= 127.0.0.1
-| SOAP PORT		= 7878
-| SOAP SOAP		= 1#1 // EXAMPLE
-| USER PASSWORD = your password account
-| SOAP KEY		= your key
-*/
-define('SOAP_IP',		'". $_POST['soap_ip']. "');
-define('SOAP_PORT', 	'". $_POST['soap_port']. "');
-define('SOAP_USER', 	'". $_POST['soap_acc']. "');
-define('SOAP_PASS', 	'". $_POST['soap_pass']. "');
-define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
-
-/*
-|--------------------------------------------------------------------------|
-| Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
-|--------------------------------------------------------------------------|
-*/
-define('BASE_URL',		'". $_POST['cfgdom']. "');
-define('ADMIN_URL',		'". $_POST['cfgdom']. "admin/');
-define('ACCOUNT_URL',	'". $_POST['cfgdom']. "account/');
-define('REALMLIST',		'". $_POST['realmlist']. "');
-define('TIMEZONE',		'America/Costa_Rica');
-
-/*
-|--------------------------------------------------------------------------|
-| System Core CMS FlameNet.
-|--------------------------------------------------------------------------|
-*/
-require('FlameCore.php');
-";
-$fp = fopen('../system/config.php', 'w');
-fwrite($fp, $string);
-fclose($fp);
-header('Location: successful');
-}
-include('config.php');
-?>
+<?php include('config.php');?>
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Step 3 - <?php echo $title ?></title>
-        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link id="data-uikit-theme" rel="stylesheet" href="css/flame.docs.min.css">
-        <link rel="stylesheet" href="css/flame.css">
-        <link rel="stylesheet" href="css/highlight.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <script src="js/jquery.js"></script>
-        <script src="js/flame.min.js"></script>
-        <script src="js/highlight.js"></script>
-        <script src="js/docs.js"></script>
-		<style>
-		body{
-			background-image: url("images/bg-step-3.png");
-			background-repeat: no-repeat;
-			background-color: #fff;
-		}
-		</style>
-    </head>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- tags -->
+		<meta name="description" content="FlameCMS Install">
+		<meta name="author" content="Luis Cortés Juarez Oneluiz">
+		<link rel="icon" href="assets/images/favicon.ico">
+		<title>Step 3 - <?php echo $title ?></title>
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/sticky-footer.css" rel="stylesheet">
+		<link href="assets/css/flame.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="<?php echo $baseUrl ?>" class="navbar-brand" style="padding: 10.5px;"><image src="assets/images/logo_black.png"></a>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="nav-link active" href="<?php echo $baseUrl; ?>"><i class="fa fa-home"></i> Home</a></li>
+					<li><a class="nav-link" href="https://github.com/FlameNET/"><i class="fa fa-github"></i> Github</a></li>
+					<li><a class="nav-link" href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+					<li><a class="nav-link" href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wrap">
+		<div class="container">
 
-    <body>
-
-        <nav class="tm-navbar uk-navbar uk-navbar-attached">
-            <div class="uk-container uk-container-center">
-
-                <a class="uk-navbar-brand uk-hidden-small" href="<?php echo $baseUrl ?>"><img class="uk-margin uk-margin-remove animated hover <?php echo $animate ?>" src="images/logos.png" width="120" data-uk-tooltip="{pos:'bottom-left'}" title="<?php echo $title ?>" alt="<?php echo $title ?>"></a>
-
-                <ul class="uk-navbar-nav uk-hidden-small">
-                    <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </ul>
-
-                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-
-                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logos.png" width="100" height="40" title="<?php echo $title ?>" alt="<?php echo $title ?>"></div>
-
-            </div>
-        </nav>
-		<br>
-		<div class="uk-container">
-
-			<div class="uk-overflow-container uk-grid-divider">
-
-				<form action="" method="post" name="install" class="uk-form" >
-					<fieldset data-uk-margin>
-						<legend>Install now FlameCMS World Of WarCraft Private Servers</legend>
-						<div class="uk-form-row">
-							<input type="text" name="hostname" placeholder="Database Host" required />
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-lg-8 col-md-7 col-sm-6">
+						<h1></h1>
+						<p class="lead">Install now FlameCMS please fill all the fields, and make sure that the data is correct.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<form class="form-horizontal" method="post" action="successful.php">
+					<fieldset>
+						<legend>CMS Mysql configuration</legend>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Host</label>
+								<input type="text" class="form-control" name="hostname" placeholder="Database Host" required />
+							</div>
 						</div>
-						<div class="uk-form-row">
-							<input type="text" name="username" placeholder="Database Username" required />
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Username</label>
+								<input type="text" class="form-control" name="username" placeholder="Database Username" required />
+							</div>
 						</div>
-						<div class="uk-form-row">
-							<input type="text" name="dbname" placeholder="Database CMS" required />
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database CMS</label>
+								<input type="text" class="form-control" name="dbname" placeholder="Database CMS" required />
+							</div>
 						</div>
-						<div class="uk-form-row">
-							<input type="password" name="password" placeholder="Database Password" required />
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Password</label>
+								<input type="text" class="form-control" name="password" placeholder="Database Password" required />
+							</div>
 						</div>
-						<div class="uk-form-row">
-							<input type="text" name="port" placeholder="Database Port" required />
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Port</label>
+								<input type="text" class="form-control" name="port" placeholder="Database Port" required />
+							</div>
 						</div>
-						<div class="uk-form-row">
-							<input type="text" name="serverhostname" placeholder="Database Server Host" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="serverusername" placeholder="Database Server Username" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="password" name="serverpassword" placeholder="Database Server Password" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="serverport" placeholder="Database Server Port" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="authdb" placeholder="Auth Database" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="chardb" placeholder="Characters Database" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="worlddb" placeholder="World Database" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="cfgdom" placeholder="Domain" required />
-						</div>
-						
-						<div class="uk-form-row">
-							<input type="text" name="soap_ip" placeholder="Soap IP e.g.: 127.0.0.1" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="soap_port" placeholder="Soap Port e.g.: 7878" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="soap_user" placeholder="Soap User e.g.: 1#1" required />
-						</div>
-						<div class="uk-form-row">
-							<input type="text" name="soap_pass" placeholder="Soap Password e.g.: 123" required />
-						</div>
-						
-						<div class="uk-form-row">
-							<input type="text" name="realmlist" placeholder="Your Set Realmlist without &quot;Set Realmlist&quot;" required />
-						</div>
-						
-						<div class="uk-form-row">
-						<span>
-						Select Your Language:
-						<select name="lang">
-							<option value="cn">简体中文</option>
-							<option value="en" selected="selected">English</option>
-							<option value="es">Espa&ntilde;ol</option>
-							<option value="de">Deutsch</option>
-							<option value="fr">Fran&ccedil;ais</option>
-							<option value="gr">ελληνικά</option>
-							<option value="it">Italiano</option>
-							<option value="ko">한국어</option>
-							<option value="pt">Portugu&ecirc;s</option>
-							<option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
-							<option value="tw">繁體中文</option>
-						</select>
-						</span>
-						</div>
-						<br>
-						<button type="submit" name="Submit"  class="u-button uk-button-large uk-button-primary" type="button" data-uk-button><i class="fa fa-check-circle-o"></i> Install FlameCMS Now</button>
 					</fieldset>
+					<br/>
+					<fieldset>
+						<legend>Wow Mysql configuration</legend>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Host</label>
+								<input type="text" class="form-control" name="serverhostname" placeholder="Database Server Host" required />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Username</label>
+								<input type="text" class="form-control" name="serverusername" placeholder="Database Server Username" required />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Password</label>
+								<input type="text" class="form-control" name="serverpassword" placeholder="Database Server Password" required />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Database Port</label>
+								<input type="text" class="form-control" name="serverport" placeholder="Database Server Port" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Auth Database</label>
+								<input type="text" class="form-control" name="authdb" placeholder="Auth Database" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Characters Database</label>
+								<input type="text" class="form-control" name="chardb" placeholder="Characters Database" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">World Database</label>
+								<input type="text" class="form-control" name="worlddb" placeholder="World Database" required />
+							</div>
+						</div>
+					</fieldset>
+					<br/>
+					<fieldset>
+						<legend>Wow soap configuration</legend>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Soap IP</label>
+								<input type="text" class="form-control" name="soap_ip" placeholder="127.0.0.1" required />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Soap Port</label>
+								<input type="text" class="form-control" name="soap_port" placeholder="7878" required />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Soap User</label>
+								<input type="text" class="form-control" name="soap_user" placeholder="1#1" required />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Soap Password</label>
+								<input type="password" class="form-control" name="soap_pass" placeholder="123" required />
+							</div>
+						</div>
+					</fieldset>
+					<br/>
+					<fieldset>
+						<legend>CMS configuration</legend>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Domain e.g (http://your.host/(if this cms is inside an folder))</label>
+								<input type="text" class="form-control" name="cfgdom" placeholder="http://you.host/3.3.5a" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Realmlist</label>
+								<input type="text" class="form-control" name="realmlist" placeholder="my.realmlist.host" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Default CMS Language:</label>
+								<select class="form-control" id="select" name="lang" required>
+									<option value="cn">简体中文</option>
+									<option value="en" selected="selected">English</option>
+									<option value="es">Espa&ntilde;ol</option>
+									<option value="de">Deutsch</option>
+									<option value="fr">Fran&ccedil;ais</option>
+									<option value="gr">ελληνικά</option>
+									<option value="it">Italiano</option>
+									<option value="ko">한국어</option>
+									<option value="pt">Portugu&ecirc;s</option>
+									<option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+									<option value="tw">繁體中文</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+					<br/>
+					<fieldset>
+						<legend>Admin Account</legend>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">First name</label>
+								<input type="text" class="form-control" name="admin_first" placeholder="John" required />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Last name</label>
+								<input type="text" class="form-control" name="admin_last" placeholder="Doe" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Username</label>
+								<input type="text" class="form-control" name="admin_user" placeholder="admin" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Password</label>
+								<input type="password" class="form-control" name="admin_pass" placeholder="pass" required />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Email</label>
+								<input type="email" class="form-control" name="admin_email" placeholder="email@provider.ex" required />
+							</div>
+						</div>
+					</fieldset>
+
+					<div class="form-group">
+						<button type="submit"  class="btn btn-primary" name="Submit">Install FlameCMS Now</button>
+						<button type="reset" class="btn btn-default">Cancel</button>
+					</div>
 				</form>
 			</div>
 		</div>
-        <div class="tm-section uk-overflow-container">
-            <div class="uk-container uk-container-center uk-text-center">
-
-				<div class="uk-overflow-container">
-
-					<ul class="uk-subnav uk-subnav-line">
-						<li><a href="https://github.com/FlameNET/">GitHub</a></li>
-						<li><a href="https://github.com/FlameNET/FlameCMS/issues">Issues</a></li>
-						<li><a href="https://github.com/FlameNET/FlameCMS/blob/master/CHANGELOG.md">Changelog</a></li>
-						<li><a href="https://twitter.com/FlameCMS">Twitter</a></li>
-					</ul>
-
-					<div class="uk-panel">
-						<p>Made by <a href="http://flamenet.github.io/FlameCMS/">FlameNET</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="https://github.com/FlameNET/FlameCMS/blob/master/COPYING">GNU license</a>.</p>
-						<a href="http://flamenet.github.io/FlameCMS/">
-						</a>
-					</div>
-
-				</div>
-
+    </div>
+	<div id="footer">
+		<div class="container">
+			<p class="pull-left text-muted creditos"> &copy; <?php echo date('Y'); ?> All rights reserved <a href="<?php echo $linkAuthor; ?>"><?php echo $title; ?></a> | Version <a>V1.1 Development</a></p>
+			<div class="pull-right">
+				<ul class="nav nav-pills payments creditosFormasPago">
+					<li><i class="fa fa-github"></i></li>
+				</ul> 
 			</div>
 		</div>
-
-        <div id="tm-offcanvas" class="uk-offcanvas">
-
-            <div class="uk-offcanvas-bar">
-
-                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
-                    <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </ul>
-
-            </div>
-
-        </div>
-    </body>
+	</div>
+	<!-- Javascript files at the end for the page to load faster -->
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootswatch.js"></script>
+	<!-- Javascript files at the end for the page to load faster -->
+</body>
 </html>

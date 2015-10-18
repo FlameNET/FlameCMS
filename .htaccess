@@ -1,7 +1,7 @@
-# Copyright (C) 2015 FlameCMS <YET TO BE DETERMINED>
+# Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 
 # Page Error
-ErrorDocument 404 http://localhost/404
+ErrorDocument 404 404
 
 Options +FollowSymLinks
 RewriteEngine On

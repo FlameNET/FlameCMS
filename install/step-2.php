@@ -9,58 +9,61 @@ preg_match('/[1-9].[0-9].[1-9][0-9]/', $info, $match);
 $mysqlVersion = $match[0]; 
 ?>
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Step 2 - <?php echo $title ?></title>
-        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link id="data-uikit-theme" rel="stylesheet" href="css/flame.docs.min.css">
-        <link rel="stylesheet" href="css/flame.css">
-        <link rel="stylesheet" href="css/highlight.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <script src="js/jquery.js"></script>
-        <script src="js/flame.min.js"></script>
-        <script src="js/highlight.js"></script>
-        <script src="js/docs.js"></script>
-    </head>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- tags -->
+		<meta name="description" content="FlameCMS Install">
+		<meta name="author" content="Luis Cortés Juarez Oneluiz">
+		<link rel="icon" href="assets/images/favicon.ico">
+		<title>Step 2 - <?php echo $title ?></title>
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/sticky-footer.css" rel="stylesheet">
+		<link href="assets/css/flame.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="<?php echo $baseUrl ?>" class="navbar-brand" style="padding: 10.5px;"><image src="assets/images/logo_black.png"></a>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="nav-link active" href="<?php echo $baseUrl; ?>"><i class="fa fa-home"></i> Home</a></li>
+					<li><a class="nav-link" href="https://github.com/FlameNET/"><i class="fa fa-github"></i> Github</a></li>
+					<li><a class="nav-link" href="#"><i class="fa fa-file-code-o"></i> Documentation</a></li>
+					<li><a class="nav-link" href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wrap">
+		<div class="container">
 
-    <body>
-
-        <nav class="tm-navbar uk-navbar uk-navbar-attached">
-            <div class="uk-container uk-container-center">
-
-                <a class="uk-navbar-brand uk-hidden-small" href="<?php echo $baseUrl ?>"><img class="uk-margin uk-margin-remove animated hover <?php echo $animate ?>" src="images/logos.png" width="120" data-uk-tooltip="{pos:'bottom-left'}" title="<?php echo $title ?>" alt="<?php echo $title ?>"></a>
-
-                <ul class="uk-navbar-nav uk-hidden-small">
-                    <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </ul>
-
-                <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-
-                <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img src="images/logos.png" width="100" height="40" title="<?php echo $title ?>" alt="<?php echo $title ?>"></div>
-
-            </div>
-        </nav>
-
-        <div class="tm-section uk-overflow-container">
-            <div class="uk-container uk-container-center uk-text-center">
-
-				<div class="uk-overflow-container">
-					<table class="uk-table uk-table-hover uk-table-striped uk-table-condensed">
-						<caption>
-							<h3 class="tm-article-subtitle">Application requirements</h3>
-						</caption>
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-lg-8 col-md-7 col-sm-6">
+						<h1>Application requirements</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover">
 						<thead>
 							<tr>
-								<th><center>Modules</center></th>
-								<th><center>Required version</center></th>
-								<th><center>Installed version</center></th>
+								<th>Modules</th>
+								<th>Required version</th>
+								<th>Installed version</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -86,47 +89,27 @@ $mysqlVersion = $match[0];
 							</tr>
 						</tbody>
 					</table>
-					
-				
-					<a href="step-3" class="uk-button uk-button-large uk-button-primary"><i class="fa fa-check-circle-o"></i> Install Now</a>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="uk-container uk-container-center uk-text-center">
-
-						<ul class="uk-subnav uk-subnav-line">
-							<li><a href="https://github.com/FlameNET/">GitHub</a></li>
-							<li><a href="https://github.com/FlameNET/FlameCMS/issues">Issues</a></li>
-							<li><a href="https://github.com/FlameNET/FlameCMS/blob/master/CHANGELOG.md">Changelog</a></li>
-							<li><a href="https://twitter.com/FlameCMS">Twitter</a></li>
-						</ul>
-
-						<div class="uk-panel">
-							<p>Made by <a href="http://flamenet.github.io/FlameCMS/">FlameNET</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="https://github.com/FlameNET/FlameCMS/blob/master/COPYING">GNU license</a>.</p>
-							<a href="http://flamenet.github.io/FlameCMS/">
-							</a>
-						</div>
-
-					</div>
-
 				</div>
-            </div>
-        </div>
-
-        <div id="tm-offcanvas" class="uk-offcanvas">
-
-            <div class="uk-offcanvas-bar">
-
-                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
-                    <li><a href="<?php echo $baseUrl ?>"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="https://github.com/FlameNET/FlameCMS"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a href="docs"><i class="fa fa-file-code-o"></i> Documentation</a></li>
-                    <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </ul>
-
-            </div>
-
-        </div>
-    </body>
+				<center>
+					<a href="step-3" class="btn btn-primary">Go to the installation process</a>
+				</center>
+			</div>
+		</div>
+    </div>
+	<div id="footer">
+		<div class="container">
+			<p class="pull-left text-muted creditos"> &copy; <?php echo date('Y'); ?> All rights reserved <a href="<?php echo $linkAuthor; ?>"><?php echo $title; ?></a> | Version <a>V1.1 Development</a></p>
+			<div class="pull-right">
+				<ul class="nav nav-pills payments creditosFormasPago">
+					<li><i class="fa fa-github"></i></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<!-- Javascript files at the end for the page to load faster -->
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootswatch.js"></script>
+	<!-- Javascript files at the end for the page to load faster -->
+</body>
 </html>

@@ -1,4 +1,4 @@
-<?php if (!isset($_SESSION)) session_start();
+<?php
 /**
 * Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
 *
@@ -16,12 +16,6 @@
 * along with this program; if not, write to the Free Software
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
-
-/*
-|--------------------------------------------------------------------------|
-| Info: Session for Accounts. END.
-|--------------------------------------------------------------------------|
-*/
 
 /*
 |--------------------------------------------------------------------------|
@@ -66,11 +60,11 @@ define('REDDIT',   	'https://www.reddit.com/');
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */
-define('HOST',		'127.0.0.1');
-define('USER',		'root');
-define('PASSWORD',	'password');
-define('PORT',		'3306');
-define('DB',		'cms');
+define('HOST',		'YOUR HOST');
+define('USER',		'YOUR USERNAME');
+define('PASSWORD',	'YOUR PASS');
+define('PORT',		'YOUR PORT');
+define('DB',		'YOUR DATABASE');
 
 
 /*
@@ -82,14 +76,13 @@ define('DB',		'cms');
 | Developers to help you.
 |--------------------------------------------------------------------------|
 */
-define('SERVERHOST',	'127.0.0.1');
-define('SERVERUSER',	'root');
-define('SERVERPASSWORD','password');
-define('SERVERPORT',	'3306');
-define('AUTH',			'auth');
-define('CHARACTERS',	'characters');
-define('WORLD',			'world');
-
+define('SERVERHOST',	'YOUR HOST');
+define('SERVERUSER',	'YOUR USERNAME');
+define('SERVERPASSWORD','YOUR PASS');
+define('SERVERPORT',	'YOUR PORT');
+define('AUTH',			'YOUR DATABASE AUTH');
+define('CHARACTERS',	'YOUR DATABASE CHARACTERS');
+define('WORLD',			'YOUR DATABASE WORLD');
 /*
 |--------------------------------------------------------------------------|
 |  Soap settings
@@ -102,10 +95,10 @@ define('WORLD',			'world');
 | USER PASSWORD = your password account
 | SOAP KEY		= your key
 */
-define('SOAP_IP',		'127.0.0.1');
-define('SOAP_PORT', 	'7878');
-define('SOAP_USER', 	'your user account');
-define('SOAP_PASS', 	'your password account');
+define('SOAP_IP',		'YOUR HOST');
+define('SOAP_PORT', 	'YOUR PORT');
+define('SOAP_USER', 	'YOUR USERNAME');
+define('SOAP_PASS', 	'YOUR PASS');
 define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 
 /*
@@ -113,10 +106,10 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-define('BASE_URL',		'');
-define('ADMIN_URL',		'');
-define('ACCOUNT_URL',	'');
-define('REALMLIST',		'127.0.0.1');
+define('BASE_URL',		'YOUR URL');
+define('ADMIN_URL',		'YOUR ADMIN URL');
+define('ACCOUNT_URL',	'YOUR ACCOUNT');
+define('TIMEZONE',		'America/Costa_Rica');
 
 /*
 |--------------------------------------------------------------------------|
