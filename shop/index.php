@@ -28,19 +28,19 @@ $account->AccountLoginQuery();
 <body class="en-gb homepage news">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__WEBKIT__.'userpanel.php'); ?>
+<?php include(WEBKIT.'userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__WEBKIT__.'search.php'); ?>
+<?php include(WEBKIT.'search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
 <?php
 $page = "menu-services";
-include(__WEBKIT__.'menu.php');
-include(__WEBKIT__.'userplate.php');?>
+include(WEBKIT.'menu.php');
+include(WEBKIT.'userplate.php');?>
 </div>
 <!-- Header END -->
 </div>
@@ -48,7 +48,7 @@ include(__WEBKIT__.'userplate.php');?>
 <div id="content">
 <div class="content-top body-top">
 <!-- Content Trail -->
-<?php include(__WEBKIT__.'breadcrumb.php'); ?>
+<?php include(WEBKIT.'breadcrumb.php'); ?>
 <!-- Content Trail END -->
 <div class="content-bot clear">
 <div class="wod-no-banner"></div>
