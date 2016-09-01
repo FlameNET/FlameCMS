@@ -5,20 +5,20 @@ $account->AccountLoginQuery();
 <html xml:lang="en-us" class="en-us">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <script>window['adrum-start-time'] = new Date().getTime();</script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/vendor/adrum.js"></script>
+<script type="text/javascript" src="./assets/js/vendor/adrum.js"></script>
 <meta http-equiv="imagetoolbar" content="false"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <title>Media - <?php echo TITLE ?></title>
-<link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/common-game-site.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/wow.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/lightbox.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/media/media-gallery.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/media/media.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/locale/en-gb.css" />
+<link rel="shortcut icon" href="./assets/images/logos/favicon.png" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/common-game-site.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/wow.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/lightbox.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/media/media-gallery.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/media/media.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/locale/en-gb.css" />
 <!-- Le Javascripts -->
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/third-party.js?v=58-65"></script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/common-game-site.js?v=58-65"></script>
+<script type="text/javascript" src="./assets/js/third-party.js?v=58-65"></script>
+<script type="text/javascript" src="./assets/js/common-game-site.js?v=58-65"></script>
 <!-- Le Core Code -->
 <script type="text/javascript">
 //<![CDATA[
@@ -435,9 +435,9 @@ other: 'Other'
 };
 //]]>
 </script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/menu.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/wow.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/search-pane.js"></script>
+<script type="text/javascript" src="./assets/js/menu.js"></script>
+<script type="text/javascript" src="./assets/js/wow.js"></script>
+<script type="text/javascript" src="./assets/js/search-pane.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
@@ -446,7 +446,7 @@ Menu.initialize('assets/data/menu.json');
 //]]>
 </script>
 
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/utility/slideshow.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/cms.min.js"></script>
+<script type="text/javascript" src="./assets/js/utility/slideshow.js"></script>
+<script type="text/javascript" src="./assets/js/cms.min.js"></script>
 </body>
 </html>

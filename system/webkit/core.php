@@ -1,20 +1,20 @@
 <!-- Le Styles -->
-<link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/common-game-site.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/wow.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/lightbox.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/cms.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/cms.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/locale/en-gb.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/legal/ratings.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/profile.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/zone.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/summary.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/pet.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/modules/sidebar.css" />
+<link rel="shortcut icon" href="./assets/images/logos/favicon.png" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/common-game-site.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/wow.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/lightbox.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/cms.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/cms.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/locale/en-gb.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/legal/ratings.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/profile.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/zone.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/summary.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/pet.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./assets/css/modules/sidebar.css" />
 <!-- Le Javascripts -->
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/third-party.js"></script>
-<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/common-game-site.js"></script>
+<script type="text/javascript" src="./assets/js/third-party.js"></script>
+<script type="text/javascript" src="./assets/js/common-game-site.js"></script>
 <!-- Le Core Code -->
 <script type="text/javascript">
 //<![CDATA[

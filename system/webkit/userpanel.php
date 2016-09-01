@@ -11,13 +11,13 @@
 }else{
 ?>
 <li class="service-cell service-welcome">
-<a href="<?php echo ACCOUNT_URL ?>login.php">Log in</a> or <a href="<?php echo ACCOUNT_URL ?>register">Create an Account</a>
+<a href="<?php echo ACCOUNT_URL ?>/login.php">Log in</a> or <a href="<?php echo ACCOUNT_URL ?>register">Create an Account</a>
 </li>
 <?php
 }
 ?>
 <li class="service-cell service-shop">
-<a href='<?php echo BASE_URL ?>shop/' class="service-link" data-action="Shop">Shop</a>
+<a href='<?php echo BASE_URL ?>/shop/' class="service-link" data-action="Shop">Shop</a>
 </li>
 <li class="service-cell service-account">
 <a href='<?php echo ACCOUNT_URL ?>/management/' class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
@@ -68,17 +68,17 @@ shim.style.display = 'block';
 </a>
 </li>
 <li>
-<a href="<?php echo BASE_URL ?>shop/" tabindex="55" data-action="Explore - Shop">
+<a href="<?php echo BASE_URL ?>/shop/" tabindex="55" data-action="Explore - Shop">
 <strong class="explore-caption">Shop</strong>
 </a>
 </li>
 <li>
-<a href="<?php echo ACCOUNT_URL ?>management/" tabindex="55" data-action="Explore - Account">
+<a href="<?php echo ACCOUNT_URL ?>/management/" tabindex="55" data-action="Explore - Account">
 <strong class="explore-caption">Account</strong>
 </a>
 </li>
 <li>
-<a href="<?php echo BASE_URL ?>support/" tabindex="55" data-action="Explore - Support">
+<a href="<?php echo BASE_URL ?>/support/" tabindex="55" data-action="Explore - Support">
 <strong class="explore-caption">Support</strong>
 </a>
 </li>

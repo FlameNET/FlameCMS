@@ -1,19 +1,12 @@
-# Copyright (C) 2015 FlameCMS <http://flamenet.github.io/FlameCMS/>
-
-# Page Error
-ErrorDocument 404 404
+ErrorDocument 404.php
 
 Options +FollowSymLinks
 RewriteEngine On
 
-# PHP redirect if any.
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [L,QSA]
 
-## Enable Apache mod_rewrite to rewrite the URL
-RewriteEngine On
-
-## Friendly URL of Articles
 RewriteRule ^blog/(.+)/(.+)$ article.php?id=$1&title=$2 [QSA]
