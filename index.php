@@ -3,6 +3,7 @@
 require_once('system/config.php');
 $account->AccountLoginQuery();
 ?>
+<!DOCTYPE html>
 <html>
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />

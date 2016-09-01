@@ -38,7 +38,7 @@
 					<p class="lead">Content Management System for World of Warcraft Servers.</p>
 					<div class="btn-group btn-group-justified">
 					  <a href="step-2.php" class="btn btn-primary">Install Now</a>
-					  <a href="https://www.google.com/" class="btn btn-default">No, Thanks</a>
+					  <a href="http://flamenet.github.io/FlameCMS/" class="btn btn-default">No, Thanks</a>
 					</div>
 				</div>
 				<div class="mastfoot">

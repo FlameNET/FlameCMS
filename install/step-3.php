@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-7 col-sm-6">
 						<h1></h1>
-						<p class="lead">Install now FlameCMS please fill all the fields, and make sure that the data is correct.</p>
+						<p class="lead">Installing FlameCMS, please fill out all the fields and make sure the data is correct.</p>
 					</div>
 				</div>
 			</div>
@@ -162,13 +162,13 @@
 						<legend>CMS configuration</legend>
 						<div class="col-md-4">
 							<div class="form-group">
-								<label for="inputEmail" class="control-label">Domain e.g (http://your.host/(if this cms is inside an folder))</label>
-								<input type="text" class="form-control" name="cfgdom" placeholder="http://you.host/3.3.5a" required />
+								<label for="inputEmail" class="control-label">Domain e.g (http://domain.com/(if via cms is inside a folder))</label>
+								<input type="text" class="form-control" name="cfgdom" placeholder="http://domain.com/(folder name)" required />
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<label for="inputEmail" class="control-label">Realmlist</label>
+								<label for="inputEmail" class="control-label">Realmlist IP</label>
 								<input type="text" class="form-control" name="realmlist" placeholder="my.realmlist.host" required />
 							</div>
 						</div>
@@ -188,6 +188,40 @@
 									<option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
 									<option value="tw">繁體中文</option>
 								</select>
+							</div>
+						</div>
+					</fieldset>
+					</br>
+					<fieldset>
+						<legend>Community</legend>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Title</label>
+								<input type="text" class="form-control" name="cs_title" placeholder="Title" required />
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Facebook</label>
+								<input type="text" class="form-control" name="cs_fb" placeholder="Facebook" required />
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Twitter</label>
+								<input type="text" class="form-control" name="cs_twitter" placeholder="Twitter" required />
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Youtube</label>
+								<input type="text" class="form-control" name="cs_yt" placeholder="Youtube" required />
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label for="inputEmail" class="control-label">Reddit</label>
+								<input type="text" class="form-control" name="cs_reddit" placeholder="Reddit" required />
 							</div>
 						</div>
 					</fieldset>
@@ -227,7 +261,7 @@
 					</fieldset>
 
 					<div class="form-group">
-						<button type="submit"  class="btn btn-primary" name="Submit">Install FlameCMS Now</button>
+						<button type="submit"  class="btn btn-primary" name="Submit">Finalize</button>
 						<button type="reset" class="btn btn-default">Cancel</button>
 					</div>
 				</form>
