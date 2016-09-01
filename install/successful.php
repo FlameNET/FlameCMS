@@ -207,7 +207,7 @@ include('config.php');
 				Succesful!
 			</div>
 				<?php 
-				$con=mysqli_connect(HOST,USER,PASSWORD,DB);
+				$con=mysqli_connect(HOST,USER,PASSWORD,DB,PORT);
 
 				// Check connection
 				if (mysqli_connect_errno($con)):
@@ -225,7 +225,7 @@ include('config.php');
 			</div>
 			<?php
 
-			$mysqli = new mysqli(HOST,USER,PASSWORD,DB);
+			$mysqli = new mysqli(HOST,USER,PASSWORD,DB,PORT);
 
 			if (mysqli_connect_error()):
 				exit('Connect Error (' . mysqli_connect_errno() . ') '
@@ -247,7 +247,7 @@ include('config.php');
 			<?php 
 			error_reporting(E_ALL);
 			ini_set('display_errors','On');
-			$con=mysqli_connect(HOST,USER,PASSWORD,DB);
+			$con=mysqli_connect(HOST,USER,PASSWORD,DB,PORT);
 
 			// Check connection
 			if (mysqli_connect_errno($con)):
