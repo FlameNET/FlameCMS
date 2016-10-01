@@ -40,17 +40,11 @@ class Connection {
 	public function Auth(){
 
 		$this->auth = new mysqli(SERVERHOST, SERVERUSER, SERVERPASSWORD, AUTH, SERVERPORT);
-		/**
-		* Language support in the database
-		*/
 		$this->auth->query("SET NAMES 'utf8'");
-
 		if (mysqli_connect_error()) {
 			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 		}
-
 		return $this->auth;
-
 	}
 
 	public function Characters(){

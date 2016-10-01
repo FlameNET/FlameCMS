@@ -91,7 +91,7 @@ $mysqlVersion = $match[0];
 					</table>
 				</div>
 				<center>
-					<a href="step-3" class="btn btn-primary">Go to the installation process</a>
+					<a href="step-3" class="btn btn-primary">Continue</a>
 				</center>
 			</div>
 		</div>
