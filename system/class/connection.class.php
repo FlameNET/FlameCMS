@@ -17,24 +17,39 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
 
-class Connection {
+class Connection extends mysqli {
 
-	private $mysqli;
+	/**
+	* Gestiona la conexión con la base de datos
+	*/
+	private $db_host 	= HOST;
+	private $db_user 	= USER;
+	private $db_pass 	= PASSWORD;
+	private $db_name 	= DB;
+	private $port 		= PORT;
 	private $auth;
 	private $characters;
 	private $world;
 
-	function __construct() {
-    }
-
+    /**
+     * Connection with the database.
+     * @return connection handle database
+     */
 	public function Connect(){
 
-		$this->mysqli = new mysqli(HOST, USER, PASSWORD, DB, PORT);
+		$this->mysqli = new mysqli($this->db_host, $this->db_user, $this->db_pass, $this->db_name);
+		// Support for special characters in the database
 		$this->mysqli->query("SET NAMES 'utf8'");
-		if (mysqli_connect_error()) {
-			die("Failed to connect to Database (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+
+		if ($this->mysqli->connect_error){
+			trigger_error("Failed to connect to Database: " . $this->mysqli->connect_error, E_USER_ERROR);
 		}
+
+		// Return connection 
 		return $this->mysqli;
+		
+		// Close the connection
+		$this->mysqli->close();
 	}
 
 	public function Auth(){
