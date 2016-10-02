@@ -18,15 +18,15 @@ CREATE TABLE `account` (
   `password` VARCHAR(44) NOT NULL DEFAULT '',
   `secret_question` VARCHAR(35) NOT NULL DEFAULT '',
   `answer_question` VARCHAR(35) NOT NULL DEFAULT '',
-  `country` VARCHAR(15) NOT NULL DEFAULT '',
+  `country` VARCHAR(3) NOT NULL DEFAULT '',
   `date_of_birth` VARCHAR(25) NOT NULL DEFAULT '',
   `avatar` VARCHAR(55) NOT NULL DEFAULT 'avatar.jpg' COMMENT 'User Avatar',
-  `rol` INT(1) NOT NULL DEFAULT '1',
+  `rol` TINYINT(2) NOT NULL DEFAULT '1',
   `activation_code` VARCHAR(255) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `FK_account` (`rol`),
-  CONSTRAINT `FK_account` FOREIGN KEY (`rol`) REFERENCES `roles` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_account_rol` FOREIGN KEY (`rol`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `account` */
 
@@ -62,15 +62,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `countries`;
 
-CREATE TABLE IF NOT EXISTS `countries` (
+CREATE TABLE `countries` (
   `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `countryName` VARCHAR(255) COLLATE utf8_bin NOT NULL,
-  `isoAlpha2` VARCHAR(2) COLLATE utf8_bin NOT NULL,
-  `isoAlpha3` VARCHAR(3) COLLATE utf8_bin NOT NULL,
+  `countryName` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `isoAlpha2` VARCHAR(2) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `isoAlpha3` VARCHAR(3) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `numeric_code` SMALLINT(6) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=250;
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `countries` */
 
@@ -348,7 +348,7 @@ CREATE TABLE `menu` (
   `menu_ru` VARCHAR(20) NOT NULL DEFAULT '',
   `menu_tw` VARCHAR(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `menu` */
 
@@ -378,7 +378,7 @@ CREATE TABLE `news` (
   `comments` INT(10) DEFAULT '0',
   `image` VARCHAR(255) DEFAULT 'staff',
   PRIMARY KEY (`id`)
-) ENGINE=MYISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `news` */
 
@@ -393,11 +393,11 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `realms`;
 
 CREATE TABLE `realms` (
-  `Id` INT(2) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Id` TINYINT(2) UNSIGNED NOT NULL AUTO_INCREMENT,
   `realmName` VARCHAR(55) NOT NULL DEFAULT 'FlameCMS',
   `rate` VARCHAR(20) NOT NULL DEFAULT 'x1',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `realms` */
 
@@ -405,7 +405,7 @@ LOCK TABLES `realms` WRITE;
 
 UNLOCK TABLES;
 
-/*Table structure for table `roles_permissions` */
+/*Table structure for table `roles` */
 
 DROP TABLE IF EXISTS `roles`;
 
@@ -414,7 +414,7 @@ CREATE TABLE `roles` (
   `roles` VARCHAR(25) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `roles` */
 
@@ -436,13 +436,13 @@ DROP TABLE IF EXISTS `slideshows`;
 
 CREATE TABLE `slideshows` (
   `id` INT(10) NOT NULL AUTO_INCREMENT,
-  `title` VARCHAR(255) CHARACTER SET utf8 NOT NULL,
-  `description` VARCHAR(255) CHARACTER SET utf8 NOT NULL,
-  `image` VARCHAR(255) CHARACTER SET utf8 NOT NULL,
-  `link` VARCHAR(255) CHARACTER SET utf8 DEFAULT '#',
-  `duration` VARCHAR(2) CHARACTER SET utf8 NOT NULL DEFAULT '7',
+  `title` VARCHAR(255) NOT NULL,
+  `description` VARCHAR(255) NOT NULL,
+  `image` VARCHAR(255) NOT NULL,
+  `link` VARCHAR(255) DEFAULT '#',
+  `duration` TINYINT(2) NOT NULL DEFAULT '7',
   PRIMARY KEY (`id`)
-) ENGINE=MYISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `slideshows` */
 
