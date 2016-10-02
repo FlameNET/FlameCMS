@@ -83,6 +83,8 @@ define('SERVERPORT',	'YOUR PORT');
 define('AUTH',			'YOUR DATABASE AUTH');
 define('CHARACTERS',	'YOUR DATABASE CHARACTERS');
 define('WORLD',			'YOUR DATABASE WORLD');
+define('REALMLIST', 	'YOUR REALMLIST');
+
 /*
 |--------------------------------------------------------------------------|
 |  Soap settings

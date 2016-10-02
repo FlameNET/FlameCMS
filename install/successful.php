@@ -86,6 +86,8 @@ if (isset($_POST['Submit'])){
 		define('AUTH',			'". $_POST['authdb']. "');
 		define('CHARACTERS',	'". $_POST['chardb']. "');
 		define('WORLD',			'". $_POST['worlddb']. "');
+		define('REALMLIST', 	'". $_POST['realmlist']."');
+
 		/*
 		|--------------------------------------------------------------------------|
 		|  Soap settings
