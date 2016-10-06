@@ -1,6 +1,5 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <https://github.com/FlameNET/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -22,11 +21,13 @@
 | Autoload Class
 |--------------------------------------------------------------------------|
 */
-function __autoload($className) {
-	if (file_exists(CLASS_DIR . strtolower($className).'.class.php')) {
-		require_once(CLASS_DIR . strtolower($className).'.class.php');
+	if (is_readable(CLASS_DIR . strtolower($ClassName) . '.class.php')){
+    	require(CLASS_DIR . strtolower($ClassName) . '.class.php');
+	}else{
+		echo 'Class not found '.$ClassName;
 	}
 }
+
 $connect	= new Connection();
 $news		= new News();
 $register	= new Users();

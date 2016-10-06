@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2015 FlameCMS <https://github.com/FlameNET/>
+* Copyright (C) 2016 FlameCMS <https://github.com/FlameNET/>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -85,6 +85,6 @@ define('LANG', SYSTEM.'languages/');
 define('CLASS_DIR', SYSTEM.'class/');
 
 include(LANG."lang.php");
-include(SYSTEM."class.php");
+include(CLASS_DIR."autoload.php");
 include(SYSTEM."function.php");
 include(SYSTEM."OOP.php");
