@@ -21,12 +21,14 @@
 | Autoload Class
 |--------------------------------------------------------------------------|
 */
+function Autoload($ClassName) {
 	if (is_readable(CLASS_DIR . strtolower($ClassName) . '.class.php')){
     	require(CLASS_DIR . strtolower($ClassName) . '.class.php');
 	}else{
 		echo 'Class not found '.$ClassName;
 	}
 }
+spl_autoload_register("Autoload");
 
 $connect	= new Connection();
 $news		= new News();
