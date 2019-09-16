@@ -7,6 +7,13 @@ ob_end_clean();
 $info = stristr($info, 'Client API version'); 
 preg_match('/[1-9].[0-9].[1-9][0-9]/', $info, $match); 
 $mysqlVersion = $match[0]; 
+if(!functrion_exists('apache_get_version')){
+	function apache_get_version() {
+	   $ver = split("[/ ]",$_SERVER['SERVER_SOFTWARE']);
+	   $apver = "$ver[1] $ver[2]";
+	   return $apver;
+	}
+}
 ?>
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
