@@ -5,7 +5,11 @@ require_once('system/config.php');
 $account->AccountLoginQuery();
 
 if (isset($_GET['id'])){
-	$news = $connect->Connect()->query("SELECT * FROM news WHERE id = '".$_GET['id']."'");
+	$c=$connect->Connect();
+	$news_id=intval($_GET['id']);
+	$SQL="SELECT * FROM news WHERE id = %d";
+	$SQL=$c->prepare($SQL,array($news_id));
+	$news = $c->query($SQL);
 	$rows = $news->fetch_assoc();
 	if (!$rows['id']){ 
 		$error = true;
@@ -76,7 +80,7 @@ if (isset($_GET['id'])){
 									<span itemprop="author"><?php echo $rows['author']; ?>
 								</span>
 							</a>
-							<span class="publish-date" title="06 May 2014 14:00 BST">06/05/2014 </span>
+							<span class="publish-date" title="06Â May 2014 14:00Â BST">06/05/2014 </span>
 							<a href="#comments" class="comments-link"><?php echo $rows['comments']; ?></a>
 						</div>
 						<meta itemprop="datePublished" content="2014-05-06T14:00:00+01"/>
@@ -123,7 +127,7 @@ if (isset($_GET['id'])){
 						</div>
 					</div>
 					<div id="comments" class="bnet-comments ">
-						<h2 class="subheader-2">Loading Comments…</h2>
+						<h2 class="subheader-2">Loading Commentsâ€¦</h2>
 						<h2 class="hide">An error has occurred loading comments.</h2>
 						<div class="comments-loading">
 						</div>
@@ -159,13 +163,13 @@ var jsonSearchHandlerUrl = '//eu.Flame.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to {1}.',
+ticketStatus: 'Ticket {0}â€™s status changed toÂ {1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
 ticketCanceled: 'Cancelled',
 ticketArchived: 'Archived',
-ticketInfo: 'Need Info',
+ticketInfo: 'NeedÂ Info',
 ticketAll: 'View All Tickets'
 };
 Msg.cms = {
@@ -210,10 +214,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'Loadingâ€¦',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onâ€¦',
+fansiteFindType: 'Find {0} onâ€¦',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -224,7 +228,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'â€¦'
 };
 Msg.fansite= {
 achievement: 'achievement',
