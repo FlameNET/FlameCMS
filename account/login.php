@@ -1,23 +1,32 @@
 <?php session_start();
 require_once('../system/config.php');
+$con=$connect->Connect();
 if(isset($_POST['submit']))
 {
 	$email			= trim($_POST['accountName']);
 	$password		= trim($_POST['password']);
-    $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
-	$query			= $connect->Connect()->query("SELECT * FROM account WHERE email='".$email."' AND password='".$sha_pass_hash."' AND activation_code IS NULL");
+	$sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
+	$SQL=$con->prepare("SELECT * FROM account WHERE email=%s",array(
+	    $email
+	));
+	$query			= $con->query($SQL);
 	$num_row		= $query->num_rows;
 	$row			= $query->fetch_array();
 
-	if( $num_row ==1 )
-	{
+	if( $num_row ==1 ){
+	    if($row['password']==$sha_pass_hash && ($row['activation_code']===null || $row['activation_code']==='NULL')){
 		$_SESSION['email']=$row['email'];
 		header("Location: ".ACCOUNT_URL."management");
 		exit;
+	    }elseif($row['password']==$sha_pass_hash && strlen($row['activation_code'])){
+		echo '<div class="alert alert-error"><ul class="unstyled"><li>Account Not Activated</li></ul></div>';
+	    }elseif($row['password']!==$sha_pass_hash){
+		echo '<div class="alert alert-error"><ul class="unstyled"><li>Wrong Password</li></ul></div>';
+	    }
 	}
 	else
 	{
-		echo '<div class="alert alert-error"><ul class="unstyled"><li>You have not activated your account</li></ul></div>';
+	    echo '<div class="alert alert-error"><ul class="unstyled"><li>Account Not Found</li></ul></div>';
 	}
 }
 ?>
@@ -173,7 +182,7 @@ var jsonSearchHandlerUrl = '//us.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to {1}.',
+ticketStatus: 'Ticket {0}ï¿½s status changed to {1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -224,10 +233,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'Loadingï¿½',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onï¿½',
+fansiteFindType: 'Find {0} onï¿½',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -238,7 +247,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'ï¿½'
 };
 Msg.fansite= {
 achievement: 'achievement',
