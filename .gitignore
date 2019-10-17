@@ -27,3 +27,7 @@ $RECYCLE.BIN/
 */cache/*
 */cache/!index.html
 */cache/!.htaccess
+/nbproject/private/
+nbproject/private/private.properties
+nbproject/project.properties
+nbproject/project.xml

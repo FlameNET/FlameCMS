@@ -1,5 +1,7 @@
 <?php session_start();
 require_once('../system/config.php');
+$con=$connect->Connect();
+
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
@@ -138,7 +140,9 @@ _gaq.push(['_trackPageview']);
 				}
 				else
 				{
-					$createAccount	= $connect->Connect()->query("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('".$firstName."','".$lastName."','".$email."','".$sha_pass_hash."','" . $question . "',UPPER('" . $answer . "'),'" . $country . "','" . $dob . "','".$code."')");
+				    $SQL=$con->prepare("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES (%s,%s,%s,%s,%s,UPPER(%s),%s,%s,%s)",
+					    array($firstName,$lastName,$email,$sha_pass_hash,$question,$answer,$country,$dob,$code));
+					$createAccount	= $con->query($SQL);
 					$register->accountCreate($email, $password);
 					if($createAccount)
 					{
@@ -652,7 +656,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}ï¿½s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -787,7 +791,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}ï¿½s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
